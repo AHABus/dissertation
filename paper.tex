@@ -1,0 +1,337 @@
+\input{header.tex}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\begin{abstract}
+    
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\chapter{Introduction}
+\label{sec:introduction}
+
+\newpage
+\chapter{Literature Review}
+\label{sec:literature-review}
+
+Most HAB missions led by universities, schools or amateur are built around
+commercially available small computers or micro-controller boards: Redland
+Green School students used a Raspberry Pi (\cite{rpi2014}) running
+python scripts as an On Board Computer (\textit{OBC}) for their HAB mission
+(\cite{Hinschelwood2015}), while other projects have been ran on AVR
+micro-controller based boards like the Arduino Mega
+(\cite{AtmelCorporation2015}).
+
+In the United Kingdom, radio licenses do not cover airborne transmission, making
+packet radio protocols like AX.25 unusable for HAB missions 
+(\cite{ukhasradio2016}). However, the Office of Communications allows the use
+of certain \textit{license-exempt} frequencies like the 70cm wavelength band,
+provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}).
+For this reason, most missions launched from the United Kingdom use the
+Radiometrix NTX2 transmitter (\cite{radiometrix2012}). Because of the
+constraints, these missions usually transmit their telemetry as text using the
+Radio-Teletype (RTTY) protocol.
+
+While most HAB projects make use of commercial-off-the-shelf components, the
+finished payloads are usually custom, single-purpose designs that are little,
+if at all modular. In the design document for the Titan-1 HAB mission, Bombasaro
+describes a hardware bus based on tightly coupled sensors which communicate
+over two different data buses, SPI and I2C, and a custom-made, single-purpose
+flight software (\cite{Bombasaro2015}).
+
+Because of the risks and cost involved, nano-satellites rely more on modular
+designs, allowing each team to work on their module independently. In his paper,
+Volstad describes the design of the data bus of the NTNU CubeSat: while the OBC
+is a based on a custom made circuit board, it is designed to provide a standard
+power interface, as well as access to an I2C standard bus
+(\cite{NXPSemiconductors2014}) to each payload (\cite{Volstad2011}). The I2C
+protocol was chosen because of its low power consumption, and because if only
+requires two lines (clock and data). Thomas Clausen describes in his 2001 paper
+how a simple packet protocol built on top of I2C itself is used for data
+transfer and error detection in Aalborg University's CubeSats
+(\cite{Clausen2001}).
+
+Satellite missions last a lot longer than High-Altitude Balloons' and the
+requirements for radio transmissions differ: while satellites can only
+communicate when their orbit passes above a ground station and require precise
+speed and data volume planning, as described by Sandy Anthunes in his book
+(\cite{Antunes2015}), non-floating HAB missions allow for line-of-sight
+communications from liftoff to late into the descent of the payload.
+
+There are however some technologies that can be adapted from satellites to be
+used in HAB applications. The University of Arizona uses a custom packet format
+over 434MHz radio, containing raw binary values for each instrument's
+measurements (\cite{Eatchel2002}). The BRITE-Austria CubeSat mission uses the
+AX.25 packet radio protocol (used by amateur radio users), which allows the
+use of off-the-shelf transmission and reception hardware rather than custom-made
+circuits (\cite{Traussnig2007}).
+
+Some nano-satellites use custom telemetry data format, which allows the team
+to minimise the volume of data to be sent over radio. The Planetary Society's
+Lightsail mission has an uplink connection that allows the ground station
+to request specific logs or data. By default, The spacecraft only communicates
+a custom beacon containing a summary of the its housekeeping data
+(\cite{planetary2016}). Uplink being impractical with the transmission power
+limits imposed in the United Kingdom, such a selective telemetry system cannot
+be relied upon for HAB missions.
+
+To improve collaboration and allow the deployment of large networks of
+satellites, probes and other space vehicles, the Consultative Committee for
+Space Data Systems has defined multiple communication standards that for
+the different types of networks encountered in spacecrafts.
+
+SpaceWire defines how instruments' data can be accessed by having the OBC
+remotely poll their memory (\cite{parkes2005}). A similar system is used to
+fetch data from ROM chips over I2C and could be used to build a simple data bus.
+
+The CCSDS Space Packet protocol defines a packet format used
+to encapsulate application data (from instruments for example) that can be sent
+over a ``Space Link'', an analogue of the OSI model's link layer
+(\cite{Stallings1987}) using CCSDS frames to encapsulate packets originating
+from multiple instruments, ground stations and spacecrafts (\cite{ccsds2003}).
+
+While HAB applications do not require the level of complexity of CCSDS
+protocols — addressing is not needed since the network only contains two
+endpoints, communicating in a single direction — some details of the Space
+Packet protocol are worth reusing (Forward Error Correction, different
+Application IDs for each payload).
+
+\section{Analysis of the Problem}
+
+
+
+\newpage
+\chapter{Proposed Solution and Methodology}
+\label{sec:methodology}
+
+The proposed solution for this project is inspired by the bus model that
+supports the architecture of most commercial satellites. A standard software
+and hardware platform provides common facilities required on all High-Altitude
+flights – position tracking, internal data transfers and radio telemetry to the
+ground station – allowing payloads (scientific instruments for example) to
+only generate data and make it available to the platform.
+
+\begin{figure}[H]
+\includegraphics[width=0.35\textwidth]{payloadbus.pdf}
+\centering
+\caption{Payload bus architecture}
+\end{figure}
+
+The platform, or \textit{Payload Bus} is composed of the following components hardware and software components:
+
+\begin{description}
+    
+\item[On Board Computer:] the computer that runs the flight software and
+controls the data bus and all communications units (also called
+\textit{Bus Controller}).
+
+\item[Flight Software:] the firmware installed on the \textit{OBC}, that
+controls the bus and the execution of the mission.
+
+\item[Power Bus:] the hardware interface that provides electrical power to
+payloads.
+
+\item[Data Bus:] the hardware interface and software protocol through which
+payloads communicate data to the flight computer.
+
+\item[Navigation System:] the hardware (GNSS receiver) and software module used
+by the flight software to keep track of the balloon's geographic coordinates and
+altitude.
+
+\item[Radio System:] the hardware (transmitter), protocols and software module
+used by the \textit{OBC} to transmit collected data and metadata to the
+ground station.
+
+\item[Ground Segment:] the software required to record and decode the signal
+received from the platform.
+    
+\end{description}
+
+The following chapter describes the design processes used to develop and
+integrate those components into a functioning prototype of the Abertay
+High-Altitude Bus (\textit{AHABus}), and the methods used to test the viability
+and performance of the design.
+
+\section{Radio Communications Protocol}
+
+This section describes the design process that led to the radio communications
+protocol used by the AHABus platform to send payload data and flight metadata
+to the ground station. Its role is to ensure that arbitrary binary data – each
+payload can use their own data format – as stably and reliably as possible. As
+discussed in the following subsections, the design and implementation choice
+were also driven by legal constraints: in the United Kingdom, airborne radio
+transmitters are limited in frequency band (70cm wavelength) and power
+(transmission power inferior to 10mW).
+
+\subsection{Requirements}
+
+Designing and building a communication layer that can be relied up was an
+important requirement for the rest of the project. Transmitting as much as
+possible of a mission's scientific data is primordial in case the platform
+is carried too far by winds and cannot be recovered after landing.
+
+From the constraints discussed above, the requirements below were established
+for the radio communications system:
+
+\begin{enumerate}
+    \item provide a system to transmit binary data.
+    \item minimise the amount of overhead and bandwidth required.
+    \item allow multiple payload's data to be sent on the same link.
+    \item provide stable transmissions on a low-power link.
+    \item correct as many transmission-induced data errors as possible.
+    \item allow ground crew to track the balloon's location over time.
+\end{enumerate}
+
+%TODO: mention one-way
+
+As stated in chapter \ref{sec:literature-review}, the United Kingdom's Office
+of Communications restrict what frequencies can be used for airborne
+radio transmissions, and how much power the transmissions can be sent at.
+Those restrictions constrain what existing protocols can be used to transmit
+arbitrary data over radio. This disqualifies existing packet radio protocols
+that would have fulfilled most of the requirements, in use in other countries
+like AX.25.
+
+Most UK-launched High Altitude Balloon missions make use of Radio-Teletype
+(\textit{RTTY}) to send ASCII-encoded text. This was considered insufficient
+for the purpose of a common platform for two main reasons: First, ASCII does
+not handle binary data by default -- only some byte values would be displayed
+as ASCII, while the rest would translate to non-printing characters. This leads
+to data loss, unless the binary data is encoded in an ASCII-compatible format
+like base64, which would require more bandwidth to send a similar amount of
+data. Furthermore, ASCII alone does not provide either a way to multiplex data
+coming from different payloads, or any kind of error checking or error
+correction. This means that such facilities must be built on top of the
+plain-text protocol.
+
+RTTY itself functions in the same way as wired UART serial links. It can provide
+some level of error checking if the transmission of a parity bit is enabled, but
+it does not carry enough information to correct errors. Additionally, RTTY is
+purely a link layer, and does not provide any kind of encapsulation necessary
+for multiplexing data from different payloads.
+
+\subsection{Protocol Specification}
+
+The AHABus radio protocol was designed to match the requirements for the radio
+system as closely as possible. While the specification presented in this section
+is the last version, which was implemented in the AHABus prototype, some parts
+of the protocol evolved or had to be changed during the prototyping process.
+% TODO: explain more? less?
+
+The protocol was designed in layers, some equivalent to the ones present in the
+OSI model (\cite{Stallings1987}). This approach was chosen because it allows
+some level of modularity – if a layer proves problematic, it can be swapped
+for another with minimal impact on the other layers. Each layer fulfils a
+specific purpose:
+
+\begin{description}
+\item[Link Layer:] The lowest-level layer's purpose is to establish a one-way
+binary stream between the two end points of the radio link.
+
+\item[Frame Layer:] The frame layer relies on the Link Layer to transmit its
+data units, and provides reliability and error correction to higher-level 
+layers.
+
+\item[Packet Layer:] The packet layer is the highest-level layer. It provides
+a way for multiple payloads' data to share bandwidth as well as metadata
+transmission.
+\end{description}
+
+
+
+\subsubsection{Link Layer}
+
+\subsubsection{Forward Error Correction}
+
+\subsubsection{Frame Layer}
+
+\begin{center}
+\begin{bytefield}{16}
+    \bitheader{0,7,8,15} \\
+    \begin{rightwordgroup}{Header}
+        \bitbox{8}{01011010} & \bitbox{8}{version} \\
+        \bitbox{16}{sequence number}
+    \end{rightwordgroup} \\
+    \begin{leftwordgroup}{Payload}
+        \wordbox[lrt]{1}{data} \\
+        \skippedwords \\
+        \wordbox[lrb]{1}{}
+    \end{leftwordgroup} \\
+    \begin{rightwordgroup}{Error Correction}
+        \wordbox[lrt]{1}{checksum} \\
+        \skippedwords \\
+        \wordbox[lrb]{1}{}
+    \end{rightwordgroup}
+\end{bytefield}
+\end{center}
+
+\subsubsection{Packet Layer}
+
+\begin{center}
+\begin{bytefield}{32}
+    \bitheader{0,7,8,15,16,23,24,31} \\
+    \begin{rightwordgroup}{Header}
+        \bitbox{8}{version} & \bitbox{8}{payload ID} &
+        \bitbox{16}{packet length} \\
+        \bitbox{32}{latitude} \\
+        \bitbox{32}{longitude} \\
+        \bitbox{16}{altitude} & \bitbox[lrt]{16}{}
+    \end{rightwordgroup} \\
+    \begin{leftwordgroup}{Payload}
+        \wordbox[lrt]{1}{data} \\
+        \skippedwords \\
+        \wordbox[lrb]{1}{}
+    \end{leftwordgroup}
+\end{bytefield}
+\end{center}
+
+\subsection{Initial Implementation and Testing}
+
+\section{Bus and Flight Software}
+
+\subsection{Requirements}
+
+\subsection{Protocol Specification}
+
+\subsection{Arduino Implementation}
+
+\section{Flight Software}
+
+\section{Ground Segment}
+
+\subsection{Reception Binary Stream Extraction}
+
+\section{Testing}
+
+\subsection{Component Testing}
+
+\subsection{Integrated Testing}
+
+\subsubsection{Day in the life Testing}
+
+\subsubsection{Resilience Testing}
+
+\newpage
+\chapter{Results}
+\label{sec:reults}
+
+\newpage
+\chapter{Discussion}
+\label{sec:discussion}
+
+\newpage
+\chapter{Conclusion}
+\label{sec:conclusion}
+
+
+\newpage
+\printbibliography[heading=bibnumbered]  
+
+\end{document}
