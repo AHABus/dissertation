@@ -15,11 +15,11 @@
 
 \newpage
 \chapter{Introduction}
-\label{sec:introduction}
+\label{ch:introduction}
 
 \newpage
 \chapter{Literature Review}
-\label{sec:literature-review}
+\label{ch:literature-review}
 
 Most HAB missions led by universities, schools or amateur are built around
 commercially available small computers or micro-controller boards: Redland
@@ -109,7 +109,7 @@ Application IDs for each payload).
 
 \newpage
 \chapter{Proposed Solution and Methodology}
-\label{sec:methodology}
+\label{ch:methodology}
 
 The proposed solution for this project is inspired by the bus model that
 supports the architecture of most commercial satellites. A standard software
@@ -171,6 +171,7 @@ transmitters are limited in frequency band (70cm wavelength) and power
 (transmission power inferior to 10mW).
 
 \subsection{Requirements}
+\label{ssec:requirements}
 
 Designing and building a communication layer that can be relied up was an
 important requirement for the rest of the project. Transmitting as much as
@@ -181,17 +182,17 @@ From the constraints discussed above, the requirements below were established
 for the radio communications system:
 
 \begin{enumerate}
-    \item provide a system to transmit binary data.
-    \item minimise the amount of overhead and bandwidth required.
-    \item allow multiple payload's data to be sent on the same link.
-    \item provide stable transmissions on a low-power link.
-    \item correct as many transmission-induced data errors as possible.
-    \item allow ground crew to track the balloon's location over time.
+\item provide a system to transmit binary data.
+\item minimise the amount of overhead and bandwidth required.
+\item allow multiple payload's data to be sent on the same link.
+\item provide stable transmissions on a low-power link.
+\item correct as many transmission-induced data errors as possible.
+\item allow ground crew to track the balloon's location over time.
 \end{enumerate}
 
 %TODO: mention one-way
 
-As stated in chapter \ref{sec:literature-review}, the United Kingdom's Office
+As stated in chapter \ref{ch:literature-review}, the United Kingdom's Office
 of Communications restrict what frequencies can be used for airborne
 radio transmissions, and how much power the transmissions can be sent at.
 Those restrictions constrain what existing protocols can be used to transmit
@@ -244,53 +245,77 @@ a way for multiple payloads' data to share bandwidth as well as metadata
 transmission.
 \end{description}
 
-
-
 \subsubsection{Link Layer}
 
-\subsubsection{Forward Error Correction}
+While RTTY was not considered sufficient to cover fulfil the requirements of
+the whole protocol, as shown in section \ref{ssec:requirements}, it fulfils the
+simple requirements of the Link Layer: it can be used to send 8-bit bytes, one
+by one, over a radio link.
+
+RTTY functions like UART, over radio. Instead of using logical electrical levels
+(5V for logical high, 0V for logical low), it uses Audio Frequency Shift Keying
+(\textit{AFSK}): two audio tones separated by a frequency shift act as two
+logical levels. When nothing is being transmitted, the line is held high. The
+start of a byte is signalled by the \textit{start bit} (the line goes low),
+followed by the eight \textit{data bits}, and one or two \textit{stop bits} (the
+line is held low). After a byte has been sent, the line is held high again until
+the next byte, or the next byte starts immediately.
+
+%TODO: replace mentions of UART with RS-232 // NOPE, RS232 diff. than TTL
+%TODO: references for DominoEx and Olivia
+Other existing protocols exist that can transmit data over radio audio signals,
+like DominoEx or Olivia, sometimes with better transmission rates. RTTY was
+preferred over them because the ESP8266 board used as OBC in the AHABus
+prototype provides hardware support for UART, making it easier to implement and
+reliable. Since the link layer is transparent to the frame and packet layers,
+RTTY could be swapped for another protocol in the future with no impact on
+those.
 
 \subsubsection{Frame Layer}
 
-\begin{center}
-\begin{bytefield}{16}
-    \bitheader{0,7,8,15} \\
-    \begin{rightwordgroup}{Header}
-        \bitbox{8}{01011010} & \bitbox{8}{version} \\
-        \bitbox{16}{sequence number}
-    \end{rightwordgroup} \\
-    \begin{leftwordgroup}{Payload}
-        \wordbox[lrt]{1}{data} \\
-        \skippedwords \\
-        \wordbox[lrb]{1}{}
-    \end{leftwordgroup} \\
-    \begin{rightwordgroup}{Error Correction}
-        \wordbox[lrt]{1}{checksum} \\
-        \skippedwords \\
-        \wordbox[lrb]{1}{}
-    \end{rightwordgroup}
-\end{bytefield}
-\end{center}
+\begin{figure}[H]
+    \begin{bytefield}{16}
+        \bitheader{0,7,8,15} \\
+        \begin{rightwordgroup}{Header}
+            \bitbox{8}{01011010} & \bitbox{8}{version} \\
+            \bitbox{16}{sequence number}
+        \end{rightwordgroup} \\
+        \begin{leftwordgroup}{Payload}
+            \wordbox[lrt]{1}{data} \\
+            \skippedwords \\
+            \wordbox[lrb]{1}{}
+        \end{leftwordgroup} \\
+        \begin{rightwordgroup}{FEC}
+            \wordbox[lrt]{1}{checksum} \\
+            \skippedwords \\
+            \wordbox[lrb]{1}{}
+        \end{rightwordgroup}
+    \end{bytefield}
+    \centering
+    \caption{AHABus Frame Format}
+\end{figure}
 
 \subsubsection{Packet Layer}
 
-\begin{center}
-\begin{bytefield}{32}
-    \bitheader{0,7,8,15,16,23,24,31} \\
-    \begin{rightwordgroup}{Header}
-        \bitbox{8}{version} & \bitbox{8}{payload ID} &
-        \bitbox{16}{packet length} \\
-        \bitbox{32}{latitude} \\
-        \bitbox{32}{longitude} \\
-        \bitbox{16}{altitude} & \bitbox[lrt]{16}{}
-    \end{rightwordgroup} \\
-    \begin{leftwordgroup}{Payload}
-        \wordbox[lrt]{1}{data} \\
-        \skippedwords \\
-        \wordbox[lrb]{1}{}
-    \end{leftwordgroup}
-\end{bytefield}
-\end{center}
+\begin{figure}[H]
+    \begin{bytefield}{32}
+        \bitheader{0,7,8,15,16,23,24,31} \\
+        \begin{rightwordgroup}{Header}
+            \bitbox{8}{version} & \bitbox{8}{payload ID} &
+            \bitbox{16}{packet length} \\
+            \bitbox{32}{latitude} \\
+            \bitbox{32}{longitude} \\
+            \bitbox{16}{altitude} & \bitbox[lrt]{16}{}
+        \end{rightwordgroup} \\
+        \begin{leftwordgroup}{Payload}
+            \wordbox[lrt]{1}{data} \\
+            \skippedwords \\
+            \wordbox[lrb]{1}{}
+        \end{leftwordgroup}
+    \end{bytefield}
+    \centering
+    \caption{AHABus Frame Format}
+\end{figure}
 
 \subsection{Initial Implementation and Testing}
 
@@ -320,15 +345,15 @@ transmission.
 
 \newpage
 \chapter{Results}
-\label{sec:reults}
+\label{ch:reults}
 
 \newpage
 \chapter{Discussion}
-\label{sec:discussion}
+\label{ch:discussion}
 
 \newpage
 \chapter{Conclusion}
-\label{sec:conclusion}
+\label{ch:conclusion}
 
 
 \newpage
