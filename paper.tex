@@ -124,7 +124,8 @@ only generate data and make it available to the platform.
 \caption{Payload bus architecture}
 \end{figure}
 
-The platform, or \textit{Payload Bus} is composed of the following components hardware and software components:
+The platform, or \textit{Payload Bus} is composed of the following components 
+hardware and software components:
 
 \begin{description}
     
@@ -190,15 +191,13 @@ for the radio communications system:
 \item allow ground crew to track the balloon's location over time.
 \end{enumerate}
 
-%TODO: mention one-way
-
 As stated in chapter \ref{ch:literature-review}, the United Kingdom's Office
 of Communications restrict what frequencies can be used for airborne
 radio transmissions, and how much power the transmissions can be sent at.
 Those restrictions constrain what existing protocols can be used to transmit
 arbitrary data over radio. This disqualifies existing packet radio protocols
 that would have fulfilled most of the requirements, in use in other countries
-like AX.25.
+like AX.25. \todo{mention Tx only, no Rx}
 
 Most UK-launched High Altitude Balloon missions make use of Radio-Teletype
 (\textit{RTTY}) to send ASCII-encoded text. This was considered insufficient
@@ -224,7 +223,7 @@ The AHABus radio protocol was designed to match the requirements for the radio
 system as closely as possible. While the specification presented in this section
 is the last version, which was implemented in the AHABus prototype, some parts
 of the protocol evolved or had to be changed during the prototyping process.
-% TODO: explain more? less?
+\todo{Might not be necessary to say that here, given further sections}
 
 The protocol was designed in layers, some equivalent to the ones present in the
 OSI model (\cite{Stallings1987}). This approach was chosen because it allows
@@ -232,20 +231,28 @@ some level of modularity – if a layer proves problematic, it can be swapped
 for another with minimal impact on the other layers. Each layer fulfils a
 specific purpose:
 
+\todo{Add some details about simplicity of the network topology}
+
 \begin{description}
 \item[Link Layer:] The lowest-level layer's purpose is to establish a one-way
 binary stream between the two end points of the radio link.
 
 \item[Frame Layer:] The frame layer relies on the Link Layer to transmit its
 data units, and provides reliability and error correction to higher-level 
-layers.
+layers.\todo{Add vocabulary maybe (ancillary)}
 
 \item[Packet Layer:] The packet layer is the highest-level layer. It provides
 a way for multiple payloads' data to share bandwidth as well as metadata
 transmission.
 \end{description}
 
+The design process and specification of each of those three layers is explained
+in more details in the following sections.
+
 \subsubsection{Link Layer}
+\label{sssec:link-layer}
+
+\todo{add an introductory sentence?}
 
 While RTTY was not considered sufficient to cover fulfil the requirements of
 the whole protocol, as shown in section \ref{ssec:requirements}, it fulfils the
@@ -258,12 +265,11 @@ RTTY functions like UART, over radio. Instead of using logical electrical levels
 logical levels. When nothing is being transmitted, the line is held high. The
 start of a byte is signalled by the \textit{start bit} (the line goes low),
 followed by the eight \textit{data bits}, and one or two \textit{stop bits} (the
-line is held low). After a byte has been sent, the line is held high again until
-the next byte, or the next byte starts immediately.
+line is held high). After a byte has been sent, the line is held high again
+until the next byte, or the next byte starts immediately.
 
-%TODO: replace mentions of UART with RS-232 // NOPE, RS232 diff. than TTL
-%TODO: references for DominoEx and Olivia
 Other existing protocols exist that can transmit data over radio audio signals,
+\todo{references for DominoEx and Olivia}
 like DominoEx or Olivia, sometimes with better transmission rates. RTTY was
 preferred over them because the ESP8266 board used as OBC in the AHABus
 prototype provides hardware support for UART, making it easier to implement and
@@ -271,7 +277,80 @@ reliable. Since the link layer is transparent to the frame and packet layers,
 RTTY could be swapped for another protocol in the future with no impact on
 those.
 
+The valid encoding and decoding of a RTTY signal depends on the chosen baud
+rate (the number of times the logical signal changes level). During tests,
+the highest baud rate that allowed clear decoding of radio signals at 10mW
+power rating was 200bauds. Since each byte requires eleven bits to be sent
+(one start bit, eight data bits and two stop bits), this corresponds to a
+\(\frac{200}{11}=18.18\) bytes per second bandwidth.
+
 \subsubsection{Frame Layer}
+
+The role of the frame layer is to provide higher-level layers with a reliable
+data stream: the Link Layer discussed in section \ref{sssec:link-layer} will
+send data bytes one after another, but it does not guarantee that the bytes are
+received, or that noise on the channel (in this case, radio waves) have not
+damaged the data between transmission and reception. Those are the two main
+potential types of issues that the Frame Layer was designed to address.
+
+Preventing complete data loss on a radio channel is only possible to a degree:
+the signal-to-noise ratio is limited by multiple factors including transmission
+power – limited in the United Kingdom – distance, other neighbouring
+transmissions and line-of-sight. Those issues could have been mitigated in part
+through solutions that were outside of this project's scope, like antennae
+design. While this meant that some data loss could not be prevented, a solution
+was required to detect occurrences of data loss, and identify which part of the
+data was missing.
+
+Identifying lost sections of an arbitrary stream of bytes without any form of
+formatting is not possible: since it is not known in advance what data should
+be expected, there is no model to which actual received data can be compared.
+For this reason, the AHABus radio protocol was designed as a framed protocol:
+the stream of data is divided in chunks of a set number of bytes, encapsulated
+in \textit{frames} that contain the a sequence number used to track the position
+of the chunk in the data stream.
+
+The AHABus frame design was inspired by other frame-based protocols like the
+CCSDS Space Packet/Frame protocol. Each frame is composed of two section: a
+header, that contains metadata, and a payload containing the data carried by
+that frame.
+
+The only piece of metadata strictly required to be carried in a frame was its
+sequence number. The frame format was designed to use a 16-bit integer to
+represent the sequence number, as it allowed a large number of frames to be
+sent in-between wrap-arounds of the number (when it becomes larger than 65,535).
+
+To ensure that frames can be identified in the future, even if the format were
+to evolve, the protocol version number was also added to the header format. At
+the time of this writing, the protocol version was 0. If a future frame decoder
+were to receive a frame indicating an old protocol version, it could be at
+least signalled to the user, if not handled gracefully.
+
+\todo{explain requirement for sync marker}
+
+The resulting first version of the frame format is presented in figure
+\ref{fig:frame-fmt-orig}.
+
+\begin{figure}[H]
+    \begin{bytefield}{24}
+        \bitheader{0,7,8,15,16,23} \\
+        \bitbox{8}{version} & \bitbox{16}{sequence number} \\
+            \wordbox[lrt]{1}{payload data} \\
+            \skippedwords \\
+            \wordbox[lrb]{1}{}
+    \end{bytefield}
+    \centering
+    \caption{Original AHABus Frame Format}
+    \label{fig:frame-fmt-orig}
+\end{figure}
+
+\todo{explain move away from double-marker towards sequence + mark}
+
+Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
+chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
+percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
+explained further, the AHABus frames were chosen to be 256-byte long. As shown
+previously, each frame also includes.
 
 \begin{figure}[H]
     \begin{bytefield}{16}
@@ -280,11 +359,11 @@ those.
             \bitbox{8}{01011010} & \bitbox{8}{version} \\
             \bitbox{16}{sequence number}
         \end{rightwordgroup} \\
-        \begin{leftwordgroup}{Payload}
+        \begin{rightwordgroup}{Payload}
             \wordbox[lrt]{1}{data} \\
             \skippedwords \\
             \wordbox[lrb]{1}{}
-        \end{leftwordgroup} \\
+        \end{rightwordgroup} \\
         \begin{rightwordgroup}{FEC}
             \wordbox[lrt]{1}{checksum} \\
             \skippedwords \\
@@ -295,18 +374,37 @@ those.
     \caption{AHABus Frame Format}
 \end{figure}
 
+
+% Topic list for this:
+%   * Provide reliability:
+%       * Data arrives whole
+%       * We receive valid data
+%   * receive all data: we chunk the data stream, number the chunks         v
+%   * we tag data with housekeeping things                                  v~
+%   * If frames too small, housekeeping/data ratio is shit
+%   * Need a way to detect the start + end of a frame.
+%   * Explain that end of frame marker complicated, going with count?
+%
+%   * Validity checked (and corrected using FEC)
+%   * FEC: went with Reed-Solomon for simplicity + availability
+%   * FEC means we need small blocks of data -> Frames
+%
+%   * FEC forces us to change from double marker inside to sync sequence + frame
+
+
+
 \subsubsection{Packet Layer}
 
 \begin{figure}[H]
     \begin{bytefield}{32}
         \bitheader{0,7,8,15,16,23,24,31} \\
-        \begin{rightwordgroup}{Header}
+        \begin{leftwordgroup}{Header}
             \bitbox{8}{version} & \bitbox{8}{payload ID} &
             \bitbox{16}{packet length} \\
             \bitbox{32}{latitude} \\
             \bitbox{32}{longitude} \\
             \bitbox{16}{altitude} & \bitbox[lrt]{16}{}
-        \end{rightwordgroup} \\
+        \end{leftwordgroup} \\
         \begin{leftwordgroup}{Payload}
             \wordbox[lrt]{1}{data} \\
             \skippedwords \\
@@ -329,9 +427,15 @@ those.
 
 \section{Flight Software}
 
+\subsection{Architecture}
+
+\subsection{User Interface}
+
 \section{Ground Segment}
 
-\subsection{Reception Binary Stream Extraction}
+\subsection{Extracting Raw Binary Stream}
+
+\subsection{Packet}
 
 \section{Testing}
 
@@ -345,7 +449,7 @@ those.
 
 \newpage
 \chapter{Results}
-\label{ch:reults}
+\label{ch:results}
 
 \newpage
 \chapter{Discussion}

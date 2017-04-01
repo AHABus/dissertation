@@ -15,8 +15,7 @@ open: compile
 	@open $(TARGET).pdf
 
 count:
-	@detex -t paper.tex > paper.txt
-	@wc -w paper.txt
+	@texcount -nosub paper.tex
 
 clean:
 	@rm -rf *.aux
