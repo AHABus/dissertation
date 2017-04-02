@@ -174,7 +174,7 @@ transmitters are limited in frequency band (70cm wavelength) and power
 \subsection{Requirements}
 \label{ssec:requirements}
 
-Designing and building a communication layer that can be relied up was an
+Designing and building a communication protocol that can be relied up was an
 important requirement for the rest of the project. Transmitting as much as
 possible of a mission's scientific data is primordial in case the platform
 is carried too far by winds and cannot be recovered after landing.
@@ -254,6 +254,8 @@ in more details in the following sections.
 
 \todo{add an introductory sentence?}
 
+
+
 While RTTY was not considered sufficient to cover fulfil the requirements of
 the whole protocol, as shown in section \ref{ssec:requirements}, it fulfils the
 simple requirements of the Link Layer: it can be used to send 8-bit bytes, one
@@ -332,19 +334,81 @@ The resulting first version of the frame format is presented in figure
 \ref{fig:frame-fmt-orig}.
 
 \begin{figure}[H]
-    \begin{bytefield}{24}
-        \bitheader{0,7,8,15,16,23} \\
-        \bitbox{8}{version} & \bitbox{16}{sequence number} \\
-            \wordbox[lrt]{1}{payload data} \\
-            \skippedwords \\
-            \wordbox[lrb]{1}{}
+    \begin{center}
+    \begin{bytefield}[bitwidth=0.65em]{64}
+        \bitheader{0,8,24,40} \\
+        \bitbox{8}{version} &
+        \bitbox{16}{sequence number} &
+        \bitbox{40}{data}
     \end{bytefield}
+    \end{center}
     \centering
-    \caption{Original AHABus Frame Format}
+    \caption{AHABus Frame Format – Second Iteration}
     \label{fig:frame-fmt-orig}
 \end{figure}
 
+This preliminary design proved impossible to work with. While it encapsulates
+the required data and metadata, it does not provide any way to identify the
+start or the end of a frame in a raw binary stream, which would have rendered
+parsing an incoming frame stream impossible.
+
+To solve this issue, a ``start sequence'' was added at the very beginning of
+the frame. When parsing frames from a binary stream, the decoder must ignore
+bytes until the start sequence (a single byte of value \texttt{0xAA} followed
+by a single byte of value \texttt{0x5A}) occurs. Once the frame sequence is
+detected, the frame's end is detected once 256 bytes have been received.
+
+\begin{figure}[H]
+    \begin{center}
+    \begin{bytefield}[bitwidth=0.65em]{64}
+        \bitheader{0,8,16,24,40} \\
+        \bitbox{8}{0xAA} & \bitbox{8}{0x5A} & \bitbox{8}{version} &
+        \bitbox{16}{sequence number} &
+        \bitbox{24}{data}
+    \end{bytefield}
+    \end{center}
+    \centering
+    \caption{AHABus Frame Format – Second Iteration}
+    \label{fig:frame-fmt-2}
+\end{figure}
+
+% Go to the magic website http://madebyevan.com/fsm/
+\begin{figure}[H]
+    \begin{center}
+    \begin{tikzpicture}[scale=0.2]
+    \tikzstyle{every node}+=[inner sep=0pt]
+    \draw [black] (23.9,-13.4) circle (3);
+    \draw (23.9,-13.4) node {$Wait$};
+    \draw [black] (53.5,-13.4) circle (3);
+    \draw (53.5,-13.4) node {$Sync$};
+    \draw [black] (38.6,-30.7) circle (3);
+    \draw (38.6,-30.7) node {$Frame$};
+    \draw [black] (26.719,-12.375) arc (107.79277:72.20723:39.209);
+    \fill [black] (50.68,-12.37) -- (50.07,-11.65) -- (49.77,-12.61);
+    \draw (38.7,-10) node [above] {$byte=AA$};
+    \draw [black] (53.11,-16.371) arc (-12.09889:-69.37588:18.591);
+    \fill [black] (41.48,-29.87) -- (42.41,-30.06) -- (42.05,-29.12);
+    \draw (49.56,-26.05) node [right] {$byte=5A$};
+    \draw [black] (35.918,-29.359) arc (-119.94439:-159.34576:25.489);
+    \fill [black] (24.79,-16.26) -- (24.61,-17.19) -- (25.54,-16.84);
+    \draw (28.67,-25.22) node [left] {$read=256$};
+    \draw [black] (51.972,-15.968) arc (-3.02212:-291.02212:2.25);
+    \draw (47.22,-18.39) node [left] {$byte=AA$};
+    \fill [black] (50.53,-13.75) -- (49.76,-13.21) -- (49.71,-14.21);
+    \draw [black] (25.724,-11.023) arc (137.60109:42.39891:17.571);
+    \fill [black] (25.72,-11.02) -- (26.63,-10.77) -- (25.89,-10.1);
+    \draw (38.7,-4.8) node [above] {$byte!=AA$};
+    \end{tikzpicture}
+    \end{center}
+    \centering
+    \caption{AHABus Frame Synchronisation}
+\end{figure}
+
+
+
 \todo{explain move away from double-marker towards sequence + mark}
+
+
 
 Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
 chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
@@ -461,6 +525,6 @@ previously, each frame also includes.
 
 
 \newpage
-\printbibliography[heading=bibnumbered]  
+\printbibliography[heading=bibnumbered, title=References]  
 
 \end{document}

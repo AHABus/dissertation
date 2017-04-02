@@ -1,0 +1,26 @@
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (27.5,-13.4) circle (3);
+\draw (27.5,-13.4) node {$Wait$};
+\draw [black] (56,-13.4) circle (3);
+\draw (56,-13.4) node {$Sync$};
+\draw [black] (41.2,-31.6) circle (3);
+\draw (41.2,-31.6) node {$Frame$};
+\draw [black] (30.5,-13.4) -- (53,-13.4);
+\fill [black] (53,-13.4) -- (52.2,-12.9) -- (52.2,-13.9);
+\draw (41.75,-13.9) node [below] {$byte\equals0xAA$};
+\draw [black] (55.657,-16.377) arc (-10.98138:-67.25372:19.515);
+\fill [black] (44.04,-30.66) -- (44.98,-30.81) -- (44.59,-29.89);
+\draw (52.2,-26.4) node [right] {$byte\equals0x5A$};
+\draw [black] (38.604,-30.1) arc (-123.37235:-162.68664:25.655);
+\fill [black] (28.22,-16.31) -- (27.98,-17.22) -- (28.94,-16.92);
+\draw (31.64,-25.5) node [left] {$read\equals256$};
+\draw [black] (57.064,-10.607) arc (186.8789:-101.1211:2.25);
+\draw (61.48,-7.34) node [right] {$byte\equals0xAA$};
+\fill [black] (58.86,-12.55) -- (59.72,-12.95) -- (59.6,-11.95);
+\draw [black] (29.956,-11.681) arc (121.2067:58.7933:22.762);
+\fill [black] (29.96,-11.68) -- (30.9,-11.69) -- (30.38,-10.84);
+\draw (41.75,-7.89) node [above] {$byte\equals0xAA$};
+\end{tikzpicture}
+\end{center}
