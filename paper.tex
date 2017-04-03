@@ -12,6 +12,7 @@
 
 \newpage
 \tableofcontents
+\setlength{\parskip}{1em}
 
 \newpage
 \chapter{Introduction}
@@ -197,7 +198,8 @@ radio transmissions, and how much power the transmissions can be sent at.
 Those restrictions constrain what existing protocols can be used to transmit
 arbitrary data over radio. This disqualifies existing packet radio protocols
 that would have fulfilled most of the requirements, in use in other countries
-like AX.25. \todo{mention Tx only, no Rx}
+like AX.25.
+% TODO: mention Tx only, no Rx
 
 Most UK-launched High Altitude Balloon missions make use of Radio-Teletype
 (\textit{RTTY}) to send ASCII-encoded text. This was considered insufficient
@@ -223,7 +225,7 @@ The AHABus radio protocol was designed to match the requirements for the radio
 system as closely as possible. While the specification presented in this section
 is the last version, which was implemented in the AHABus prototype, some parts
 of the protocol evolved or had to be changed during the prototyping process.
-\todo{Might not be necessary to say that here, given further sections}
+% TODO: Might not be necessary to say that here, given further sections
 
 The protocol was designed in layers, some equivalent to the ones present in the
 OSI model (\cite{Stallings1987}). This approach was chosen because it allows
@@ -231,7 +233,7 @@ some level of modularity – if a layer proves problematic, it can be swapped
 for another with minimal impact on the other layers. Each layer fulfils a
 specific purpose:
 
-\todo{Add some details about simplicity of the network topology}
+% TODO: Add some details about simplicity of the network topology
 
 \begin{description}
 \item[Link Layer:] The lowest-level layer's purpose is to establish a one-way
@@ -239,7 +241,8 @@ binary stream between the two end points of the radio link.
 
 \item[Frame Layer:] The frame layer relies on the Link Layer to transmit its
 data units, and provides reliability and error correction to higher-level 
-layers.\todo{Add vocabulary maybe (ancillary)}
+layers.
+% TODO: Add vocabulary maybe (ancillary)
 
 \item[Packet Layer:] The packet layer is the highest-level layer. It provides
 a way for multiple payloads' data to share bandwidth as well as metadata
@@ -252,9 +255,7 @@ in more details in the following sections.
 \subsubsection{Link Layer}
 \label{sssec:link-layer}
 
-\todo{add an introductory sentence?}
-
-
+% TODO: add an introductory sentence?
 
 While RTTY was not considered sufficient to cover fulfil the requirements of
 the whole protocol, as shown in section \ref{ssec:requirements}, it fulfils the
@@ -270,8 +271,9 @@ followed by the eight \textit{data bits}, and one or two \textit{stop bits} (the
 line is held high). After a byte has been sent, the line is held high again
 until the next byte, or the next byte starts immediately.
 
+% TODO: references for DominoEx and Olivia
+
 Other existing protocols exist that can transmit data over radio audio signals,
-\todo{references for DominoEx and Olivia}
 like DominoEx or Olivia, sometimes with better transmission rates. RTTY was
 preferred over them because the ESP8266 board used as OBC in the AHABus
 prototype provides hardware support for UART, making it easier to implement and
@@ -328,22 +330,22 @@ the time of this writing, the protocol version was 0. If a future frame decoder
 were to receive a frame indicating an old protocol version, it could be at
 least signalled to the user, if not handled gracefully.
 
-\todo{explain requirement for sync marker}
+% TODO: explain requirement for sync marker
 
 The resulting first version of the frame format is presented in figure
 \ref{fig:frame-fmt-orig}.
 
 \begin{figure}[H]
     \begin{center}
-    \begin{bytefield}[bitwidth=0.65em]{64}
+    \begin{bytefield}[bitwidth=0.5em]{64}
         \bitheader{0,8,24,40} \\
         \bitbox{8}{version} &
-        \bitbox{16}{sequence number} &
-        \bitbox{40}{data}
+        \bitbox{16}{seq. number} &
+        \bitbox{40}{data[253]}
     \end{bytefield}
     \end{center}
     \centering
-    \caption{AHABus Frame Format – Second Iteration}
+    \caption{AHABus Frame Format – Version 1}
     \label{fig:frame-fmt-orig}
 \end{figure}
 
@@ -360,19 +362,116 @@ detected, the frame's end is detected once 256 bytes have been received.
 
 \begin{figure}[H]
     \begin{center}
-    \begin{bytefield}[bitwidth=0.65em]{64}
+    \begin{bytefield}[bitwidth=0.5em]{64}
         \bitheader{0,8,16,24,40} \\
-        \bitbox{8}{0xAA} & \bitbox{8}{0x5A} & \bitbox{8}{version} &
-        \bitbox{16}{sequence number} &
-        \bitbox{24}{data}
+        \bitbox{8}{\texttt{0xAA}} & \bitbox{8}{\texttt{0x5A}} & \bitbox{8}{version} &
+        \bitbox{16}{seq. number} &
+        \bitbox{24}{data[251]}
     \end{bytefield}
     \end{center}
     \centering
-    \caption{AHABus Frame Format – Second Iteration}
+    \caption{AHABus Frame Format – Version 2}
     \label{fig:frame-fmt-2}
 \end{figure}
 
-% Go to the magic website http://madebyevan.com/fsm/
+The second version of the frame format shown in figure \ref{fig:frame-fmt-2}
+fulfils one of its two design goals (detection of data loss). However, it does
+not provide a way to detect and correct errors due to noise or interferences on
+the radio channel.
+
+The error-correction requirement led to the use of a Forward Error Correction
+(\textit{FEC}) algorithm. FEC algorithms function by adding some amount of data
+\(D\) to each message sent \(M\). \(D\) is computed by the encoder. The decoder
+uses \(D\) to detect whether errors were introduced anywhere in the received
+block \(M+D\), and correct those errors if their number is below the
+algorithm's maximum.
+
+% TODO: block diagram of the encoding-decoding chain
+
+For the purpose of this project, Reed-Solomon(255,223) was chosen for multiple
+reasons:
+
+\begin{itemize}
+    
+\item The Reed-Solomon family of algorithms is widespread in its use, notably
+in space communications systems – the Voyager probes used Reed-Solomon codes to
+encode their images (\cite{Wicker1994}), the Space Data Links frames (devised
+by ESA and CCSDS) use a variant of Reed-Solomon to provide FEC
+(\cite{EuropeanCooperationforSpaceStandardization2010}) and the SSDV protocol,
+used in High-Altitude Balloon missions to transmit low-resolution images,
+uses RS(255,223) with 256-byte frames (\cite{UKHAS2016}).
+
+\item There were existing, well tested open-source implementation of that
+specific variant of the Reed-Solomon encoders and decoders, which meant that
+more time could be spent working on other parts of the project.
+
+% TODO: Ask Ian, transparent might not be the right technical term
+
+\item Reed-Solomon codes are transparent: the original data is not modified for
+the purposes of error correction. This means that even if too many errors are
+present for the FEC decoder to correct, the data can be manually inspected and
+some of it can potentially be saved.
+    
+\end{itemize}
+
+When applied to 8-bit \textit{symbols} (in this project's case, bytes),
+Reed-Solomon codes can only handle blocks (Data and Error-Correction Codes) of
+a length up to \(2^{8}-1 = 255\) bytes. The chosen variant, \(RS(223,255)\)
+works on 223-byte messages, and adds 32 bytes of Error-Correction Codes at the
+end to produce 255-byte blocks. This prompted slight changes in the frame
+format: each frame being 256-byte long, one byte would not have been covered
+by error correction.
+
+The chosen solution was to not include the start sequence as part of the
+error-corrected message. Since proper detection of that sequence is required
+for the decoder to start parsing a frame, it would have been impossible to apply
+FEC to a frame whose frame start sequence is corrupted.
+
+\begin{figure}[H]
+    \begin{center}
+    \begin{bytefield}[bitwidth=1.8em]{20}
+        \bitbox{8}{frame} &
+        \bitbox{8}{frame} &
+        \bitbox{4}{...}
+    \end{bytefield}
+    \end{center}
+    \centering
+    \caption{Frame stream with embedded start sequence}
+    \label{fig:frame-sync-emb}
+\end{figure}
+
+The start sequence design had to be changed to occupy a single frame byte, as
+opposed to two bytes in version 2 of the frame format. Using a single byte to
+detect the start of a frame was not deemed sufficient, since the probably of
+that exact value occurring elsewhere in the binary stream would have been
+fairly high. To mitigate this, the third and final version of the frame format
+uses a single frame start marker (\texttt{0x5A}) at the beginning of each
+frame, and each frame must be preceded by at least one synchronisation byte
+(\texttt{0xAA}), inserted in the binary stream as shown in the lower half of 
+figure \ref{fig:frame-sync-extra}. The following 223 bytes in the frame
+(starting with the protocol version number) are error-corrected, with the
+frame's 32 trailing bytes.
+
+\begin{figure}[H]
+    \begin{center}
+    \begin{bytefield}[bitwidth=1.8em]{20}
+        \bitbox{1}{\texttt{AA}} &
+        \bitbox{8}{frame} &
+        \bitbox{1}{\texttt{AA}} &
+        \bitbox{8}{frame} &
+        \bitbox{2}{...}
+    \end{bytefield}
+    \end{center}
+    \centering
+    \caption{Frame stream with external synchronisation byte}
+    \label{fig:frame-sync-extra}
+\end{figure}
+
+While this approach may seem wasteful since at least one extra byte must be
+inserted in between each frame, it is to be noted that the same synchronisation
+byte was previously part of each frame's 256 bytes, leading to a smaller amount
+of data being encapsulated in each frame.
+
 \begin{figure}[H]
     \begin{center}
     \begin{tikzpicture}[scale=0.2]
@@ -385,42 +484,37 @@ detected, the frame's end is detected once 256 bytes have been received.
     \draw (38.6,-30.7) node {$Frame$};
     \draw [black] (26.719,-12.375) arc (107.79277:72.20723:39.209);
     \fill [black] (50.68,-12.37) -- (50.07,-11.65) -- (49.77,-12.61);
-    \draw (38.7,-10) node [above] {$byte=AA$};
+    \draw (38.7,-10) node [above] {$\texttt{byte=0xAA}$};
     \draw [black] (53.11,-16.371) arc (-12.09889:-69.37588:18.591);
     \fill [black] (41.48,-29.87) -- (42.41,-30.06) -- (42.05,-29.12);
-    \draw (49.56,-26.05) node [right] {$byte=5A$};
+    \draw (49.56,-26.05) node [right] {$\texttt{byte=0x5A}$};
     \draw [black] (35.918,-29.359) arc (-119.94439:-159.34576:25.489);
     \fill [black] (24.79,-16.26) -- (24.61,-17.19) -- (25.54,-16.84);
-    \draw (28.67,-25.22) node [left] {$read=256$};
+    \draw (28.67,-25.22) node [left] {$\texttt{read=256}$};
     \draw [black] (51.972,-15.968) arc (-3.02212:-291.02212:2.25);
-    \draw (47.22,-18.39) node [left] {$byte=AA$};
+    \draw (47.22,-18.39) node [left] {$\texttt{byte=0xAA}$};
     \fill [black] (50.53,-13.75) -- (49.76,-13.21) -- (49.71,-14.21);
     \draw [black] (25.724,-11.023) arc (137.60109:42.39891:17.571);
     \fill [black] (25.72,-11.02) -- (26.63,-10.77) -- (25.89,-10.1);
-    \draw (38.7,-4.8) node [above] {$byte!=AA$};
+    \draw (38.7,-4.8) node [above] {$\texttt{byte!=0xAA}$};
     \end{tikzpicture}
     \end{center}
     \centering
-    \caption{AHABus Frame Synchronisation}
+    \caption{AHABus Frame Synchronisation State Machine}
+    \label{fig:frame-fsm}
 \end{figure}
 
+Figure \ref{fig:frame-fsm} presents the finite state machine that AHABus frame
+decoders must implement to detect frames in a binary stream, and figure
+\ref{fig:frame-fmt-3} the final version of the AHABus frame format.
 
-
-\todo{explain move away from double-marker towards sequence + mark}
-
-
-
-Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
-chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
-percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
-explained further, the AHABus frames were chosen to be 256-byte long. As shown
-previously, each frame also includes.
+% Go to the magic website http://madebyevan.com/fsm/
 
 \begin{figure}[H]
     \begin{bytefield}{16}
         \bitheader{0,7,8,15} \\
         \begin{rightwordgroup}{Header}
-            \bitbox{8}{01011010} & \bitbox{8}{version} \\
+            \bitbox{8}{\texttt{0x5A}} & \bitbox{8}{version} \\
             \bitbox{16}{sequence number}
         \end{rightwordgroup} \\
         \begin{rightwordgroup}{Payload}
@@ -435,8 +529,16 @@ previously, each frame also includes.
         \end{rightwordgroup}
     \end{bytefield}
     \centering
-    \caption{AHABus Frame Format}
+    \caption{AHABus Frame Format - Version 3}
+    \label{fig:frame-fmt-3}
 \end{figure}
+
+
+Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
+chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
+percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
+explained further, the AHABus frames were chosen to be 256-byte long. As shown
+previously, each frame also includes.
 
 
 % Topic list for this:

@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
@@ -18,7 +18,7 @@
 \usepackage[a4paper, margin=2.54cm]{geometry}
 \usepackage[nottoc,numbib]{tocbibind}
 
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 
 \graphicspath{{figures/}}
 
@@ -37,13 +37,23 @@ firstinits=true
 
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
-\author{Amy Parent}
-\title{AHABus/FCORE: Modular Communications Bus for High Altitude Balloon Missions}
-\date{\today}
-\makeatletter
+\author{Amy Parent (1303985)}
+\title{AHABus \& FCORE:\\Modular Platform for High Altitude Balloon Missions}
+\date{April 2017}
 
-\def\@maketitle{%
-	\newpage
+
+% Parameters
+
+
+\setlength{\baselineskip}{1.5em}
+%\linespread{1.3em}
+
+% Title
+
+
+\makeatletter
+\def\maketitle{%
+    \vspace*{10em}
 	\begin{center}%
 	\let \footnote \thanks
         \vskip 5em%
@@ -56,6 +66,6 @@ firstinits=true
 		{\normalsize University of Abertay Dundee\\}%
 		\vskip .1em%
 		{\normalsize Dundee, DD1 1HG, UK}%
-	\end{center}%
-	\vskip 1.5em%
+	\end{center}
 }
+\makeatother
