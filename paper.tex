@@ -112,6 +112,13 @@ Application IDs for each payload).
 \chapter{Proposed Solution and Methodology}
 \label{ch:methodology}
 
+% TODO: add something about:
+%       - hardware choices
+%       - software choices
+%       - language choices
+%
+%       - overall arch (flight platform, ground segmetn)
+
 The proposed solution for this project is inspired by the bus model that
 supports the architecture of most commercial satellites. A standard software
 and hardware platform provides common facilities required on all High-Altitude
@@ -184,12 +191,12 @@ From the constraints discussed above, the requirements below were established
 for the radio communications system:
 
 \begin{enumerate}
-\item provide a system to transmit binary data.
-\item minimise the amount of overhead and bandwidth required.
-\item allow multiple payload's data to be sent on the same link.
-\item provide stable transmissions on a low-power link.
-\item correct as many transmission-induced data errors as possible.
-\item allow ground crew to track the balloon's location over time.
+\item provide a system to transmit binary data.% DATA LINK
+\item minimise the amount of overhead and bandwidth required.% ALL
+\item allow multiple payload's data to be sent on the same link.% PACKET LAYER
+\item provide stable transmissions on a low-power link.% FRAME LAYER
+\item correct as many transmission-induced data errors as possible.% FRAME LAYER
+\item allow ground crew to track the balloon's location over time.% PACKET LAYER
 \end{enumerate}
 
 As stated in chapter \ref{ch:literature-review}, the United Kingdom's Office
@@ -271,8 +278,6 @@ followed by the eight \textit{data bits}, and one or two \textit{stop bits} (the
 line is held high). After a byte has been sent, the line is held high again
 until the next byte, or the next byte starts immediately.
 
-% TODO: references for DominoEx and Olivia
-
 Other existing protocols exist that can transmit data over radio audio signals,
 like DominoEx or Olivia, sometimes with better transmission rates. RTTY was
 preferred over them because the ESP8266 board used as OBC in the AHABus
@@ -289,6 +294,7 @@ power rating was 200bauds. Since each byte requires eleven bits to be sent
 \(\frac{200}{11}=18.18\) bytes per second bandwidth.
 
 \subsubsection{Frame Layer}
+\label{sssec:frame-layer}
 
 The role of the frame layer is to provide higher-level layers with a reliable
 data stream: the Link Layer discussed in section \ref{sssec:link-layer} will
@@ -330,8 +336,6 @@ the time of this writing, the protocol version was 0. If a future frame decoder
 were to receive a frame indicating an old protocol version, it could be at
 least signalled to the user, if not handled gracefully.
 
-% TODO: explain requirement for sync marker
-
 The resulting first version of the frame format is presented in figure
 \ref{fig:frame-fmt-orig}.
 
@@ -349,7 +353,7 @@ The resulting first version of the frame format is presented in figure
     \label{fig:frame-fmt-orig}
 \end{figure}
 
-This preliminary design proved impossible to work with. While it encapsulates
+This preliminary design proved impossible to work with: while it encapsulates
 the required data and metadata, it does not provide any way to identify the
 start or the end of a frame in a raw binary stream, which would have rendered
 parsing an incoming frame stream impossible.
@@ -430,9 +434,10 @@ FEC to a frame whose frame start sequence is corrupted.
 \begin{figure}[H]
     \begin{center}
     \begin{bytefield}[bitwidth=1.8em]{20}
+        \bitbox{1}{...} &
         \bitbox{8}{frame} &
         \bitbox{8}{frame} &
-        \bitbox{4}{...}
+        \bitbox{3}{...}
     \end{bytefield}
     \end{center}
     \centering
@@ -455,11 +460,12 @@ frame's 32 trailing bytes.
 \begin{figure}[H]
     \begin{center}
     \begin{bytefield}[bitwidth=1.8em]{20}
+        \bitbox{1}{...} &
         \bitbox{1}{\texttt{AA}} &
         \bitbox{8}{frame} &
         \bitbox{1}{\texttt{AA}} &
         \bitbox{8}{frame} &
-        \bitbox{2}{...}
+        \bitbox{1}{...}
     \end{bytefield}
     \end{center}
     \centering
@@ -513,26 +519,27 @@ decoders must implement to detect frames in a binary stream, and figure
 \begin{figure}[H]
     \begin{bytefield}{16}
         \bitheader{0,7,8,15} \\
-        \begin{rightwordgroup}{Header}
+        \begin{leftwordgroup}{Header}
             \bitbox{8}{\texttt{0x5A}} & \bitbox{8}{version} \\
             \bitbox{16}{sequence number}
-        \end{rightwordgroup} \\
-        \begin{rightwordgroup}{Payload}
+        \end{leftwordgroup} \\
+        \begin{leftwordgroup}{Payload}
             \wordbox[lrt]{1}{data} \\
             \skippedwords \\
             \wordbox[lrb]{1}{}
-        \end{rightwordgroup} \\
-        \begin{rightwordgroup}{FEC}
+        \end{leftwordgroup} \\
+        \begin{leftwordgroup}{FEC}
             \wordbox[lrt]{1}{checksum} \\
             \skippedwords \\
             \wordbox[lrb]{1}{}
-        \end{rightwordgroup}
+        \end{leftwordgroup}
     \end{bytefield}
     \centering
     \caption{AHABus Frame Format - Version 3}
     \label{fig:frame-fmt-3}
 \end{figure}
-
+ 
+%TODO: what's that worth? shouldn't it be at the end
 
 Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
 chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
@@ -540,50 +547,79 @@ percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
 explained further, the AHABus frames were chosen to be 256-byte long. As shown
 previously, each frame also includes.
 
-
-% Topic list for this:
-%   * Provide reliability:
-%       * Data arrives whole
-%       * We receive valid data
-%   * receive all data: we chunk the data stream, number the chunks         v
-%   * we tag data with housekeeping things                                  v~
-%   * If frames too small, housekeeping/data ratio is shit
-%   * Need a way to detect the start + end of a frame.
-%   * Explain that end of frame marker complicated, going with count?
-%
-%   * Validity checked (and corrected using FEC)
-%   * FEC: went with Reed-Solomon for simplicity + availability
-%   * FEC means we need small blocks of data -> Frames
-%
-%   * FEC forces us to change from double marker inside to sync sequence + frame
-
-
-
 \subsubsection{Packet Layer}
+
+The Packet Layer relies on the stable data stream provided by the Link and Frame
+Layers, and was designed to allow the multiplexing of multiple payload's data as
+well as the transmission of ancillary data required for the overall flight
+management (platform's GNSS co-ordinates and altitude).
+
+To achieve those goals, the AHABus protocol uses packets similar to frames. Each
+packet encapsulates a chunk of data retrieved from a single payload. To that
+end, packets were designed to be of variable length, to avoid unnecessary
+padding, which would have wasted bandwidth. The data - referred to as the
+packet's \textit{payload} – is preceded by the packet's header, which contains
+information necessary to attribute the packet's data to a payload, indicate
+the length of the packet, and carry the AHABus platform's location and altitude.
+
+This design achieves multiplexing through time division: packets are chunked
+and sent in frames one after the other, and can be dispatched to their
+respective payload teams once decoded at the ground station. The main issue with
+that method is that the protocol itself does not ensure that each payload gets
+an even or fair share of the total bandwidth. As discussed in section
+\ref{sec:flight-software}, this was solved in the flight software design.
 
 \begin{figure}[H]
     \begin{bytefield}{32}
         \bitheader{0,7,8,15,16,23,24,31} \\
         \begin{leftwordgroup}{Header}
             \bitbox{8}{version} & \bitbox{8}{payload ID} &
-            \bitbox{16}{packet length} \\
+            \bitbox{16}{length} \\
             \bitbox{32}{latitude} \\
             \bitbox{32}{longitude} \\
             \bitbox{16}{altitude} & \bitbox[lrt]{16}{}
         \end{leftwordgroup} \\
         \begin{leftwordgroup}{Payload}
-            \wordbox[lrt]{1}{data} \\
-            \skippedwords \\
-            \wordbox[lrb]{1}{}
+            \wordbox[lrb]{3}{data[length]}
         \end{leftwordgroup}
     \end{bytefield}
     \centering
-    \caption{AHABus Frame Format}
+    \caption{AHABus Packet Format - Version 1}
+    \label{fig:packet-fmt-1}
 \end{figure}
+
+Figure \ref{fig:packet-fmt-1} shows the first and current version of the AHABus
+packet format. Like frame discussed in section \ref{sssec:frame-layer}, each
+packet carries a version flag which was added to allow backwards compatibility,
+were the protocol to evolve in the future.
+
+The encoding of the metadata was chosen based on the physical constraints of
+the information:
+
+\begin{itemize}
+\item Latitude and Longitudes can be both positive (North, East) or Negative
+(South, West). At the equator, \({0.0001}^\circ\) \footnotemark of
+longitude maps to roughly 11 metres, and that distance decreases when moving
+towards the poles, which was deemed precise enough for the project's purpose.
+To avoid conflicts in floating-point mathematics conventions, and allow packet
+encoders to be written for embedded platform without hardware floating point
+support, latitude and longitude were designed to be multiplied by \(10,000\)
+and transmitted as 32-bit precision signed integers.
+
+\item Altitude is positive for the whole mission duration, and cannot exceed
+\(40,000m\). Since a sub-metre precision is not required, and would hardly be
+achievable with civilian GNSS receivers, it is encoded as a 16-bit precision
+unsigned integer.
+\end{itemize}
+
+\footnotetext{
+Earth circumference at the equator: \(40\time10^{6}m\).
+\(D_{0.0001^{\circ}} = 0.0001\frac{40\time10^{6}}{360}=11.1...m\)
+}
 
 \subsection{Initial Implementation and Testing}
 
-\section{Bus and Flight Software}
+\section{Payload Data Bus}
 
 \subsection{Requirements}
 
@@ -592,6 +628,7 @@ previously, each frame also includes.
 \subsection{Arduino Implementation}
 
 \section{Flight Software}
+\label{sec:flight-software}
 
 \subsection{Architecture}
 
