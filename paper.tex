@@ -598,24 +598,50 @@ the information:
 
 \begin{itemize}
 \item Latitude and Longitudes can be both positive (North, East) or Negative
-(South, West). At the equator, \({0.0001}^\circ\) \footnotemark of
-longitude maps to roughly 11 metres, and that distance decreases when moving
-towards the poles, which was deemed precise enough for the project's purpose.
-To avoid conflicts in floating-point mathematics conventions, and allow packet
-encoders to be written for embedded platform without hardware floating point
-support, latitude and longitude were designed to be multiplied by \(10,000\)
-and transmitted as 32-bit precision signed integers.
+(South, West). At the equator, \({0.0001}^\circ\) of longitude maps to roughly
+11 metres\footnotemark , and that distance decreases when moving towards the
+poles, which was deemed precise enough for the project's purpose. To avoid
+conflicts in floating-point mathematics conventions, and allow packet encoders
+to be written for embedded platform without hardware floating point support,
+latitude and longitude were designed to be multiplied by 10,000 and transmitted
+as 32-bit precision signed integers.
 
-\item Altitude is positive for the whole mission duration, and cannot exceed
-\(40,000m\). Since a sub-metre precision is not required, and would hardly be
+\item Altitude is above zero for the whole mission duration, and cannot exceed
+50,000m. Since a sub-metre precision is not required, and would hardly be
 achievable with civilian GNSS receivers, it is encoded as a 16-bit precision
 unsigned integer.
 \end{itemize}
 
 \footnotetext{
-Earth circumference at the equator: \(40\time10^{6}m\).
+Earth circumference at the equator: \(40\time10^{6}\)m.
 \(D_{0.0001^{\circ}} = 0.0001\frac{40\time10^{6}}{360}=11.1...m\)
 }
+
+The decision was made during the design process to align packet boundaries with
+frame boundaries. This means that every time a new packet is sent through the
+radio channel starts at the start of a new frame, instead of being inserted
+in the middle of a frame, where the last packet stopped.
+
+This approach leads to a loss in bandwidth: if a packet's length is not a 
+multiple of the amount of data that a frame carry, the packet's last frame
+will be padded with zeros instead of containing the start of the next packet.
+However, it was deemed an acceptable tradeoff because of the issues that
+non-aligned (contiguous) packets would present:
+
+\begin{itemize}
+\item If a packet's end does not match a frame's end, that frame cannot be
+sent until the start of the next packet is known. This meant that the
+transmission of most packet's last frames could be delayed for sometimes several
+seconds until another packet is processed.
+
+\item In the case where a frame is lost due to channel noise or interferences,
+finding the start of the next packet would have been complicated, or required
+a synchronisation mechanism similar to the one designed for AHABus frames.
+Aligning packets instead makes such a system unnecessary, reducing the packet
+header size and the complexity of packet decoders.
+\end{itemize}
+
+% TODO: Add diagram explaining aligment
 
 \subsection{Initial Implementation and Testing}
 
