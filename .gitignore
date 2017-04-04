@@ -8,3 +8,12 @@
 *.xml
 *.toc
 *.txt
+*.alg
+*.glg
+*.gls
+*.glo
+*.ist
+*.acn
+*.acr
+*.lof
+*.lot

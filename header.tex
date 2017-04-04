@@ -1,10 +1,9 @@
-\documentclass[12pt]{report}
+\documentclass[11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{titlesec}
-\usepackage{todonotes}
 \usepackage{float}
 \usepackage{color}
 \usepackage{listings}
@@ -16,9 +15,9 @@
 \usepackage[scaled]{beramono} % BitStream Vera font (code)
 \usepackage[T1]{fontenc}
 \usepackage[a4paper, margin=2.54cm]{geometry}
-\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[nottoc]{tocbibind}
 
-%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
 
 \graphicspath{{figures/}}
 
@@ -38,7 +37,7 @@ firstinits=true
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
 \author{Amy Parent}
-\title{AHABus \& FCORE:\\Modular Platform for High Altitude Balloon Missions}
+\title{AHABus \& FCORE:\\Modular Platform for High-Altitude Balloon Missions}
 \date{April 2017}  
 
 % Parameters
@@ -48,6 +47,16 @@ firstinits=true
 %\linespread{1.3em}
 
 % Title
+
+\newcommand\frontmatter{%
+    \cleardoublepage
+  %\@mainmatterfalse
+  \pagenumbering{roman}}
+
+\newcommand\mainmatter{%
+    \cleardoublepage
+ % \@mainmattertrue
+  \pagenumbering{arabic}}
 
 
 \makeatletter
@@ -59,7 +68,9 @@ firstinits=true
 		{\LARGE \textbf{\@title} \par}%
 		\vskip 1.5em%
 		{\large \@author}%
-		\vskip .5em%
+		\vskip 1em%
+        {\large BSc (Hons) Computing - \@date\\} %
+		\vskip 1em%
 		{\normalsize School of Arts, Media and Games\\}%
 		\vskip .1em%
 		{\normalsize University of Abertay Dundee\\}%

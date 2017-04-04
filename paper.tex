@@ -1,20 +1,29 @@
 \input{header.tex}
+\input{glossaries.tex}
 
 \begin{document}
+    
+\frontmatter
 
 \begin{titlepage}
 \maketitle
 \end{titlepage}
 
 \begin{abstract}
-    
 \end{abstract}
 
-\newpage
 \tableofcontents
 \setlength{\parskip}{1em}
 
-\newpage
+\listoffigures
+
+\listoftables
+
+\printglossary
+\printglossary[type=\acronymtype]
+
+\mainmatter
+
 \chapter{Introduction}
 \label{ch:introduction}
 
@@ -22,10 +31,10 @@
 \chapter{Literature Review}
 \label{ch:literature-review}
 
-Most HAB missions led by universities, schools or amateur are built around
-commercially available small computers or micro-controller boards: Redland
-Green School students used a Raspberry Pi (\cite{rpi2014}) running
-python scripts as an On Board Computer (\textit{OBC}) for their HAB mission
+Most \acrshort{hab} missions led by universities, schools or amateur are built 
+around commercially available small computers or micro-controller boards:
+Redland Green School students used a Raspberry Pi (\cite{rpi2014}) running
+python scripts as an \acrfull{obc} for their HAB mission
 (\cite{Hinschelwood2015}), while other projects have been ran on AVR
 micro-controller based boards like the Arduino Mega
 (\cite{AtmelCorporation2015}).
@@ -38,26 +47,26 @@ provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}).
 For this reason, most missions launched from the United Kingdom use the
 Radiometrix NTX2 transmitter (\cite{radiometrix2012}). Because of the
 constraints, these missions usually transmit their telemetry as text using the
-Radio-Teletype (RTTY) protocol.
+\acrfull{rtty} protocol.
 
-While most HAB projects make use of commercial-off-the-shelf components, the
-finished payloads are usually custom, single-purpose designs that are little,
-if at all modular. In the design document for the Titan-1 HAB mission, Bombasaro
-describes a hardware bus based on tightly coupled sensors which communicate
-over two different data buses, SPI and I2C, and a custom-made, single-purpose
-flight software (\cite{Bombasaro2015}).
+While most \acrshort{hab} projects make use of commercial-off-the-shelf
+components, the finished payloads are usually custom, single-purpose designs
+that are little, if at all modular. In the design document for the Titan-1 HAB
+mission, Bombasaro describes a hardware bus based on tightly coupled sensors
+which communicate over two different data buses, SPI and \acrshort{i2c}, and a
+custom-made, single-purpose flight software (\cite{Bombasaro2015}).
 
 Because of the risks and cost involved, nano-satellites rely more on modular
 designs, allowing each team to work on their module independently. In his paper,
 Volstad describes the design of the data bus of the NTNU CubeSat: while the OBC
 is a based on a custom made circuit board, it is designed to provide a standard
-power interface, as well as access to an I2C standard bus
-(\cite{NXPSemiconductors2014}) to each payload (\cite{Volstad2011}). The I2C
-protocol was chosen because of its low power consumption, and because if only
-requires two lines (clock and data). Thomas Clausen describes in his 2001 paper
-how a simple packet protocol built on top of I2C itself is used for data
-transfer and error detection in Aalborg University's CubeSats
-(\cite{Clausen2001}).
+power interface, as well as access to an \acrshort{i2c} standard bus
+(\cite{NXPSemiconductors2014}) to each payload (\cite{Volstad2011}). The
+\acrshort{i2c} protocol was chosen because of its low power consumption, and
+because if only requires two lines (clock and data). Thomas Clausen describes
+in his 2001 paper how a simple packet protocol built on top of \acrshort{i2c}
+itself is used for data transfer and error detection in Aalborg University's
+CubeSats (\cite{Clausen2001}).
 
 Satellite missions last a lot longer than High-Altitude Balloons' and the
 requirements for radio transmissions differ: while satellites can only
@@ -67,12 +76,12 @@ speed and data volume planning, as described by Sandy Anthunes in his book
 communications from liftoff to late into the descent of the payload.
 
 There are however some technologies that can be adapted from satellites to be
-used in HAB applications. The University of Arizona uses a custom packet format
-over 434MHz radio, containing raw binary values for each instrument's
-measurements (\cite{Eatchel2002}). The BRITE-Austria CubeSat mission uses the
-AX.25 packet radio protocol (used by amateur radio users), which allows the
-use of off-the-shelf transmission and reception hardware rather than custom-made
-circuits (\cite{Traussnig2007}).
+used in \acrshort{hab} applications. The University of Arizona uses a custom
+packet format over 434MHz radio, containing raw binary values for each
+instrument's measurements (\cite{Eatchel2002}). The BRITE-Austria CubeSat
+mission uses the AX.25 packet radio protocol (used by amateur radio users),
+which allows the use of off-the-shelf transmission and reception hardware
+rather than custom-made circuits (\cite{Traussnig2007}).
 
 Some nano-satellites use custom telemetry data format, which allows the team
 to minimise the volume of data to be sent over radio. The Planetary Society's
@@ -81,7 +90,7 @@ to request specific logs or data. By default, The spacecraft only communicates
 a custom beacon containing a summary of the its housekeeping data
 (\cite{planetary2016}). Uplink being impractical with the transmission power
 limits imposed in the United Kingdom, such a selective telemetry system cannot
-be relied upon for HAB missions.
+be relied upon for \acrshort{hab} missions.
 
 To improve collaboration and allow the deployment of large networks of
 satellites, probes and other space vehicles, the Consultative Committee for
@@ -90,23 +99,23 @@ the different types of networks encountered in spacecrafts.
 
 SpaceWire defines how instruments' data can be accessed by having the OBC
 remotely poll their memory (\cite{parkes2005}). A similar system is used to
-fetch data from ROM chips over I2C and could be used to build a simple data bus.
+fetch data from ROM chips over \acrshort{i2c} and could be used to build a
+simple data bus.
 
-The CCSDS Space Packet protocol defines a packet format used
-to encapsulate application data (from instruments for example) that can be sent
+The \acrshort{ccsds} Space Packet protocol defines a packet format used to
+encapsulate application data (from instruments for example) that can be sent
 over a ``Space Link'', an analogue of the OSI model's link layer
-(\cite{Stallings1987}) using CCSDS frames to encapsulate packets originating
-from multiple instruments, ground stations and spacecrafts (\cite{ccsds2003}).
+(\cite{Stallings1987}) using \acrshort{ccsds} frames to encapsulate packets
+originating from multiple instruments, ground stations and spacecrafts
+(\cite{ccsds2003}).
 
-While HAB applications do not require the level of complexity of CCSDS
-protocols — addressing is not needed since the network only contains two
-endpoints, communicating in a single direction — some details of the Space
-Packet protocol are worth reusing (Forward Error Correction, different
-Application IDs for each payload).
+While \acrshort{hab} applications do not require the level of complexity of
+\acrshort{ccsds} protocols — addressing is not needed since the network only
+contains two endpoints, communicating in a single direction — some details of
+the Space Packet protocol are worth reusing (Forward Error Correction,
+different Application IDs for each payload).
 
 \section{Analysis of the Problem}
-
-
 
 \newpage
 \chapter{Proposed Solution and Methodology}
@@ -385,7 +394,8 @@ the radio channel.
 
 The error-correction requirement led to the use of a Forward Error Correction
 (\textit{FEC}) algorithm. FEC algorithms function by adding some amount of data
-\(D\) to each message sent \(M\). \(D\) is computed by the encoder. The decoder
+\(D\) to each message sent \(M\). In this case, the message includes both the
+frame's header and its payload. \(D\) is computed by the encoder. The decoder
 uses \(D\) to detect whether errors were introduced anywhere in the received
 block \(M+D\), and correct those errors if their number is below the
 algorithm's maximum.
@@ -413,8 +423,8 @@ more time could be spent working on other parts of the project.
 
 \item Reed-Solomon codes are transparent: the original data is not modified for
 the purposes of error correction. This means that even if too many errors are
-present for the FEC decoder to correct, the data can be manually inspected and
-some of it can potentially be saved.
+present for the \acrshort{fec} decoder to correct, the data can be manually
+inspected and some of it can potentially be saved.
     
 \end{itemize}
 
@@ -510,9 +520,10 @@ of data being encapsulated in each frame.
     \label{fig:frame-fsm}
 \end{figure}
 
-Figure \ref{fig:frame-fsm} presents the finite state machine that AHABus frame
-decoders must implement to detect frames in a binary stream, and figure
-\ref{fig:frame-fmt-3} the final version of the AHABus frame format.
+Figure \ref{fig:frame-fsm} presents the finite state machine that
+\acrshort{ahabus} frame decoders must implement to detect frames in a binary
+stream, and figure \ref{fig:frame-fmt-3} the final version of the
+\acrshort{ahabus} frame format.
 
 % Go to the magic website http://madebyevan.com/fsm/
 
@@ -524,18 +535,14 @@ decoders must implement to detect frames in a binary stream, and figure
             \bitbox{16}{sequence number}
         \end{leftwordgroup} \\
         \begin{leftwordgroup}{Payload}
-            \wordbox[lrt]{1}{data} \\
-            \skippedwords \\
-            \wordbox[lrb]{1}{}
+            \wordbox{2}{data[]}
         \end{leftwordgroup} \\
         \begin{leftwordgroup}{FEC}
-            \wordbox[lrt]{1}{checksum} \\
-            \skippedwords \\
-            \wordbox[lrb]{1}{}
+            \wordbox{2}{checksum[32]}
         \end{leftwordgroup}
     \end{bytefield}
     \centering
-    \caption{AHABus Frame Format - Version 3}
+    \caption{\acrshort{ahabus} Frame Format - Version 3}
     \label{fig:frame-fmt-3}
 \end{figure}
  
@@ -544,8 +551,8 @@ decoders must implement to detect frames in a binary stream, and figure
 Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
 chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
 percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
-explained further, the AHABus frames were chosen to be 256-byte long. As shown
-previously, each frame also includes.
+explained further, the \acrshort{ahabus} frames were chosen to be 256-byte
+long. As shown previously, each frame also includes.
 
 \subsubsection{Packet Layer}
 
@@ -645,6 +652,9 @@ header size and the complexity of packet decoders.
 
 \subsection{Initial Implementation and Testing}
 
+To evaluate the protocol's viability, a reference implementation of an encoder
+and decoder was written. The goal was to 
+
 \section{Payload Data Bus}
 
 \subsection{Requirements}
@@ -688,8 +698,6 @@ header size and the complexity of packet decoders.
 \chapter{Conclusion}
 \label{ch:conclusion}
 
-
-\newpage
-\printbibliography[heading=bibnumbered, title=References]  
+\printbibliography[heading=bibintoc, title=References]
 
 \end{document}

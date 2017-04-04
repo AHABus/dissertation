@@ -7,6 +7,7 @@ all: open
 compile:
 	@$(CXX) -shell-escape $(TARGET).tex
 	@$(BIB) $(TARGET) > /dev/null
+	@makeglossaries $(TARGET)
 	@$(CXX) -shell-escape $(TARGET).tex > /dev/null
 	@$(CXX) -shell-escape $(TARGET).tex > /dev/null
 	@clear
@@ -28,4 +29,10 @@ clean:
 	@rm -rf *.bbl
 	@rm -rf *.log
 	@rm -rf *.toc
+	@rm -rf *.gls
+	@rm -rf *.glo
+	@rm -rf *.ist
+	@rm -rf *.acn
+	@rm -rf *.acr
+	@rm -rf *.alg
 	@rm -rf _minted-$(TARGET)
