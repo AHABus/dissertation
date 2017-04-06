@@ -265,6 +265,11 @@ a way for multiple payloads' data to share bandwidth as well as metadata
 transmission.
 \end{description}
 
+To avoid possible byte order conflicts between the architectures used on the
+flight platform and the ground station, multi-bytes values referred to in the
+specification should always be transmitted as big-endian (most significant byte
+first).
+
 The design process and specification of each of those three layers is explained
 in more details in the following sections.
 
@@ -295,12 +300,12 @@ reliable. Since the link layer is transparent to the frame and packet layers,
 RTTY could be swapped for another protocol in the future with no impact on
 those.
 
-The valid encoding and decoding of a RTTY signal depends on the chosen baud
-rate (the number of times the logical signal changes level). During tests,
-the highest baud rate that allowed clear decoding of radio signals at 10mW
-power rating was 200bauds. Since each byte requires eleven bits to be sent
-(one start bit, eight data bits and two stop bits), this corresponds to a
-\(\frac{200}{11}=18.18\) bytes per second bandwidth.
+The valid encoding and decoding of a \acrshort{rtty} signal depends on the
+chosen baud rate (the number of times the logical signal changes level). During
+tests, the highest baud rate that allowed clear decoding of radio signals at
+\SI{10}{mW} power rating was \SI{200}{bps}. Since each byte requires eleven
+bits to be sent (one start bit, eight data bits and two stop bits), this
+corresponds to a \(\frac{200}{11}=\SI{18.18}{Bps}\) bandwidth.
 
 \subsubsection{Frame Layer}
 \label{sssec:frame-layer}
@@ -410,10 +415,10 @@ reasons:
 \item The Reed-Solomon family of algorithms is widespread in its use, notably
 in space communications systems – the Voyager probes used Reed-Solomon codes to
 encode their images (\cite{Wicker1994}), the Space Data Links frames (devised
-by ESA and CCSDS) use a variant of Reed-Solomon to provide FEC
-(\cite{EuropeanCooperationforSpaceStandardization2010}) and the SSDV protocol,
-used in High-Altitude Balloon missions to transmit low-resolution images,
-uses RS(255,223) with 256-byte frames (\cite{UKHAS2016}).
+by \acrshort{esa} and \acrshort{ccsds}) use a variant of Reed-Solomon to
+provide \acrshort{fec} (\cite{EuropeanCooperationforSpaceStandardization2010})
+and the SSDV protocol, used in High-Altitude Balloon missions to transmit
+low-resolution images, uses RS(255,223) with 256-byte frames (\cite{UKHAS2016}).
 
 \item There were existing, well tested open-source implementation of that
 specific variant of the Reed-Solomon encoders and decoders, which meant that
@@ -439,7 +444,7 @@ by error correction.
 The chosen solution was to not include the start sequence as part of the
 error-corrected message. Since proper detection of that sequence is required
 for the decoder to start parsing a frame, it would have been impossible to apply
-FEC to a frame whose frame start sequence is corrupted.
+\acrshort{fec} to a frame whose frame start sequence is corrupted.
 
 \begin{figure}[H]
     \begin{center}
@@ -521,9 +526,9 @@ of data being encapsulated in each frame.
 \end{figure}
 
 Figure \ref{fig:frame-fsm} presents the finite state machine that
-\acrshort{ahabus} frame decoders must implement to detect frames in a binary
+AHABus frame decoders must implement to detect frames in a binary
 stream, and figure \ref{fig:frame-fmt-3} the final version of the
-\acrshort{ahabus} frame format.
+AHABus frame format.
 
 % Go to the magic website http://madebyevan.com/fsm/
 
@@ -542,7 +547,7 @@ stream, and figure \ref{fig:frame-fmt-3} the final version of the
         \end{leftwordgroup}
     \end{bytefield}
     \centering
-    \caption{\acrshort{ahabus} Frame Format - Version 3}
+    \caption{AHABus Frame Format - Version 3}
     \label{fig:frame-fmt-3}
 \end{figure}
  
@@ -551,7 +556,7 @@ stream, and figure \ref{fig:frame-fmt-3} the final version of the
 Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
 chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
 percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
-explained further, the \acrshort{ahabus} frames were chosen to be 256-byte
+explained further, the AHABus frames were chosen to be 256-byte
 long. As shown previously, each frame also includes.
 
 \subsubsection{Packet Layer}
@@ -605,23 +610,24 @@ the information:
 
 \begin{itemize}
 \item Latitude and Longitudes can be both positive (North, East) or Negative
-(South, West). At the equator, \({0.0001}^\circ\) of longitude maps to roughly
-11 metres\footnotemark , and that distance decreases when moving towards the
-poles, which was deemed precise enough for the project's purpose. To avoid
-conflicts in floating-point mathematics conventions, and allow packet encoders
-to be written for embedded platform without hardware floating point support,
-latitude and longitude were designed to be multiplied by 10,000 and transmitted
-as 32-bit precision signed integers.
+(South, West). At the equator, \SI{0.0001}{\degree} of longitude maps to
+roughly eleven metres\footnotemark , and that distance decreases when moving
+towards the poles, which was deemed precise enough for the project's purpose.
+To avoid conflicts in floating-point mathematics conventions, and allow packet
+encoders to be written for embedded platform without hardware floating point
+support, latitude and longitude were designed to be multiplied by 10,000 and
+transmitted as 32-bit precision signed integers.
 
 \item Altitude is above zero for the whole mission duration, and cannot exceed
-50,000m. Since a sub-metre precision is not required, and would hardly be
-achievable with civilian GNSS receivers, it is encoded as a 16-bit precision
-unsigned integer.
+\SI{50000}{\meter}. Since a sub-metre precision is not required, and would
+hardly be achievable with civilian GNSS receivers, it is encoded as a 16-bit
+precision unsigned integer.
+
 \end{itemize}
 
 \footnotetext{
-Earth circumference at the equator: \(40\time10^{6}\)m.
-\(D_{0.0001^{\circ}} = 0.0001\frac{40\time10^{6}}{360}=11.1...m\)
+Earth circumference at the equator: \SI{40e6}{\meter}.
+\(D_{\SI{0.0001}{\degree}} = 0.0001\times\frac{40\times{10^6}}{360}=\SI{11.1}{\meter}\)
 }
 
 The decision was made during the design process to align packet boundaries with
@@ -652,12 +658,68 @@ header size and the complexity of packet decoders.
 
 \subsection{Initial Implementation and Testing}
 
-To evaluate the protocol's viability, a reference implementation of an encoder
-and decoder was written. The goal was to 
+To evaluate the protocol's viability, a full demonstration of an AHABus radio
+stack was written. Its main goals were to provide a reference implementation of
+a compliant encoder and decoder, validate the protocol's design process, and
+test the algorithms used in a controlled environment before integrated testing.
 
-\section{Payload Data Bus}
+The C language (ISO/IEC 9899:1999 standard) was chosen for the reference
+implementation because of its widespread use, and its availability on most
+micro-controller and embedded platforms, which would be used as AHABus flight
+platforms. To render the code as portable and reusable as possible, care was
+taken to limit the dependencies to a subset of the C language standard library,
+and avoid use of dynamic memory allocation, which is often inefficient or
+unavailable on embedded platforms.
+
+To increase portability and ease of use further, the encoder and decoder read
+and write data using user-supplied callback. This allows developers to import
+the implementation files and use the library without editing, at the expense of
+optimisation.
+% TODO: Explain?
+
+\subsubsection{Encoder}
+
+Figure \ref{fig:encoder-flow} illustrate the data flow in the encoder.
+In an attempt to use as little memory as possible, no intermediate
+representation of the packet is created or stored. Instead, the header and
+first chunk of the packet's data is written directly to a frame buffer. Once
+the frame is fully constructed, its binary representation is written using the
+user-provided callback. The buffer is then cleared, and the process is repeated
+until all of the packet's payload has been framed. 
+
+\begin{figure}[H]
+\includegraphics[width=0.6\textwidth]{encoder-flow.pdf}
+\centering
+\caption{Encoder Data Flow}
+\label{fig:encoder-flow}
+\end{figure}
+
+For testing purposes, a simple program was built that takes in user input,
+uses the encoder to package that data and outputs the frame stream to the
+UNIX standard output (\texttt{stdout}).
+
+% TODO: more details? how much is required?
+% TODO: add reference to appendix with code
+
+\subsubsection{Decoder}
+
+\subsubsection{Initial Testing}
+
+\section{Payload Bus}
+\label{sec:payload-bus}
+
+The Payload Bus is the hardware and software interface that is used by the
+\acrfull{obc} to communicate with each payload carried on a mission. 
 
 \subsection{Requirements}
+
+\subsection{Initial Prototypes}
+
+Before a protocol was chosen, two different preliminary designs approaches were
+prototyped and
+
+\subsubsection
+
 
 \subsection{Protocol Specification}
 
@@ -671,12 +733,14 @@ and decoder was written. The goal was to
 \subsection{User Interface}
 
 \section{Ground Segment}
+\label{sec:ground-segment}
 
 \subsection{Extracting Raw Binary Stream}
 
 \subsection{Packet}
 
 \section{Testing}
+\label{sec:testing}
 
 \subsection{Component Testing}
 

@@ -35,4 +35,6 @@ clean:
 	@rm -rf *.acn
 	@rm -rf *.acr
 	@rm -rf *.alg
+	@rm -rf *.lot
+	@rm -rf *.lof
 	@rm -rf _minted-$(TARGET)

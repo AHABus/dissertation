@@ -10,6 +10,7 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{bytefield}
+\usepackage[detect-weight=true, binary-units=true]{siunitx}
 \usepackage{tikz}
 \usepackage[justification=centering,labelfont={small,bf},font={small,bf}]{caption}
 \usepackage[scaled]{beramono} % BitStream Vera font (code)
@@ -17,7 +18,7 @@
 \usepackage[a4paper, margin=2.54cm]{geometry}
 \usepackage[nottoc]{tocbibind}
 
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 
 \graphicspath{{figures/}}
 
@@ -37,27 +38,23 @@ firstinits=true
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
 \author{Amy Parent}
-\title{AHABus \& FCORE:\\Modular Platform for High-Altitude Balloon Missions}
+\title{AHABus \& FCORE:\\Modular Bus for High-Altitude Balloon Missions}
 \date{April 2017}  
 
 % Parameters
 
 
 \setlength{\baselineskip}{1.5em}
-%\linespread{1.3em}
 
 % Title
 
 \newcommand\frontmatter{%
     \cleardoublepage
-  %\@mainmatterfalse
-  \pagenumbering{roman}}
+    \pagenumbering{roman}}
 
 \newcommand\mainmatter{%
     \cleardoublepage
- % \@mainmattertrue
-  \pagenumbering{arabic}}
-
+    \pagenumbering{arabic}}
 
 \makeatletter
 \def\maketitle{%
