@@ -709,16 +709,90 @@ UNIX standard output (\texttt{stdout}).
 \label{sec:payload-bus}
 
 The Payload Bus is the hardware and software interface that is used by the
-\acrfull{obc} to communicate with each payload carried on a mission. 
+\acrfull{obc} to communicate with each payload carried on a mission.
 
 \subsection{Requirements}
 
 \subsection{Initial Prototypes}
 
-Before a protocol was chosen, two different preliminary designs approaches were
-prototyped and
+Before a protocol was chosen, two different preliminary designs were devised
+and experimented with outside of the full flight platform to ensure they were
+viable, and which of the two was worth developing further.
 
-\subsubsection
+\subsubsection{Serial Bus Interface}
+
+The first experimental bus interface was designed around a Serial interface.
+Serial interfaces (based on \acrshort{uart}) are only meant to connect two
+devices, and require two data wires (one for each transmission direction). To
+avoid requiring a pair of input/output pins on the \acrlong{obc} for each
+connected payload, and simplify the electronic layout, all payloads were wired
+in parallels on the same reception (Rx) and transmission (Rx) data lines. When
+a payload had any data ready to be sent, it would transmit it using
+\acrshort{uart} to the \acrshort{obc}, which would then store it in memory.
+
+This configuration proved unusable. Because \acrshort{uart} is not designed
+to handle multiple devices on the same connection endpoint, data would be
+corrupted whenever two or more payloads were attempting to send data to the
+\acrshort{obc}.
+
+The chosen solution for this problem was to make four bus lines available to
+each payload. In addition to the common Rx/Tx lines, each interface is composed
+of a Communication Request Line (CR) and a Communication Enable Line (CE). With
+the new design, the communication sequence had to be changed to the following:
+
+\begin{enumerate}
+\item When a payload is ready to send data, it pulls its CR line high.
+\item The \acrshort{obc} lists payloads that have raised CR. For each:
+\begin{enumerate}
+    \item The \acrshort{obc} pulls the payload's CE line high.
+    \item The payload sends its data to the \acrshort{obc}.
+    \item The \acrshort{obc} pulls the payload's CE line low.
+    \item The payload pulls its CR line low.
+    \item The \acrshort{obc} processes the received data.
+\end{enumerate}
+\end{enumerate}
+
+To ensure that non-cooperative payload could not attempt to send data when the
+\acrshort{obc} had not addressed them through pulling the CE line high, a logic
+AND gate (two NAND gates chained together as shown in figure \ref{fig:uart-nor})
+was placed between the payload's Tx line and its CE line. With this design,
+any signal on the Tx line could not get past the gate unless the payload was
+being addressed, thus preventing a payload from corrupting another's signal.
+
+\begin{figure}[H]
+\includegraphics[width=0.6\textwidth]{serial-nand.png}
+\centering
+\caption{Payload Tx line protection}
+\label{fig:uart-nor}
+\end{figure}
+
+This solution was tested using a Raspberry Pi 3 for the \acrlong{obc}, and an
+Arduino UNO board for the payload. An unforeseen electrical engineering issue
+required slight redesign of the system: on both the Arduino or the Raspberry
+Pi, a small voltage, even inferior to the logic high (\SI{3.3}{V} on Raspberry
+Pi, \SI{5}{V} on the Arduino UNO) was enough for the line to be read as a
+logical high. This caused certain bursts of noise in the lines to be detected
+by the \acrshort{obc} as a high CR line, even though the payload had not
+raised it. This was fixed by using inverted logic: a payload would signal 
+available data by pulling the \(\overline{CE}\) line low, and the \acrshort{obc}
+would pull \(\overline{CR}\) low when addressing a payload.
+
+\begin{figure}[H]
+\includegraphics[width=0.6\textwidth]{serial-wires.jpg}
+\centering
+\caption{Payload Serial Bus test setup}
+\label{fig:uart-nor}
+\end{figure}
+
+The system worked with the experimental setup, and the \acrlong{obc} and the
+OBC were able to exchange data. However, the design was deemed flawed because
+of the hardware requirements: while the Rx and Tx lines are shared between all
+payloads, each still requires two I/O pins on the \acrshort{obc} for the 
+\(\overline{CE}\) and \(\overline{CR}\) lines. With most micro-controllers
+exposing between 5 and 15 I/O pins, this would have strongly limited how many
+payloads could have been connected at the same time.
+
+\subsubsection{\acrshort{i2c} Bus Interface}
 
 
 \subsection{Protocol Specification}
