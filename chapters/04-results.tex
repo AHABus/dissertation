@@ -1,0 +1,55 @@
+\chapter{Results}
+\label{ch:results}
+
+\section{Component Testing}
+
+\section{Day In The Life Testing}
+
+The Day-in-the-Life test consisted of a full simulated \acrlong{hab} mission,
+from lift-off to landing. To obtain data similar to what would be encountered
+during a real flight, the GNSS receiver was replaced by an Arduino board 
+sending simulated geographic co-ordinates and altitude.
+
+Figure \ref{fig:dit-alt} shows the altitude of the AHABus platform reported by
+the received headers over the approximately two hours and twenty minutes of the
+simulation. The altitude marks are matched to the time at which each packet
+is received, and not emitted.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}
+\addplot table [
+xlabel=Mission Elapsed Time,
+ylabel=Altitude,
+x=met, y=alt, col sep=comma
+] {data/02-ditl/loc.csv};
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{DITL Test - Altitude over time}
+\label{fig:dit-alt}
+\end{figure}
+
+The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
+payloads: payload 10 at priority level 2, and payload 20 at priority level 1.
+Table \ref{tab:ditl-cfg}.
+
+\begin{table}[H]
+\caption {DITL Test - FCORE configuration}
+\label{tab:ditl-cfg}
+\begin{center}
+\begin{tabular}{ |c|c c c| }
+\hline
+payload & priority & core frequency & polling interval \\
+\hline
+GNSS & - & -
+10 & 2 & \SI{5.082}{\hertz} & \SI{102}{\second} \\
+20 & 1 & \SI{10.164}{\hertz} & \SI{51}{\second} \\
+\hline 
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\section{Radio Stress-Testing}

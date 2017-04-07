@@ -1,22 +1,32 @@
-CXX = pdflatex
-BIB = biber
-TARGET = paper
+TEX 		:= pdflatex
+BIB 		:= biber
+TARGET 		:= paper
+CH_DIR		:= ./chapters
+CHAPTERS 	:= $(wildcard $(CH_DIR)/*.tex)
 
 all: open
 
 compile:
-	@$(CXX) -shell-escape $(TARGET).tex
+	@$(TEX) -shell-escape $(TARGET).tex
 	@$(BIB) $(TARGET) > /dev/null
 	@makeglossaries $(TARGET)
-	@$(CXX) -shell-escape $(TARGET).tex > /dev/null
-	@$(CXX) -shell-escape $(TARGET).tex > /dev/null
+	@$(TEX) -shell-escape $(TARGET).tex > /dev/null
+	@$(TEX) -shell-escape $(TARGET).tex > /dev/null
 	@clear
 
 open: compile
 	@open $(TARGET).pdf
 
-count:
-	@texcount -nosub paper.tex
+count: $(CHAPTERS)
+	@echo $(CHAPTERS)
+	@echo "[done]"
+	
+
+$(CH_DIR)/%.tex:
+	@echo "[chapter: $@]"
+	@texcount -nosub $@
+	
+
 
 clean:
 	@rm -rf *.aux
