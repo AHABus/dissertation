@@ -1,0 +1,4 @@
+device, up, down, recovering, uprate
+gnss, 67, 0, 2, 0.971014
+payload 10, 64, 0, 5, 0.927536
+payload 20, 63, 0, 6, 0.913043
