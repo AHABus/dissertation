@@ -1,4 +1,84 @@
-\input{header.tex}
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{bytefield}
+\usepackage{pgfplots}
+\usepackage{csvsimple}
+\usepackage[detect-weight=true, binary-units=true]{siunitx}
+\usepackage{tikz}
+\usepackage[justification=centering,labelfont={small,bf},font={small,bf}]{caption}
+\usepackage[scaled]{beramono} % BitStream Vera font (code)
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, margin=2.54cm]{geometry}
+\usepackage[nottoc]{tocbibind}
+
+%\renewcommand{\familydefault}{\sfdefault}
+\pgfplotsset{width=10cm,height=6cm,compat=newest}
+\graphicspath{{figures/}}
+
+\usepackage[
+style=authoryear,
+citestyle=authoryear,
+backend=biber,
+firstinits=true
+]{biblatex}
+\DeclareNameAlias{author}{last-first}
+
+\addbibresource{../library.bib}
+\DefineBibliographyStrings{english}{%
+  references = {References},
+}
+
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+
+\author{Amy Parent}
+\title{AHABus \& FCORE:\\Modular Bus for High-Altitude Balloon Missions}
+\date{April 2017}  
+
+% Parameters
+
+
+\setlength{\baselineskip}{1.5em}
+
+% Title
+
+\newcommand\frontmatter{%
+    \cleardoublepage
+    \pagenumbering{roman}}
+
+\newcommand\mainmatter{%
+    \cleardoublepage
+    \pagenumbering{arabic}}
+
+\makeatletter
+\def\maketitle{%
+    \vspace*{10em}
+	\begin{center}%
+	\let \footnote \thanks
+        \vskip 5em%
+		{\LARGE \textbf{\@title} \par}%
+		\vskip 1.5em%
+		{\large \@author}%
+		\vskip 1em%
+        {\large BSc (Hons) Computing - \@date\\} %
+		\vskip 1em%
+		{\normalsize School of Arts, Media and Games\\}%
+		\vskip .1em%
+		{\normalsize University of Abertay Dundee\\}%
+		\vskip .1em%
+		{\normalsize Dundee, DD1 1HG, UK}%
+	\end{center}
+}
+\makeatother
+
 \input{glossaries.tex}
 
 \begin{document}
@@ -21,6 +101,13 @@
 
 \printglossary
 \printglossary[type=\acronymtype]
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+I would like to thank my supervisor, Dr. Ian Ferguson, for the support and
+insight he gave throughout this research project, and as Dr. Natalie Coull for
+her advice during the proposal phase of the project.
 
 \mainmatter
 \input{chapters/01-introduction.tex}
