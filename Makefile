@@ -3,15 +3,18 @@ BIB 		:= biber
 TARGET 		:= paper
 CH_DIR		:= ./chapters
 CHAPTERS 	:= $(wildcard $(CH_DIR)/*.tex)
+OUT_DIR		:= ./out
 
 all: open
 
 compile:
-	@$(TEX) -shell-escape $(TARGET).tex
-	@$(BIB) $(TARGET) > /dev/null
-	@makeglossaries $(TARGET)
-	@$(TEX) -shell-escape $(TARGET).tex > /dev/null
-	@$(TEX) -shell-escape $(TARGET).tex > /dev/null
+	@mkdir -p $(OUT_DIR)
+	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex
+	@$(BIB) -output-directory $(OUT_DIR) $(TARGET) > /dev/null
+	@makeglossaries -d $(OUT_DIR) $(TARGET)
+	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
+	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
+	@cp $(OUT_DIR)/$(TARGET).pdf ./$(TARGET).pdf
 	@clear
 
 open: compile
@@ -29,22 +32,4 @@ $(CH_DIR)/%.tex:
 
 
 clean:
-	@rm -rf *.aux
-	@rm -rf *.xml
-	@rm -rf *.out
-	@rm -rf *.lot
-	@rm -rf *.lof
-	@rm -rf *.blg
-	@rm -rf *.bcf
-	@rm -rf *.bbl
-	@rm -rf *.log
-	@rm -rf *.toc
-	@rm -rf *.gls
-	@rm -rf *.glo
-	@rm -rf *.ist
-	@rm -rf *.acn
-	@rm -rf *.acr
-	@rm -rf *.alg
-	@rm -rf *.lot
-	@rm -rf *.lof
-	@rm -rf _minted-$(TARGET)
+	@rm -rf $(OUT_DIR)

@@ -1,0 +1,2118 @@
+
+///// FCORE//PACKET START /////
+rx time:   1490710746
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  203m
+payload:   10
+length:    70 bytes
+======
+0000: 5a 4d 53 ff d5 5a 4d 53 00 27 5a 4d 53 00 1f 5a        ZMS..ZMS.'ZMS..Z
+0010: 4d 53 00 40 5a 4d 53 00 3c 5a 4d 53 00 5a 5a 4d        MS.@ZMS.<ZMS.ZZM
+0020: 53 00 00 5a 4d 53 ff d6 5a 4d 53 00 31 5a 4d 53        S..ZMS..ZMS.1ZMS
+0030: 00 01 5a 4d 53 00 60 5a 4d 53 00 5f 5a 4d 53 00        ..ZMS.`ZMS._ZMS.
+0040: 30 5a 4d 53 00 48                                      0ZMS.H
+-------
+> ZMSZMS'ZMSZMS@ZMS<ZMSZZMSZMSZMS1ZMSZMS`ZMS_ZMS0ZMSH
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490710868
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  523m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 21 5a 4d 53 00 01 5a 4d 53 00 0f 5a        ZMS.!ZMS..ZMS..Z
+0010: 4d 53 ff d5 5a 4d 53 00 04 5a 4d 53 ff e4 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 49 5a 4d 53 00 19 5a 4d 53 00 4d 5a 4d 53        S.IZMS..ZMS.MZMS
+0030: 00 47 5a 4d 53 00 58 5a 4d 53 00 39 5a 4d 53 00        .GZMS.XZMS.9ZMS.
+0040: 0d 5a 4d 53 00 58 5a 4d 53 ff ce 5a 4d 53 00 1f        .ZMS.XZMS..ZMS..
+0050: 5a 4d 53 00 35 5a 4d 53 00 3a 5a 4d 53 ff da 5a        ZMS.5ZMS.:ZMS..Z
+0060: 4d 53 00 25 5a 4d 53 00 08 5a 4d 53 00 23 5a 4d        MS.%ZMS..ZMS.#ZM
+0070: 53 ff ff 5a 4d 53 00 35 5a 4d 53 00 41 5a 4d 53        S..ZMS.5ZMS.AZMS
+0080: 00 0f 5a 4d 53 00 0f 5a 4d 53 00 42 5a 4d 53 00        ..ZMS..ZMS.BZMS.
+0090: 0d 5a 4d 53 00 3a 5a 4d 53 ff f5 5a 4d 53 00 0b        .ZMS.:ZMS..ZMS..
+00a0: 5a 4d 53 00 24 5a 4d 53 00 01 5a 4d 53 00 62 5a        ZMS.$ZMS..ZMS.bZ
+00b0: 4d 53 00 39 5a 4d 53 00 07 5a 4d 53 00 09 5a 4d        MS.9ZMS..ZMS..ZM
+00c0: 53 00 20 5a 4d 53 00 06 5a 4d 53 00 1a 5a 4d 53        S. ZMS..ZMS..ZMS
+00d0: ff e6 5a 4d 53 ff da 5a 4d 53 ff f8 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+00e0: 00 5a 4d 53 00 0b 5a 4d 53 00 06 5a 4d 53 ff dc        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 ff e1 5a 4d 53 ff ec 5a 4d 53 ff e3 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 21 5a 4d 53 00 01 5a 4d 53 00              ZMS.!ZMS..ZMS.
+-------
+> ZMS!ZMSZMSZMSZMSZMSZMSIZMSZMSMZMSGZMSXZMS9ZMSZMSXZMSZMSZMS5ZMS:ZMSZMS%ZMSZMS#ZMSZMS5ZMSAZMSZMSZMSBZMSZMS:ZMSZMSZMS$ZMSZMSbZMS9ZMSZMSZMS ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZZMS!ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490710987
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1371m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff da 5a 4d 53 00 59 5a 4d 53 ff fc 5a        ZMS..ZMS.YZMS..Z
+0010: 4d 53 00 1f 5a 4d 53 00 5b 5a 4d 53 ff fd 5a 4d        MS..ZMS.[ZMS..ZM
+0020: 53 00 3b 5a 4d 53 ff fe 5a 4d 53 00 27 5a 4d 53        S.;ZMS..ZMS.'ZMS
+0030: 00 0a 5a 4d 53 00 43 5a 4d 53 00 01 5a 4d 53 ff        ..ZMS.CZMS..ZMS.
+0040: fd 5a 4d 53 00 18 5a 4d 53 00 4d 5a 4d 53 00 1b        .ZMS..ZMS.MZMS..
+0050: 5a 4d 53 00 63 5a 4d 53 00 13 5a 4d 53 00 49 5a        ZMS.cZMS..ZMS.IZ
+0060: 4d 53 ff f0 5a 4d 53 ff cf 5a 4d 53 00 04 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff da 5a 4d 53 00 17 5a 4d 53 00 21 5a 4d 53        S..ZMS..ZMS.!ZMS
+0080: 00 42 5a 4d 53 ff ce 5a 4d 53 ff d8 5a 4d 53 00        .BZMS..ZMS..ZMS.
+0090: 08 5a 4d 53 00 37 5a 4d 53 00 06 5a 4d 53 00 50        .ZMS.7ZMS..ZMS.P
+00a0: 5a 4d 53 00 23 5a 4d 53 00 1b 5a 4d 53 00 4b 5a        ZMS.#ZMS..ZMS.KZ
+00b0: 4d 53 ff ec 5a 4d 53 ff d3 5a 4d 53 00 4a 5a 4d        MS..ZMS..ZMS.JZM
+00c0: 53 00 4f 5a 4d 53 ff d7 5a 4d 53 00 5e 5a 4d 53        S.OZMS..ZMS.^ZMS
+00d0: 00 50 5a 4d 53 ff eb 5a 4d 53 00 0b 5a 4d 53 ff        .PZMS..ZMS..ZMS.
+00e0: f1 5a 4d 53 ff e7 5a 4d 53 00 55 5a 4d 53 00 04        .ZMS..ZMS.UZMS..
+00f0: 5a 4d 53 00 20 5a 4d 53 00 5d 5a 4d 53 00 42 5a        ZMS. ZMS.]ZMS.BZ
+0100: 5a 4d 53 ff da 5a 4d 53 00 59 5a 4d 53 ff              ZMS..ZMS.YZMS.
+-------
+> ZMSZMSYZMSZMSZMS[ZMSZMS;ZMSZMS'ZMSZMSCZMSZMSZMSZMSMZMSZMScZMSZMSIZMSZMSZMSZMSZMSZMS!ZMSBZMSZMSZMSZMS7ZMSZMSPZMS#ZMSZMSKZMSZMSZMSJZMSOZMSZMS^ZMSPZMSZMSZMSZMSZMSUZMSZMS ZMS]ZMSBZZMSZMSYZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711084
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2211m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff de 5a 4d 53 00 5a 5a 4d 53 00 2f 5a        ZMS..ZMS.ZZMS./Z
+0010: 4d 53 00 5e 5a 4d 53 ff e7 5a 4d 53 00 22 5a 4d        MS.^ZMS..ZMS."ZM
+0020: 53 00 10 5a 4d 53 ff ee 5a 4d 53 ff e2 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 15 5a 4d 53 ff fc 5a 4d 53 ff de 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 05 5a 4d 53 00 09 5a 4d 53 ff e9 5a 4d 53 00 58        .ZMS..ZMS..ZMS.X
+0050: 5a 4d 53 00 0d 5a 4d 53 ff ed 5a 4d 53 ff e8 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 61 5a 4d 53 00 2a 5a 4d 53 00 5f 5a 4d        MS.aZMS.*ZMS._ZM
+0070: 53 00 4e 5a 4d 53 ff d4 5a 4d 53 00 30 5a 4d 53        S.NZMS..ZMS.0ZMS
+0080: 00 33 5a 4d 53 00 47 5a 4d 53 ff f2 5a 4d 53 00        .3ZMS.GZMS..ZMS.
+0090: 5c 5a 4d 53 00 00 5a 4d 53 ff ef 5a 4d 53 00 51        \ZMS..ZMS..ZMS.Q
+00a0: 5a 4d 53 00 3a 5a 4d 53 ff e3 5a 4d 53 00 11 5a        ZMS.:ZMS..ZMS..Z
+00b0: 4d 53 00 14 5a 4d 53 ff d1 5a 4d 53 00 56 5a 4d        MS..ZMS..ZMS.VZM
+00c0: 53 00 43 5a 4d 53 00 5c 5a 4d 53 00 0b 5a 4d 53        S.CZMS.\ZMS..ZMS
+00d0: 00 3c 5a 4d 53 ff e8 5a 4d 53 ff f4 5a 4d 53 ff        .<ZMS..ZMS..ZMS.
+00e0: e2 5a 4d 53 ff e0 5a 4d 53 00 4a 5a 4d 53 ff dc        .ZMS..ZMS.JZMS..
+00f0: 5a 4d 53 00 50 5a 4d 53 ff d4 5a 4d 53 00 5d 5a        ZMS.PZMS..ZMS.]Z
+0100: 5a 4d 53 ff de 5a 4d 53 00 5a 5a 4d 53 00              ZMS..ZMS.ZZMS.
+-------
+> ZMSZMSZZMS/ZMS^ZMSZMS"ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSXZMSZMSZMSZMSaZMS*ZMS_ZMSNZMSZMS0ZMS3ZMSGZMSZMS\ZMSZMSZMSQZMS:ZMSZMSZMSZMSZMSVZMSCZMS\ZMSZMS<ZMSZMSZMSZMSZMSJZMSZMSPZMSZMS]ZZMSZMSZZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711516
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5243m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff d5 5a 4d 53 ff d7 5a 4d 53 ff da 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 18 5a 4d 53 00 61 5a 4d 53 00 60 5a 4d        MS..ZMS.aZMS.`ZM
+0020: 53 00 09 5a 4d 53 ff e0 5a 4d 53 00 5e 5a 4d 53        S..ZMS..ZMS.^ZMS
+0030: 00 4a 5a 4d 53 00 15 5a 4d 53 ff d5 5a 4d 53 00        .JZMS..ZMS..ZMS.
+0040: 4b 5a 4d 53 00 3a 5a 4d 53 00 51 5a 4d 53 00 16        KZMS.:ZMS.QZMS..
+0050: 5a 4d 53 00 56 5a 4d 53 00 3c 5a 4d 53 ff f3 5a        ZMS.VZMS.<ZMS..Z
+0060: 4d 53 00 09 5a 4d 53 ff d9 5a 4d 53 00 31 5a 4d        MS..ZMS..ZMS.1ZM
+0070: 53 00 47 5a 4d 53 00 50 5a 4d 53 ff d5 5a 4d 53        S.GZMS.PZMS..ZMS
+0080: 00 3b 5a 4d 53 00 51 5a 4d 53 00 51 5a 4d 53 00        .;ZMS.QZMS.QZMS.
+0090: 01 5a 4d 53 ff e1 5a 4d 53 00 03 5a 4d 53 ff e5        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 4f 5a 4d 53 00 4f 5a 4d 53 00 42 5a        ZMS.OZMS.OZMS.BZ
+00b0: 4d 53 00 27 5a 4d 53 00 2e 5a 4d 53 00 45 5a 4d        MS.'ZMS..ZMS.EZM
+00c0: 53 00 48 5a 4d 53 00 0a 5a 4d 53 ff ee 5a 4d 53        S.HZMS..ZMS..ZMS
+00d0: 00 50 5a 4d 53 00 41 5a 4d 53 ff fd 5a 4d 53 00        .PZMS.AZMS..ZMS.
+00e0: 49 5a 4d 53 00 1e 5a 4d 53 00 1a 5a 4d 53 00 1b        IZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 00 5a 4d 53 00 25 5a 4d 53 00 22 5a        ZMS..ZMS.%ZMS."Z
+0100: 5a 4d 53 ff d5 5a 4d 53 ff d7 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMSaZMS`ZMSZMSZMS^ZMSJZMSZMSZMSKZMS:ZMSQZMSZMSVZMS<ZMSZMSZMSZMS1ZMSGZMSPZMSZMS;ZMSQZMSQZMSZMSZMSZMSZMSOZMSOZMSBZMS'ZMS.ZMSEZMSHZMSZMSZMSPZMSAZMSZMSIZMSZMSZMSZMSZMS%ZMS"ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711624
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6083m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 23 5a 4d 53 ff d4 5a 4d 53 ff e0 5a        ZMS.#ZMS..ZMS..Z
+0010: 4d 53 00 0c 5a 4d 53 00 16 5a 4d 53 00 4b 5a 4d        MS..ZMS..ZMS.KZM
+0020: 53 00 2c 5a 4d 53 00 52 5a 4d 53 00 29 5a 4d 53        S.,ZMS.RZMS.)ZMS
+0030: 00 22 5a 4d 53 ff d9 5a 4d 53 ff f7 5a 4d 53 ff        ."ZMS..ZMS..ZMS.
+0040: f8 5a 4d 53 ff f3 5a 4d 53 ff f3 5a 4d 53 00 06        .ZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 58 5a 4d 53 00 25 5a 4d 53 00 54 5a        ZMS.XZMS.%ZMS.TZ
+0060: 4d 53 ff f1 5a 4d 53 00 29 5a 4d 53 00 04 5a 4d        MS..ZMS.)ZMS..ZM
+0070: 53 00 1e 5a 4d 53 ff d1 5a 4d 53 00 3a 5a 4d 53        S..ZMS..ZMS.:ZMS
+0080: 00 11 5a 4d 53 00 32 5a 4d 53 ff d2 5a 4d 53 00        ..ZMS.2ZMS..ZMS.
+0090: 38 5a 4d 53 00 4a 5a 4d 53 00 42 5a 4d 53 00 55        8ZMS.JZMS.BZMS.U
+00a0: 5a 4d 53 00 42 5a 4d 53 00 0a 5a 4d 53 00 2e 5a        ZMS.BZMS..ZMS..Z
+00b0: 4d 53 ff d1 5a 4d 53 00 58 5a 4d 53 00 53 5a 4d        MS..ZMS.XZMS.SZM
+00c0: 53 00 1f 5a 4d 53 00 2f 5a 4d 53 00 43 5a 4d 53        S..ZMS./ZMS.CZMS
+00d0: 00 0c 5a 4d 53 00 28 5a 4d 53 00 1e 5a 4d 53 ff        ..ZMS.(ZMS..ZMS.
+00e0: cf 5a 4d 53 00 31 5a 4d 53 ff fc 5a 4d 53 00 49        .ZMS.1ZMS..ZMS.I
+00f0: 5a 4d 53 00 20 5a 4d 53 ff eb 5a 4d 53 ff ea 5a        ZMS. ZMS..ZMS..Z
+0100: 5a 4d 53 00 23 5a 4d 53 ff d4 5a 4d 53 ff              ZMS.#ZMS..ZMS.
+-------
+> ZMS#ZMSZMSZMSZMSZMSKZMS,ZMSRZMS)ZMS"ZMSZMSZMSZMSZMSZMSZMSXZMS%ZMSTZMSZMS)ZMSZMSZMSZMS:ZMSZMS2ZMSZMS8ZMSJZMSBZMSUZMSBZMSZMS.ZMSZMSXZMSSZMSZMS/ZMSCZMSZMS(ZMSZMSZMS1ZMSZMSIZMS ZMSZMSZZMS#ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711732
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6931m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 16 5a 4d 53 ff d9 5a 4d 53 00 19 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 ff dd 5a 4d 53 00 50 5a 4d 53 ff da 5a 4d        MS..ZMS.PZMS..ZM
+0020: 53 00 22 5a 4d 53 ff eb 5a 4d 53 ff dd 5a 4d 53        S."ZMS..ZMS..ZMS
+0030: ff dd 5a 4d 53 ff fc 5a 4d 53 00 3c 5a 4d 53 00        ..ZMS..ZMS.<ZMS.
+0040: 29 5a 4d 53 ff f6 5a 4d 53 00 3f 5a 4d 53 00 1f        )ZMS..ZMS.?ZMS..
+0050: 5a 4d 53 ff f4 5a 4d 53 ff d2 5a 4d 53 ff dd 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff d9 5a 4d 53 00 35 5a 4d 53 00 55 5a 4d        MS..ZMS.5ZMS.UZM
+0070: 53 ff da 5a 4d 53 ff ed 5a 4d 53 00 09 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: 00 27 5a 4d 53 ff f0 5a 4d 53 00 42 5a 4d 53 00        .'ZMS..ZMS.BZMS.
+0090: 2b 5a 4d 53 ff f0 5a 4d 53 00 13 5a 4d 53 00 17        +ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 5c 5a 4d 53 ff f9 5a 4d 53 00 35 5a        ZMS.\ZMS..ZMS.5Z
+00b0: 4d 53 00 02 5a 4d 53 00 63 5a 4d 53 ff f7 5a 4d        MS..ZMS.cZMS..ZM
+00c0: 53 ff ef 5a 4d 53 ff f5 5a 4d 53 00 32 5a 4d 53        S..ZMS..ZMS.2ZMS
+00d0: 00 0e 5a 4d 53 00 5e 5a 4d 53 00 58 5a 4d 53 00        ..ZMS.^ZMS.XZMS.
+00e0: 4e 5a 4d 53 00 06 5a 4d 53 ff e8 5a 4d 53 00 34        NZMS..ZMS..ZMS.4
+00f0: 5a 4d 53 00 46 5a 4d 53 00 49 5a 4d 53 00 48 5a        ZMS.FZMS.IZMS.HZ
+0100: 5a 4d 53 00 16 5a 4d 53 ff d9 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMSPZMSZMS"ZMSZMSZMSZMSZMS<ZMS)ZMSZMS?ZMSZMSZMSZMSZMSZMS5ZMSUZMSZMSZMSZMS'ZMSZMSBZMS+ZMSZMSZMSZMS\ZMSZMS5ZMSZMScZMSZMSZMSZMS2ZMSZMS^ZMSXZMSNZMSZMSZMS4ZMSFZMSIZMSHZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711950
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8443m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 5c 5a 4d 53 00 5e 5a 4d 53 00 3b 5a        ZMS.\ZMS.^ZMS.;Z
+0010: 4d 53 00 06 5a 4d 53 ff f0 5a 4d 53 00 41 5a 4d        MS..ZMS..ZMS.AZM
+0020: 53 ff ce 5a 4d 53 00 04 5a 4d 53 00 55 5a 4d 53        S..ZMS..ZMS.UZMS
+0030: 00 18 5a 4d 53 ff fc 5a 4d 53 ff d8 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 24 5a 4d 53 ff f3 5a 4d 53 ff d7 5a 4d 53 ff d5        $ZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 56 5a 4d 53 ff e2 5a 4d 53 00 03 5a        ZMS.VZMS..ZMS..Z
+0060: 4d 53 00 54 5a 4d 53 00 54 5a 4d 53 00 47 5a 4d        MS.TZMS.TZMS.GZM
+0070: 53 ff f2 5a 4d 53 00 5f 5a 4d 53 ff f6 5a 4d 53        S..ZMS._ZMS..ZMS
+0080: 00 06 5a 4d 53 ff e2 5a 4d 53 ff fe 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 41 5a 4d 53 ff d7 5a 4d 53 ff f8 5a 4d 53 ff d1        AZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 55 5a 4d 53 00 14 5a 4d 53 ff e8 5a        ZMS.UZMS..ZMS..Z
+00b0: 4d 53 00 4a 5a 4d 53 00 4f 5a 4d 53 00 3d 5a 4d        MS.JZMS.OZMS.=ZM
+00c0: 53 00 59 5a 4d 53 ff d8 5a 4d 53 00 45 5a 4d 53        S.YZMS..ZMS.EZMS
+00d0: 00 46 5a 4d 53 00 10 5a 4d 53 00 5f 5a 4d 53 00        .FZMS..ZMS._ZMS.
+00e0: 11 5a 4d 53 00 5f 5a 4d 53 ff e1 5a 4d 53 00 3f        .ZMS._ZMS..ZMS.?
+00f0: 5a 4d 53 00 61 5a 4d 53 00 13 5a 4d 53 ff e1 5a        ZMS.aZMS..ZMS..Z
+0100: 5a 4d 53 00 5c 5a 4d 53 00 5e 5a 4d 53 00              ZMS.\ZMS.^ZMS.
+-------
+> ZMS\ZMS^ZMS;ZMSZMSZMSAZMSZMSZMSUZMSZMSZMSZMS$ZMSZMSZMSZMSVZMSZMSZMSTZMSTZMSGZMSZMS_ZMSZMSZMSZMSZMSAZMSZMSZMSZMSUZMSZMSZMSJZMSOZMS=ZMSYZMSZMSEZMSFZMSZMS_ZMSZMS_ZMSZMS?ZMSaZMSZMSZZMS\ZMS^ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712067
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9283m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 11 5a 4d 53 00 3f 5a 4d 53 ff f2 5a        ZMS..ZMS.?ZMS..Z
+0010: 4d 53 ff e1 5a 4d 53 00 3e 5a 4d 53 ff ff 5a 4d        MS..ZMS.>ZMS..ZM
+0020: 53 00 4c 5a 4d 53 00 27 5a 4d 53 ff dc 5a 4d 53        S.LZMS.'ZMS..ZMS
+0030: 00 2e 5a 4d 53 00 35 5a 4d 53 00 2e 5a 4d 53 00        ..ZMS.5ZMS..ZMS.
+0040: 02 5a 4d 53 00 1d 5a 4d 53 ff f9 5a 4d 53 ff d2        .ZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 2f 5a 4d 53 00 4a 5a 4d 53 00 2f 5a        ZMS./ZMS.JZMS./Z
+0060: 4d 53 00 4d 5a 4d 53 00 1f 5a 4d 53 00 03 5a 4d        MS.MZMS..ZMS..ZM
+0070: 53 00 32 5a 4d 53 ff f2 5a 4d 53 00 3d 5a 4d 53        S.2ZMS..ZMS.=ZMS
+0080: 00 34 5a 4d 53 00 2c 5a 4d 53 00 0b 5a 4d 53 ff        .4ZMS.,ZMS..ZMS.
+0090: ff 5a 4d 53 ff d9 5a 4d 53 ff df 5a 4d 53 00 2c        .ZMS..ZMS..ZMS.,
+00a0: 5a 4d 53 00 39 5a 4d 53 00 1b 5a 4d 53 00 45 5a        ZMS.9ZMS..ZMS.EZ
+00b0: 4d 53 00 11 5a 4d 53 00 2b 5a 4d 53 00 40 5a 4d        MS..ZMS.+ZMS.@ZM
+00c0: 53 ff ea 5a 4d 53 00 57 5a 4d 53 00 2a 5a 4d 53        S..ZMS.WZMS.*ZMS
+00d0: 00 07 5a 4d 53 ff d9 5a 4d 53 00 23 5a 4d 53 00        ..ZMS..ZMS.#ZMS.
+00e0: 03 5a 4d 53 ff dd 5a 4d 53 00 5e 5a 4d 53 00 61        .ZMS..ZMS.^ZMS.a
+00f0: 5a 4d 53 ff d5 5a 4d 53 00 1e 5a 4d 53 00 3c 5a        ZMS..ZMS..ZMS.<Z
+0100: 5a 4d 53 00 11 5a 4d 53 00 3f 5a 4d 53 ff              ZMS..ZMS.?ZMS.
+-------
+> ZMSZMS?ZMSZMSZMS>ZMSZMSLZMS'ZMSZMS.ZMS5ZMS.ZMSZMSZMSZMSZMS/ZMSJZMS/ZMSMZMSZMSZMS2ZMSZMS=ZMS4ZMS,ZMSZMSZMSZMSZMS,ZMS9ZMSZMSEZMSZMS+ZMS@ZMSZMSWZMS*ZMSZMSZMS#ZMSZMSZMS^ZMSaZMSZMSZMS<ZZMSZMS?ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712273
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10803m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff d7 5a 4d 53 00 11 5a 4d 53 00 39 5a        ZMS..ZMS..ZMS.9Z
+0010: 4d 53 ff d9 5a 4d 53 00 05 5a 4d 53 00 47 5a 4d        MS..ZMS..ZMS.GZM
+0020: 53 00 46 5a 4d 53 00 38 5a 4d 53 00 29 5a 4d 53        S.FZMS.8ZMS.)ZMS
+0030: 00 11 5a 4d 53 00 5f 5a 4d 53 ff da 5a 4d 53 00        ..ZMS._ZMS..ZMS.
+0040: 3e 5a 4d 53 ff d9 5a 4d 53 00 5f 5a 4d 53 ff f9        >ZMS..ZMS._ZMS..
+0050: 5a 4d 53 ff de 5a 4d 53 00 45 5a 4d 53 00 20 5a        ZMS..ZMS.EZMS. Z
+0060: 4d 53 00 5f 5a 4d 53 00 4a 5a 4d 53 ff d1 5a 4d        MS._ZMS.JZMS..ZM
+0070: 53 00 1b 5a 4d 53 ff e8 5a 4d 53 00 3b 5a 4d 53        S..ZMS..ZMS.;ZMS
+0080: 00 5c 5a 4d 53 ff d8 5a 4d 53 ff d1 5a 4d 53 00        .\ZMS..ZMS..ZMS.
+0090: 26 5a 4d 53 00 02 5a 4d 53 00 4c 5a 4d 53 00 16        &ZMS..ZMS.LZMS..
+00a0: 5a 4d 53 00 30 5a 4d 53 00 11 5a 4d 53 ff e3 5a        ZMS.0ZMS..ZMS..Z
+00b0: 4d 53 00 3d 5a 4d 53 00 13 5a 4d 53 ff fa 5a 4d        MS.=ZMS..ZMS..ZM
+00c0: 53 00 0f 5a 4d 53 ff fc 5a 4d 53 ff d7 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 37 5a 4d 53 ff e5 5a 4d 53 00 56 5a 4d 53 00        .7ZMS..ZMS.VZMS.
+00e0: 5c 5a 4d 53 00 02 5a 4d 53 00 58 5a 4d 53 ff df        \ZMS..ZMS.XZMS..
+00f0: 5a 4d 53 00 17 5a 4d 53 ff cf 5a 4d 53 00 58 5a        ZMS..ZMS..ZMS.XZ
+0100: 5a 4d 53 ff d7 5a 4d 53 00 11 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMS9ZMSZMSZMSGZMSFZMS8ZMS)ZMSZMS_ZMSZMS>ZMSZMS_ZMSZMSZMSEZMS ZMS_ZMSJZMSZMSZMSZMS;ZMS\ZMSZMSZMS&ZMSZMSLZMSZMS0ZMSZMSZMS=ZMSZMSZMSZMSZMSZMS7ZMSZMSVZMS\ZMSZMSXZMSZMSZMSZMSXZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712381
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11643m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f1 5a 4d 53 ff f5 5a 4d 53 ff ee 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 1c 5a 4d 53 ff db 5a 4d 53 ff f6 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 19 5a 4d 53 ff da 5a 4d 53 00 04 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: ff d0 5a 4d 53 00 08 5a 4d 53 00 14 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0040: e0 5a 4d 53 ff d8 5a 4d 53 ff dc 5a 4d 53 ff e9        .ZMS..ZMS..ZMS..
+0050: 5a 4d 53 ff f9 5a 4d 53 ff f9 5a 4d 53 00 4b 5a        ZMS..ZMS..ZMS.KZ
+0060: 4d 53 ff d5 5a 4d 53 ff f3 5a 4d 53 00 17 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 2b 5a 4d 53 ff d4 5a 4d 53 ff de 5a 4d 53        S.+ZMS..ZMS..ZMS
+0080: 00 59 5a 4d 53 ff d1 5a 4d 53 ff db 5a 4d 53 00        .YZMS..ZMS..ZMS.
+0090: 63 5a 4d 53 ff d0 5a 4d 53 00 2f 5a 4d 53 00 39        cZMS..ZMS./ZMS.9
+00a0: 5a 4d 53 00 13 5a 4d 53 ff ec 5a 4d 53 00 38 5a        ZMS..ZMS..ZMS.8Z
+00b0: 4d 53 ff d7 5a 4d 53 00 5a 5a 4d 53 ff d8 5a 4d        MS..ZMS.ZZMS..ZM
+00c0: 53 ff db 5a 4d 53 ff ef 5a 4d 53 00 03 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 52 5a 4d 53 00 4b 5a 4d 53 00 01 5a 4d 53 ff        .RZMS.KZMS..ZMS.
+00e0: d4 5a 4d 53 00 62 5a 4d 53 00 2d 5a 4d 53 00 58        .ZMS.bZMS.-ZMS.X
+00f0: 5a 4d 53 00 40 5a 4d 53 ff f8 5a 4d 53 00 52 5a        ZMS.@ZMS..ZMS.RZ
+0100: 5a 4d 53 ff f1 5a 4d 53 ff f5 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSKZMSZMSZMSZMS+ZMSZMSZMSYZMSZMSZMScZMSZMS/ZMS9ZMSZMSZMS8ZMSZMSZZMSZMSZMSZMSZMSRZMSKZMSZMSZMSbZMS-ZMSXZMS@ZMSZMSRZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712489
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12483m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 60 5a 4d 53 ff fe 5a 4d 53 ff ff 5a        ZMS.`ZMS..ZMS..Z
+0010: 4d 53 00 09 5a 4d 53 00 12 5a 4d 53 00 5d 5a 4d        MS..ZMS..ZMS.]ZM
+0020: 53 00 2f 5a 4d 53 ff e6 5a 4d 53 00 4a 5a 4d 53        S./ZMS..ZMS.JZMS
+0030: 00 63 5a 4d 53 00 2a 5a 4d 53 ff df 5a 4d 53 00        .cZMS.*ZMS..ZMS.
+0040: 17 5a 4d 53 00 25 5a 4d 53 ff eb 5a 4d 53 00 5f        .ZMS.%ZMS..ZMS._
+0050: 5a 4d 53 00 41 5a 4d 53 ff d7 5a 4d 53 00 52 5a        ZMS.AZMS..ZMS.RZ
+0060: 4d 53 00 1c 5a 4d 53 00 2d 5a 4d 53 00 10 5a 4d        MS..ZMS.-ZMS..ZM
+0070: 53 00 40 5a 4d 53 00 5a 5a 4d 53 ff d3 5a 4d 53        S.@ZMS.ZZMS..ZMS
+0080: ff e0 5a 4d 53 00 14 5a 4d 53 00 52 5a 4d 53 00        ..ZMS..ZMS.RZMS.
+0090: 52 5a 4d 53 ff e6 5a 4d 53 00 55 5a 4d 53 ff e1        RZMS..ZMS.UZMS..
+00a0: 5a 4d 53 ff e8 5a 4d 53 00 34 5a 4d 53 00 2c 5a        ZMS..ZMS.4ZMS.,Z
+00b0: 4d 53 00 25 5a 4d 53 ff f8 5a 4d 53 ff e7 5a 4d        MS.%ZMS..ZMS..ZM
+00c0: 53 ff e1 5a 4d 53 00 4b 5a 4d 53 ff e4 5a 4d 53        S..ZMS.KZMS..ZMS
+00d0: ff e9 5a 4d 53 ff fe 5a 4d 53 00 00 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+00e0: 62 5a 4d 53 00 32 5a 4d 53 ff d9 5a 4d 53 ff dd        bZMS.2ZMS..ZMS..
+00f0: 5a 4d 53 00 12 5a 4d 53 00 2c 5a 4d 53 ff db 5a        ZMS..ZMS.,ZMS..Z
+0100: 5a 4d 53 00 60 5a 4d 53 ff fe 5a 4d 53 ff              ZMS.`ZMS..ZMS.
+-------
+> ZMS`ZMSZMSZMSZMSZMS]ZMS/ZMSZMSJZMScZMS*ZMSZMSZMS%ZMSZMS_ZMSAZMSZMSRZMSZMS-ZMSZMS@ZMSZZMSZMSZMSZMSRZMSRZMSZMSUZMSZMSZMS4ZMS,ZMS%ZMSZMSZMSZMSKZMSZMSZMSZMSZMSbZMS2ZMSZMSZMSZMS,ZMSZZMS`ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712597
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  13155m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 39 5a 4d 53 00 4e 5a 4d 53 00 32 5a        ZMS.9ZMS.NZMS.2Z
+0010: 4d 53 ff dd 5a 4d 53 00 21 5a 4d 53 00 37 5a 4d        MS..ZMS.!ZMS.7ZM
+0020: 53 00 59 5a 4d 53 00 16 5a 4d 53 00 0b 5a 4d 53        S.YZMS..ZMS..ZMS
+0030: 00 61 5a 4d 53 00 07 5a 4d 53 00 20 5a 4d 53 00        .aZMS..ZMS. ZMS.
+0040: 29 5a 4d 53 00 29 5a 4d 53 00 3d 5a 4d 53 00 08        )ZMS.)ZMS.=ZMS..
+0050: 5a 4d 53 00 1d 5a 4d 53 ff d3 5a 4d 53 ff fc 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 1e 5a 4d 53 ff fd 5a 4d 53 00 0f 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff d8 5a 4d 53 00 48 5a 4d 53 ff d0 5a 4d 53        S..ZMS.HZMS..ZMS
+0080: 00 05 5a 4d 53 00 46 5a 4d 53 ff db 5a 4d 53 ff        ..ZMS.FZMS..ZMS.
+0090: d0 5a 4d 53 ff e7 5a 4d 53 00 26 5a 4d 53 00 24        .ZMS..ZMS.&ZMS.$
+00a0: 5a 4d 53 00 4a 5a 4d 53 00 43 5a 4d 53 00 0b 5a        ZMS.JZMS.CZMS..Z
+00b0: 4d 53 00 48 5a 4d 53 00 5b 5a 4d 53 00 30 5a 4d        MS.HZMS.[ZMS.0ZM
+00c0: 53 00 03 5a 4d 53 00 43 5a 4d 53 ff e6 5a 4d 53        S..ZMS.CZMS..ZMS
+00d0: 00 14 5a 4d 53 ff f6 5a 4d 53 00 4c 5a 4d 53 00        ..ZMS..ZMS.LZMS.
+00e0: 54 5a 4d 53 00 25 5a 4d 53 ff e8 5a 4d 53 00 5b        TZMS.%ZMS..ZMS.[
+00f0: 5a 4d 53 ff fc 5a 4d 53 00 39 5a 4d 53 ff dc 5a        ZMS..ZMS.9ZMS..Z
+0100: 5a 4d 53 00 39 5a 4d 53 00 4e 5a 4d 53 00              ZMS.9ZMS.NZMS.
+-------
+> ZMS9ZMSNZMS2ZMSZMS!ZMS7ZMSYZMSZMSZMSaZMSZMS ZMS)ZMS)ZMS=ZMSZMSZMSZMSZMSZMSZMSZMSZMSHZMSZMSZMSFZMSZMSZMSZMS&ZMS$ZMSJZMSCZMSZMSHZMS[ZMS0ZMSZMSCZMSZMSZMSZMSLZMSTZMS%ZMSZMS[ZMSZMS9ZMSZZMS9ZMSNZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712705
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14011m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 14 5a 4d 53 00 44 5a 4d 53 00 02 5a        ZMS..ZMS.DZMS..Z
+0010: 4d 53 00 3a 5a 4d 53 ff f3 5a 4d 53 ff d2 5a 4d        MS.:ZMS..ZMS..ZM
+0020: 53 00 63 5a 4d 53 00 44 5a 4d 53 00 07 5a 4d 53        S.cZMS.DZMS..ZMS
+0030: 00 07 5a 4d 53 ff ee 5a 4d 53 ff f3 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0040: fa 5a 4d 53 00 24 5a 4d 53 00 63 5a 4d 53 00 0c        .ZMS.$ZMS.cZMS..
+0050: 5a 4d 53 ff ee 5a 4d 53 ff d7 5a 4d 53 ff eb 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 17 5a 4d 53 00 45 5a 4d 53 ff fc 5a 4d        MS..ZMS.EZMS..ZM
+0070: 53 00 25 5a 4d 53 00 2b 5a 4d 53 ff ff 5a 4d 53        S.%ZMS.+ZMS..ZMS
+0080: 00 1b 5a 4d 53 00 32 5a 4d 53 00 20 5a 4d 53 00        ..ZMS.2ZMS. ZMS.
+0090: 52 5a 4d 53 00 3e 5a 4d 53 ff dd 5a 4d 53 00 24        RZMS.>ZMS..ZMS.$
+00a0: 5a 4d 53 00 4c 5a 4d 53 00 0b 5a 4d 53 ff e5 5a        ZMS.LZMS..ZMS..Z
+00b0: 4d 53 00 20 5a 4d 53 ff f3 5a 4d 53 00 28 5a 4d        MS. ZMS..ZMS.(ZM
+00c0: 53 00 5b 5a 4d 53 00 3b 5a 4d 53 ff f4 5a 4d 53        S.[ZMS.;ZMS..ZMS
+00d0: 00 15 5a 4d 53 00 52 5a 4d 53 00 2d 5a 4d 53 00        ..ZMS.RZMS.-ZMS.
+00e0: 29 5a 4d 53 00 2d 5a 4d 53 00 47 5a 4d 53 00 39        )ZMS.-ZMS.GZMS.9
+00f0: 5a 4d 53 00 4e 5a 4d 53 ff e2 5a 4d 53 00 23 5a        ZMS.NZMS..ZMS.#Z
+0100: 5a 4d 53 00 14 5a 4d 53 00 44 5a 4d 53 00              ZMS..ZMS.DZMS.
+-------
+> ZMSZMSDZMSZMS:ZMSZMSZMScZMSDZMSZMSZMSZMSZMSZMS$ZMScZMSZMSZMSZMSZMSZMSEZMSZMS%ZMS+ZMSZMSZMS2ZMS ZMSRZMS>ZMSZMS$ZMSLZMSZMSZMS ZMSZMS(ZMS[ZMS;ZMSZMSZMSRZMS-ZMS)ZMS-ZMSGZMS9ZMSNZMSZMS#ZZMSZMSDZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712813
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14843m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 56 5a 4d 53 00 3e 5a 4d 53 00 05 5a        ZMS.VZMS.>ZMS..Z
+0010: 4d 53 ff d1 5a 4d 53 00 37 5a 4d 53 00 1e 5a 4d        MS..ZMS.7ZMS..ZM
+0020: 53 00 32 5a 4d 53 00 25 5a 4d 53 00 12 5a 4d 53        S.2ZMS.%ZMS..ZMS
+0030: 00 51 5a 4d 53 ff f8 5a 4d 53 00 2b 5a 4d 53 ff        .QZMS..ZMS.+ZMS.
+0040: e9 5a 4d 53 00 3c 5a 4d 53 00 4b 5a 4d 53 00 05        .ZMS.<ZMS.KZMS..
+0050: 5a 4d 53 00 10 5a 4d 53 00 46 5a 4d 53 ff f0 5a        ZMS..ZMS.FZMS..Z
+0060: 4d 53 ff cf 5a 4d 53 ff ee 5a 4d 53 ff e8 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 48 5a 4d 53 00 58 5a 4d 53 ff fe 5a 4d 53        S.HZMS.XZMS..ZMS
+0080: ff d1 5a 4d 53 00 2f 5a 4d 53 00 4f 5a 4d 53 00        ..ZMS./ZMS.OZMS.
+0090: 34 5a 4d 53 ff d2 5a 4d 53 00 61 5a 4d 53 00 49        4ZMS..ZMS.aZMS.I
+00a0: 5a 4d 53 00 0d 5a 4d 53 00 14 5a 4d 53 00 01 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff d2 5a 4d 53 00 40 5a 4d 53 00 07 5a 4d        MS..ZMS.@ZMS..ZM
+00c0: 53 ff fc 5a 4d 53 ff ce 5a 4d 53 ff d0 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 52 5a 4d 53 ff fd 5a 4d 53 00 29 5a 4d 53 00        .RZMS..ZMS.)ZMS.
+00e0: 44 5a 4d 53 00 4d 5a 4d 53 ff ee 5a 4d 53 00 30        DZMS.MZMS..ZMS.0
+00f0: 5a 4d 53 ff fd 5a 4d 53 00 60 5a 4d 53 00 02 5a        ZMS..ZMS.`ZMS..Z
+0100: 5a 4d 53 00 56 5a 4d 53 00 3e 5a 4d 53 00              ZMS.VZMS.>ZMS.
+-------
+> ZMSVZMS>ZMSZMSZMS7ZMSZMS2ZMS%ZMSZMSQZMSZMS+ZMSZMS<ZMSKZMSZMSZMSFZMSZMSZMSZMSZMSHZMSXZMSZMSZMS/ZMSOZMS4ZMSZMSaZMSIZMSZMSZMSZMSZMS@ZMSZMSZMSZMSZMSRZMSZMS)ZMSDZMSMZMSZMS0ZMSZMS`ZMSZZMSVZMS>ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712922
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15515m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 40 5a 4d 53 00 3e 5a 4d 53 00 04 5a        ZMS.@ZMS.>ZMS..Z
+0010: 4d 53 00 61 5a 4d 53 ff e7 5a 4d 53 ff d9 5a 4d        MS.aZMS..ZMS..ZM
+0020: 53 00 05 5a 4d 53 00 4f 5a 4d 53 00 52 5a 4d 53        S..ZMS.OZMS.RZMS
+0030: 00 21 5a 4d 53 00 39 5a 4d 53 ff f4 5a 4d 53 00        .!ZMS.9ZMS..ZMS.
+0040: 42 5a 4d 53 ff f6 5a 4d 53 00 1c 5a 4d 53 00 29        BZMS..ZMS..ZMS.)
+0050: 5a 4d 53 00 22 5a 4d 53 00 04 5a 4d 53 00 07 5a        ZMS."ZMS..ZMS..Z
+0060: 4d 53 00 28 5a 4d 53 ff d5 5a 4d 53 ff f3 5a 4d        MS.(ZMS..ZMS..ZM
+0070: 53 00 0d 5a 4d 53 00 08 5a 4d 53 00 0a 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff f7 5a 4d 53 00 39 5a 4d 53 ff d5 5a 4d 53 00        ..ZMS.9ZMS..ZMS.
+0090: 4a 5a 4d 53 00 41 5a 4d 53 00 05 5a 4d 53 ff e4        JZMS.AZMS..ZMS..
+00a0: 5a 4d 53 00 0b 5a 4d 53 ff ee 5a 4d 53 ff fa 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 5a 5a 4d 53 ff d0 5a 4d 53 ff e0 5a 4d        MS.ZZMS..ZMS..ZM
+00c0: 53 00 1a 5a 4d 53 00 01 5a 4d 53 ff dd 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 2e 5a 4d 53 00 46 5a 4d 53 ff d1 5a 4d 53 00        ..ZMS.FZMS..ZMS.
+00e0: 41 5a 4d 53 00 28 5a 4d 53 00 27 5a 4d 53 00 08        AZMS.(ZMS.'ZMS..
+00f0: 5a 4d 53 ff e2 5a 4d 53 00 1c 5a 4d 53 ff f3 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 40 5a 4d 53 00 3e 5a 4d 53 00              ZMS.@ZMS.>ZMS.
+-------
+> ZMS@ZMS>ZMSZMSaZMSZMSZMSZMSOZMSRZMS!ZMS9ZMSZMSBZMSZMSZMS)ZMS"ZMSZMSZMS(ZMSZMSZMSZMSZMSZMSZMS9ZMSZMSJZMSAZMSZMSZMSZMSZMSZMSZZMSZMSZMSZMSZMSZMS.ZMSFZMSZMSAZMS(ZMS'ZMSZMSZMSZMSZZMS@ZMS>ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713031
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  16355m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff fe 5a 4d 53 00 36 5a 4d 53 00 51 5a        ZMS..ZMS.6ZMS.QZ
+0010: 4d 53 00 44 5a 4d 53 00 43 5a 4d 53 00 31 5a 4d        MS.DZMS.CZMS.1ZM
+0020: 53 00 2b 5a 4d 53 ff d8 5a 4d 53 00 24 5a 4d 53        S.+ZMS..ZMS.$ZMS
+0030: 00 2e 5a 4d 53 00 1d 5a 4d 53 00 07 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 23 5a 4d 53 00 3a 5a 4d 53 00 23 5a 4d 53 00 2c        #ZMS.:ZMS.#ZMS.,
+0050: 5a 4d 53 ff d6 5a 4d 53 ff f2 5a 4d 53 00 00 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff e2 5a 4d 53 00 45 5a 4d 53 ff ec 5a 4d        MS..ZMS.EZMS..ZM
+0070: 53 00 5f 5a 4d 53 00 32 5a 4d 53 00 4f 5a 4d 53        S._ZMS.2ZMS.OZMS
+0080: ff d3 5a 4d 53 00 62 5a 4d 53 ff dd 5a 4d 53 ff        ..ZMS.bZMS..ZMS.
+0090: e3 5a 4d 53 ff f7 5a 4d 53 00 12 5a 4d 53 ff d9        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 0a 5a 4d 53 00 39 5a 4d 53 00 1a 5a        ZMS..ZMS.9ZMS..Z
+00b0: 4d 53 ff e9 5a 4d 53 ff d3 5a 4d 53 00 61 5a 4d        MS..ZMS..ZMS.aZM
+00c0: 53 00 43 5a 4d 53 00 61 5a 4d 53 00 61 5a 4d 53        S.CZMS.aZMS.aZMS
+00d0: 00 5e 5a 4d 53 00 48 5a 4d 53 ff ee 5a 4d 53 00        .^ZMS.HZMS..ZMS.
+00e0: 0e 5a 4d 53 00 59 5a 4d 53 ff f5 5a 4d 53 ff ec        .ZMS.YZMS..ZMS..
+00f0: 5a 4d 53 00 44 5a 4d 53 00 23 5a 4d 53 00 58 5a        ZMS.DZMS.#ZMS.XZ
+0100: 5a 4d 53 ff fe 5a 4d 53 00 36 5a 4d 53 00              ZMS..ZMS.6ZMS.
+-------
+> ZMSZMS6ZMSQZMSDZMSCZMS1ZMS+ZMSZMS$ZMS.ZMSZMSZMS#ZMS:ZMS#ZMS,ZMSZMSZMSZMSZMSEZMSZMS_ZMS2ZMSOZMSZMSbZMSZMSZMSZMSZMSZMSZMS9ZMSZMSZMSZMSaZMSCZMSaZMSaZMS^ZMSHZMSZMSZMSYZMSZMSZMSDZMS#ZMSXZZMSZMS6ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713147
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17195m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff d3 5a 4d 53 00 54 5a 4d 53 00 0e 5a        ZMS..ZMS.TZMS..Z
+0010: 4d 53 ff dc 5a 4d 53 00 21 5a 4d 53 00 00 5a 4d        MS..ZMS.!ZMS..ZM
+0020: 53 00 14 5a 4d 53 ff d5 5a 4d 53 00 40 5a 4d 53        S..ZMS..ZMS.@ZMS
+0030: 00 63 5a 4d 53 00 56 5a 4d 53 00 37 5a 4d 53 ff        .cZMS.VZMS.7ZMS.
+0040: dc 5a 4d 53 00 30 5a 4d 53 00 60 5a 4d 53 00 24        .ZMS.0ZMS.`ZMS.$
+0050: 5a 4d 53 00 02 5a 4d 53 00 42 5a 4d 53 ff f9 5a        ZMS..ZMS.BZMS..Z
+0060: 4d 53 ff d0 5a 4d 53 ff ee 5a 4d 53 00 3f 5a 4d        MS..ZMS..ZMS.?ZM
+0070: 53 00 0c 5a 4d 53 00 55 5a 4d 53 00 33 5a 4d 53        S..ZMS.UZMS.3ZMS
+0080: 00 1c 5a 4d 53 00 23 5a 4d 53 00 0b 5a 4d 53 00        ..ZMS.#ZMS..ZMS.
+0090: 5f 5a 4d 53 00 3e 5a 4d 53 00 0d 5a 4d 53 00 53        _ZMS.>ZMS..ZMS.S
+00a0: 5a 4d 53 00 61 5a 4d 53 00 1b 5a 4d 53 00 15 5a        ZMS.aZMS..ZMS..Z
+00b0: 4d 53 00 4a 5a 4d 53 00 12 5a 4d 53 00 12 5a 4d        MS.JZMS..ZMS..ZM
+00c0: 53 ff e4 5a 4d 53 ff d2 5a 4d 53 00 1c 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 5d 5a 4d 53 00 5f 5a 4d 53 00 02 5a 4d 53 00        .]ZMS._ZMS..ZMS.
+00e0: 19 5a 4d 53 00 53 5a 4d 53 ff fc 5a 4d 53 ff da        .ZMS.SZMS..ZMS..
+00f0: 5a 4d 53 00 17 5a 4d 53 00 4d 5a 4d 53 ff ec 5a        ZMS..ZMS.MZMS..Z
+0100: 5a 4d 53 ff d3 5a 4d 53 00 54 5a 4d 53 00              ZMS..ZMS.TZMS.
+-------
+> ZMSZMSTZMSZMSZMS!ZMSZMSZMSZMS@ZMScZMSVZMS7ZMSZMS0ZMS`ZMS$ZMSZMSBZMSZMSZMSZMS?ZMSZMSUZMS3ZMSZMS#ZMSZMS_ZMS>ZMSZMSSZMSaZMSZMSZMSJZMSZMSZMSZMSZMSZMS]ZMS_ZMSZMSZMSSZMSZMSZMSZMSMZMSZZMSZMSTZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713245
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18035m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 5e 5a 4d 53 00 59 5a 4d 53 ff f0 5a        ZMS.^ZMS.YZMS..Z
+0010: 4d 53 00 03 5a 4d 53 ff fd 5a 4d 53 00 33 5a 4d        MS..ZMS..ZMS.3ZM
+0020: 53 00 03 5a 4d 53 ff dc 5a 4d 53 00 2a 5a 4d 53        S..ZMS..ZMS.*ZMS
+0030: 00 35 5a 4d 53 00 04 5a 4d 53 00 0d 5a 4d 53 ff        .5ZMS..ZMS..ZMS.
+0040: fe 5a 4d 53 ff f1 5a 4d 53 00 4b 5a 4d 53 00 34        .ZMS..ZMS.KZMS.4
+0050: 5a 4d 53 ff eb 5a 4d 53 00 40 5a 4d 53 00 29 5a        ZMS..ZMS.@ZMS.)Z
+0060: 4d 53 ff e5 5a 4d 53 ff df 5a 4d 53 00 4f 5a 4d        MS..ZMS..ZMS.OZM
+0070: 53 ff ed 5a 4d 53 ff e1 5a 4d 53 00 32 5a 4d 53        S..ZMS..ZMS.2ZMS
+0080: 00 11 5a 4d 53 00 4f 5a 4d 53 ff d2 5a 4d 53 ff        ..ZMS.OZMS..ZMS.
+0090: d3 5a 4d 53 00 07 5a 4d 53 00 0a 5a 4d 53 00 1a        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 ff cf 5a 4d 53 ff f2 5a 4d 53 ff dc 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 41 5a 4d 53 ff f9 5a 4d 53 00 22 5a 4d        MS.AZMS..ZMS."ZM
+00c0: 53 ff f7 5a 4d 53 00 40 5a 4d 53 00 09 5a 4d 53        S..ZMS.@ZMS..ZMS
+00d0: 00 08 5a 4d 53 00 30 5a 4d 53 00 3e 5a 4d 53 00        ..ZMS.0ZMS.>ZMS.
+00e0: 38 5a 4d 53 00 37 5a 4d 53 ff d0 5a 4d 53 00 29        8ZMS.7ZMS..ZMS.)
+00f0: 5a 4d 53 00 30 5a 4d 53 00 37 5a 4d 53 ff e3 5a        ZMS.0ZMS.7ZMS..Z
+0100: 5a 4d 53 00 5e 5a 4d 53 00 59 5a 4d 53 ff              ZMS.^ZMS.YZMS.
+-------
+> ZMS^ZMSYZMSZMSZMSZMS3ZMSZMSZMS*ZMS5ZMSZMSZMSZMSZMSKZMS4ZMSZMS@ZMS)ZMSZMSZMSOZMSZMSZMS2ZMSZMSOZMSZMSZMSZMSZMSZMSZMSZMSZMSAZMSZMS"ZMSZMS@ZMSZMSZMS0ZMS>ZMS8ZMS7ZMSZMS)ZMS0ZMS7ZMSZZMS^ZMSYZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713353
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18723m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f2 5a 4d 53 00 4c 5a 4d 53 00 23 5a        ZMS..ZMS.LZMS.#Z
+0010: 4d 53 00 15 5a 4d 53 00 5a 5a 4d 53 00 52 5a 4d        MS..ZMS.ZZMS.RZM
+0020: 53 00 27 5a 4d 53 00 28 5a 4d 53 00 46 5a 4d 53        S.'ZMS.(ZMS.FZMS
+0030: ff fa 5a 4d 53 00 2f 5a 4d 53 00 43 5a 4d 53 00        ..ZMS./ZMS.CZMS.
+0040: 5b 5a 4d 53 00 34 5a 4d 53 ff e2 5a 4d 53 00 12        [ZMS.4ZMS..ZMS..
+0050: 5a 4d 53 ff cf 5a 4d 53 00 34 5a 4d 53 00 5d 5a        ZMS..ZMS.4ZMS.]Z
+0060: 4d 53 00 3e 5a 4d 53 00 16 5a 4d 53 ff d5 5a 4d        MS.>ZMS..ZMS..ZM
+0070: 53 00 35 5a 4d 53 00 34 5a 4d 53 ff dc 5a 4d 53        S.5ZMS.4ZMS..ZMS
+0080: 00 22 5a 4d 53 00 57 5a 4d 53 00 01 5a 4d 53 00        ."ZMS.WZMS..ZMS.
+0090: 5e 5a 4d 53 ff f9 5a 4d 53 00 5e 5a 4d 53 00 27        ^ZMS..ZMS.^ZMS.'
+00a0: 5a 4d 53 ff ea 5a 4d 53 ff ec 5a 4d 53 ff f5 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff fb 5a 4d 53 00 3a 5a 4d 53 00 54 5a 4d        MS..ZMS.:ZMS.TZM
+00c0: 53 ff fa 5a 4d 53 00 19 5a 4d 53 00 05 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: ff fd 5a 4d 53 00 0f 5a 4d 53 00 18 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+00e0: e3 5a 4d 53 ff f2 5a 4d 53 00 09 5a 4d 53 ff f3        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 4b 5a 4d 53 ff e3 5a 4d 53 00 62 5a        ZMS.KZMS..ZMS.bZ
+0100: 5a 4d 53 ff f2 5a 4d 53 00 4c 5a 4d 53 00              ZMS..ZMS.LZMS.
+-------
+> ZMSZMSLZMS#ZMSZMSZZMSRZMS'ZMS(ZMSFZMSZMS/ZMSCZMS[ZMS4ZMSZMSZMSZMS4ZMS]ZMS>ZMSZMSZMS5ZMS4ZMSZMS"ZMSWZMSZMS^ZMSZMS^ZMS'ZMSZMSZMSZMSZMS:ZMSTZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSKZMSZMSbZZMSZMSLZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713461
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  19555m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 33 5a 4d 53 00 43 5a 4d 53 00 20 5a        ZMS.3ZMS.CZMS. Z
+0010: 4d 53 00 04 5a 4d 53 00 58 5a 4d 53 00 2e 5a 4d        MS..ZMS.XZMS..ZM
+0020: 53 ff ea 5a 4d 53 00 2e 5a 4d 53 00 49 5a 4d 53        S..ZMS..ZMS.IZMS
+0030: 00 0b 5a 4d 53 00 2f 5a 4d 53 ff ef 5a 4d 53 00        ..ZMS./ZMS..ZMS.
+0040: 09 5a 4d 53 ff f7 5a 4d 53 00 37 5a 4d 53 00 33        .ZMS..ZMS.7ZMS.3
+0050: 5a 4d 53 ff f6 5a 4d 53 00 44 5a 4d 53 ff ff 5a        ZMS..ZMS.DZMS..Z
+0060: 4d 53 ff d5 5a 4d 53 ff fc 5a 4d 53 00 27 5a 4d        MS..ZMS..ZMS.'ZM
+0070: 53 00 28 5a 4d 53 00 4d 5a 4d 53 ff f2 5a 4d 53        S.(ZMS.MZMS..ZMS
+0080: 00 15 5a 4d 53 00 12 5a 4d 53 ff df 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 14 5a 4d 53 ff db 5a 4d 53 ff d6 5a 4d 53 00 02        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 2f 5a 4d 53 00 4f 5a 4d 53 ff f0 5a        ZMS./ZMS.OZMS..Z
+00b0: 4d 53 00 04 5a 4d 53 00 2b 5a 4d 53 00 02 5a 4d        MS..ZMS.+ZMS..ZM
+00c0: 53 ff de 5a 4d 53 00 09 5a 4d 53 00 0d 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 0b 5a 4d 53 00 3e 5a 4d 53 ff f0 5a 4d 53 00        ..ZMS.>ZMS..ZMS.
+00e0: 4e 5a 4d 53 00 4c 5a 4d 53 ff ff 5a 4d 53 ff d8        NZMS.LZMS..ZMS..
+00f0: 5a 4d 53 00 5b 5a 4d 53 00 22 5a 4d 53 00 49 5a        ZMS.[ZMS."ZMS.IZ
+0100: 5a 4d 53 00 33 5a 4d 53 00 43 5a 4d 53 00              ZMS.3ZMS.CZMS.
+-------
+> ZMS3ZMSCZMS ZMSZMSXZMS.ZMSZMS.ZMSIZMSZMS/ZMSZMSZMSZMS7ZMS3ZMSZMSDZMSZMSZMSZMS'ZMS(ZMSMZMSZMSZMSZMSZMSZMSZMSZMSZMS/ZMSOZMSZMSZMS+ZMSZMSZMSZMSZMSZMS>ZMSZMSNZMSLZMSZMSZMS[ZMS"ZMSIZZMS3ZMSCZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713569
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  20395m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 02 5a 4d 53 00 30 5a 4d 53 ff dc 5a        ZMS..ZMS.0ZMS..Z
+0010: 4d 53 00 2f 5a 4d 53 00 0f 5a 4d 53 00 0c 5a 4d        MS./ZMS..ZMS..ZM
+0020: 53 00 16 5a 4d 53 00 25 5a 4d 53 00 1f 5a 4d 53        S..ZMS.%ZMS..ZMS
+0030: 00 1e 5a 4d 53 ff f4 5a 4d 53 00 05 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 3a 5a 4d 53 ff f7 5a 4d 53 ff f1 5a 4d 53 00 46        :ZMS..ZMS..ZMS.F
+0050: 5a 4d 53 ff f1 5a 4d 53 ff e7 5a 4d 53 00 41 5a        ZMS..ZMS..ZMS.AZ
+0060: 4d 53 00 39 5a 4d 53 00 47 5a 4d 53 00 5c 5a 4d        MS.9ZMS.GZMS.\ZM
+0070: 53 ff d2 5a 4d 53 ff d8 5a 4d 53 00 52 5a 4d 53        S..ZMS..ZMS.RZMS
+0080: 00 31 5a 4d 53 00 40 5a 4d 53 00 61 5a 4d 53 00        .1ZMS.@ZMS.aZMS.
+0090: 1f 5a 4d 53 00 4a 5a 4d 53 ff de 5a 4d 53 00 33        .ZMS.JZMS..ZMS.3
+00a0: 5a 4d 53 ff d4 5a 4d 53 00 2e 5a 4d 53 00 51 5a        ZMS..ZMS..ZMS.QZ
+00b0: 4d 53 00 08 5a 4d 53 00 16 5a 4d 53 00 10 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff ec 5a 4d 53 00 45 5a 4d 53 00 5c 5a 4d 53        S..ZMS.EZMS.\ZMS
+00d0: ff ff 5a 4d 53 00 3f 5a 4d 53 00 2c 5a 4d 53 00        ..ZMS.?ZMS.,ZMS.
+00e0: 4c 5a 4d 53 ff e6 5a 4d 53 ff cf 5a 4d 53 00 3d        LZMS..ZMS..ZMS.=
+00f0: 5a 4d 53 ff ed 5a 4d 53 00 20 5a 4d 53 00 03 5a        ZMS..ZMS. ZMS..Z
+0100: 5a 4d 53 00 02 5a 4d 53 00 30 5a 4d 53 ff              ZMS..ZMS.0ZMS.
+-------
+> ZMSZMS0ZMSZMS/ZMSZMSZMSZMS%ZMSZMSZMSZMSZMS:ZMSZMSZMSFZMSZMSZMSAZMS9ZMSGZMS\ZMSZMSZMSRZMS1ZMS@ZMSaZMSZMSJZMSZMS3ZMSZMS.ZMSQZMSZMSZMSZMSZMSEZMS\ZMSZMS?ZMS,ZMSLZMSZMSZMS=ZMSZMS ZMSZZMSZMS0ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713677
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21067m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 02 5a 4d 53 00 0a 5a 4d 53 00 5a 5a        ZMS..ZMS..ZMS.ZZ
+0010: 4d 53 00 17 5a 4d 53 ff e3 5a 4d 53 00 4b 5a 4d        MS..ZMS..ZMS.KZM
+0020: 53 00 58 5a 4d 53 00 57 5a 4d 53 00 2e 5a 4d 53        S.XZMS.WZMS..ZMS
+0030: ff df 5a 4d 53 00 5b 5a 4d 53 00 61 5a 4d 53 ff        ..ZMS.[ZMS.aZMS.
+0040: ce 5a 4d 53 00 1d 5a 4d 53 ff ec 5a 4d 53 00 11        .ZMS..ZMS..ZMS..
+0050: 5a 4d 53 ff ed 5a 4d 53 00 12 5a 4d 53 ff d9 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff ed 5a 4d 53 ff d0 5a 4d 53 ff f3 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 1b 5a 4d 53 00 05 5a 4d 53 00 04 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: 00 02 5a 4d 53 ff f6 5a 4d 53 ff d7 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: fb 5a 4d 53 00 20 5a 4d 53 ff f2 5a 4d 53 00 29        .ZMS. ZMS..ZMS.)
+00a0: 5a 4d 53 00 05 5a 4d 53 00 15 5a 4d 53 00 09 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 37 5a 4d 53 00 46 5a 4d 53 00 5b 5a 4d        MS.7ZMS.FZMS.[ZM
+00c0: 53 00 12 5a 4d 53 00 5f 5a 4d 53 00 00 5a 4d 53        S..ZMS._ZMS..ZMS
+00d0: ff f6 5a 4d 53 ff eb 5a 4d 53 ff ce 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+00e0: f6 5a 4d 53 00 4d 5a 4d 53 00 5c 5a 4d 53 00 48        .ZMS.MZMS.\ZMS.H
+00f0: 5a 4d 53 00 1d 5a 4d 53 00 0d 5a 4d 53 ff f8 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 02 5a 4d 53 00 0a 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZZMSZMSZMSKZMSXZMSWZMS.ZMSZMS[ZMSaZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMS ZMSZMS)ZMSZMSZMSZMS7ZMSFZMS[ZMSZMS_ZMSZMSZMSZMSZMSZMSMZMS\ZMSHZMSZMSZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713785
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21907m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 5a 5a 4d 53 00 1a 5a 4d 53 ff de 5a        ZMS.ZZMS..ZMS..Z
+0010: 4d 53 00 28 5a 4d 53 00 63 5a 4d 53 00 2a 5a 4d        MS.(ZMS.cZMS.*ZM
+0020: 53 00 47 5a 4d 53 00 32 5a 4d 53 00 04 5a 4d 53        S.GZMS.2ZMS..ZMS
+0030: 00 3c 5a 4d 53 00 21 5a 4d 53 ff d7 5a 4d 53 ff        .<ZMS.!ZMS..ZMS.
+0040: f5 5a 4d 53 ff e3 5a 4d 53 ff db 5a 4d 53 00 56        .ZMS..ZMS..ZMS.V
+0050: 5a 4d 53 00 08 5a 4d 53 00 21 5a 4d 53 00 51 5a        ZMS..ZMS.!ZMS.QZ
+0060: 4d 53 00 09 5a 4d 53 ff db 5a 4d 53 ff e6 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff e3 5a 4d 53 ff fa 5a 4d 53 00 29 5a 4d 53        S..ZMS..ZMS.)ZMS
+0080: 00 2b 5a 4d 53 00 0e 5a 4d 53 ff f0 5a 4d 53 00        .+ZMS..ZMS..ZMS.
+0090: 18 5a 4d 53 00 33 5a 4d 53 00 5b 5a 4d 53 00 34        .ZMS.3ZMS.[ZMS.4
+00a0: 5a 4d 53 00 0b 5a 4d 53 ff e2 5a 4d 53 ff e8 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff cf 5a 4d 53 00 58 5a 4d 53 00 5b 5a 4d        MS..ZMS.XZMS.[ZM
+00c0: 53 00 20 5a 4d 53 ff d4 5a 4d 53 ff ec 5a 4d 53        S. ZMS..ZMS..ZMS
+00d0: 00 45 5a 4d 53 00 3d 5a 4d 53 00 0f 5a 4d 53 00        .EZMS.=ZMS..ZMS.
+00e0: 14 5a 4d 53 00 27 5a 4d 53 00 4c 5a 4d 53 ff fe        .ZMS.'ZMS.LZMS..
+00f0: 5a 4d 53 00 17 5a 4d 53 00 15 5a 4d 53 ff e4 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 5a 5a 4d 53 00 1a 5a 4d 53 ff              ZMS.ZZMS..ZMS.
+-------
+> ZMSZZMSZMSZMS(ZMScZMS*ZMSGZMS2ZMSZMS<ZMS!ZMSZMSZMSZMSZMSVZMSZMS!ZMSQZMSZMSZMSZMSZMSZMS)ZMS+ZMSZMSZMSZMS3ZMS[ZMS4ZMSZMSZMSZMSZMSXZMS[ZMS ZMSZMSZMSEZMS=ZMSZMSZMS'ZMSLZMSZMSZMSZMSZZMSZZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713893
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  22747m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 5c 5a 4d 53 ff f1 5a 4d 53 00 50 5a        ZMS.\ZMS..ZMS.PZ
+0010: 4d 53 00 1b 5a 4d 53 00 27 5a 4d 53 00 07 5a 4d        MS..ZMS.'ZMS..ZM
+0020: 53 00 2f 5a 4d 53 00 18 5a 4d 53 00 40 5a 4d 53        S./ZMS..ZMS.@ZMS
+0030: 00 4f 5a 4d 53 00 2d 5a 4d 53 ff f6 5a 4d 53 00        .OZMS.-ZMS..ZMS.
+0040: 12 5a 4d 53 00 62 5a 4d 53 00 0b 5a 4d 53 ff e3        .ZMS.bZMS..ZMS..
+0050: 5a 4d 53 00 08 5a 4d 53 00 14 5a 4d 53 ff e1 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff fb 5a 4d 53 00 37 5a 4d 53 00 60 5a 4d        MS..ZMS.7ZMS.`ZM
+0070: 53 00 28 5a 4d 53 00 2f 5a 4d 53 00 3e 5a 4d 53        S.(ZMS./ZMS.>ZMS
+0080: 00 43 5a 4d 53 00 0e 5a 4d 53 00 1b 5a 4d 53 00        .CZMS..ZMS..ZMS.
+0090: 14 5a 4d 53 00 1b 5a 4d 53 00 53 5a 4d 53 00 42        .ZMS..ZMS.SZMS.B
+00a0: 5a 4d 53 00 1a 5a 4d 53 ff f2 5a 4d 53 00 04 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 1b 5a 4d 53 ff f1 5a 4d 53 00 2c 5a 4d        MS..ZMS..ZMS.,ZM
+00c0: 53 ff f1 5a 4d 53 00 38 5a 4d 53 00 61 5a 4d 53        S..ZMS.8ZMS.aZMS
+00d0: 00 4e 5a 4d 53 00 0b 5a 4d 53 ff fc 5a 4d 53 00        .NZMS..ZMS..ZMS.
+00e0: 2c 5a 4d 53 00 53 5a 4d 53 00 41 5a 4d 53 00 51        ,ZMS.SZMS.AZMS.Q
+00f0: 5a 4d 53 00 48 5a 4d 53 00 2f 5a 4d 53 00 60 5a        ZMS.HZMS./ZMS.`Z
+0100: 5a 4d 53 00 5c 5a 4d 53 ff f1 5a 4d 53 00              ZMS.\ZMS..ZMS.
+-------
+> ZMS\ZMSZMSPZMSZMS'ZMSZMS/ZMSZMS@ZMSOZMS-ZMSZMSZMSbZMSZMSZMSZMSZMSZMSZMS7ZMS`ZMS(ZMS/ZMS>ZMSCZMSZMSZMSZMSZMSSZMSBZMSZMSZMSZMSZMSZMS,ZMSZMS8ZMSaZMSNZMSZMSZMS,ZMSSZMSAZMSQZMSHZMS/ZMS`ZZMS\ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714002
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  23427m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f4 5a 4d 53 00 41 5a 4d 53 00 50 5a        ZMS..ZMS.AZMS.PZ
+0010: 4d 53 00 02 5a 4d 53 00 2e 5a 4d 53 00 21 5a 4d        MS..ZMS..ZMS.!ZM
+0020: 53 00 5f 5a 4d 53 00 13 5a 4d 53 ff e3 5a 4d 53        S._ZMS..ZMS..ZMS
+0030: 00 34 5a 4d 53 ff ff 5a 4d 53 ff d9 5a 4d 53 00        .4ZMS..ZMS..ZMS.
+0040: 0a 5a 4d 53 ff f1 5a 4d 53 00 3b 5a 4d 53 00 31        .ZMS..ZMS.;ZMS.1
+0050: 5a 4d 53 00 3e 5a 4d 53 ff d4 5a 4d 53 00 4b 5a        ZMS.>ZMS..ZMS.KZ
+0060: 4d 53 00 3e 5a 4d 53 ff db 5a 4d 53 00 5b 5a 4d        MS.>ZMS..ZMS.[ZM
+0070: 53 ff f1 5a 4d 53 00 41 5a 4d 53 00 30 5a 4d 53        S..ZMS.AZMS.0ZMS
+0080: 00 04 5a 4d 53 ff dc 5a 4d 53 00 26 5a 4d 53 00        ..ZMS..ZMS.&ZMS.
+0090: 24 5a 4d 53 00 11 5a 4d 53 00 51 5a 4d 53 ff e1        $ZMS..ZMS.QZMS..
+00a0: 5a 4d 53 ff e8 5a 4d 53 ff fa 5a 4d 53 00 62 5a        ZMS..ZMS..ZMS.bZ
+00b0: 4d 53 00 27 5a 4d 53 00 08 5a 4d 53 00 39 5a 4d        MS.'ZMS..ZMS.9ZM
+00c0: 53 ff d9 5a 4d 53 00 20 5a 4d 53 00 36 5a 4d 53        S..ZMS. ZMS.6ZMS
+00d0: 00 4d 5a 4d 53 ff f2 5a 4d 53 00 31 5a 4d 53 00        .MZMS..ZMS.1ZMS.
+00e0: 2b 5a 4d 53 00 27 5a 4d 53 ff da 5a 4d 53 ff eb        +ZMS.'ZMS..ZMS..
+00f0: 5a 4d 53 00 1b 5a 4d 53 00 31 5a 4d 53 00 0a 5a        ZMS..ZMS.1ZMS..Z
+0100: 5a 4d 53 ff f4 5a 4d 53 00 41 5a 4d 53 00              ZMS..ZMS.AZMS.
+-------
+> ZMSZMSAZMSPZMSZMS.ZMS!ZMS_ZMSZMSZMS4ZMSZMSZMSZMSZMS;ZMS1ZMS>ZMSZMSKZMS>ZMSZMS[ZMSZMSAZMS0ZMSZMSZMS&ZMS$ZMSZMSQZMSZMSZMSZMSbZMS'ZMSZMS9ZMSZMS ZMS6ZMSMZMSZMS1ZMS+ZMS'ZMSZMSZMSZMS1ZMSZZMSZMSAZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714111
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  24267m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 31 5a 4d 53 ff e6 5a 4d 53 00 02 5a        ZMS.1ZMS..ZMS..Z
+0010: 4d 53 00 29 5a 4d 53 ff e9 5a 4d 53 00 4d 5a 4d        MS.)ZMS..ZMS.MZM
+0020: 53 00 32 5a 4d 53 00 57 5a 4d 53 ff d5 5a 4d 53        S.2ZMS.WZMS..ZMS
+0030: ff e6 5a 4d 53 00 38 5a 4d 53 00 3e 5a 4d 53 00        ..ZMS.8ZMS.>ZMS.
+0040: 15 5a 4d 53 00 53 5a 4d 53 ff d6 5a 4d 53 ff d7        .ZMS.SZMS..ZMS..
+0050: 5a 4d 53 00 22 5a 4d 53 00 58 5a 4d 53 ff d3 5a        ZMS."ZMS.XZMS..Z
+0060: 4d 53 00 28 5a 4d 53 ff d7 5a 4d 53 00 1a 5a 4d        MS.(ZMS..ZMS..ZM
+0070: 53 00 24 5a 4d 53 00 00 5a 4d 53 00 16 5a 4d 53        S.$ZMS..ZMS..ZMS
+0080: ff ea 5a 4d 53 ff e2 5a 4d 53 00 16 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: f3 5a 4d 53 ff d3 5a 4d 53 00 3b 5a 4d 53 ff e9        .ZMS..ZMS.;ZMS..
+00a0: 5a 4d 53 ff e4 5a 4d 53 00 44 5a 4d 53 00 42 5a        ZMS..ZMS.DZMS.BZ
+00b0: 4d 53 00 3b 5a 4d 53 00 23 5a 4d 53 00 57 5a 4d        MS.;ZMS.#ZMS.WZM
+00c0: 53 00 2a 5a 4d 53 00 22 5a 4d 53 ff f5 5a 4d 53        S.*ZMS."ZMS..ZMS
+00d0: 00 12 5a 4d 53 00 29 5a 4d 53 ff e5 5a 4d 53 ff        ..ZMS.)ZMS..ZMS.
+00e0: f9 5a 4d 53 00 0d 5a 4d 53 00 04 5a 4d 53 ff f5        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 ff e3 5a 4d 53 ff e1 5a 4d 53 ff df 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 31 5a 4d 53 ff e6 5a 4d 53 00              ZMS.1ZMS..ZMS.
+-------
+> ZMS1ZMSZMSZMS)ZMSZMSMZMS2ZMSWZMSZMSZMS8ZMS>ZMSZMSSZMSZMSZMS"ZMSXZMSZMS(ZMSZMSZMS$ZMSZMSZMSZMSZMSZMSZMSZMS;ZMSZMSZMSDZMSBZMS;ZMS#ZMSWZMS*ZMS"ZMSZMSZMS)ZMSZMSZMSZMSZMSZMSZMSZMSZZMS1ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714228
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  25107m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 49 5a 4d 53 00 48 5a 4d 53 00 5e 5a        ZMS.IZMS.HZMS.^Z
+0010: 4d 53 ff ea 5a 4d 53 00 59 5a 4d 53 ff eb 5a 4d        MS..ZMS.YZMS..ZM
+0020: 53 00 38 5a 4d 53 00 18 5a 4d 53 ff e5 5a 4d 53        S.8ZMS..ZMS..ZMS
+0030: ff e2 5a 4d 53 00 42 5a 4d 53 00 3b 5a 4d 53 ff        ..ZMS.BZMS.;ZMS.
+0040: dd 5a 4d 53 ff e5 5a 4d 53 00 33 5a 4d 53 ff ed        .ZMS..ZMS.3ZMS..
+0050: 5a 4d 53 00 1f 5a 4d 53 ff f6 5a 4d 53 ff dd 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 54 5a 4d 53 00 62 5a 4d 53 ff e0 5a 4d        MS.TZMS.bZMS..ZM
+0070: 53 ff f2 5a 4d 53 ff d3 5a 4d 53 00 35 5a 4d 53        S..ZMS..ZMS.5ZMS
+0080: ff d7 5a 4d 53 00 51 5a 4d 53 ff f7 5a 4d 53 ff        ..ZMS.QZMS..ZMS.
+0090: d9 5a 4d 53 00 39 5a 4d 53 00 00 5a 4d 53 00 44        .ZMS.9ZMS..ZMS.D
+00a0: 5a 4d 53 00 3a 5a 4d 53 ff dc 5a 4d 53 ff ff 5a        ZMS.:ZMS..ZMS..Z
+00b0: 4d 53 ff ef 5a 4d 53 00 2b 5a 4d 53 00 16 5a 4d        MS..ZMS.+ZMS..ZM
+00c0: 53 00 1d 5a 4d 53 ff ef 5a 4d 53 00 35 5a 4d 53        S..ZMS..ZMS.5ZMS
+00d0: 00 5a 5a 4d 53 00 33 5a 4d 53 00 0a 5a 4d 53 ff        .ZZMS.3ZMS..ZMS.
+00e0: e2 5a 4d 53 00 4e 5a 4d 53 00 5f 5a 4d 53 00 30        .ZMS.NZMS._ZMS.0
+00f0: 5a 4d 53 00 20 5a 4d 53 ff ea 5a 4d 53 00 13 5a        ZMS. ZMS..ZMS..Z
+0100: 5a 4d 53 00 49 5a 4d 53 00 48 5a 4d 53 00              ZMS.IZMS.HZMS.
+-------
+> ZMSIZMSHZMS^ZMSZMSYZMSZMS8ZMSZMSZMSZMSBZMS;ZMSZMSZMS3ZMSZMSZMSZMSZMSTZMSbZMSZMSZMSZMS5ZMSZMSQZMSZMSZMS9ZMSZMSDZMS:ZMSZMSZMSZMS+ZMSZMSZMSZMS5ZMSZZMS3ZMSZMSZMSNZMS_ZMS0ZMS ZMSZMSZZMSIZMSHZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714326
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  25947m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 0d 5a 4d 53 00 2f 5a 4d 53 00 43 5a        ZMS..ZMS./ZMS.CZ
+0010: 4d 53 00 5b 5a 4d 53 00 41 5a 4d 53 00 34 5a 4d        MS.[ZMS.AZMS.4ZM
+0020: 53 00 4c 5a 4d 53 00 4c 5a 4d 53 00 23 5a 4d 53        S.LZMS.LZMS.#ZMS
+0030: ff ef 5a 4d 53 ff fc 5a 4d 53 00 11 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 19 5a 4d 53 00 3b 5a 4d 53 00 4d 5a 4d 53 00 1f        .ZMS.;ZMS.MZMS..
+0050: 5a 4d 53 00 42 5a 4d 53 ff db 5a 4d 53 00 28 5a        ZMS.BZMS..ZMS.(Z
+0060: 4d 53 00 31 5a 4d 53 00 51 5a 4d 53 00 21 5a 4d        MS.1ZMS.QZMS.!ZM
+0070: 53 ff e7 5a 4d 53 ff f2 5a 4d 53 00 3a 5a 4d 53        S..ZMS..ZMS.:ZMS
+0080: 00 0a 5a 4d 53 00 2b 5a 4d 53 00 42 5a 4d 53 00        ..ZMS.+ZMS.BZMS.
+0090: 36 5a 4d 53 00 17 5a 4d 53 ff f9 5a 4d 53 ff fb        6ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 07 5a 4d 53 00 3f 5a 4d 53 00 45 5a        ZMS..ZMS.?ZMS.EZ
+00b0: 4d 53 00 43 5a 4d 53 ff ec 5a 4d 53 00 04 5a 4d        MS.CZMS..ZMS..ZM
+00c0: 53 ff dd 5a 4d 53 ff e6 5a 4d 53 ff fc 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 57 5a 4d 53 00 29 5a 4d 53 00 46 5a 4d 53 00        .WZMS.)ZMS.FZMS.
+00e0: 59 5a 4d 53 00 3c 5a 4d 53 00 50 5a 4d 53 ff e0        YZMS.<ZMS.PZMS..
+00f0: 5a 4d 53 00 2f 5a 4d 53 00 0d 5a 4d 53 00 49 5a        ZMS./ZMS..ZMS.IZ
+0100: 5a 4d 53 00 0d 5a 4d 53 00 2f 5a 4d 53 00              ZMS..ZMS./ZMS.
+-------
+> ZMSZMS/ZMSCZMS[ZMSAZMS4ZMSLZMSLZMS#ZMSZMSZMSZMSZMS;ZMSMZMSZMSBZMSZMS(ZMS1ZMSQZMS!ZMSZMSZMS:ZMSZMS+ZMSBZMS6ZMSZMSZMSZMSZMS?ZMSEZMSCZMSZMSZMSZMSZMSZMSWZMS)ZMSFZMSYZMS<ZMSPZMSZMS/ZMSZMSIZZMSZMS/ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714434
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26619m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff e0 5a 4d 53 ff d3 5a 4d 53 00 4a 5a        ZMS..ZMS..ZMS.JZ
+0010: 4d 53 00 58 5a 4d 53 00 26 5a 4d 53 00 38 5a 4d        MS.XZMS.&ZMS.8ZM
+0020: 53 00 0f 5a 4d 53 ff e6 5a 4d 53 ff d4 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 00 5a 4d 53 00 37 5a 4d 53 00 49 5a 4d 53 00        ..ZMS.7ZMS.IZMS.
+0040: 48 5a 4d 53 00 10 5a 4d 53 ff d2 5a 4d 53 00 0a        HZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 40 5a 4d 53 ff f5 5a 4d 53 00 58 5a        ZMS.@ZMS..ZMS.XZ
+0060: 4d 53 ff d4 5a 4d 53 ff f8 5a 4d 53 00 03 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 25 5a 4d 53 00 12 5a 4d 53 ff f5 5a 4d 53        S.%ZMS..ZMS..ZMS
+0080: ff eb 5a 4d 53 ff e3 5a 4d 53 ff eb 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 09 5a 4d 53 00 27 5a 4d 53 00 0d 5a 4d 53 ff eb        .ZMS.'ZMS..ZMS..
+00a0: 5a 4d 53 00 10 5a 4d 53 00 52 5a 4d 53 ff e3 5a        ZMS..ZMS.RZMS..Z
+00b0: 4d 53 00 14 5a 4d 53 ff d3 5a 4d 53 ff fc 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 56 5a 4d 53 00 50 5a 4d 53 00 4a 5a 4d 53        S.VZMS.PZMS.JZMS
+00d0: 00 41 5a 4d 53 00 13 5a 4d 53 00 50 5a 4d 53 ff        .AZMS..ZMS.PZMS.
+00e0: f3 5a 4d 53 ff de 5a 4d 53 00 04 5a 4d 53 00 1a        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 08 5a 4d 53 ff d0 5a 4d 53 00 38 5a        ZMS..ZMS..ZMS.8Z
+0100: 5a 4d 53 ff e0 5a 4d 53 ff d3 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSJZMSXZMS&ZMS8ZMSZMSZMSZMSZMS7ZMSIZMSHZMSZMSZMSZMS@ZMSZMSXZMSZMSZMSZMS%ZMSZMSZMSZMSZMSZMSZMS'ZMSZMSZMSZMSRZMSZMSZMSZMSZMSVZMSPZMSJZMSAZMSZMSPZMSZMSZMSZMSZMSZMSZMS8ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714542
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  27459m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 47 5a 4d 53 00 1d 5a 4d 53 00 4f 5a        ZMS.GZMS..ZMS.OZ
+0010: 4d 53 00 4c 5a 4d 53 00 03 5a 4d 53 00 62 5a 4d        MS.LZMS..ZMS.bZM
+0020: 53 00 56 5a 4d 53 00 11 5a 4d 53 00 47 5a 4d 53        S.VZMS..ZMS.GZMS
+0030: 00 48 5a 4d 53 00 2a 5a 4d 53 00 52 5a 4d 53 ff        .HZMS.*ZMS.RZMS.
+0040: ee 5a 4d 53 00 4e 5a 4d 53 00 33 5a 4d 53 00 1b        .ZMS.NZMS.3ZMS..
+0050: 5a 4d 53 00 21 5a 4d 53 00 5f 5a 4d 53 00 0f 5a        ZMS.!ZMS._ZMS..Z
+0060: 4d 53 ff f5 5a 4d 53 00 2c 5a 4d 53 00 4a 5a 4d        MS..ZMS.,ZMS.JZM
+0070: 53 00 3d 5a 4d 53 00 07 5a 4d 53 00 46 5a 4d 53        S.=ZMS..ZMS.FZMS
+0080: 00 5b 5a 4d 53 00 2c 5a 4d 53 00 4e 5a 4d 53 ff        .[ZMS.,ZMS.NZMS.
+0090: e0 5a 4d 53 00 26 5a 4d 53 00 2d 5a 4d 53 00 4d        .ZMS.&ZMS.-ZMS.M
+00a0: 5a 4d 53 00 5f 5a 4d 53 00 23 5a 4d 53 00 03 5a        ZMS._ZMS.#ZMS..Z
+00b0: 4d 53 00 22 5a 4d 53 00 60 5a 4d 53 ff d4 5a 4d        MS."ZMS.`ZMS..ZM
+00c0: 53 00 17 5a 4d 53 00 27 5a 4d 53 00 0d 5a 4d 53        S..ZMS.'ZMS..ZMS
+00d0: 00 3b 5a 4d 53 ff da 5a 4d 53 00 5e 5a 4d 53 00        .;ZMS..ZMS.^ZMS.
+00e0: 00 5a 4d 53 00 12 5a 4d 53 00 0e 5a 4d 53 00 0b        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 48 5a 4d 53 00 3c 5a 4d 53 ff f1 5a        ZMS.HZMS.<ZMS..Z
+0100: 5a 4d 53 00 47 5a 4d 53 00 1d 5a 4d 53 00              ZMS.GZMS..ZMS.
+-------
+> ZMSGZMSZMSOZMSLZMSZMSbZMSVZMSZMSGZMSHZMS*ZMSRZMSZMSNZMS3ZMSZMS!ZMS_ZMSZMSZMS,ZMSJZMS=ZMSZMSFZMS[ZMS,ZMSNZMSZMS&ZMS-ZMSMZMS_ZMS#ZMSZMS"ZMS`ZMSZMSZMS'ZMSZMS;ZMSZMS^ZMSZMSZMSZMSZMSHZMS<ZMSZZMSGZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714650
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  28307m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 2e 5a 4d 53 00 36 5a 4d 53 00 0f 5a        ZMS..ZMS.6ZMS..Z
+0010: 4d 53 00 57 5a 4d 53 ff ef 5a 4d 53 00 50 5a 4d        MS.WZMS..ZMS.PZM
+0020: 53 ff d8 5a 4d 53 ff fa 5a 4d 53 00 35 5a 4d 53        S..ZMS..ZMS.5ZMS
+0030: ff de 5a 4d 53 00 63 5a 4d 53 00 02 5a 4d 53 ff        ..ZMS.cZMS..ZMS.
+0040: fb 5a 4d 53 00 4c 5a 4d 53 00 16 5a 4d 53 00 3a        .ZMS.LZMS..ZMS.:
+0050: 5a 4d 53 ff ff 5a 4d 53 00 5a 5a 4d 53 00 40 5a        ZMS..ZMS.ZZMS.@Z
+0060: 4d 53 ff f4 5a 4d 53 00 0b 5a 4d 53 00 23 5a 4d        MS..ZMS..ZMS.#ZM
+0070: 53 ff d8 5a 4d 53 00 26 5a 4d 53 00 2f 5a 4d 53        S..ZMS.&ZMS./ZMS
+0080: 00 13 5a 4d 53 00 23 5a 4d 53 00 06 5a 4d 53 00        ..ZMS.#ZMS..ZMS.
+0090: 22 5a 4d 53 ff fc 5a 4d 53 00 18 5a 4d 53 ff e9        "ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 14 5a 4d 53 00 62 5a 4d 53 00 21 5a        ZMS..ZMS.bZMS.!Z
+00b0: 4d 53 00 4e 5a 4d 53 00 39 5a 4d 53 00 0d 5a 4d        MS.NZMS.9ZMS..ZM
+00c0: 53 ff f3 5a 4d 53 ff f8 5a 4d 53 00 45 5a 4d 53        S..ZMS..ZMS.EZMS
+00d0: ff fd 5a 4d 53 00 59 5a 4d 53 00 09 5a 4d 53 00        ..ZMS.YZMS..ZMS.
+00e0: 25 5a 4d 53 00 2f 5a 4d 53 00 36 5a 4d 53 00 24        %ZMS./ZMS.6ZMS.$
+00f0: 5a 4d 53 ff df 5a 4d 53 ff d5 5a 4d 53 ff f1 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 2e 5a 4d 53 00 36 5a 4d 53 00              ZMS..ZMS.6ZMS.
+-------
+> ZMS.ZMS6ZMSZMSWZMSZMSPZMSZMSZMS5ZMSZMScZMSZMSZMSLZMSZMS:ZMSZMSZZMS@ZMSZMSZMS#ZMSZMS&ZMS/ZMSZMS#ZMSZMS"ZMSZMSZMSZMSZMSbZMS!ZMSNZMS9ZMSZMSZMSZMSEZMSZMSYZMSZMS%ZMS/ZMS6ZMS$ZMSZMSZMSZZMS.ZMS6ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714758
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  28979m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff e9 5a 4d 53 ff e1 5a 4d 53 00 36 5a        ZMS..ZMS..ZMS.6Z
+0010: 4d 53 00 48 5a 4d 53 ff d1 5a 4d 53 ff ef 5a 4d        MS.HZMS..ZMS..ZM
+0020: 53 00 4e 5a 4d 53 ff f3 5a 4d 53 00 42 5a 4d 53        S.NZMS..ZMS.BZMS
+0030: 00 0b 5a 4d 53 ff f3 5a 4d 53 00 46 5a 4d 53 ff        ..ZMS..ZMS.FZMS.
+0040: ee 5a 4d 53 00 4e 5a 4d 53 00 43 5a 4d 53 ff dc        .ZMS.NZMS.CZMS..
+0050: 5a 4d 53 ff d2 5a 4d 53 00 45 5a 4d 53 ff d3 5a        ZMS..ZMS.EZMS..Z
+0060: 4d 53 00 06 5a 4d 53 ff db 5a 4d 53 00 56 5a 4d        MS..ZMS..ZMS.VZM
+0070: 53 00 01 5a 4d 53 ff d3 5a 4d 53 00 12 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: 00 17 5a 4d 53 ff f4 5a 4d 53 00 1e 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: ec 5a 4d 53 00 2f 5a 4d 53 ff d9 5a 4d 53 00 4d        .ZMS./ZMS..ZMS.M
+00a0: 5a 4d 53 00 19 5a 4d 53 00 0d 5a 4d 53 00 0e 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 34 5a 4d 53 ff d2 5a 4d 53 00 3f 5a 4d        MS.4ZMS..ZMS.?ZM
+00c0: 53 00 07 5a 4d 53 00 29 5a 4d 53 00 34 5a 4d 53        S..ZMS.)ZMS.4ZMS
+00d0: ff ec 5a 4d 53 00 0b 5a 4d 53 00 5d 5a 4d 53 00        ..ZMS..ZMS.]ZMS.
+00e0: 03 5a 4d 53 00 04 5a 4d 53 00 19 5a 4d 53 00 34        .ZMS..ZMS..ZMS.4
+00f0: 5a 4d 53 00 1c 5a 4d 53 00 5a 5a 4d 53 00 04 5a        ZMS..ZMS.ZZMS..Z
+0100: 5a 4d 53 ff e9 5a 4d 53 ff e1 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMS6ZMSHZMSZMSZMSNZMSZMSBZMSZMSZMSFZMSZMSNZMSCZMSZMSZMSEZMSZMSZMSZMSVZMSZMSZMSZMSZMSZMSZMSZMS/ZMSZMSMZMSZMSZMSZMS4ZMSZMS?ZMSZMS)ZMS4ZMSZMSZMS]ZMSZMSZMSZMS4ZMSZMSZZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714866
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  29819m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff dc 5a 4d 53 00 3e 5a 4d 53 ff ed 5a        ZMS..ZMS.>ZMS..Z
+0010: 4d 53 00 0f 5a 4d 53 00 0c 5a 4d 53 ff d0 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 2b 5a 4d 53 ff ed 5a 4d 53 ff e4 5a 4d 53        S.+ZMS..ZMS..ZMS
+0030: ff d4 5a 4d 53 00 31 5a 4d 53 00 4c 5a 4d 53 ff        ..ZMS.1ZMS.LZMS.
+0040: db 5a 4d 53 00 09 5a 4d 53 00 55 5a 4d 53 00 61        .ZMS..ZMS.UZMS.a
+0050: 5a 4d 53 00 15 5a 4d 53 ff d6 5a 4d 53 00 13 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 3d 5a 4d 53 ff da 5a 4d 53 00 60 5a 4d        MS.=ZMS..ZMS.`ZM
+0070: 53 00 55 5a 4d 53 00 58 5a 4d 53 00 0d 5a 4d 53        S.UZMS.XZMS..ZMS
+0080: 00 0a 5a 4d 53 00 0b 5a 4d 53 00 3c 5a 4d 53 ff        ..ZMS..ZMS.<ZMS.
+0090: df 5a 4d 53 00 28 5a 4d 53 ff ed 5a 4d 53 ff e7        .ZMS.(ZMS..ZMS..
+00a0: 5a 4d 53 00 63 5a 4d 53 00 0a 5a 4d 53 00 1c 5a        ZMS.cZMS..ZMS..Z
+00b0: 4d 53 00 27 5a 4d 53 ff da 5a 4d 53 ff d2 5a 4d        MS.'ZMS..ZMS..ZM
+00c0: 53 ff fc 5a 4d 53 00 1d 5a 4d 53 00 07 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 2a 5a 4d 53 00 4e 5a 4d 53 ff dc 5a 4d 53 00        .*ZMS.NZMS..ZMS.
+00e0: 07 5a 4d 53 ff f9 5a 4d 53 00 1d 5a 4d 53 00 54        .ZMS..ZMS..ZMS.T
+00f0: 5a 4d 53 00 26 5a 4d 53 00 17 5a 4d 53 00 3b 5a        ZMS.&ZMS..ZMS.;Z
+0100: 5a 4d 53 ff dc 5a 4d 53 00 3e 5a 4d 53 ff              ZMS..ZMS.>ZMS.
+-------
+> ZMSZMS>ZMSZMSZMSZMSZMS+ZMSZMSZMSZMS1ZMSLZMSZMSZMSUZMSaZMSZMSZMSZMS=ZMSZMS`ZMSUZMSXZMSZMSZMSZMS<ZMSZMS(ZMSZMSZMScZMSZMSZMS'ZMSZMSZMSZMSZMSZMS*ZMSNZMSZMSZMSZMSZMSTZMS&ZMSZMS;ZZMSZMS>ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714974
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  30659m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 53 5a 4d 53 00 5f 5a 4d 53 ff f3 5a        ZMS.SZMS._ZMS..Z
+0010: 4d 53 ff e3 5a 4d 53 00 02 5a 4d 53 00 1f 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 19 5a 4d 53 00 19 5a 4d 53 00 16 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: ff dc 5a 4d 53 ff d2 5a 4d 53 00 03 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 0c 5a 4d 53 00 24 5a 4d 53 ff e5 5a 4d 53 ff ef        .ZMS.$ZMS..ZMS..
+0050: 5a 4d 53 00 3d 5a 4d 53 ff d5 5a 4d 53 00 4e 5a        ZMS.=ZMS..ZMS.NZ
+0060: 4d 53 00 3c 5a 4d 53 00 2e 5a 4d 53 ff d5 5a 4d        MS.<ZMS..ZMS..ZM
+0070: 53 00 4c 5a 4d 53 ff f1 5a 4d 53 00 48 5a 4d 53        S.LZMS..ZMS.HZMS
+0080: 00 63 5a 4d 53 00 1d 5a 4d 53 00 63 5a 4d 53 ff        .cZMS..ZMS.cZMS.
+0090: f8 5a 4d 53 ff dd 5a 4d 53 00 4b 5a 4d 53 00 63        .ZMS..ZMS.KZMS.c
+00a0: 5a 4d 53 ff fe 5a 4d 53 00 20 5a 4d 53 ff f0 5a        ZMS..ZMS. ZMS..Z
+00b0: 4d 53 ff e6 5a 4d 53 00 45 5a 4d 53 ff e9 5a 4d        MS..ZMS.EZMS..ZM
+00c0: 53 ff db 5a 4d 53 00 0f 5a 4d 53 00 27 5a 4d 53        S..ZMS..ZMS.'ZMS
+00d0: 00 0e 5a 4d 53 ff e2 5a 4d 53 00 45 5a 4d 53 00        ..ZMS..ZMS.EZMS.
+00e0: 5e 5a 4d 53 ff e2 5a 4d 53 ff e9 5a 4d 53 ff e0        ^ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 ff d7 5a 4d 53 00 5f 5a 4d 53 00 4f 5a        ZMS..ZMS._ZMS.OZ
+0100: 5a 4d 53 00 53 5a 4d 53 00 5f 5a 4d 53 ff              ZMS.SZMS._ZMS.
+-------
+> ZMSSZMS_ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMS$ZMSZMSZMS=ZMSZMSNZMS<ZMS.ZMSZMSLZMSZMSHZMScZMSZMScZMSZMSZMSKZMScZMSZMS ZMSZMSZMSEZMSZMSZMSZMS'ZMSZMSZMSEZMS^ZMSZMSZMSZMSZMS_ZMSOZZMSSZMS_ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715082
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  31331m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 5e 5a 4d 53 ff ff 5a 4d 53 ff f4 5a        ZMS.^ZMS..ZMS..Z
+0010: 4d 53 00 61 5a 4d 53 00 19 5a 4d 53 ff e8 5a 4d        MS.aZMS..ZMS..ZM
+0020: 53 ff ce 5a 4d 53 00 37 5a 4d 53 00 2a 5a 4d 53        S..ZMS.7ZMS.*ZMS
+0030: 00 28 5a 4d 53 00 15 5a 4d 53 00 49 5a 4d 53 ff        .(ZMS..ZMS.IZMS.
+0040: fe 5a 4d 53 00 4c 5a 4d 53 ff e1 5a 4d 53 00 4d        .ZMS.LZMS..ZMS.M
+0050: 5a 4d 53 00 2b 5a 4d 53 00 26 5a 4d 53 ff ed 5a        ZMS.+ZMS.&ZMS..Z
+0060: 4d 53 00 3e 5a 4d 53 ff ed 5a 4d 53 00 4a 5a 4d        MS.>ZMS..ZMS.JZM
+0070: 53 ff dc 5a 4d 53 00 34 5a 4d 53 00 48 5a 4d 53        S..ZMS.4ZMS.HZMS
+0080: 00 1e 5a 4d 53 00 29 5a 4d 53 00 52 5a 4d 53 00        ..ZMS.)ZMS.RZMS.
+0090: 5c 5a 4d 53 ff fd 5a 4d 53 ff f0 5a 4d 53 ff eb        \ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 ff f5 5a 4d 53 00 07 5a 4d 53 00 32 5a        ZMS..ZMS..ZMS.2Z
+00b0: 4d 53 00 01 5a 4d 53 00 3e 5a 4d 53 00 08 5a 4d        MS..ZMS.>ZMS..ZM
+00c0: 53 ff ec 5a 4d 53 00 1d 5a 4d 53 ff f6 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: ff d2 5a 4d 53 ff f1 5a 4d 53 ff de 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+00e0: 61 5a 4d 53 ff f6 5a 4d 53 00 53 5a 4d 53 ff de        aZMS..ZMS.SZMS..
+00f0: 5a 4d 53 00 3b 5a 4d 53 00 63 5a 4d 53 00 54 5a        ZMS.;ZMS.cZMS.TZ
+0100: 5a 4d 53 00 5e 5a 4d 53 ff ff 5a 4d 53 ff              ZMS.^ZMS..ZMS.
+-------
+> ZMS^ZMSZMSZMSaZMSZMSZMSZMS7ZMS*ZMS(ZMSZMSIZMSZMSLZMSZMSMZMS+ZMS&ZMSZMS>ZMSZMSJZMSZMS4ZMSHZMSZMS)ZMSRZMS\ZMSZMSZMSZMSZMSZMS2ZMSZMS>ZMSZMSZMSZMSZMSZMSZMSZMSaZMSZMSSZMSZMS;ZMScZMSTZZMS^ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715192
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  32155m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff fb 5a 4d 53 00 5f 5a 4d 53 ff ea 5a        ZMS..ZMS._ZMS..Z
+0010: 4d 53 ff cf 5a 4d 53 00 44 5a 4d 53 00 4c 5a 4d        MS..ZMS.DZMS.LZM
+0020: 53 ff f8 5a 4d 53 ff fd 5a 4d 53 00 3d 5a 4d 53        S..ZMS..ZMS.=ZMS
+0030: 00 16 5a 4d 53 ff d3 5a 4d 53 00 52 5a 4d 53 00        ..ZMS..ZMS.RZMS.
+0040: 0b 5a 4d 53 00 52 5a 4d 53 ff d6 5a 4d 53 00 2d        .ZMS.RZMS..ZMS.-
+0050: 5a 4d 53 00 4b 5a 4d 53 ff d1 5a 4d 53 00 46 5a        ZMS.KZMS..ZMS.FZ
+0060: 4d 53 00 10 5a 4d 53 ff dc 5a 4d 53 00 54 5a 4d        MS..ZMS..ZMS.TZM
+0070: 53 00 58 5a 4d 53 00 33 5a 4d 53 00 43 5a 4d 53        S.XZMS.3ZMS.CZMS
+0080: ff e1 5a 4d 53 ff d6 5a 4d 53 00 63 5a 4d 53 00        ..ZMS..ZMS.cZMS.
+0090: 5c 5a 4d 53 ff d6 5a 4d 53 00 24 5a 4d 53 ff f7        \ZMS..ZMS.$ZMS..
+00a0: 5a 4d 53 ff f5 5a 4d 53 00 3d 5a 4d 53 ff d9 5a        ZMS..ZMS.=ZMS..Z
+00b0: 4d 53 ff fe 5a 4d 53 00 0a 5a 4d 53 ff f8 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff eb 5a 4d 53 00 3b 5a 4d 53 00 5b 5a 4d 53        S..ZMS.;ZMS.[ZMS
+00d0: 00 3c 5a 4d 53 00 50 5a 4d 53 00 28 5a 4d 53 ff        .<ZMS.PZMS.(ZMS.
+00e0: fd 5a 4d 53 00 17 5a 4d 53 00 5a 5a 4d 53 00 01        .ZMS..ZMS.ZZMS..
+00f0: 5a 4d 53 00 2f 5a 4d 53 00 35 5a 4d 53 ff d0 5a        ZMS./ZMS.5ZMS..Z
+0100: 5a 4d 53 ff fb 5a 4d 53 00 5f 5a 4d 53 ff              ZMS..ZMS._ZMS.
+-------
+> ZMSZMS_ZMSZMSZMSDZMSLZMSZMSZMS=ZMSZMSZMSRZMSZMSRZMSZMS-ZMSKZMSZMSFZMSZMSZMSTZMSXZMS3ZMSCZMSZMSZMScZMS\ZMSZMS$ZMSZMSZMS=ZMSZMSZMSZMSZMSZMS;ZMS[ZMS<ZMSPZMS(ZMSZMSZMSZZMSZMS/ZMS5ZMSZZMSZMS_ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715308
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  32955m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 2f 5a 4d 53 00 0d 5a 4d 53 00 26 5a        ZMS./ZMS..ZMS.&Z
+0010: 4d 53 ff e4 5a 4d 53 00 18 5a 4d 53 00 46 5a 4d        MS..ZMS..ZMS.FZM
+0020: 53 ff cf 5a 4d 53 ff ec 5a 4d 53 ff f0 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 42 5a 4d 53 00 5d 5a 4d 53 00 3a 5a 4d 53 00        .BZMS.]ZMS.:ZMS.
+0040: 2e 5a 4d 53 00 33 5a 4d 53 ff d8 5a 4d 53 00 54        .ZMS.3ZMS..ZMS.T
+0050: 5a 4d 53 00 30 5a 4d 53 ff de 5a 4d 53 00 27 5a        ZMS.0ZMS..ZMS.'Z
+0060: 4d 53 ff ec 5a 4d 53 ff ce 5a 4d 53 00 4a 5a 4d        MS..ZMS..ZMS.JZM
+0070: 53 ff d1 5a 4d 53 00 4c 5a 4d 53 ff d8 5a 4d 53        S..ZMS.LZMS..ZMS
+0080: 00 19 5a 4d 53 00 04 5a 4d 53 ff f0 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 0c 5a 4d 53 00 1a 5a 4d 53 00 08 5a 4d 53 00 5d        .ZMS..ZMS..ZMS.]
+00a0: 5a 4d 53 ff dd 5a 4d 53 00 0b 5a 4d 53 ff dc 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff ff 5a 4d 53 00 52 5a 4d 53 00 26 5a 4d        MS..ZMS.RZMS.&ZM
+00c0: 53 00 1e 5a 4d 53 00 16 5a 4d 53 ff f4 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 4f 5a 4d 53 00 19 5a 4d 53 00 02 5a 4d 53 00        .OZMS..ZMS..ZMS.
+00e0: 59 5a 4d 53 00 0e 5a 4d 53 00 63 5a 4d 53 00 20        YZMS..ZMS.cZMS. 
+00f0: 5a 4d 53 00 27 5a 4d 53 00 4c 5a 4d 53 00 07 5a        ZMS.'ZMS.LZMS..Z
+0100: 5a 4d 53 00 2f 5a 4d 53 00 0d 5a 4d 53 00              ZMS./ZMS..ZMS.
+-------
+> ZMS/ZMSZMS&ZMSZMSZMSFZMSZMSZMSZMSBZMS]ZMS:ZMS.ZMS3ZMSZMSTZMS0ZMSZMS'ZMSZMSZMSJZMSZMSLZMSZMSZMSZMSZMSZMSZMSZMS]ZMSZMSZMSZMSZMSRZMS&ZMSZMSZMSZMSOZMSZMSZMSYZMSZMScZMS ZMS'ZMSLZMSZZMS/ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715406
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  33763m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 07 5a 4d 53 ff cf 5a 4d 53 00 14 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 51 5a 4d 53 00 14 5a 4d 53 ff df 5a 4d        MS.QZMS..ZMS..ZM
+0020: 53 00 51 5a 4d 53 ff fd 5a 4d 53 ff d7 5a 4d 53        S.QZMS..ZMS..ZMS
+0030: 00 3b 5a 4d 53 ff df 5a 4d 53 ff ee 5a 4d 53 00        .;ZMS..ZMS..ZMS.
+0040: 12 5a 4d 53 00 39 5a 4d 53 ff d2 5a 4d 53 ff e7        .ZMS.9ZMS..ZMS..
+0050: 5a 4d 53 00 0f 5a 4d 53 ff e7 5a 4d 53 00 12 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 5d 5a 4d 53 00 30 5a 4d 53 ff ce 5a 4d        MS.]ZMS.0ZMS..ZM
+0070: 53 ff e7 5a 4d 53 00 0e 5a 4d 53 00 09 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff f7 5a 4d 53 ff fe 5a 4d 53 00 2f 5a 4d 53 00        ..ZMS..ZMS./ZMS.
+0090: 1d 5a 4d 53 00 10 5a 4d 53 00 52 5a 4d 53 00 4d        .ZMS..ZMS.RZMS.M
+00a0: 5a 4d 53 00 05 5a 4d 53 00 27 5a 4d 53 ff e5 5a        ZMS..ZMS.'ZMS..Z
+00b0: 4d 53 00 41 5a 4d 53 00 4d 5a 4d 53 00 60 5a 4d        MS.AZMS.MZMS.`ZM
+00c0: 53 00 41 5a 4d 53 ff f0 5a 4d 53 00 0c 5a 4d 53        S.AZMS..ZMS..ZMS
+00d0: 00 56 5a 4d 53 ff d4 5a 4d 53 00 58 5a 4d 53 00        .VZMS..ZMS.XZMS.
+00e0: 32 5a 4d 53 00 4f 5a 4d 53 00 63 5a 4d 53 ff d1        2ZMS.OZMS.cZMS..
+00f0: 5a 4d 53 00 09 5a 4d 53 00 45 5a 4d 53 00 18 5a        ZMS..ZMS.EZMS..Z
+0100: 5a 4d 53 00 07 5a 4d 53 ff cf 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSQZMSZMSZMSQZMSZMSZMS;ZMSZMSZMSZMS9ZMSZMSZMSZMSZMSZMS]ZMS0ZMSZMSZMSZMSZMSZMSZMS/ZMSZMSZMSRZMSMZMSZMS'ZMSZMSAZMSMZMS`ZMSAZMSZMSZMSVZMSZMSXZMS2ZMSOZMScZMSZMSZMSEZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715514
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  34387m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff cf 5a 4d 53 00 1b 5a 4d 53 00 61 5a        ZMS..ZMS..ZMS.aZ
+0010: 4d 53 00 13 5a 4d 53 ff eb 5a 4d 53 ff de 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 0f 5a 4d 53 ff f1 5a 4d 53 00 17 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 40 5a 4d 53 00 37 5a 4d 53 ff f6 5a 4d 53 ff        .@ZMS.7ZMS..ZMS.
+0040: e5 5a 4d 53 00 27 5a 4d 53 00 63 5a 4d 53 00 32        .ZMS.'ZMS.cZMS.2
+0050: 5a 4d 53 00 0d 5a 4d 53 00 00 5a 4d 53 ff e2 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 30 5a 4d 53 00 02 5a 4d 53 00 40 5a 4d        MS.0ZMS..ZMS.@ZM
+0070: 53 00 1d 5a 4d 53 ff fd 5a 4d 53 ff ea 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff ef 5a 4d 53 00 34 5a 4d 53 00 20 5a 4d 53 00        ..ZMS.4ZMS. ZMS.
+0090: 5e 5a 4d 53 ff e9 5a 4d 53 00 2b 5a 4d 53 00 06        ^ZMS..ZMS.+ZMS..
+00a0: 5a 4d 53 00 30 5a 4d 53 00 0b 5a 4d 53 00 63 5a        ZMS.0ZMS..ZMS.cZ
+00b0: 4d 53 00 5c 5a 4d 53 ff d7 5a 4d 53 00 2c 5a 4d        MS.\ZMS..ZMS.,ZM
+00c0: 53 00 27 5a 4d 53 00 35 5a 4d 53 00 57 5a 4d 53        S.'ZMS.5ZMS.WZMS
+00d0: 00 14 5a 4d 53 00 12 5a 4d 53 00 25 5a 4d 53 00        ..ZMS..ZMS.%ZMS.
+00e0: 42 5a 4d 53 00 17 5a 4d 53 ff f9 5a 4d 53 ff d2        BZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 19 5a 4d 53 00 13 5a 4d 53 00 03 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 ff cf 5a 4d 53 00 1b 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSaZMSZMSZMSZMSZMSZMSZMS@ZMS7ZMSZMSZMS'ZMScZMS2ZMSZMSZMSZMS0ZMSZMS@ZMSZMSZMSZMSZMS4ZMS ZMS^ZMSZMS+ZMSZMS0ZMSZMScZMS\ZMSZMS,ZMS'ZMS5ZMSWZMSZMSZMS%ZMSBZMSZMSZMSZMSZMSZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715838
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  28818m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 18 5a 4d 53 ff ea 5a 4d 53 ff fc 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 ff f7 5a 4d 53 ff f2 5a 4d 53 ff ce 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 2c 5a 4d 53 00 10 5a 4d 53 ff f0 5a 4d 53        S.,ZMS..ZMS..ZMS
+0030: 00 56 5a 4d 53 ff f2 5a 4d 53 00 20 5a 4d 53 00        .VZMS..ZMS. ZMS.
+0040: 03 5a 4d 53 00 1f 5a 4d 53 00 4d 5a 4d 53 00 37        .ZMS..ZMS.MZMS.7
+0050: 5a 4d 53 00 27 5a 4d 53 00 03 5a 4d 53 00 46 5a        ZMS.'ZMS..ZMS.FZ
+0060: 4d 53 ff ff 5a 4d 53 ff df 5a 4d 53 00 15 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff f1 5a 4d 53 ff e0 5a 4d 53 ff f2 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: 00 35 5a 4d 53 00 52 5a 4d 53 00 4f 5a 4d 53 00        .5ZMS.RZMS.OZMS.
+0090: 30 5a 4d 53 00 23 5a 4d 53 00 20 5a 4d 53 00 52        0ZMS.#ZMS. ZMS.R
+00a0: 5a 4d 53 ff f7 5a 4d 53 00 0a 5a 4d 53 00 25 5a        ZMS..ZMS..ZMS.%Z
+00b0: 4d 53 00 2f 5a 4d 53 ff fc 5a 4d 53 00 14 5a 4d        MS./ZMS..ZMS..ZM
+00c0: 53 ff e5 5a 4d 53 00 05 5a 4d 53 ff e4 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: ff f4 5a 4d 53 00 5a 5a 4d 53 00 09 5a 4d 53 00        ..ZMS.ZZMS..ZMS.
+00e0: 01 5a 4d 53 00 51 5a 4d 53 00 55 5a 4d 53 00 5e        .ZMS.QZMS.UZMS.^
+00f0: 5a 4d 53 ff eb 5a 4d 53 00 43 5a 4d 53 00 04 5a        ZMS..ZMS.CZMS..Z
+0100: 5a 4d 53 00 18 5a 4d 53 ff ea 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMSZMSZMS,ZMSZMSZMSVZMSZMS ZMSZMSZMSMZMS7ZMS'ZMSZMSFZMSZMSZMSZMSZMSZMSZMS5ZMSRZMSOZMS0ZMS#ZMS ZMSRZMSZMSZMS%ZMS/ZMSZMSZMSZMSZMSZMSZMSZZMSZMSZMSQZMSUZMS^ZMSZMSCZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715946
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26422m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 1d 5a 4d 53 00 38 5a 4d 53 ff ff 5a        ZMS..ZMS.8ZMS..Z
+0010: 4d 53 00 41 5a 4d 53 00 5e 5a 4d 53 ff e6 5a 4d        MS.AZMS.^ZMS..ZM
+0020: 53 00 39 5a 4d 53 00 17 5a 4d 53 00 49 5a 4d 53        S.9ZMS..ZMS.IZMS
+0030: ff ce 5a 4d 53 00 31 5a 4d 53 00 42 5a 4d 53 00        ..ZMS.1ZMS.BZMS.
+0040: 0d 5a 4d 53 ff ee 5a 4d 53 ff d6 5a 4d 53 ff ff        .ZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 21 5a 4d 53 00 0f 5a 4d 53 00 1b 5a        ZMS.!ZMS..ZMS..Z
+0060: 4d 53 00 0c 5a 4d 53 ff f3 5a 4d 53 ff f5 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 23 5a 4d 53 00 3f 5a 4d 53 00 1d 5a 4d 53        S.#ZMS.?ZMS..ZMS
+0080: 00 1b 5a 4d 53 00 2b 5a 4d 53 ff e0 5a 4d 53 00        ..ZMS.+ZMS..ZMS.
+0090: 01 5a 4d 53 00 34 5a 4d 53 00 39 5a 4d 53 00 3d        .ZMS.4ZMS.9ZMS.=
+00a0: 5a 4d 53 00 49 5a 4d 53 00 5b 5a 4d 53 00 20 5a        ZMS.IZMS.[ZMS. Z
+00b0: 4d 53 00 0c 5a 4d 53 00 18 5a 4d 53 ff e3 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff f8 5a 4d 53 ff ee 5a 4d 53 00 36 5a 4d 53        S..ZMS..ZMS.6ZMS
+00d0: ff d0 5a 4d 53 ff f7 5a 4d 53 00 61 5a 4d 53 00        ..ZMS..ZMS.aZMS.
+00e0: 36 5a 4d 53 ff d6 5a 4d 53 ff fa 5a 4d 53 00 3e        6ZMS..ZMS..ZMS.>
+00f0: 5a 4d 53 ff ee 5a 4d 53 00 21 5a 4d 53 00 40 5a        ZMS..ZMS.!ZMS.@Z
+0100: 5a 4d 53 00 1d 5a 4d 53 00 38 5a 4d 53 ff              ZMS..ZMS.8ZMS.
+-------
+> ZMSZMS8ZMSZMSAZMS^ZMSZMS9ZMSZMSIZMSZMS1ZMSBZMSZMSZMSZMSZMS!ZMSZMSZMSZMSZMSZMS#ZMS?ZMSZMSZMS+ZMSZMSZMS4ZMS9ZMS=ZMSIZMS[ZMS ZMSZMSZMSZMSZMSZMS6ZMSZMSZMSaZMS6ZMSZMSZMS>ZMSZMS!ZMS@ZZMSZMS8ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716054
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  24326m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f5 5a 4d 53 00 07 5a 4d 53 00 26 5a        ZMS..ZMS..ZMS.&Z
+0010: 4d 53 00 5a 5a 4d 53 ff dd 5a 4d 53 00 5e 5a 4d        MS.ZZMS..ZMS.^ZM
+0020: 53 00 17 5a 4d 53 00 5b 5a 4d 53 00 2b 5a 4d 53        S..ZMS.[ZMS.+ZMS
+0030: 00 4d 5a 4d 53 00 27 5a 4d 53 00 21 5a 4d 53 00        .MZMS.'ZMS.!ZMS.
+0040: 0d 5a 4d 53 ff e0 5a 4d 53 00 36 5a 4d 53 00 38        .ZMS..ZMS.6ZMS.8
+0050: 5a 4d 53 00 18 5a 4d 53 00 4b 5a 4d 53 ff cf 5a        ZMS..ZMS.KZMS..Z
+0060: 4d 53 00 01 5a 4d 53 ff fe 5a 4d 53 00 0c 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 03 5a 4d 53 00 20 5a 4d 53 00 3c 5a 4d 53        S..ZMS. ZMS.<ZMS
+0080: 00 61 5a 4d 53 00 38 5a 4d 53 ff d1 5a 4d 53 00        .aZMS.8ZMS..ZMS.
+0090: 45 5a 4d 53 00 23 5a 4d 53 00 5f 5a 4d 53 ff f1        EZMS.#ZMS._ZMS..
+00a0: 5a 4d 53 00 34 5a 4d 53 00 4b 5a 4d 53 00 2b 5a        ZMS.4ZMS.KZMS.+Z
+00b0: 4d 53 ff f3 5a 4d 53 00 0f 5a 4d 53 00 05 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 4f 5a 4d 53 ff cf 5a 4d 53 00 08 5a 4d 53        S.OZMS..ZMS..ZMS
+00d0: 00 12 5a 4d 53 ff ef 5a 4d 53 00 1d 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+00e0: e9 5a 4d 53 ff d1 5a 4d 53 00 11 5a 4d 53 00 24        .ZMS..ZMS..ZMS.$
+00f0: 5a 4d 53 00 5f 5a 4d 53 ff da 5a 4d 53 00 1e 5a        ZMS._ZMS..ZMS..Z
+0100: 5a 4d 53 ff f5 5a 4d 53 00 07 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMS&ZMSZZMSZMS^ZMSZMS[ZMS+ZMSMZMS'ZMS!ZMSZMSZMS6ZMS8ZMSZMSKZMSZMSZMSZMSZMSZMS ZMS<ZMSaZMS8ZMSZMSEZMS#ZMS_ZMSZMS4ZMSKZMS+ZMSZMSZMSZMSOZMSZMSZMSZMSZMSZMSZMSZMSZMS$ZMS_ZMSZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716162
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  22801m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f9 5a 4d 53 00 27 5a 4d 53 00 2a 5a        ZMS..ZMS.'ZMS.*Z
+0010: 4d 53 00 1d 5a 4d 53 ff e4 5a 4d 53 ff e1 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 ff d2 5a 4d 53 00 14 5a 4d 53 00 51 5a 4d 53        S..ZMS..ZMS.QZMS
+0030: 00 4c 5a 4d 53 00 3b 5a 4d 53 00 4e 5a 4d 53 00        .LZMS.;ZMS.NZMS.
+0040: 29 5a 4d 53 00 62 5a 4d 53 00 03 5a 4d 53 00 41        )ZMS.bZMS..ZMS.A
+0050: 5a 4d 53 ff f6 5a 4d 53 00 0c 5a 4d 53 00 44 5a        ZMS..ZMS..ZMS.DZ
+0060: 4d 53 00 22 5a 4d 53 00 42 5a 4d 53 00 44 5a 4d        MS."ZMS.BZMS.DZM
+0070: 53 00 55 5a 4d 53 00 28 5a 4d 53 ff e3 5a 4d 53        S.UZMS.(ZMS..ZMS
+0080: 00 5e 5a 4d 53 00 5c 5a 4d 53 00 46 5a 4d 53 00        .^ZMS.\ZMS.FZMS.
+0090: 4b 5a 4d 53 00 16 5a 4d 53 00 2f 5a 4d 53 00 28        KZMS..ZMS./ZMS.(
+00a0: 5a 4d 53 00 1b 5a 4d 53 00 61 5a 4d 53 00 62 5a        ZMS..ZMS.aZMS.bZ
+00b0: 4d 53 00 00 5a 4d 53 ff fa 5a 4d 53 ff f3 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 4f 5a 4d 53 00 3f 5a 4d 53 00 08 5a 4d 53        S.OZMS.?ZMS..ZMS
+00d0: 00 39 5a 4d 53 00 1f 5a 4d 53 00 26 5a 4d 53 00        .9ZMS..ZMS.&ZMS.
+00e0: 4d 5a 4d 53 ff d7 5a 4d 53 00 5f 5a 4d 53 00 4f        MZMS..ZMS._ZMS.O
+00f0: 5a 4d 53 00 30 5a 4d 53 00 47 5a 4d 53 00 5e 5a        ZMS.0ZMS.GZMS.^Z
+0100: 5a 4d 53 ff f9 5a 4d 53 00 27 5a 4d 53 00              ZMS..ZMS.'ZMS.
+-------
+> ZMSZMS'ZMS*ZMSZMSZMSZMSZMSZMSQZMSLZMS;ZMSNZMS)ZMSbZMSZMSAZMSZMSZMSDZMS"ZMSBZMSDZMSUZMS(ZMSZMS^ZMS\ZMSFZMSKZMSZMS/ZMS(ZMSZMSaZMSbZMSZMSZMSZMSOZMS?ZMSZMS9ZMSZMS&ZMSMZMSZMS_ZMSOZMS0ZMSGZMS^ZZMSZMS'ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716273
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21125m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff d9 5a 4d 53 00 1a 5a 4d 53 00 60 5a        ZMS..ZMS..ZMS.`Z
+0010: 4d 53 00 03 5a 4d 53 ff e8 5a 4d 53 ff e7 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 23 5a 4d 53 00 5d 5a 4d 53 ff f7 5a 4d 53        S.#ZMS.]ZMS..ZMS
+0030: 00 1e 5a 4d 53 00 1a 5a 4d 53 00 1d 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 2e 5a 4d 53 00 48 5a 4d 53 ff d3 5a 4d 53 ff ee        .ZMS.HZMS..ZMS..
+0050: 5a 4d 53 00 3d 5a 4d 53 00 55 5a 4d 53 00 11 5a        ZMS.=ZMS.UZMS..Z
+0060: 4d 53 00 1d 5a 4d 53 00 18 5a 4d 53 00 03 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff f7 5a 4d 53 00 50 5a 4d 53 ff cf 5a 4d 53        S..ZMS.PZMS..ZMS
+0080: ff f6 5a 4d 53 00 1b 5a 4d 53 00 43 5a 4d 53 ff        ..ZMS..ZMS.CZMS.
+0090: e2 5a 4d 53 ff d6 5a 4d 53 00 0e 5a 4d 53 ff d0        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 00 03 5a 4d 53 ff db 5a 4d 53 00 42 5a        ZMS..ZMS..ZMS.BZ
+00b0: 4d 53 00 3e 5a 4d 53 00 4e 5a 4d 53 00 44 5a 4d        MS.>ZMS.NZMS.DZM
+00c0: 53 00 2b 5a 4d 53 00 4e 5a 4d 53 00 22 5a 4d 53        S.+ZMS.NZMS."ZMS
+00d0: 00 08 5a 4d 53 00 59 5a 4d 53 00 2b 5a 4d 53 00        ..ZMS.YZMS.+ZMS.
+00e0: 2e 5a 4d 53 ff e9 5a 4d 53 00 47 5a 4d 53 00 32        .ZMS..ZMS.GZMS.2
+00f0: 5a 4d 53 00 1a 5a 4d 53 00 21 5a 4d 53 00 5b 5a        ZMS..ZMS.!ZMS.[Z
+0100: 5a 4d 53 ff d9 5a 4d 53 00 1a 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMS`ZMSZMSZMSZMS#ZMS]ZMSZMSZMSZMSZMS.ZMSHZMSZMSZMS=ZMSUZMSZMSZMSZMSZMSZMSPZMSZMSZMSZMSCZMSZMSZMSZMSZMSZMSZMSBZMS>ZMSNZMSDZMS+ZMSNZMS"ZMSZMSYZMS+ZMS.ZMSZMSGZMS2ZMSZMS!ZMS[ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716388
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  19571m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 36 5a 4d 53 00 25 5a 4d 53 00 3e 5a        ZMS.6ZMS.%ZMS.>Z
+0010: 4d 53 00 1d 5a 4d 53 00 13 5a 4d 53 00 5c 5a 4d        MS..ZMS..ZMS.\ZM
+0020: 53 ff d3 5a 4d 53 ff e9 5a 4d 53 00 29 5a 4d 53        S..ZMS..ZMS.)ZMS
+0030: 00 37 5a 4d 53 00 4b 5a 4d 53 ff f9 5a 4d 53 ff        .7ZMS.KZMS..ZMS.
+0040: f4 5a 4d 53 ff dc 5a 4d 53 00 12 5a 4d 53 00 62        .ZMS..ZMS..ZMS.b
+0050: 5a 4d 53 ff ea 5a 4d 53 ff f6 5a 4d 53 ff db 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 00 5c 5a 4d 53 ff e8 5a 4d 53 00 05 5a 4d        MS.\ZMS..ZMS..ZM
+0070: 53 00 25 5a 4d 53 00 57 5a 4d 53 ff d5 5a 4d 53        S.%ZMS.WZMS..ZMS
+0080: 00 5b 5a 4d 53 ff f0 5a 4d 53 ff fe 5a 4d 53 00        .[ZMS..ZMS..ZMS.
+0090: 34 5a 4d 53 00 42 5a 4d 53 00 3b 5a 4d 53 00 1a        4ZMS.BZMS.;ZMS..
+00a0: 5a 4d 53 00 5c 5a 4d 53 00 36 5a 4d 53 00 0f 5a        ZMS.\ZMS.6ZMS..Z
+00b0: 4d 53 ff f8 5a 4d 53 00 21 5a 4d 53 00 3c 5a 4d        MS..ZMS.!ZMS.<ZM
+00c0: 53 ff f2 5a 4d 53 ff ec 5a 4d 53 ff f8 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 0a 5a 4d 53 ff f7 5a 4d 53 00 23 5a 4d 53 ff        ..ZMS..ZMS.#ZMS.
+00e0: d7 5a 4d 53 00 24 5a 4d 53 ff dc 5a 4d 53 00 43        .ZMS.$ZMS..ZMS.C
+00f0: 5a 4d 53 00 4e 5a 4d 53 00 05 5a 4d 53 00 29 5a        ZMS.NZMS..ZMS.)Z
+0100: 5a 4d 53 00 36 5a 4d 53 00 25 5a 4d 53 00              ZMS.6ZMS.%ZMS.
+-------
+> ZMS6ZMS%ZMS>ZMSZMSZMS\ZMSZMSZMS)ZMS7ZMSKZMSZMSZMSZMSZMSbZMSZMSZMSZMS\ZMSZMSZMS%ZMSWZMSZMS[ZMSZMSZMS4ZMSBZMS;ZMSZMS\ZMS6ZMSZMSZMS!ZMS<ZMSZMSZMSZMSZMSZMS#ZMSZMS$ZMSZMSCZMSNZMSZMS)ZZMS6ZMS%ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716486
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18148m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 3a 5a 4d 53 ff fc 5a 4d 53 ff df 5a        ZMS.:ZMS..ZMS..Z
+0010: 4d 53 00 02 5a 4d 53 ff e4 5a 4d 53 00 4d 5a 4d        MS..ZMS..ZMS.MZM
+0020: 53 00 2b 5a 4d 53 ff de 5a 4d 53 00 5d 5a 4d 53        S.+ZMS..ZMS.]ZMS
+0030: 00 1d 5a 4d 53 00 3e 5a 4d 53 00 1f 5a 4d 53 ff        ..ZMS.>ZMS..ZMS.
+0040: ff 5a 4d 53 00 39 5a 4d 53 00 52 5a 4d 53 00 43        .ZMS.9ZMS.RZMS.C
+0050: 5a 4d 53 ff ce 5a 4d 53 ff df 5a 4d 53 00 26 5a        ZMS..ZMS..ZMS.&Z
+0060: 4d 53 00 1e 5a 4d 53 00 18 5a 4d 53 00 18 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 08 5a 4d 53 00 33 5a 4d 53 00 05 5a 4d 53        S..ZMS.3ZMS..ZMS
+0080: ff d3 5a 4d 53 00 00 5a 4d 53 00 3d 5a 4d 53 00        ..ZMS..ZMS.=ZMS.
+0090: 29 5a 4d 53 00 14 5a 4d 53 00 45 5a 4d 53 00 28        )ZMS..ZMS.EZMS.(
+00a0: 5a 4d 53 00 4f 5a 4d 53 00 63 5a 4d 53 00 39 5a        ZMS.OZMS.cZMS.9Z
+00b0: 4d 53 00 42 5a 4d 53 00 3c 5a 4d 53 00 5d 5a 4d        MS.BZMS.<ZMS.]ZM
+00c0: 53 ff f2 5a 4d 53 00 5b 5a 4d 53 00 5d 5a 4d 53        S..ZMS.[ZMS.]ZMS
+00d0: 00 0e 5a 4d 53 ff ed 5a 4d 53 00 24 5a 4d 53 00        ..ZMS..ZMS.$ZMS.
+00e0: 23 5a 4d 53 00 36 5a 4d 53 00 46 5a 4d 53 00 38        #ZMS.6ZMS.FZMS.8
+00f0: 5a 4d 53 00 49 5a 4d 53 ff df 5a 4d 53 ff e2 5a        ZMS.IZMS..ZMS..Z
+0100: 5a 4d 53 00 3a 5a 4d 53 ff fc 5a 4d 53 ff              ZMS.:ZMS..ZMS.
+-------
+> ZMS:ZMSZMSZMSZMSZMSMZMS+ZMSZMS]ZMSZMS>ZMSZMSZMS9ZMSRZMSCZMSZMSZMS&ZMSZMSZMSZMSZMS3ZMSZMSZMSZMS=ZMS)ZMSZMSEZMS(ZMSOZMScZMS9ZMSBZMS<ZMS]ZMSZMS[ZMS]ZMSZMSZMS$ZMS#ZMS6ZMSFZMS8ZMSIZMSZMSZZMS:ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716595
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17092m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 0e 5a 4d 53 00 28 5a 4d 53 00 55 5a        ZMS..ZMS.(ZMS.UZ
+0010: 4d 53 ff e3 5a 4d 53 00 56 5a 4d 53 00 00 5a 4d        MS..ZMS.VZMS..ZM
+0020: 53 00 63 5a 4d 53 ff f5 5a 4d 53 00 38 5a 4d 53        S.cZMS..ZMS.8ZMS
+0030: 00 23 5a 4d 53 00 36 5a 4d 53 00 43 5a 4d 53 ff        .#ZMS.6ZMS.CZMS.
+0040: f5 5a 4d 53 ff f1 5a 4d 53 00 52 5a 4d 53 00 36        .ZMS..ZMS.RZMS.6
+0050: 5a 4d 53 00 3c 5a 4d 53 00 40 5a 4d 53 00 4d 5a        ZMS.<ZMS.@ZMS.MZ
+0060: 4d 53 ff fe 5a 4d 53 00 63 5a 4d 53 00 3b 5a 4d        MS..ZMS.cZMS.;ZM
+0070: 53 00 49 5a 4d 53 00 19 5a 4d 53 00 36 5a 4d 53        S.IZMS..ZMS.6ZMS
+0080: 00 40 5a 4d 53 00 04 5a 4d 53 ff f2 5a 4d 53 ff        .@ZMS..ZMS..ZMS.
+0090: d1 5a 4d 53 ff ea 5a 4d 53 00 47 5a 4d 53 00 12        .ZMS..ZMS.GZMS..
+00a0: 5a 4d 53 ff f2 5a 4d 53 00 61 5a 4d 53 00 23 5a        ZMS..ZMS.aZMS.#Z
+00b0: 4d 53 00 54 5a 4d 53 00 38 5a 4d 53 00 12 5a 4d        MS.TZMS.8ZMS..ZM
+00c0: 53 00 15 5a 4d 53 00 3a 5a 4d 53 ff d7 5a 4d 53        S..ZMS.:ZMS..ZMS
+00d0: 00 03 5a 4d 53 00 0e 5a 4d 53 00 60 5a 4d 53 ff        ..ZMS..ZMS.`ZMS.
+00e0: ed 5a 4d 53 00 1c 5a 4d 53 ff fc 5a 4d 53 00 4f        .ZMS..ZMS..ZMS.O
+00f0: 5a 4d 53 00 4f 5a 4d 53 00 2d 5a 4d 53 00 61 5a        ZMS.OZMS.-ZMS.aZ
+0100: 5a 4d 53 00 0e 5a 4d 53 00 28 5a 4d 53 00              ZMS..ZMS.(ZMS.
+-------
+> ZMSZMS(ZMSUZMSZMSVZMSZMScZMSZMS8ZMS#ZMS6ZMSCZMSZMSZMSRZMS6ZMS<ZMS@ZMSMZMSZMScZMS;ZMSIZMSZMS6ZMS@ZMSZMSZMSZMSZMSGZMSZMSZMSaZMS#ZMSTZMS8ZMSZMSZMS:ZMSZMSZMSZMS`ZMSZMSZMSZMSOZMSOZMS-ZMSaZZMSZMS(ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716703
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15858m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff e6 5a 4d 53 00 3a 5a 4d 53 00 61 5a        ZMS..ZMS.:ZMS.aZ
+0010: 4d 53 ff cf 5a 4d 53 00 01 5a 4d 53 00 2b 5a 4d        MS..ZMS..ZMS.+ZM
+0020: 53 00 23 5a 4d 53 00 39 5a 4d 53 ff e4 5a 4d 53        S.#ZMS.9ZMS..ZMS
+0030: ff db 5a 4d 53 00 2c 5a 4d 53 ff ef 5a 4d 53 00        ..ZMS.,ZMS..ZMS.
+0040: 3f 5a 4d 53 ff e6 5a 4d 53 ff ed 5a 4d 53 00 56        ?ZMS..ZMS..ZMS.V
+0050: 5a 4d 53 ff d1 5a 4d 53 00 1c 5a 4d 53 00 57 5a        ZMS..ZMS..ZMS.WZ
+0060: 4d 53 00 15 5a 4d 53 00 5b 5a 4d 53 ff f3 5a 4d        MS..ZMS.[ZMS..ZM
+0070: 53 00 12 5a 4d 53 ff f5 5a 4d 53 00 24 5a 4d 53        S..ZMS..ZMS.$ZMS
+0080: 00 59 5a 4d 53 00 59 5a 4d 53 ff e4 5a 4d 53 00        .YZMS.YZMS..ZMS.
+0090: 32 5a 4d 53 00 51 5a 4d 53 00 59 5a 4d 53 00 0c        2ZMS.QZMS.YZMS..
+00a0: 5a 4d 53 ff ef 5a 4d 53 00 3f 5a 4d 53 ff f3 5a        ZMS..ZMS.?ZMS..Z
+00b0: 4d 53 00 46 5a 4d 53 00 10 5a 4d 53 00 1c 5a 4d        MS.FZMS..ZMS..ZM
+00c0: 53 00 45 5a 4d 53 00 52 5a 4d 53 00 1e 5a 4d 53        S.EZMS.RZMS..ZMS
+00d0: 00 15 5a 4d 53 ff f6 5a 4d 53 00 1b 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+00e0: 5b 5a 4d 53 ff d9 5a 4d 53 00 40 5a 4d 53 00 1d        [ZMS..ZMS.@ZMS..
+00f0: 5a 4d 53 00 54 5a 4d 53 00 5e 5a 4d 53 00 55 5a        ZMS.TZMS.^ZMS.UZ
+0100: 5a 4d 53 ff e6 5a 4d 53 00 3a 5a 4d 53 00              ZMS..ZMS.:ZMS.
+-------
+> ZMSZMS:ZMSaZMSZMSZMS+ZMS#ZMS9ZMSZMSZMS,ZMSZMS?ZMSZMSZMSVZMSZMSZMSWZMSZMS[ZMSZMSZMSZMS$ZMSYZMSYZMSZMS2ZMSQZMSYZMSZMSZMS?ZMSZMSFZMSZMSZMSEZMSRZMSZMSZMSZMSZMS[ZMSZMS@ZMSZMSTZMS^ZMSUZZMSZMS:ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716811
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14697m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 15 5a 4d 53 00 2f 5a 4d 53 00 16 5a        ZMS..ZMS./ZMS..Z
+0010: 4d 53 00 30 5a 4d 53 00 01 5a 4d 53 00 51 5a 4d        MS.0ZMS..ZMS.QZM
+0020: 53 00 50 5a 4d 53 00 00 5a 4d 53 ff fe 5a 4d 53        S.PZMS..ZMS..ZMS
+0030: 00 04 5a 4d 53 00 58 5a 4d 53 ff d3 5a 4d 53 00        ..ZMS.XZMS..ZMS.
+0040: 29 5a 4d 53 00 14 5a 4d 53 00 42 5a 4d 53 00 1b        )ZMS..ZMS.BZMS..
+0050: 5a 4d 53 00 07 5a 4d 53 00 09 5a 4d 53 00 1e 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff f7 5a 4d 53 00 35 5a 4d 53 00 33 5a 4d        MS..ZMS.5ZMS.3ZM
+0070: 53 00 23 5a 4d 53 00 43 5a 4d 53 00 24 5a 4d 53        S.#ZMS.CZMS.$ZMS
+0080: 00 61 5a 4d 53 00 62 5a 4d 53 00 10 5a 4d 53 00        .aZMS.bZMS..ZMS.
+0090: 09 5a 4d 53 ff ef 5a 4d 53 ff e6 5a 4d 53 ff eb        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 ff ea 5a 4d 53 00 62 5a 4d 53 00 5d 5a        ZMS..ZMS.bZMS.]Z
+00b0: 4d 53 ff e2 5a 4d 53 ff f4 5a 4d 53 ff f2 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff e8 5a 4d 53 ff f1 5a 4d 53 00 54 5a 4d 53        S..ZMS..ZMS.TZMS
+00d0: 00 0a 5a 4d 53 00 60 5a 4d 53 00 2b 5a 4d 53 ff        ..ZMS.`ZMS.+ZMS.
+00e0: d7 5a 4d 53 00 22 5a 4d 53 00 1c 5a 4d 53 ff e7        .ZMS."ZMS..ZMS..
+00f0: 5a 4d 53 00 3f 5a 4d 53 ff e6 5a 4d 53 00 4a 5a        ZMS.?ZMS..ZMS.JZ
+0100: 5a 4d 53 00 15 5a 4d 53 00 2f 5a 4d 53 00              ZMS..ZMS./ZMS.
+-------
+> ZMSZMS/ZMSZMS0ZMSZMSQZMSPZMSZMSZMSZMSXZMSZMS)ZMSZMSBZMSZMSZMSZMSZMSZMS5ZMS3ZMS#ZMSCZMS$ZMSaZMSbZMSZMSZMSZMSZMSZMSZMSbZMS]ZMSZMSZMSZMSZMSZMSTZMSZMS`ZMS+ZMSZMS"ZMSZMSZMS?ZMSZMSJZZMSZMS/ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716919
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  13853m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 48 5a 4d 53 ff d6 5a 4d 53 00 34 5a        ZMS.HZMS..ZMS.4Z
+0010: 4d 53 00 14 5a 4d 53 00 22 5a 4d 53 00 59 5a 4d        MS..ZMS."ZMS.YZM
+0020: 53 00 51 5a 4d 53 ff f2 5a 4d 53 00 5d 5a 4d 53        S.QZMS..ZMS.]ZMS
+0030: 00 30 5a 4d 53 00 29 5a 4d 53 00 34 5a 4d 53 ff        .0ZMS.)ZMS.4ZMS.
+0040: e4 5a 4d 53 00 10 5a 4d 53 00 31 5a 4d 53 ff ce        .ZMS..ZMS.1ZMS..
+0050: 5a 4d 53 00 5f 5a 4d 53 00 2d 5a 4d 53 00 0c 5a        ZMS._ZMS.-ZMS..Z
+0060: 4d 53 ff f4 5a 4d 53 00 18 5a 4d 53 00 17 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 02 5a 4d 53 00 16 5a 4d 53 00 44 5a 4d 53        S..ZMS..ZMS.DZMS
+0080: 00 59 5a 4d 53 00 31 5a 4d 53 00 08 5a 4d 53 00        .YZMS.1ZMS..ZMS.
+0090: 4c 5a 4d 53 00 10 5a 4d 53 00 3b 5a 4d 53 00 41        LZMS..ZMS.;ZMS.A
+00a0: 5a 4d 53 ff f9 5a 4d 53 00 0f 5a 4d 53 ff fc 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 4e 5a 4d 53 00 0b 5a 4d 53 00 01 5a 4d        MS.NZMS..ZMS..ZM
+00c0: 53 00 10 5a 4d 53 00 4d 5a 4d 53 00 01 5a 4d 53        S..ZMS.MZMS..ZMS
+00d0: 00 63 5a 4d 53 ff d8 5a 4d 53 00 21 5a 4d 53 00        .cZMS..ZMS.!ZMS.
+00e0: 60 5a 4d 53 00 1a 5a 4d 53 00 13 5a 4d 53 00 46        `ZMS..ZMS..ZMS.F
+00f0: 5a 4d 53 ff e9 5a 4d 53 ff ea 5a 4d 53 00 25 5a        ZMS..ZMS..ZMS.%Z
+0100: 5a 4d 53 00 48 5a 4d 53 ff d6 5a 4d 53 00              ZMS.HZMS..ZMS.
+-------
+> ZMSHZMSZMS4ZMSZMS"ZMSYZMSQZMSZMS]ZMS0ZMS)ZMS4ZMSZMSZMS1ZMSZMS_ZMS-ZMSZMSZMSZMSZMSZMSZMSDZMSYZMS1ZMSZMSLZMSZMS;ZMSAZMSZMSZMSZMSNZMSZMSZMSZMSMZMSZMScZMSZMS!ZMS`ZMSZMSZMSFZMSZMSZMS%ZZMSHZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717027
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12829m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f7 5a 4d 53 00 04 5a 4d 53 ff f9 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 ff f3 5a 4d 53 00 20 5a 4d 53 00 27 5a 4d        MS..ZMS. ZMS.'ZM
+0020: 53 00 5c 5a 4d 53 00 01 5a 4d 53 ff d6 5a 4d 53        S.\ZMS..ZMS..ZMS
+0030: 00 55 5a 4d 53 ff f7 5a 4d 53 ff e3 5a 4d 53 00        .UZMS..ZMS..ZMS.
+0040: 18 5a 4d 53 00 5d 5a 4d 53 00 0c 5a 4d 53 00 27        .ZMS.]ZMS..ZMS.'
+0050: 5a 4d 53 00 0a 5a 4d 53 00 2c 5a 4d 53 ff ed 5a        ZMS..ZMS.,ZMS..Z
+0060: 4d 53 00 39 5a 4d 53 00 4d 5a 4d 53 ff f3 5a 4d        MS.9ZMS.MZMS..ZM
+0070: 53 00 0b 5a 4d 53 00 62 5a 4d 53 00 33 5a 4d 53        S..ZMS.bZMS.3ZMS
+0080: 00 5f 5a 4d 53 ff ce 5a 4d 53 00 36 5a 4d 53 00        ._ZMS..ZMS.6ZMS.
+0090: 3a 5a 4d 53 00 63 5a 4d 53 00 35 5a 4d 53 ff d4        :ZMS.cZMS.5ZMS..
+00a0: 5a 4d 53 00 22 5a 4d 53 ff d2 5a 4d 53 00 40 5a        ZMS."ZMS..ZMS.@Z
+00b0: 4d 53 ff fa 5a 4d 53 ff ec 5a 4d 53 00 35 5a 4d        MS..ZMS..ZMS.5ZM
+00c0: 53 00 49 5a 4d 53 00 3d 5a 4d 53 00 0f 5a 4d 53        S.IZMS.=ZMS..ZMS
+00d0: 00 4b 5a 4d 53 00 1d 5a 4d 53 00 60 5a 4d 53 00        .KZMS..ZMS.`ZMS.
+00e0: 09 5a 4d 53 ff fb 5a 4d 53 ff d2 5a 4d 53 00 21        .ZMS..ZMS..ZMS.!
+00f0: 5a 4d 53 00 4e 5a 4d 53 00 50 5a 4d 53 ff d6 5a        ZMS.NZMS.PZMS..Z
+0100: 5a 4d 53 ff f7 5a 4d 53 00 04 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMS ZMS'ZMS\ZMSZMSZMSUZMSZMSZMSZMS]ZMSZMS'ZMSZMS,ZMSZMS9ZMSMZMSZMSZMSbZMS3ZMS_ZMSZMS6ZMS:ZMScZMS5ZMSZMS"ZMSZMS@ZMSZMSZMS5ZMSIZMS=ZMSZMSKZMSZMS`ZMSZMSZMSZMS!ZMSNZMSPZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717135
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11864m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 08 5a 4d 53 ff e2 5a 4d 53 00 05 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 ff f7 5a 4d 53 00 2a 5a 4d 53 ff d7 5a 4d        MS..ZMS.*ZMS..ZM
+0020: 53 00 3b 5a 4d 53 00 18 5a 4d 53 00 34 5a 4d 53        S.;ZMS..ZMS.4ZMS
+0030: 00 04 5a 4d 53 00 1d 5a 4d 53 00 2e 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 2a 5a 4d 53 00 5c 5a 4d 53 ff f0 5a 4d 53 ff ea        *ZMS.\ZMS..ZMS..
+0050: 5a 4d 53 ff f6 5a 4d 53 ff ed 5a 4d 53 00 0e 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff f5 5a 4d 53 00 17 5a 4d 53 00 11 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 4b 5a 4d 53 00 31 5a 4d 53 00 1e 5a 4d 53        S.KZMS.1ZMS..ZMS
+0080: ff d6 5a 4d 53 00 63 5a 4d 53 00 4e 5a 4d 53 ff        ..ZMS.cZMS.NZMS.
+0090: e5 5a 4d 53 00 16 5a 4d 53 00 5a 5a 4d 53 ff d6        .ZMS..ZMS.ZZMS..
+00a0: 5a 4d 53 ff f9 5a 4d 53 00 09 5a 4d 53 ff d1 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff eb 5a 4d 53 00 1e 5a 4d 53 00 34 5a 4d        MS..ZMS..ZMS.4ZM
+00c0: 53 00 1a 5a 4d 53 ff d3 5a 4d 53 00 40 5a 4d 53        S..ZMS..ZMS.@ZMS
+00d0: 00 05 5a 4d 53 00 01 5a 4d 53 00 51 5a 4d 53 ff        ..ZMS..ZMS.QZMS.
+00e0: fb 5a 4d 53 00 29 5a 4d 53 00 2f 5a 4d 53 00 5a        .ZMS.)ZMS./ZMS.Z
+00f0: 5a 4d 53 ff fb 5a 4d 53 ff d1 5a 4d 53 ff f8 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 08 5a 4d 53 ff e2 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMS*ZMSZMS;ZMSZMS4ZMSZMSZMS.ZMS*ZMS\ZMSZMSZMSZMSZMSZMSZMSZMSZMSKZMS1ZMSZMSZMScZMSNZMSZMSZMSZZMSZMSZMSZMSZMSZMSZMS4ZMSZMSZMS@ZMSZMSZMSQZMSZMS)ZMS/ZMSZZMSZMSZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717243
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11129m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff d1 5a 4d 53 00 17 5a 4d 53 00 4a 5a        ZMS..ZMS..ZMS.JZ
+0010: 4d 53 00 34 5a 4d 53 ff ff 5a 4d 53 00 4b 5a 4d        MS.4ZMS..ZMS.KZM
+0020: 53 00 40 5a 4d 53 ff d3 5a 4d 53 ff db 5a 4d 53        S.@ZMS..ZMS..ZMS
+0030: 00 11 5a 4d 53 00 61 5a 4d 53 00 42 5a 4d 53 ff        ..ZMS.aZMS.BZMS.
+0040: d6 5a 4d 53 00 13 5a 4d 53 00 39 5a 4d 53 ff dd        .ZMS..ZMS.9ZMS..
+0050: 5a 4d 53 00 10 5a 4d 53 00 54 5a 4d 53 ff fd 5a        ZMS..ZMS.TZMS..Z
+0060: 4d 53 00 00 5a 4d 53 00 2e 5a 4d 53 ff d1 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 20 5a 4d 53 ff fb 5a 4d 53 00 15 5a 4d 53        S. ZMS..ZMS..ZMS
+0080: ff eb 5a 4d 53 ff de 5a 4d 53 ff d9 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: ea 5a 4d 53 00 53 5a 4d 53 ff da 5a 4d 53 00 15        .ZMS.SZMS..ZMS..
+00a0: 5a 4d 53 00 0b 5a 4d 53 00 60 5a 4d 53 ff df 5a        ZMS..ZMS.`ZMS..Z
+00b0: 4d 53 00 0e 5a 4d 53 ff f0 5a 4d 53 00 13 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 29 5a 4d 53 00 51 5a 4d 53 00 50 5a 4d 53        S.)ZMS.QZMS.PZMS
+00d0: 00 57 5a 4d 53 ff e8 5a 4d 53 00 27 5a 4d 53 00        .WZMS..ZMS.'ZMS.
+00e0: 01 5a 4d 53 ff e6 5a 4d 53 00 2f 5a 4d 53 00 3d        .ZMS..ZMS./ZMS.=
+00f0: 5a 4d 53 00 3a 5a 4d 53 00 14 5a 4d 53 00 28 5a        ZMS.:ZMS..ZMS.(Z
+0100: 5a 4d 53 ff d1 5a 4d 53 00 17 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSJZMS4ZMSZMSKZMS@ZMSZMSZMSZMSaZMSBZMSZMSZMS9ZMSZMSZMSTZMSZMSZMS.ZMSZMS ZMSZMSZMSZMSZMSZMSZMSSZMSZMSZMSZMS`ZMSZMSZMSZMSZMS)ZMSQZMSPZMSWZMSZMS'ZMSZMSZMS/ZMS=ZMS:ZMSZMS(ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717353
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10295m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 22 5a 4d 53 00 4c 5a 4d 53 00 3f 5a        ZMS."ZMS.LZMS.?Z
+0010: 4d 53 00 4e 5a 4d 53 ff e8 5a 4d 53 00 19 5a 4d        MS.NZMS..ZMS..ZM
+0020: 53 00 60 5a 4d 53 00 20 5a 4d 53 00 35 5a 4d 53        S.`ZMS. ZMS.5ZMS
+0030: 00 55 5a 4d 53 00 1a 5a 4d 53 00 07 5a 4d 53 00        .UZMS..ZMS..ZMS.
+0040: 1b 5a 4d 53 00 4a 5a 4d 53 00 1a 5a 4d 53 ff e3        .ZMS.JZMS..ZMS..
+0050: 5a 4d 53 00 60 5a 4d 53 00 59 5a 4d 53 00 47 5a        ZMS.`ZMS.YZMS.GZ
+0060: 4d 53 00 29 5a 4d 53 ff e4 5a 4d 53 00 11 5a 4d        MS.)ZMS..ZMS..ZM
+0070: 53 00 2a 5a 4d 53 00 09 5a 4d 53 00 36 5a 4d 53        S.*ZMS..ZMS.6ZMS
+0080: 00 09 5a 4d 53 00 09 5a 4d 53 00 30 5a 4d 53 ff        ..ZMS..ZMS.0ZMS.
+0090: e7 5a 4d 53 00 10 5a 4d 53 00 5f 5a 4d 53 ff f2        .ZMS..ZMS._ZMS..
+00a0: 5a 4d 53 00 32 5a 4d 53 ff f9 5a 4d 53 00 2a 5a        ZMS.2ZMS..ZMS.*Z
+00b0: 4d 53 00 44 5a 4d 53 ff e2 5a 4d 53 ff f9 5a 4d        MS.DZMS..ZMS..ZM
+00c0: 53 ff dc 5a 4d 53 ff d0 5a 4d 53 00 38 5a 4d 53        S..ZMS..ZMS.8ZMS
+00d0: 00 59 5a 4d 53 00 0b 5a 4d 53 00 36 5a 4d 53 ff        .YZMS..ZMS.6ZMS.
+00e0: d7 5a 4d 53 ff f2 5a 4d 53 00 3b 5a 4d 53 00 5a        .ZMS..ZMS.;ZMS.Z
+00f0: 5a 4d 53 00 58 5a 4d 53 ff ff 5a 4d 53 00 1a 5a        ZMS.XZMS..ZMS..Z
+0100: 5a 4d 53 00 22 5a 4d 53 00 4c 5a 4d 53 00              ZMS."ZMS.LZMS.
+-------
+> ZMS"ZMSLZMS?ZMSNZMSZMSZMS`ZMS ZMS5ZMSUZMSZMSZMSZMSJZMSZMSZMS`ZMSYZMSGZMS)ZMSZMSZMS*ZMSZMS6ZMSZMSZMS0ZMSZMSZMS_ZMSZMS2ZMSZMS*ZMSDZMSZMSZMSZMSZMS8ZMSYZMSZMS6ZMSZMSZMS;ZMSZZMSXZMSZMSZZMS"ZMSLZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717468
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9481m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 19 5a 4d 53 ff fb 5a 4d 53 ff dd 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 62 5a 4d 53 00 02 5a 4d 53 ff f0 5a 4d        MS.bZMS..ZMS..ZM
+0020: 53 ff dc 5a 4d 53 00 52 5a 4d 53 00 30 5a 4d 53        S..ZMS.RZMS.0ZMS
+0030: 00 14 5a 4d 53 00 25 5a 4d 53 00 55 5a 4d 53 00        ..ZMS.%ZMS.UZMS.
+0040: 0b 5a 4d 53 00 2f 5a 4d 53 ff ee 5a 4d 53 ff fa        .ZMS./ZMS..ZMS..
+0050: 5a 4d 53 00 40 5a 4d 53 00 37 5a 4d 53 00 34 5a        ZMS.@ZMS.7ZMS.4Z
+0060: 4d 53 00 16 5a 4d 53 00 58 5a 4d 53 00 4e 5a 4d        MS..ZMS.XZMS.NZM
+0070: 53 00 57 5a 4d 53 00 4f 5a 4d 53 ff e6 5a 4d 53        S.WZMS.OZMS..ZMS
+0080: ff ce 5a 4d 53 00 04 5a 4d 53 ff f3 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 04 5a 4d 53 00 26 5a 4d 53 00 3d 5a 4d 53 ff e5        .ZMS.&ZMS.=ZMS..
+00a0: 5a 4d 53 00 4d 5a 4d 53 00 5f 5a 4d 53 ff f2 5a        ZMS.MZMS._ZMS..Z
+00b0: 4d 53 00 02 5a 4d 53 ff d6 5a 4d 53 00 5e 5a 4d        MS..ZMS..ZMS.^ZM
+00c0: 53 00 40 5a 4d 53 00 2a 5a 4d 53 00 2b 5a 4d 53        S.@ZMS.*ZMS.+ZMS
+00d0: 00 3d 5a 4d 53 ff d9 5a 4d 53 00 33 5a 4d 53 00        .=ZMS..ZMS.3ZMS.
+00e0: 2a 5a 4d 53 00 4e 5a 4d 53 00 50 5a 4d 53 00 63        *ZMS.NZMS.PZMS.c
+00f0: 5a 4d 53 ff de 5a 4d 53 00 58 5a 4d 53 00 09 5a        ZMS..ZMS.XZMS..Z
+0100: 5a 4d 53 00 19 5a 4d 53 ff fb 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSbZMSZMSZMSZMSRZMS0ZMSZMS%ZMSUZMSZMS/ZMSZMSZMS@ZMS7ZMS4ZMSZMSXZMSNZMSWZMSOZMSZMSZMSZMSZMSZMS&ZMS=ZMSZMSMZMS_ZMSZMSZMSZMS^ZMS@ZMS*ZMS+ZMS=ZMSZMS3ZMS*ZMSNZMSPZMScZMSZMSXZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717567
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8842m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 54 5a 4d 53 ff ea 5a 4d 53 00 4e 5a        ZMS.TZMS..ZMS.NZ
+0010: 4d 53 00 3d 5a 4d 53 ff ce 5a 4d 53 00 32 5a 4d        MS.=ZMS..ZMS.2ZM
+0020: 53 00 2f 5a 4d 53 00 21 5a 4d 53 00 45 5a 4d 53        S./ZMS.!ZMS.EZMS
+0030: ff e2 5a 4d 53 00 02 5a 4d 53 00 5f 5a 4d 53 00        ..ZMS..ZMS._ZMS.
+0040: 27 5a 4d 53 ff ef 5a 4d 53 00 23 5a 4d 53 00 43        'ZMS..ZMS.#ZMS.C
+0050: 5a 4d 53 00 55 5a 4d 53 00 0a 5a 4d 53 00 52 5a        ZMS.UZMS..ZMS.RZ
+0060: 4d 53 00 02 5a 4d 53 00 61 5a 4d 53 00 45 5a 4d        MS..ZMS.aZMS.EZM
+0070: 53 ff e1 5a 4d 53 ff d9 5a 4d 53 00 01 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff e0 5a 4d 53 ff d1 5a 4d 53 00 0a 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 40 5a 4d 53 00 00 5a 4d 53 00 3c 5a 4d 53 00 26        @ZMS..ZMS.<ZMS.&
+00a0: 5a 4d 53 00 5a 5a 4d 53 ff f8 5a 4d 53 00 20 5a        ZMS.ZZMS..ZMS. Z
+00b0: 4d 53 00 04 5a 4d 53 ff f4 5a 4d 53 ff f6 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff d7 5a 4d 53 00 12 5a 4d 53 00 62 5a 4d 53        S..ZMS..ZMS.bZMS
+00d0: 00 25 5a 4d 53 ff f2 5a 4d 53 00 02 5a 4d 53 00        .%ZMS..ZMS..ZMS.
+00e0: 26 5a 4d 53 ff fb 5a 4d 53 00 31 5a 4d 53 00 4f        &ZMS..ZMS.1ZMS.O
+00f0: 5a 4d 53 00 21 5a 4d 53 ff ff 5a 4d 53 00 0c 5a        ZMS.!ZMS..ZMS..Z
+0100: 5a 4d 53 00 54 5a 4d 53 ff ea 5a 4d 53 00              ZMS.TZMS..ZMS.
+-------
+> ZMSTZMSZMSNZMS=ZMSZMS2ZMS/ZMS!ZMSEZMSZMSZMS_ZMS'ZMSZMS#ZMSCZMSUZMSZMSRZMSZMSaZMSEZMSZMSZMSZMSZMSZMSZMS@ZMSZMS<ZMS&ZMSZZMSZMS ZMSZMSZMSZMSZMSZMSbZMS%ZMSZMSZMS&ZMSZMS1ZMSOZMS!ZMSZMSZZMSTZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717675
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8061m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 1a 5a 4d 53 00 4a 5a 4d 53 ff fb 5a        ZMS..ZMS.JZMS..Z
+0010: 4d 53 00 10 5a 4d 53 00 5c 5a 4d 53 00 26 5a 4d        MS..ZMS.\ZMS.&ZM
+0020: 53 00 38 5a 4d 53 ff d0 5a 4d 53 ff ef 5a 4d 53        S.8ZMS..ZMS..ZMS
+0030: ff db 5a 4d 53 ff d1 5a 4d 53 ff de 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 22 5a 4d 53 ff fa 5a 4d 53 00 2f 5a 4d 53 00 02        "ZMS..ZMS./ZMS..
+0050: 5a 4d 53 00 46 5a 4d 53 ff de 5a 4d 53 00 10 5a        ZMS.FZMS..ZMS..Z
+0060: 4d 53 00 3f 5a 4d 53 00 15 5a 4d 53 00 18 5a 4d        MS.?ZMS..ZMS..ZM
+0070: 53 00 43 5a 4d 53 00 55 5a 4d 53 00 30 5a 4d 53        S.CZMS.UZMS.0ZMS
+0080: 00 24 5a 4d 53 00 19 5a 4d 53 00 4c 5a 4d 53 00        .$ZMS..ZMS.LZMS.
+0090: 61 5a 4d 53 00 49 5a 4d 53 00 52 5a 4d 53 ff ec        aZMS.IZMS.RZMS..
+00a0: 5a 4d 53 00 07 5a 4d 53 00 1a 5a 4d 53 ff f6 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 06 5a 4d 53 00 08 5a 4d 53 00 16 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 ff e3 5a 4d 53 00 51 5a 4d 53 00 3f 5a 4d 53        S..ZMS.QZMS.?ZMS
+00d0: 00 1d 5a 4d 53 00 03 5a 4d 53 00 57 5a 4d 53 00        ..ZMS..ZMS.WZMS.
+00e0: 22 5a 4d 53 ff e2 5a 4d 53 ff de 5a 4d 53 00 37        "ZMS..ZMS..ZMS.7
+00f0: 5a 4d 53 ff dc 5a 4d 53 00 3d 5a 4d 53 00 18 5a        ZMS..ZMS.=ZMS..Z
+0100: 5a 4d 53 00 1a 5a 4d 53 00 4a 5a 4d 53 ff              ZMS..ZMS.JZMS.
+-------
+> ZMSZMSJZMSZMSZMS\ZMS&ZMS8ZMSZMSZMSZMSZMSZMS"ZMSZMS/ZMSZMSFZMSZMSZMS?ZMSZMSZMSCZMSUZMS0ZMS$ZMSZMSLZMSaZMSIZMSRZMSZMSZMSZMSZMSZMSZMSZMSZMSQZMS?ZMSZMSZMSWZMS"ZMSZMSZMS7ZMSZMS=ZMSZZMSZMSJZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717783
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7300m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff ea 5a 4d 53 00 0a 5a 4d 53 00 17 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 0c 5a 4d 53 ff ff 5a 4d 53 00 4d 5a 4d        MS..ZMS..ZMS.MZM
+0020: 53 00 18 5a 4d 53 ff d3 5a 4d 53 00 33 5a 4d 53        S..ZMS..ZMS.3ZMS
+0030: ff d4 5a 4d 53 00 15 5a 4d 53 ff e5 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 09 5a 4d 53 00 28 5a 4d 53 00 50 5a 4d 53 00 45        .ZMS.(ZMS.PZMS.E
+0050: 5a 4d 53 ff ea 5a 4d 53 00 46 5a 4d 53 00 21 5a        ZMS..ZMS.FZMS.!Z
+0060: 4d 53 ff ee 5a 4d 53 ff f2 5a 4d 53 00 40 5a 4d        MS..ZMS..ZMS.@ZM
+0070: 53 00 25 5a 4d 53 ff d9 5a 4d 53 00 40 5a 4d 53        S.%ZMS..ZMS.@ZMS
+0080: ff f7 5a 4d 53 00 45 5a 4d 53 ff fe 5a 4d 53 ff        ..ZMS.EZMS..ZMS.
+0090: ee 5a 4d 53 ff e0 5a 4d 53 00 02 5a 4d 53 00 18        .ZMS..ZMS..ZMS..
+00a0: 5a 4d 53 ff e8 5a 4d 53 00 33 5a 4d 53 00 08 5a        ZMS..ZMS.3ZMS..Z
+00b0: 4d 53 00 24 5a 4d 53 00 4e 5a 4d 53 00 04 5a 4d        MS.$ZMS.NZMS..ZM
+00c0: 53 00 35 5a 4d 53 00 27 5a 4d 53 00 53 5a 4d 53        S.5ZMS.'ZMS.SZMS
+00d0: 00 61 5a 4d 53 ff eb 5a 4d 53 00 1b 5a 4d 53 00        .aZMS..ZMS..ZMS.
+00e0: 4b 5a 4d 53 ff d5 5a 4d 53 00 19 5a 4d 53 00 2f        KZMS..ZMS..ZMS./
+00f0: 5a 4d 53 00 13 5a 4d 53 00 0d 5a 4d 53 00 5f 5a        ZMS..ZMS..ZMS._Z
+0100: 5a 4d 53 ff ea 5a 4d 53 00 0a 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSZMSZMSMZMSZMSZMS3ZMSZMSZMSZMSZMS(ZMSPZMSEZMSZMSFZMS!ZMSZMSZMS@ZMS%ZMSZMS@ZMSZMSEZMSZMSZMSZMSZMSZMSZMS3ZMSZMS$ZMSNZMSZMS5ZMS'ZMSSZMSaZMSZMSZMSKZMSZMSZMS/ZMSZMSZMS_ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717891
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6556m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 54 5a 4d 53 00 1d 5a 4d 53 00 32 5a        ZMS.TZMS..ZMS.2Z
+0010: 4d 53 ff e1 5a 4d 53 ff e0 5a 4d 53 00 62 5a 4d        MS..ZMS..ZMS.bZM
+0020: 53 00 27 5a 4d 53 ff d7 5a 4d 53 00 4d 5a 4d 53        S.'ZMS..ZMS.MZMS
+0030: 00 04 5a 4d 53 ff ed 5a 4d 53 00 48 5a 4d 53 ff        ..ZMS..ZMS.HZMS.
+0040: fe 5a 4d 53 ff d2 5a 4d 53 00 39 5a 4d 53 00 4b        .ZMS..ZMS.9ZMS.K
+0050: 5a 4d 53 ff e5 5a 4d 53 ff fd 5a 4d 53 00 15 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff db 5a 4d 53 ff fc 5a 4d 53 ff fd 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 5e 5a 4d 53 00 35 5a 4d 53 ff dd 5a 4d 53        S.^ZMS.5ZMS..ZMS
+0080: ff e7 5a 4d 53 ff db 5a 4d 53 00 26 5a 4d 53 00        ..ZMS..ZMS.&ZMS.
+0090: 03 5a 4d 53 ff f2 5a 4d 53 00 48 5a 4d 53 00 10        .ZMS..ZMS.HZMS..
+00a0: 5a 4d 53 00 2e 5a 4d 53 ff f4 5a 4d 53 00 4d 5a        ZMS..ZMS..ZMS.MZ
+00b0: 4d 53 00 47 5a 4d 53 00 31 5a 4d 53 00 0b 5a 4d        MS.GZMS.1ZMS..ZM
+00c0: 53 00 4a 5a 4d 53 ff f2 5a 4d 53 00 3c 5a 4d 53        S.JZMS..ZMS.<ZMS
+00d0: 00 4b 5a 4d 53 ff f8 5a 4d 53 ff ed 5a 4d 53 00        .KZMS..ZMS..ZMS.
+00e0: 48 5a 4d 53 00 2a 5a 4d 53 00 0f 5a 4d 53 00 1b        HZMS.*ZMS..ZMS..
+00f0: 5a 4d 53 00 37 5a 4d 53 ff de 5a 4d 53 00 08 5a        ZMS.7ZMS..ZMS..Z
+0100: 5a 4d 53 00 54 5a 4d 53 00 1d 5a 4d 53 00              ZMS.TZMS..ZMS.
+-------
+> ZMSTZMSZMS2ZMSZMSZMSbZMS'ZMSZMSMZMSZMSZMSHZMSZMSZMS9ZMSKZMSZMSZMSZMSZMSZMSZMS^ZMS5ZMSZMSZMSZMS&ZMSZMSZMSHZMSZMS.ZMSZMSMZMSGZMS1ZMSZMSJZMSZMS<ZMSKZMSZMSZMSHZMS*ZMSZMSZMS7ZMSZMSZZMSTZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717999
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5994m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 03 5a 4d 53 ff e0 5a 4d 53 00 2f 5a        ZMS..ZMS..ZMS./Z
+0010: 4d 53 ff de 5a 4d 53 00 39 5a 4d 53 00 37 5a 4d        MS..ZMS.9ZMS.7ZM
+0020: 53 ff f0 5a 4d 53 00 51 5a 4d 53 00 11 5a 4d 53        S..ZMS.QZMS..ZMS
+0030: 00 42 5a 4d 53 ff ee 5a 4d 53 ff dc 5a 4d 53 00        .BZMS..ZMS..ZMS.
+0040: 47 5a 4d 53 00 01 5a 4d 53 00 5b 5a 4d 53 ff d0        GZMS..ZMS.[ZMS..
+0050: 5a 4d 53 ff ff 5a 4d 53 ff fb 5a 4d 53 00 07 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff f9 5a 4d 53 ff df 5a 4d 53 00 11 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 1a 5a 4d 53 ff d4 5a 4d 53 ff e9 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff f9 5a 4d 53 ff da 5a 4d 53 00 24 5a 4d 53 00        ..ZMS..ZMS.$ZMS.
+0090: 23 5a 4d 53 00 28 5a 4d 53 ff fe 5a 4d 53 00 0c        #ZMS.(ZMS..ZMS..
+00a0: 5a 4d 53 00 20 5a 4d 53 ff d3 5a 4d 53 00 5b 5a        ZMS. ZMS..ZMS.[Z
+00b0: 4d 53 00 08 5a 4d 53 ff f1 5a 4d 53 00 0b 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 5a 5a 4d 53 00 05 5a 4d 53 ff ec 5a 4d 53        S.ZZMS..ZMS..ZMS
+00d0: 00 08 5a 4d 53 00 3d 5a 4d 53 ff dc 5a 4d 53 00        ..ZMS.=ZMS..ZMS.
+00e0: 4d 5a 4d 53 ff f1 5a 4d 53 00 63 5a 4d 53 ff d1        MZMS..ZMS.cZMS..
+00f0: 5a 4d 53 00 21 5a 4d 53 ff df 5a 4d 53 00 50 5a        ZMS.!ZMS..ZMS.PZ
+0100: 5a 4d 53 00 03 5a 4d 53 ff e0 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMS/ZMSZMS9ZMS7ZMSZMSQZMSZMSBZMSZMSZMSGZMSZMS[ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMS$ZMS#ZMS(ZMSZMSZMS ZMSZMS[ZMSZMSZMSZMSZZMSZMSZMSZMS=ZMSZMSMZMSZMScZMSZMS!ZMSZMSPZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718107
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5296m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 63 5a 4d 53 ff e5 5a 4d 53 00 56 5a        ZMS.cZMS..ZMS.VZ
+0010: 4d 53 00 4f 5a 4d 53 00 63 5a 4d 53 00 61 5a 4d        MS.OZMS.cZMS.aZM
+0020: 53 00 02 5a 4d 53 00 3d 5a 4d 53 ff e6 5a 4d 53        S..ZMS.=ZMS..ZMS
+0030: 00 22 5a 4d 53 00 4e 5a 4d 53 00 34 5a 4d 53 ff        ."ZMS.NZMS.4ZMS.
+0040: e8 5a 4d 53 00 4f 5a 4d 53 00 17 5a 4d 53 00 1e        .ZMS.OZMS..ZMS..
+0050: 5a 4d 53 00 0a 5a 4d 53 00 50 5a 4d 53 ff ff 5a        ZMS..ZMS.PZMS..Z
+0060: 4d 53 00 54 5a 4d 53 00 05 5a 4d 53 00 09 5a 4d        MS.TZMS..ZMS..ZM
+0070: 53 ff fb 5a 4d 53 00 09 5a 4d 53 ff db 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff d3 5a 4d 53 00 14 5a 4d 53 ff d3 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0090: 25 5a 4d 53 00 49 5a 4d 53 00 12 5a 4d 53 ff d6        %ZMS.IZMS..ZMS..
+00a0: 5a 4d 53 00 61 5a 4d 53 00 63 5a 4d 53 00 4a 5a        ZMS.aZMS.cZMS.JZ
+00b0: 4d 53 ff d5 5a 4d 53 ff da 5a 4d 53 00 2b 5a 4d        MS..ZMS..ZMS.+ZM
+00c0: 53 00 49 5a 4d 53 00 35 5a 4d 53 00 4a 5a 4d 53        S.IZMS.5ZMS.JZMS
+00d0: ff f5 5a 4d 53 00 3f 5a 4d 53 00 05 5a 4d 53 00        ..ZMS.?ZMS..ZMS.
+00e0: 4a 5a 4d 53 00 4a 5a 4d 53 00 46 5a 4d 53 00 34        JZMS.JZMS.FZMS.4
+00f0: 5a 4d 53 00 1e 5a 4d 53 ff dd 5a 4d 53 ff ea 5a        ZMS..ZMS..ZMS..Z
+0100: 5a 4d 53 00 63 5a 4d 53 ff e5 5a 4d 53 00              ZMS.cZMS..ZMS.
+-------
+> ZMScZMSZMSVZMSOZMScZMSaZMSZMS=ZMSZMS"ZMSNZMS4ZMSZMSOZMSZMSZMSZMSPZMSZMSTZMSZMSZMSZMSZMSZMSZMSZMSZMS%ZMSIZMSZMSZMSaZMScZMSJZMSZMSZMS+ZMSIZMS5ZMSJZMSZMS?ZMSZMSJZMSJZMSFZMS4ZMSZMSZMSZZMScZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718215
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  4623m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 03 5a 4d 53 00 2e 5a 4d 53 00 57 5a        ZMS..ZMS..ZMS.WZ
+0010: 4d 53 00 07 5a 4d 53 ff fb 5a 4d 53 ff ea 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 00 61 5a 4d 53 00 29 5a 4d 53 ff f7 5a 4d 53        S.aZMS.)ZMS..ZMS
+0030: ff d5 5a 4d 53 00 1f 5a 4d 53 ff d1 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 28 5a 4d 53 ff d2 5a 4d 53 ff df 5a 4d 53 00 18        (ZMS..ZMS..ZMS..
+0050: 5a 4d 53 00 03 5a 4d 53 00 50 5a 4d 53 ff cf 5a        ZMS..ZMS.PZMS..Z
+0060: 4d 53 ff e1 5a 4d 53 00 11 5a 4d 53 ff f3 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff d2 5a 4d 53 ff e5 5a 4d 53 00 01 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff d6 5a 4d 53 00 14 5a 4d 53 ff d7 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: ea 5a 4d 53 ff e5 5a 4d 53 00 58 5a 4d 53 ff f0        .ZMS..ZMS.XZMS..
+00a0: 5a 4d 53 00 41 5a 4d 53 00 63 5a 4d 53 00 2f 5a        ZMS.AZMS.cZMS./Z
+00b0: 4d 53 00 30 5a 4d 53 00 1e 5a 4d 53 00 06 5a 4d        MS.0ZMS..ZMS..ZM
+00c0: 53 ff f9 5a 4d 53 00 2f 5a 4d 53 00 37 5a 4d 53        S..ZMS./ZMS.7ZMS
+00d0: ff fa 5a 4d 53 00 05 5a 4d 53 00 54 5a 4d 53 ff        ..ZMS..ZMS.TZMS.
+00e0: d2 5a 4d 53 00 2a 5a 4d 53 00 30 5a 4d 53 00 60        .ZMS.*ZMS.0ZMS.`
+00f0: 5a 4d 53 00 38 5a 4d 53 00 24 5a 4d 53 00 37 5a        ZMS.8ZMS.$ZMS.7Z
+0100: 5a 4d 53 00 03 5a 4d 53 00 2e 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMS.ZMSWZMSZMSZMSZMSaZMS)ZMSZMSZMSZMSZMS(ZMSZMSZMSZMSZMSPZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSXZMSZMSAZMScZMS/ZMS0ZMSZMSZMSZMS/ZMS7ZMSZMSZMSTZMSZMS*ZMS0ZMS`ZMS8ZMS$ZMS7ZZMSZMS.ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718323
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  4102m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 30 5a 4d 53 00 4b 5a 4d 53 00 02 5a        ZMS.0ZMS.KZMS..Z
+0010: 4d 53 00 45 5a 4d 53 00 0d 5a 4d 53 00 54 5a 4d        MS.EZMS..ZMS.TZM
+0020: 53 00 1a 5a 4d 53 00 0b 5a 4d 53 00 2c 5a 4d 53        S..ZMS..ZMS.,ZMS
+0030: 00 14 5a 4d 53 00 05 5a 4d 53 00 40 5a 4d 53 00        ..ZMS..ZMS.@ZMS.
+0040: 1e 5a 4d 53 00 32 5a 4d 53 00 07 5a 4d 53 00 06        .ZMS.2ZMS..ZMS..
+0050: 5a 4d 53 00 0b 5a 4d 53 ff d9 5a 4d 53 ff fe 5a        ZMS..ZMS..ZMS..Z
+0060: 4d 53 ff ff 5a 4d 53 00 20 5a 4d 53 00 5b 5a 4d        MS..ZMS. ZMS.[ZM
+0070: 53 ff fa 5a 4d 53 00 56 5a 4d 53 00 16 5a 4d 53        S..ZMS.VZMS..ZMS
+0080: ff e5 5a 4d 53 00 53 5a 4d 53 ff f9 5a 4d 53 00        ..ZMS.SZMS..ZMS.
+0090: 1f 5a 4d 53 00 63 5a 4d 53 ff f9 5a 4d 53 00 2c        .ZMS.cZMS..ZMS.,
+00a0: 5a 4d 53 ff e4 5a 4d 53 00 47 5a 4d 53 00 37 5a        ZMS..ZMS.GZMS.7Z
+00b0: 4d 53 00 56 5a 4d 53 ff e1 5a 4d 53 00 46 5a 4d        MS.VZMS..ZMS.FZM
+00c0: 53 00 0d 5a 4d 53 00 53 5a 4d 53 00 29 5a 4d 53        S..ZMS.SZMS.)ZMS
+00d0: 00 49 5a 4d 53 ff db 5a 4d 53 00 0d 5a 4d 53 00        .IZMS..ZMS..ZMS.
+00e0: 1b 5a 4d 53 00 09 5a 4d 53 00 1a 5a 4d 53 ff e4        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 00 30 5a 4d 53 00 24 5a 4d 53 ff e8 5a        ZMS.0ZMS.$ZMS..Z
+0100: 5a 4d 53 00 30 5a 4d 53 00 4b 5a 4d 53 00              ZMS.0ZMS.KZMS.
+-------
+> ZMS0ZMSKZMSZMSEZMSZMSTZMSZMSZMS,ZMSZMSZMS@ZMSZMS2ZMSZMSZMSZMSZMSZMSZMS ZMS[ZMSZMSVZMSZMSZMSSZMSZMSZMScZMSZMS,ZMSZMSGZMS7ZMSVZMSZMSFZMSZMSSZMS)ZMSIZMSZMSZMSZMSZMSZMSZMS0ZMS$ZMSZZMS0ZMSKZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718434
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3476m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 61 5a 4d 53 00 03 5a 4d 53 00 18 5a        ZMS.aZMS..ZMS..Z
+0010: 4d 53 ff ff 5a 4d 53 00 2b 5a 4d 53 00 07 5a 4d        MS..ZMS.+ZMS..ZM
+0020: 53 00 55 5a 4d 53 ff ce 5a 4d 53 ff e5 5a 4d 53        S.UZMS..ZMS..ZMS
+0030: 00 41 5a 4d 53 00 39 5a 4d 53 00 03 5a 4d 53 00        .AZMS.9ZMS..ZMS.
+0040: 35 5a 4d 53 00 07 5a 4d 53 ff ee 5a 4d 53 00 0b        5ZMS..ZMS..ZMS..
+0050: 5a 4d 53 ff d1 5a 4d 53 00 3b 5a 4d 53 00 05 5a        ZMS..ZMS.;ZMS..Z
+0060: 4d 53 ff e9 5a 4d 53 ff ce 5a 4d 53 ff de 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 00 2c 5a 4d 53 00 03 5a 4d 53 00 4f 5a 4d 53        S.,ZMS..ZMS.OZMS
+0080: 00 49 5a 4d 53 00 44 5a 4d 53 00 1c 5a 4d 53 ff        .IZMS.DZMS..ZMS.
+0090: fc 5a 4d 53 00 57 5a 4d 53 00 02 5a 4d 53 ff dd        .ZMS.WZMS..ZMS..
+00a0: 5a 4d 53 ff df 5a 4d 53 ff f6 5a 4d 53 ff fe 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 ff de 5a 4d 53 00 2e 5a 4d 53 ff e0 5a 4d        MS..ZMS..ZMS..ZM
+00c0: 53 00 4b 5a 4d 53 00 46 5a 4d 53 ff f1 5a 4d 53        S.KZMS.FZMS..ZMS
+00d0: ff fe 5a 4d 53 00 0f 5a 4d 53 00 42 5a 4d 53 ff        ..ZMS..ZMS.BZMS.
+00e0: e9 5a 4d 53 00 59 5a 4d 53 00 33 5a 4d 53 00 53        .ZMS.YZMS.3ZMS.S
+00f0: 5a 4d 53 00 48 5a 4d 53 ff f6 5a 4d 53 00 0f 5a        ZMS.HZMS..ZMS..Z
+0100: 5a 4d 53 00 61 5a 4d 53 00 03 5a 4d 53 00              ZMS.aZMS..ZMS.
+-------
+> ZMSaZMSZMSZMSZMS+ZMSZMSUZMSZMSZMSAZMS9ZMSZMS5ZMSZMSZMSZMSZMS;ZMSZMSZMSZMSZMS,ZMSZMSOZMSIZMSDZMSZMSZMSWZMSZMSZMSZMSZMSZMSZMS.ZMSZMSKZMSFZMSZMSZMSZMSBZMSZMSYZMS3ZMSSZMSHZMSZMSZZMSaZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718548
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2878m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 4c 5a 4d 53 00 63 5a 4d 53 00 28 5a        ZMS.LZMS.cZMS.(Z
+0010: 4d 53 00 45 5a 4d 53 ff ec 5a 4d 53 ff e5 5a 4d        MS.EZMS..ZMS..ZM
+0020: 53 00 1e 5a 4d 53 00 46 5a 4d 53 ff ec 5a 4d 53        S..ZMS.FZMS..ZMS
+0030: 00 5c 5a 4d 53 00 5a 5a 4d 53 ff e9 5a 4d 53 00        .\ZMS.ZZMS..ZMS.
+0040: 1f 5a 4d 53 00 23 5a 4d 53 ff eb 5a 4d 53 ff d7        .ZMS.#ZMS..ZMS..
+0050: 5a 4d 53 00 30 5a 4d 53 00 4e 5a 4d 53 00 01 5a        ZMS.0ZMS.NZMS..Z
+0060: 4d 53 ff ef 5a 4d 53 ff f4 5a 4d 53 00 1f 5a 4d        MS..ZMS..ZMS..ZM
+0070: 53 ff fb 5a 4d 53 ff ea 5a 4d 53 ff f1 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff f3 5a 4d 53 00 24 5a 4d 53 00 3e 5a 4d 53 00        ..ZMS.$ZMS.>ZMS.
+0090: 3f 5a 4d 53 00 59 5a 4d 53 00 2c 5a 4d 53 ff e8        ?ZMS.YZMS.,ZMS..
+00a0: 5a 4d 53 00 05 5a 4d 53 00 00 5a 4d 53 00 16 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 1b 5a 4d 53 00 32 5a 4d 53 ff fd 5a 4d        MS..ZMS.2ZMS..ZM
+00c0: 53 00 38 5a 4d 53 00 16 5a 4d 53 ff d5 5a 4d 53        S.8ZMS..ZMS..ZMS
+00d0: ff cf 5a 4d 53 ff fa 5a 4d 53 00 36 5a 4d 53 00        ..ZMS..ZMS.6ZMS.
+00e0: 2e 5a 4d 53 ff d2 5a 4d 53 ff ee 5a 4d 53 ff f6        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 ff f7 5a 4d 53 00 1f 5a 4d 53 00 3f 5a        ZMS..ZMS..ZMS.?Z
+0100: 5a 4d 53 00 4c 5a 4d 53 00 63 5a 4d 53 00              ZMS.LZMS.cZMS.
+-------
+> ZMSLZMScZMS(ZMSEZMSZMSZMSZMSFZMSZMS\ZMSZZMSZMSZMS#ZMSZMSZMS0ZMSNZMSZMSZMSZMSZMSZMSZMSZMSZMS$ZMS>ZMS?ZMSYZMS,ZMSZMSZMSZMSZMSZMS2ZMSZMS8ZMSZMSZMSZMSZMS6ZMS.ZMSZMSZMSZMSZMSZMS?ZZMSLZMScZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718648
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2419m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 00 2a 5a 4d 53 ff ee 5a 4d 53 ff e3 5a        ZMS.*ZMS..ZMS..Z
+0010: 4d 53 00 40 5a 4d 53 ff d6 5a 4d 53 00 2a 5a 4d        MS.@ZMS..ZMS.*ZM
+0020: 53 00 18 5a 4d 53 00 0c 5a 4d 53 ff f9 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 0f 5a 4d 53 00 20 5a 4d 53 00 40 5a 4d 53 00        ..ZMS. ZMS.@ZMS.
+0040: 47 5a 4d 53 00 2d 5a 4d 53 00 5f 5a 4d 53 ff e9        GZMS.-ZMS._ZMS..
+0050: 5a 4d 53 00 35 5a 4d 53 00 5d 5a 4d 53 00 58 5a        ZMS.5ZMS.]ZMS.XZ
+0060: 4d 53 00 28 5a 4d 53 00 4a 5a 4d 53 00 4e 5a 4d        MS.(ZMS.JZMS.NZM
+0070: 53 00 3c 5a 4d 53 ff de 5a 4d 53 00 43 5a 4d 53        S.<ZMS..ZMS.CZMS
+0080: ff d7 5a 4d 53 00 09 5a 4d 53 ff de 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0090: f5 5a 4d 53 00 43 5a 4d 53 00 43 5a 4d 53 00 4f        .ZMS.CZMS.CZMS.O
+00a0: 5a 4d 53 ff db 5a 4d 53 00 0a 5a 4d 53 00 1a 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 21 5a 4d 53 00 3d 5a 4d 53 00 58 5a 4d        MS.!ZMS.=ZMS.XZM
+00c0: 53 00 26 5a 4d 53 00 48 5a 4d 53 00 53 5a 4d 53        S.&ZMS.HZMS.SZMS
+00d0: ff db 5a 4d 53 ff df 5a 4d 53 ff e3 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+00e0: 1e 5a 4d 53 00 07 5a 4d 53 00 25 5a 4d 53 ff f1        .ZMS..ZMS.%ZMS..
+00f0: 5a 4d 53 00 41 5a 4d 53 ff ee 5a 4d 53 00 1a 5a        ZMS.AZMS..ZMS..Z
+0100: 5a 4d 53 00 2a 5a 4d 53 ff ee 5a 4d 53 ff              ZMS.*ZMS..ZMS.
+-------
+> ZMS*ZMSZMSZMS@ZMSZMS*ZMSZMSZMSZMSZMS ZMS@ZMSGZMS-ZMS_ZMSZMS5ZMS]ZMSXZMS(ZMSJZMSNZMS<ZMSZMSCZMSZMSZMSZMSZMSCZMSCZMSOZMSZMSZMSZMS!ZMS=ZMSXZMS&ZMSHZMSSZMSZMSZMSZMSZMSZMS%ZMSZMSAZMSZMSZZMS*ZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718756
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1872m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff dd 5a 4d 53 ff df 5a 4d 53 00 1a 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 20 5a 4d 53 00 28 5a 4d 53 00 3c 5a 4d        MS. ZMS.(ZMS.<ZM
+0020: 53 ff ee 5a 4d 53 ff e3 5a 4d 53 00 3c 5a 4d 53        S..ZMS..ZMS.<ZMS
+0030: 00 10 5a 4d 53 ff e8 5a 4d 53 00 10 5a 4d 53 00        ..ZMS..ZMS..ZMS.
+0040: 56 5a 4d 53 00 2e 5a 4d 53 ff fd 5a 4d 53 00 35        VZMS..ZMS..ZMS.5
+0050: 5a 4d 53 00 1c 5a 4d 53 ff d9 5a 4d 53 00 3d 5a        ZMS..ZMS..ZMS.=Z
+0060: 4d 53 00 4c 5a 4d 53 ff e5 5a 4d 53 00 27 5a 4d        MS.LZMS..ZMS.'ZM
+0070: 53 00 30 5a 4d 53 00 11 5a 4d 53 00 44 5a 4d 53        S.0ZMS..ZMS.DZMS
+0080: 00 0e 5a 4d 53 ff fd 5a 4d 53 00 5f 5a 4d 53 00        ..ZMS..ZMS._ZMS.
+0090: 00 5a 4d 53 ff f2 5a 4d 53 00 49 5a 4d 53 00 62        .ZMS..ZMS.IZMS.b
+00a0: 5a 4d 53 00 51 5a 4d 53 00 4c 5a 4d 53 00 2d 5a        ZMS.QZMS.LZMS.-Z
+00b0: 4d 53 00 26 5a 4d 53 00 07 5a 4d 53 00 5a 5a 4d        MS.&ZMS..ZMS.ZZM
+00c0: 53 00 2e 5a 4d 53 00 51 5a 4d 53 00 46 5a 4d 53        S..ZMS.QZMS.FZMS
+00d0: ff fe 5a 4d 53 00 55 5a 4d 53 ff fe 5a 4d 53 00        ..ZMS.UZMS..ZMS.
+00e0: 1f 5a 4d 53 00 62 5a 4d 53 ff f7 5a 4d 53 ff ec        .ZMS.bZMS..ZMS..
+00f0: 5a 4d 53 00 1e 5a 4d 53 ff e2 5a 4d 53 00 32 5a        ZMS..ZMS..ZMS.2Z
+0100: 5a 4d 53 ff dd 5a 4d 53 ff df 5a 4d 53 00              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMS ZMS(ZMS<ZMSZMSZMS<ZMSZMSZMSZMSVZMS.ZMSZMS5ZMSZMSZMS=ZMSLZMSZMS'ZMS0ZMSZMSDZMSZMSZMS_ZMSZMSZMSIZMSbZMSQZMSLZMS-ZMS&ZMSZMSZZMS.ZMSQZMSFZMSZMSUZMSZMSZMSbZMSZMSZMSZMSZMS2ZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718864
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1354m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff e6 5a 4d 53 00 07 5a 4d 53 ff d8 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 5f 5a 4d 53 ff f7 5a 4d 53 00 22 5a 4d        MS._ZMS..ZMS."ZM
+0020: 53 00 3c 5a 4d 53 ff f8 5a 4d 53 00 4e 5a 4d 53        S.<ZMS..ZMS.NZMS
+0030: 00 2c 5a 4d 53 00 61 5a 4d 53 ff d6 5a 4d 53 ff        .,ZMS.aZMS..ZMS.
+0040: ef 5a 4d 53 00 2f 5a 4d 53 ff ed 5a 4d 53 00 09        .ZMS./ZMS..ZMS..
+0050: 5a 4d 53 00 29 5a 4d 53 00 41 5a 4d 53 00 0c 5a        ZMS.)ZMS.AZMS..Z
+0060: 4d 53 00 26 5a 4d 53 ff ef 5a 4d 53 00 0d 5a 4d        MS.&ZMS..ZMS..ZM
+0070: 53 ff e0 5a 4d 53 ff f0 5a 4d 53 00 19 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff f9 5a 4d 53 00 59 5a 4d 53 00 59 5a 4d 53 00        ..ZMS.YZMS.YZMS.
+0090: 34 5a 4d 53 ff f0 5a 4d 53 ff f6 5a 4d 53 00 3b        4ZMS..ZMS..ZMS.;
+00a0: 5a 4d 53 00 18 5a 4d 53 ff e5 5a 4d 53 00 0c 5a        ZMS..ZMS..ZMS..Z
+00b0: 4d 53 00 0e 5a 4d 53 ff eb 5a 4d 53 00 51 5a 4d        MS..ZMS..ZMS.QZM
+00c0: 53 00 63 5a 4d 53 00 59 5a 4d 53 00 0b 5a 4d 53        S.cZMS.YZMS..ZMS
+00d0: 00 36 5a 4d 53 ff da 5a 4d 53 00 25 5a 4d 53 00        .6ZMS..ZMS.%ZMS.
+00e0: 46 5a 4d 53 00 47 5a 4d 53 00 0b 5a 4d 53 ff ea        FZMS.GZMS..ZMS..
+00f0: 5a 4d 53 00 4b 5a 4d 53 00 35 5a 4d 53 ff f6 5a        ZMS.KZMS.5ZMS..Z
+0100: 5a 4d 53 ff e6 5a 4d 53 00 07 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMS_ZMSZMS"ZMS<ZMSZMSNZMS,ZMSaZMSZMSZMS/ZMSZMSZMS)ZMSAZMSZMS&ZMSZMSZMSZMSZMSZMSZMSYZMSYZMS4ZMSZMSZMS;ZMSZMSZMSZMSZMSZMSQZMScZMSYZMSZMS6ZMSZMS%ZMSFZMSGZMSZMSZMSKZMS5ZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718972
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  854m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff ee 5a 4d 53 00 2c 5a 4d 53 00 61 5a        ZMS..ZMS.,ZMS.aZ
+0010: 4d 53 00 4b 5a 4d 53 ff fd 5a 4d 53 00 28 5a 4d        MS.KZMS..ZMS.(ZM
+0020: 53 00 3a 5a 4d 53 00 36 5a 4d 53 00 5c 5a 4d 53        S.:ZMS.6ZMS.\ZMS
+0030: ff fd 5a 4d 53 ff fa 5a 4d 53 ff f3 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+0040: e8 5a 4d 53 ff f9 5a 4d 53 00 47 5a 4d 53 00 4e        .ZMS..ZMS.GZMS.N
+0050: 5a 4d 53 00 63 5a 4d 53 00 54 5a 4d 53 00 59 5a        ZMS.cZMS.TZMS.YZ
+0060: 4d 53 ff d2 5a 4d 53 00 18 5a 4d 53 00 2b 5a 4d        MS..ZMS..ZMS.+ZM
+0070: 53 ff e9 5a 4d 53 ff f0 5a 4d 53 00 5e 5a 4d 53        S..ZMS..ZMS.^ZMS
+0080: 00 1b 5a 4d 53 00 4c 5a 4d 53 00 01 5a 4d 53 ff        ..ZMS.LZMS..ZMS.
+0090: d6 5a 4d 53 ff f4 5a 4d 53 00 29 5a 4d 53 00 25        .ZMS..ZMS.)ZMS.%
+00a0: 5a 4d 53 00 1b 5a 4d 53 00 57 5a 4d 53 ff e1 5a        ZMS..ZMS.WZMS..Z
+00b0: 4d 53 ff d5 5a 4d 53 ff fb 5a 4d 53 00 25 5a 4d        MS..ZMS..ZMS.%ZM
+00c0: 53 ff ce 5a 4d 53 ff d4 5a 4d 53 00 03 5a 4d 53        S..ZMS..ZMS..ZMS
+00d0: 00 1e 5a 4d 53 ff f0 5a 4d 53 ff ef 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+00e0: d9 5a 4d 53 ff e7 5a 4d 53 00 62 5a 4d 53 ff ff        .ZMS..ZMS.bZMS..
+00f0: 5a 4d 53 00 3e 5a 4d 53 ff d7 5a 4d 53 ff fc 5a        ZMS.>ZMS..ZMS..Z
+0100: 5a 4d 53 ff ee 5a 4d 53 00 2c 5a 4d 53 00              ZMS..ZMS.,ZMS.
+-------
+> ZMSZMS,ZMSaZMSKZMSZMS(ZMS:ZMS6ZMS\ZMSZMSZMSZMSZMSZMSGZMSNZMScZMSTZMSYZMSZMSZMS+ZMSZMSZMS^ZMSZMSLZMSZMSZMSZMS)ZMS%ZMSZMSWZMSZMSZMSZMS%ZMSZMSZMSZMSZMSZMSZMSZMSZMSbZMSZMS>ZMSZMSZZMSZMS,ZMS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490719080
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  454m
+payload:   10
+length:    270 bytes
+======
+0000: 5a 4d 53 ff f1 5a 4d 53 ff ec 5a 4d 53 ff e9 5a        ZMS..ZMS..ZMS..Z
+0010: 4d 53 00 43 5a 4d 53 00 0b 5a 4d 53 00 08 5a 4d        MS.CZMS..ZMS..ZM
+0020: 53 00 1d 5a 4d 53 ff f7 5a 4d 53 ff fb 5a 4d 53        S..ZMS..ZMS..ZMS
+0030: 00 4c 5a 4d 53 00 51 5a 4d 53 00 38 5a 4d 53 00        .LZMS.QZMS.8ZMS.
+0040: 32 5a 4d 53 00 0b 5a 4d 53 00 07 5a 4d 53 00 06        2ZMS..ZMS..ZMS..
+0050: 5a 4d 53 ff f6 5a 4d 53 00 44 5a 4d 53 00 07 5a        ZMS..ZMS.DZMS..Z
+0060: 4d 53 ff da 5a 4d 53 00 59 5a 4d 53 00 4a 5a 4d        MS..ZMS.YZMS.JZM
+0070: 53 ff f0 5a 4d 53 00 14 5a 4d 53 ff fa 5a 4d 53        S..ZMS..ZMS..ZMS
+0080: ff e1 5a 4d 53 00 16 5a 4d 53 00 33 5a 4d 53 00        ..ZMS..ZMS.3ZMS.
+0090: 13 5a 4d 53 00 35 5a 4d 53 00 26 5a 4d 53 ff fc        .ZMS.5ZMS.&ZMS..
+00a0: 5a 4d 53 00 5f 5a 4d 53 00 24 5a 4d 53 ff ce 5a        ZMS._ZMS.$ZMS..Z
+00b0: 4d 53 00 4b 5a 4d 53 00 23 5a 4d 53 00 45 5a 4d        MS.KZMS.#ZMS.EZM
+00c0: 53 ff f9 5a 4d 53 00 49 5a 4d 53 00 20 5a 4d 53        S..ZMS.IZMS. ZMS
+00d0: 00 56 5a 4d 53 00 58 5a 4d 53 00 61 5a 4d 53 ff        .VZMS.XZMS.aZMS.
+00e0: db 5a 4d 53 ff db 5a 4d 53 00 59 5a 4d 53 ff fd        .ZMS..ZMS.YZMS..
+00f0: 5a 4d 53 00 23 5a 4d 53 00 06 5a 4d 53 ff e8 5a        ZMS.#ZMS..ZMS..Z
+0100: 5a 4d 53 ff f1 5a 4d 53 ff ec 5a 4d 53 ff              ZMS..ZMS..ZMS.
+-------
+> ZMSZMSZMSZMSCZMSZMSZMSZMSZMSZMSLZMSQZMS8ZMS2ZMSZMSZMSZMSZMSDZMSZMSZMSYZMSJZMSZMSZMSZMSZMSZMS3ZMSZMS5ZMS&ZMSZMS_ZMS$ZMSZMSKZMS#ZMSEZMSZMSIZMS ZMSVZMSXZMSaZMSZMSZMSYZMSZMS#ZMSZMSZZMSZMSZMS
+
+////// FCORE//PACKET END //////

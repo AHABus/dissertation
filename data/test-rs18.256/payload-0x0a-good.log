@@ -1,0 +1,47 @@
+
+///// FCORE//PACKET START /////
+rx time:   1490783932
+latitude:  0.000000°
+longitude: 0.000000°
+altitude:  0m
+payload:   10
+length:    65 bytes
+======
+0000: 5a 4d 53 ff d5 5a 4d 53 00 27 5a 4d 53 00 1f 5a        ZMS..ZMS.'ZMS..Z
+0010: 4d 53 00 40 5a 4d 53 00 3c 5a 4d 53 00 5a 5a 4d        MS.@ZMS.<ZMS.ZZM
+0020: 53 00 00 5a 4d 53 ff d6 5a 4d 53 00 31 5a 4d 53        S..ZMS..ZMS.1ZMS
+0030: 00 01 5a 4d 53 00 60 5a 4d 53 00 5f 5a 4d 53 00        ..ZMS.`ZMS._ZMS.
+0040: 30                                                     0
+-------
+> ZMSZMS'ZMSZMS@ZMS<ZMSZZMSZMSZMS1ZMSZMS`ZMS_ZMS0
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490784055
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  515m
+payload:   10
+length:    255 bytes
+======
+0000: 5a 4d 53 00 48 5a 4d 53 00 21 5a 4d 53 00 01 5a        ZMS.HZMS.!ZMS..Z
+0010: 4d 53 00 0f 5a 4d 53 ff d5 5a 4d 53 00 04 5a 4d        MS..ZMS..ZMS..ZM
+0020: 53 ff e4 5a 4d 53 00 49 5a 4d 53 00 19 5a 4d 53        S..ZMS.IZMS..ZMS
+0030: 00 4d 5a 4d 53 00 47 5a 4d 53 00 58 5a 4d 53 00        .MZMS.GZMS.XZMS.
+0040: 39 5a 4d 53 00 0d 5a 4d 53 00 58 5a 4d 53 ff ce        9ZMS..ZMS.XZMS..
+0050: 5a 4d 53 00 1f 5a 4d 53 00 35 5a 4d 53 00 3a 5a        ZMS..ZMS.5ZMS.:Z
+0060: 4d 53 ff da 5a 4d 53 00 25 5a 4d 53 00 08 5a 4d        MS..ZMS.%ZMS..ZM
+0070: 53 00 23 5a 4d 53 ff ff 5a 4d 53 00 35 5a 4d 53        S.#ZMS..ZMS.5ZMS
+0080: 00 41 5a 4d 53 00 0f 5a 4d 53 00 0f 5a 4d 53 00        .AZMS..ZMS..ZMS.
+0090: 42 5a 4d 53 00 0d 5a 4d 53 00 3a 5a 4d 53 ff f5        BZMS..ZMS.:ZMS..
+00a0: 5a 4d 53 00 0b 5a 4d 53 00 24 5a 4d 53 00 01 5a        ZMS..ZMS.$ZMS..Z
+00b0: 4d 53 00 62 5a 4d 53 00 39 5a 4d 53 00 07 5a 4d        MS.bZMS.9ZMS..ZM
+00c0: 53 00 09 5a 4d 53 00 20 5a 4d 53 00 06 5a 4d 53        S..ZMS. ZMS..ZMS
+00d0: 00 1a 5a 4d 53 ff e6 5a 4d 53 ff da 5a 4d 53 ff        ..ZMS..ZMS..ZMS.
+00e0: f8 5a 4d 53 00 00 5a 4d 53 00 0b 5a 4d 53 00 06        .ZMS..ZMS..ZMS..
+00f0: 5a 4d 53 ff dc 5a 4d 53 ff e1 5a 4d 53 ff ec           ZMS..ZMS..ZMS..
+-------
+> ZMSHZMS!ZMSZMSZMSZMSZMSZMSIZMSZMSMZMSGZMSXZMS9ZMSZMSXZMSZMSZMS5ZMS:ZMSZMS%ZMSZMS#ZMSZMS5ZMSAZMSZMSZMSBZMSZMS:ZMSZMSZMS$ZMSZMSbZMS9ZMSZMSZMS ZMSZMSZMSZMSZMSZMSZMSZMSZMSZMSZMS
+
+////// FCORE//PACKET END //////

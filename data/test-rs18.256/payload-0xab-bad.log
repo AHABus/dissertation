@@ -1,0 +1,23 @@
+
+///// FCORE//PACKET START /////
+rx time:   1490784008
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  347m
+payload:   171
+length:    153 bytes
+======
+0000: 54 00 09 54 00 20 54 00 06 54 00 1a 2b ff e6 54        T..T. T..T..+..T
+0010: ff da 54 ff f8 54 00 00 54 00 0b 54 00 06 54 ff        ..T..T..T..T..T.
+0020: dc 54 ff e1 54 ff ec 54 ff e3 54 00 8e 54 ff e3        .T..T..T..T..T..
+0030: 54 ff ec 54 ff da 54 00 59 54 ff fc 54 00 1f 54        T..T..T.YT..T..T
+0040: 00 5b 54 ff 03 54 00 3b 54 ff fe 54 fa 27 54 00        .[T..T.;T..T.'T.
+0050: 0a 54 25 43 54 00 01 54 ff fd 54 00 18 54 83 4d        .T%CT..T..T..T.M
+0060: 54 00 1b 54 00 63 54 00 13 54 00 49 54 fa f0 54        T..T.cT..T.IT..T
+0070: ff cf 54 00 04 54 ff da 54 00 17 54 41 21 54 00        ..T..T..T..TA!T.
+0080: 42 54 ff ce 54 ff d8 54 c3 08 54 00 37 54 00 06        BT..T..T..T.7T..
+0090: 54 00 50 54 11 56 54 00 1b                             T.PT.VT..
+-------
+> TT TT+TTTTTTTTTTTTTTYTTT[TT;TT'TT%CTTTTMTTcTTITTTTTTA!TBTTTT7TTPTVT
+
+////// FCORE//PACKET END //////

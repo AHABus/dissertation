@@ -1,0 +1,46 @@
+
+///// FCORE//PACKET START /////
+rx time:   1490784070
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  675m
+payload:   20
+length:    153 bytes
+======
+0000: 54 00 4b 54 ff ec 54 ff d3 54 00 4a 54 00 4f 54        T.KT..T..T.JT.OT
+0010: ff d7 54 00 5e 54 00 50 54 ff eb 54 00 0b 54 ff        ..T.^T.PT..T..T.
+0020: f1 54 ff e7 54 00 55 54 00 04 54 00 20 54 00 5d        .T..T.UT..T. T.]
+0030: 54 00 42 54 00 42 54 ff e8 54 ff fd 54 ff de 54        T.BT.BT..T..T..T
+0040: 00 5a 54 00 2f 54 00 5e 54 ff e7 54 00 22 54 00        .ZT./T.^T..T."T.
+0050: 10 54 ff ee 54 ff e2 54 00 15 54 ff fc 54 ff de        .T..T..T..T..T..
+0060: 54 00 05 54 00 09 54 ff e9 54 00 58 54 00 0d 54        T..T..T..T.XT..T
+0070: ff ed 54 ff e8 54 00 61 54 00 2a 54 00 5f 54 00        ..T..T.aT.*T._T.
+0080: 4e 54 ff d4 54 00 30 54 00 33 54 00 47 54 ff f2        NT..T.0T.3T.GT..
+0090: 54 00 5c 54 00 00 54 ff ef                             T.\T..T..
+-------
+> TKTTTJTOTT^TPTTTTTUTT T]TBTBTTTTZT/T^TT"TTTTTTTTTTXTTTTaT*T_TNTT0T3TGTT\TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490784110
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1011m
+payload:   20
+length:    153 bytes
+======
+0000: 54 00 51 54 00 3a 54 ff e3 54 00 11 54 00 14 54        T.QT.:T..T..T..T
+0010: ff d1 54 00 56 54 00 43 54 00 5c 54 00 0b 54 00        ..T.VT.CT.\T..T.
+0020: 3c 54 ff e8 54 ff f4 54 ff e2 54 ff e0 54 00 4a        <T..T..T..T..T.J
+0030: 54 ff dc 54 00 50 54 ff d4 54 00 5d 54 00 10 54        T..T.PT..T.]T..T
+0040: 00 12 54 00 22 54 ff f4 54 ff f3 54 00 29 54 00        ..T."T..T..T.)T.
+0050: 5f 54 00 1b 54 ff eb 54 00 46 54 00 2d 54 ff f5        _T..T..T.FT.-T..
+0060: 54 ff e9 54 ff ec 54 00 4f 54 00 11 54 00 40 54        T..T..T.OT..T.@T
+0070: 00 20 54 00 4a 54 ff f5 54 00 5d 54 ff db 54 ff        . T.JT..T.]T..T.
+0080: d8 54 00 1c 54 00 37 54 00 5b 54 00 06 54 00 28        .T..T.7T.[T..T.(
+0090: 54 ff d1 54 00 5e 54 00 52                             T..T.^T.R
+-------
+> TQT:TTTTTVTCT\TT<TTTTTJTTPTT]TTT"TTT)T_TTTFT-TTTTOTT@T TJTT]TTTT7T[TT(TT^TR
+
+////// FCORE//PACKET END //////

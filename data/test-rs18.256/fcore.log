@@ -1,0 +1,76 @@
+///// FCORE//PACKET PARSER /////
+[1490783877]: connected to localhost:5555
+[1490783892]: frame start detected
+[1490783907]: too many byte errors     
+[1490783907]: invalid frame protocol version
+[1490783907]: decoded invalid system packet
+[1490783907]: 	>>>> FIX(0.000000°, 0.000000°, 0m)
+[1490783907]: 	>>>> FCORE//SYS_INIT ?: BO4TDONE (FCORE Test `)
+[1490783907]: rx stats: 339 received, 0/256 frame bytes (0 fixed)
+[1490783918]: frame start detected
+[1490783932]: lost 1 frames            
+[1490783932]: decoded valid payload packet (0x0a)
+[1490783932]: 	>>>> FIX(0.000000°, 0.000000°, 0m)
+[1490783932]: rx stats: 600 received, 256/512 frame bytes (13 fixed)
+[1490783994]: frame start detected
+[1490784008]: too many byte errors     
+[1490784008]: decoded invalid payload packet (0xab)
+[1490784008]: 	>>>> FIX(56.462000°, -2.970700°, 347m)
+[1490784008]: rx stats: 1122 received, 256/768 frame bytes (13 fixed)
+[1490784027]: frame start detected
+[1490784041]: lost 3 frames            
+[1490784041]: rx stats: 1644 received, 512/1536 frame bytes (27 fixed)
+[1490784041]: frame start detected
+[1490784055]: decoded valid payload packet (0x0a)
+[1490784055]: 	>>>> FIX(56.462000°, -2.970700°, 515m)
+[1490784055]: rx stats: 1905 received, 768/1536 frame bytes (43 fixed)
+[1490784056]: frame start detected
+[1490784070]: decoded valid payload packet (0x14)
+[1490784070]: 	>>>> FIX(56.462000°, -2.970700°, 675m)
+[1490784070]: rx stats: 2166 received, 1024/1536 frame bytes (59 fixed)
+[1490784096]: frame start detected
+[1490784110]: decoded valid payload packet (0x14)
+[1490784110]: 	>>>> FIX(56.462000°, -2.970700°, 1011m)
+[1490784110]: rx stats: 2427 received, 1280/1536 frame bytes (73 fixed)
+[1490784136]: frame start detected
+[1490784150]: lost 1 frames            
+[1490784150]: invalid packet protocol version
+[1490784150]: decoded invalid payload packet (0x14)
+[1490784150]: 	>>>> FIX(56.462000°, -2.970700°, 1011m)
+[1490784150]: rx stats: 2949 received, 1536/1792 frame bytes (88 fixed)
+[1490784150]: frame start detected
+[1490784164]: too many byte errors     
+[1490784164]: decoded invalid system packet
+[1490784164]: 	>>>> FIX(58.586800°, -2.970700°, 1339m)
+[1490784164]: 	>>>> FCORE//SYS?HEALTH :: G/U,P0A/U,?14/U
+[1490784164]: rx stats: 3210 received, 1536/2048 frame bytes (88 fixed)
+[1490784165]: frame start detected
+[1490784179]: too many byte errors     
+[1490784179]: rx stats: 3471 received, 1536/2304 frame bytes (88 fixed)
+[1490784224]: frame start detected
+[1490784238]: lost 3 frames            
+[1490784238]: rx stats: 3993 received, 1792/3072 frame bytes (104 fixed)
+[1490784238]: frame start detected
+[1490784252]: rx stats: 4254 received, 2048/3072 frame bytes (119 fixed)
+[1490784252]: frame start detected
+[1490784266]: rx stats: 4515 received, 2304/3072 frame bytes (135 fixed)
+[1490784300]: frame start detected
+[1490784314]: too many byte errors     
+[1490784314]: rx stats: 5037 received, 2304/3328 frame bytes (135 fixed)
+[1490784326]: frame start detected
+[1490784340]: too many byte errors     
+[1490784340]: rx stats: 5298 received, 2304/3584 frame bytes (135 fixed)
+[1490784340]: frame start detected
+[1490784354]: lost 3 frames            
+[1490784354]: rx stats: 5559 received, 2560/4352 frame bytes (151 fixed)
+[1490784354]: frame start detected
+[1490784369]: too many byte errors     
+[1490784369]: rx stats: 5820 received, 2560/4608 frame bytes (151 fixed)
+[1490784428]: frame start detected
+[1490784442]: lost 3 frames            
+[1490784442]: rx stats: 6603 received, 2816/5376 frame bytes (166 fixed)
+[1490784456]: frame start detected
+[1490784471]: too many byte errors     
+[1490784471]: error fetching incoming byte
+[1490784471]: decoded invalid payload packet (0x14)
+[1490784471]: 	>>>> FIX(56.448700°, -2.970700°, 1339m)

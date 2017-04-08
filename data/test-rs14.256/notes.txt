@@ -1,0 +1,5 @@
+FCORE Tests - 14/256 FEC recovery
+=================================
+
+ * using corruption genereator in FCORE
+ * frame skip errors cause bigger number of lost bytes than actual

@@ -1,0 +1,3279 @@
+
+///// FCORE//PACKET START /////
+rx time:   1490710882
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  707m
+payload:   20
+length:    165 bytes
+======
+0000: 54 ff d5 54 00 27 54 00 1f 54 00 40 54 00 3c 54        T..T.'T..T.@T.<T
+0010: 00 5a 54 00 00 54 ff d6 54 00 31 54 00 01 54 00        .ZT..T..T.1T..T.
+0020: 60 54 00 5f 54 00 30 54 00 48 54 00 21 54 00 01        `T._T.0T.HT.!T..
+0030: 54 00 0f 54 ff d5 54 00 04 54 ff e4 54 00 49 54        T..T..T..T..T.IT
+0040: 00 19 54 00 4d 54 00 47 54 00 58 54 00 39 54 00        ..T.MT.GT.XT.9T.
+0050: 0d 54 00 58 54 ff ce 54 00 1f 54 00 35 54 00 3a        .T.XT..T..T.5T.:
+0060: 54 ff da 54 00 25 54 00 08 54 00 23 54 ff ff 54        T..T.%T..T.#T..T
+0070: 00 35 54 00 41 54 00 0f 54 00 0f 54 00 42 54 00        .5T.AT..T..T.BT.
+0080: 0d 54 00 3a 54 ff f5 54 00 0b 54 00 24 54 00 01        .T.:T..T..T.$T..
+0090: 54 00 62 54 00 39 54 00 07 54 00 09 54 00 20 54        T.bT.9T..T..T. T
+00a0: 00 06 54 00 1a                                         ..T..
+-------
+> TT'TT@T<TZTTT1TT`T_T0THT!TTTTTTITTMTGTXT9TTXTTT5T:TT%TT#TT5TATTTBTT:TTT$TTbT9TTT TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490710935
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1203m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3c 54 ff e8 54 ff f4 54 ff e2 54 ff e0 54        T.<T..T..T..T..T
+0010: 00 4a 54 ff dc 54 00 50 54 ff d4 54 00 5d 54 00        .JT..T.PT..T.]T.
+0020: 10 54 00 12 54 00 22 54 ff f4 54 ff f3 54 00 29        .T..T."T..T..T.)
+0030: 54 00 5f 54 00 1b 54 ff eb 54 00 46 54 00 2d 54        T._T..T..T.FT.-T
+0040: ff f5 54 ff e9 54 ff ec 54 00 4f 54 00 11 54 00        ..T..T..T.OT..T.
+0050: 40 54 00 20 54 00 4a 54 ff f5 54 00 5d 54 ff db        @T. T.JT..T.]T..
+0060: 54 ff d8 54 00 1c 54 00 37 54 00 5b 54 00 06 54        T..T..T.7T.[T..T
+0070: 00 28 54 ff d1 54 00 5e 54 00 52 54 00 3a 54 00        .(T..T.^T.RT.:T.
+0080: 55 54 ff ed 54 ff ff 54 ff dd 54 00 03 54 ff f9        UT..T..T..T..T..
+0090: 54 00 13 54 00 29 54 00 1c 54 00 58 54 00 0b 54        T..T.)T..T.XT..T
+00a0: 00 28                                                  .(
+-------
+> T<TTTTTJTTPTT]TTT"TTT)T_TTTFT-TTTTOTT@T TJTT]TTTT7T[TT(TT^TRT:TUTTTTTTT)TTXTT(
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711002
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1539m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e5 54 ff ff 54 00 07 54 ff fd 54 00 1c 54        T..T..T..T..T..T
+0010: 00 2b 54 ff ec 54 00 2d 54 00 41 54 ff fe 54 00        .+T..T.-T.AT..T.
+0020: 11 54 00 02 54 00 05 54 ff fa 54 00 38 54 00 50        .T..T..T..T.8T.P
+0030: 54 00 58 54 00 47 54 ff d3 54 00 39 54 ff e7 54        T.XT.GT..T.9T..T
+0040: 00 05 54 00 41 54 00 14 54 00 31 54 00 23 54 ff        ..T.AT..T.1T.#T.
+0050: d2 54 ff e5 54 ff f2 54 00 48 54 ff e2 54 00 07        .T..T..T.HT..T..
+0060: 54 ff d5 54 00 3c 54 00 0c 54 00 52 54 00 3b 54        T..T.<T..T.RT.;T
+0070: 00 5f 54 00 31 54 00 43 54 00 3f 54 ff fb 54 00        ._T.1T.CT.?T..T.
+0080: 5e 54 00 07 54 00 2d 54 00 1f 54 ff e4 54 00 25        ^T..T.-T..T..T.%
+0090: 54 00 0b 54 00 22 54 00 32 54 00 15 54 00 57 54        T..T."T.2T..T.WT
+00a0: 00 43                                                  .C
+-------
+> TTTTTT+TT-TATTTTTT8TPTXTGTT9TTTATT1T#TTTTHTTTT<TTRT;T_T1TCT?TT^TT-TTT%TT"T2TTWTC
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711043
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1875m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0b 54 ff e0 54 ff ee 54 00 10 54 00 2d 54        T..T..T..T..T.-T
+0010: ff ee 54 ff e8 54 00 02 54 00 0c 54 ff ea 54 00        ..T..T..T..T..T.
+0020: 18 54 ff e8 54 00 1f 54 ff da 54 00 03 54 ff f8        .T..T..T..T..T..
+0030: 54 00 3b 54 00 0c 54 00 5d 54 00 5d 54 00 0d 54        T.;T..T.]T.]T..T
+0040: 00 5d 54 00 4f 54 ff f1 54 ff e9 54 00 33 54 00        .]T.OT..T..T.3T.
+0050: 5e 54 00 47 54 00 1c 54 00 31 54 00 20 54 00 5e        ^T.GT..T.1T. T.^
+0060: 54 ff ce 54 00 24 54 00 16 54 00 54 54 ff fd 54        T..T.$T..T.TT..T
+0070: 00 0e 54 00 46 54 00 05 54 ff f9 54 ff f5 54 00        ..T.FT..T..T..T.
+0080: 0e 54 00 26 54 00 58 54 ff e7 54 00 53 54 ff e2        .T.&T.XT..T.ST..
+0090: 54 ff dc 54 00 37 54 00 1f 54 00 2b 54 ff eb 54        T..T.7T..T.+T..T
+00a0: 00 4e                                                  .N
+-------
+> TTTTT-TTTTTTTTTTTT;TT]T]TT]TOTTT3T^TGTT1T T^TT$TTTTTTFTTTTT&TXTTSTTT7TT+TTN
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711113
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2379m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff ea 54 ff ed 54 00 5b 54 00 1b 54 00 5a 54        T..T..T.[T..T.ZT
+0010: 00 05 54 00 27 54 ff e1 54 ff e6 54 ff e6 54 ff        ..T.'T..T..T..T.
+0020: da 54 00 32 54 00 26 54 ff d5 54 ff d7 54 ff da        .T.2T.&T..T..T..
+0030: 54 00 18 54 00 61 54 00 60 54 00 09 54 ff e0 54        T..T.aT.`T..T..T
+0040: 00 5e 54 00 4a 54 00 15 54 ff d5 54 00 4b 54 00        .^T.JT..T..T.KT.
+0050: 3a 54 00 51 54 00 16 54 00 56 54 00 3c 54 ff f3        :T.QT..T.VT.<T..
+0060: 54 00 09 54 ff d9 54 00 31 54 00 47 54 00 50 54        T..T..T.1T.GT.PT
+0070: ff d5 54 00 3b 54 00 51 54 00 51 54 00 01 54 ff        ..T.;T.QT.QT..T.
+0080: e1 54 00 03 54 ff e5 54 00 4f 54 00 4f 54 00 42        .T..T..T.OT.OT.B
+0090: 54 00 27 54 00 2e 54 00 45 54 00 48 54 00 0a 54        T.'T..T.ET.HT..T
+00a0: ff ee                                                  ..
+-------
+> TTT[TTZTT'TTTTT2T&TTTTTaT`TTT^TJTTTKT:TQTTVT<TTTT1TGTPTT;TQTQTTTTTOTOTBT'T.TETHTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711151
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2715m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 50 54 00 41 54 ff fd 54 00 49 54 00 1e 54        T.PT.AT..T.IT..T
+0010: 00 1a 54 00 1b 54 00 00 54 00 25 54 00 22 54 ff        ..T..T..T.%T."T.
+0020: d4 54 00 51 54 00 2e 54 00 23 54 ff d4 54 ff e0        .T.QT..T.#T..T..
+0030: 54 00 0c 54 00 16 54 00 4b 54 00 2c 54 00 52 54        T..T..T.KT.,T.RT
+0040: 00 29 54 00 22 54 ff d9 54 ff f7 54 ff f8 54 ff        .)T."T..T..T..T.
+0050: f3 54 ff f3 54 00 06 54 00 58 54 00 25 54 00 54        .T..T..T.XT.%T.T
+0060: 54 ff f1 54 00 29 54 00 04 54 00 1e 54 ff d1 54        T..T.)T..T..T..T
+0070: 00 3a 54 00 11 54 00 32 54 ff d2 54 00 38 54 00        .:T..T.2T..T.8T.
+0080: 4a 54 00 42 54 00 55 54 00 42 54 00 0a 54 00 2e        JT.BT.UT.BT..T..
+0090: 54 ff d1 54 00 58 54 00 53 54 00 1f 54 00 2f 54        T..T.XT.ST..T./T
+00a0: 00 43                                                  .C
+-------
+> TPTATTITTTTT%T"TTQT.T#TTTTTKT,TRT)T"TTTTTTTXT%TTTT)TTTT:TT2TT8TJTBTUTBTT.TTXTSTT/TC
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711213
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3219m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0c 54 00 28 54 00 1e 54 ff cf 54 00 31 54        T..T.(T..T..T.1T
+0010: ff fc 54 00 49 54 00 20 54 ff eb 54 ff ea 54 ff        ..T.IT. T..T..T.
+0020: e7 54 ff ee 54 00 2e 54 00 16 54 ff d9 54 00 19        .T..T..T..T..T..
+0030: 54 ff dd 54 00 50 54 ff da 54 00 22 54 ff eb 54        T..T.PT..T."T..T
+0040: ff dd 54 ff dd 54 ff fc 54 00 3c 54 00 29 54 ff        ..T..T..T.<T.)T.
+0050: f6 54 00 3f 54 00 1f 54 ff f4 54 ff d2 54 ff dd        .T.?T..T..T..T..
+0060: 54 ff d9 54 00 35 54 00 55 54 ff da 54 ff ed 54        T..T.5T.UT..T..T
+0070: 00 09 54 00 27 54 ff f0 54 00 42 54 00 2b 54 ff        ..T.'T..T.BT.+T.
+0080: f0 54 00 13 54 00 17 54 00 5c 54 ff f9 54 00 35        .T..T..T.\T..T.5
+0090: 54 00 02 54 00 63 54 ff f7 54 ff ef 54 ff f5 54        T..T.cT..T..T..T
+00a0: 00 32                                                  .2
+-------
+> TT(TTT1TTIT TTTTT.TTTTTPTT"TTTTT<T)TT?TTTTTT5TUTTTT'TTBT+TTTT\TT5TTcTTTT2
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711259
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3571m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0e 54 00 5e 54 00 58 54 00 4e 54 00 06 54        T..T.^T.XT.NT..T
+0010: ff e8 54 00 34 54 00 46 54 00 49 54 00 48 54 00        ..T.4T.FT.IT.HT.
+0020: 03 54 ff f4 54 ff f7 54 00 1f 54 00 4a 54 00 41        .T..T..T..T.JT.A
+0030: 54 ff cf 54 00 44 54 00 27 54 ff f7 54 00 03 54        T..T.DT.'T..T..T
+0040: 00 18 54 00 4e 54 ff e6 54 ff ff 54 00 45 54 ff        ..T.NT..T..T.ET.
+0050: ce 54 ff f9 54 00 2d 54 00 50 54 00 27 54 ff d1        .T..T.-T.PT.'T..
+0060: 54 ff d1 54 ff f5 54 00 31 54 00 48 54 ff e4 54        T..T..T.1T.HT..T
+0070: 00 20 54 ff fb 54 ff e2 54 00 1f 54 00 0f 54 ff        . T..T..T..T..T.
+0080: db 54 ff e9 54 00 42 54 00 18 54 00 06 54 00 05        .T..T.BT..T..T..
+0090: 54 ff e3 54 00 30 54 00 4e 54 00 3f 54 00 55 54        T..T.0T.NT.?T.UT
+00a0: 00 1b                                                  ..
+-------
+> TT^TXTNTTT4TFTITHTTTTTJTATTDT'TTTTNTTTETTT-TPT'TTTT1THTT TTTTTTTBTTTTT0TNT?TUT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711313
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3899m
+payload:   20
+length:    159 bytes
+======
+0000: 54 00 60 54 ff f3 54 ff fd 54 00 4b 54 00 11 54        T.`T..T..T.KT..T
+0010: 00 14 54 ff fc 54 00 49 54 ff ea 54 ff ed 54 00        ..T..T.IT..T..T.
+0020: 01 54 00 1e 54 ff d6 54 00 5c 54 00 5e 54 00 3b        .T..T..T.\T.^T.;
+0030: 54 00 06 54 ff f0 54 00 41 54 ff ce 54 00 04 54        T..T..T.AT..T..T
+0040: 00 55 54 00 18 54 ff fc 54 ff d8 54 00 24 54 ff        .UT..T..T..T.$T.
+0050: f3 54 ff d7 54 ff d5 54 00 56 54 ff e2 54 00 03        .T..T..T.VT..T..
+0060: 54 00 54 54 00 54 54 00 47 54 ff f2 54 00 5f 54        T.TT.TT.GT..T._T
+0070: ff f6 54 00 06 54 ff e2 54 ff fe 54 00 41 54 ff        ..T..T..T..T.AT.
+0080: d7 54 ff f8 54 ff d1 54 00 55 54 00 14 54 ff e8        .T..T..T.UT..T..
+0090: 54 00 4a 54 00 4f 54 00 3d 54 00 59 54 ff d8           T.JT.OT.=T.YT..
+-------
+> T`TTTKTTTTITTTTTT\T^T;TTTATTTUTTTT$TTTTVTTTTTTTGTT_TTTTTATTTTUTTTJTOT=TYT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711367
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  4403m
+payload:   20
+length:    159 bytes
+======
+0000: 54 00 46 54 00 10 54 00 5f 54 00 11 54 00 5f 54        T.FT..T._T..T._T
+0010: ff e1 54 00 3f 54 00 61 54 00 13 54 ff e1 54 ff        ..T.?T.aT..T..T.
+0020: e2 54 ff e5 54 ff ef 54 00 11 54 00 3f 54 ff f2        .T..T..T..T.?T..
+0030: 54 ff e1 54 00 3e 54 ff ff 54 00 4c 54 00 27 54        T..T.>T..T.LT.'T
+0040: ff dc 54 00 2e 54 00 35 54 00 2e 54 00 02 54 00        ..T..T.5T..T..T.
+0050: 1d 54 ff f9 54 ff d2 54 00 2f 54 00 4a 54 00 2f        .T..T..T./T.JT./
+0060: 54 00 4d 54 00 1f 54 00 03 54 00 32 54 ff f2 54        T.MT..T..T.2T..T
+0070: 00 3d 54 00 34 54 00 2c 54 00 0b 54 ff ff 54 ff        .=T.4T.,T..T..T.
+0080: d9 54 ff df 54 00 2c 54 00 39 54 00 1b 54 00 45        .T..T.,T.9T..T.E
+0090: 54 00 11 54 00 2b 54 00 40 54 ff ea 54 00 57           T..T.+T.@T..T.W
+-------
+> TFTT_TT_TT?TaTTTTTTT?TTT>TTLT'TT.T5T.TTTTT/TJT/TMTTT2TT=T4T,TTTTT,T9TTETT+T@TTW
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711421
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  4739m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 2a 54 00 07 54 ff d9 54 00 23 54 00 03 54        T.*T..T..T.#T..T
+0010: ff dd 54 00 5e 54 00 61 54 ff d5 54 00 1e 54 00        ..T.^T.aT..T..T.
+0020: 3c 54 00 5c 54 00 23 54 00 2a 54 00 54 54 00 3b        <T.\T.#T.*T.TT.;
+0030: 54 00 3e 54 ff e1 54 00 23 54 00 5e 54 ff fd 54        T.>T..T.#T.^T..T
+0040: 00 25 54 00 3b 54 00 04 54 00 1f 54 00 1b 54 00        .%T.;T..T..T..T.
+0050: 2e 54 ff ec 54 00 58 54 00 31 54 00 5d 54 ff d0        .T..T.XT.1T.]T..
+0060: 54 00 31 54 00 35 54 ff d5 54 00 5a 54 ff d2 54        T.1T.5T..T.ZT..T
+0070: 00 55 54 00 53 54 00 5c 54 00 27 54 00 32 54 ff        .UT.ST.\T.'T.2T.
+0080: d4 54 ff cf 54 ff d9 54 ff e6 54 00 11 54 ff f7        .T..T..T..T..T..
+0090: 54 00 2a 54 ff e6 54 ff d9 54 00 00 54 00 02 54        T.*T..T..T..T..T
+00a0: ff d4                                                  ..
+-------
+> T*TTT#TTT^TaTTT<T\T#T*TTT;T>TT#T^TT%T;TTTT.TTXT1T]TT1T5TTZTTUTST\T'T2TTTTTTT*TTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711475
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5075m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 38 54 00 5b 54 ff dd 54 ff f2 54 00 45 54        T.8T.[T..T..T.ET
+0010: 00 3c 54 00 5f 54 00 27 54 00 11 54 00 44 54 ff        .<T._T.'T..T.DT.
+0020: d0 54 ff e5 54 00 1e 54 00 4e 54 ff d7 54 00 11        .T..T..T.NT..T..
+0030: 54 00 39 54 ff d9 54 00 05 54 00 47 54 00 46 54        T.9T..T..T.GT.FT
+0040: 00 38 54 00 29 54 00 11 54 00 5f 54 ff da 54 00        .8T.)T..T._T..T.
+0050: 3e 54 ff d9 54 00 5f 54 ff f9 54 ff de 54 00 45        >T..T._T..T..T.E
+0060: 54 00 20 54 00 5f 54 00 4a 54 ff d1 54 00 1b 54        T. T._T.JT..T..T
+0070: ff e8 54 00 3b 54 00 5c 54 ff d8 54 ff d1 54 00        ..T.;T.\T..T..T.
+0080: 26 54 00 02 54 00 4c 54 00 16 54 00 30 54 00 11        &T..T.LT..T.0T..
+0090: 54 ff e3 54 00 3d 54 00 13 54 ff fa 54 00 0f 54        T..T.=T..T..T..T
+00a0: ff fc                                                  ..
+-------
+> T8T[TTTET<T_T'TTDTTTTNTTT9TTTGTFT8T)TT_TT>TT_TTTET T_TJTTTT;T\TTT&TTLTT0TTT=TTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711531
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5579m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d7 54 00 37 54 ff e5 54 00 56 54 00 5c 54        T..T.7T..T.VT.\T
+0010: 00 02 54 00 58 54 ff df 54 00 17 54 ff cf 54 00        ..T.XT..T..T..T.
+0020: 58 54 ff f8 54 00 07 54 00 20 54 ff f1 54 ff f5        XT..T..T. T..T..
+0030: 54 ff ee 54 00 1c 54 ff db 54 ff f6 54 00 19 54        T..T..T..T..T..T
+0040: ff da 54 00 04 54 ff d0 54 00 08 54 00 14 54 ff        ..T..T..T..T..T.
+0050: e0 54 ff d8 54 ff dc 54 ff e9 54 ff f9 54 ff f9        .T..T..T..T..T..
+0060: 54 00 4b 54 ff d5 54 ff f3 54 00 17 54 00 2b 54        T.KT..T..T..T.+T
+0070: ff d4 54 ff de 54 00 59 54 ff d1 54 ff db 54 00        ..T..T.YT..T..T.
+0080: 63 54 ff d0 54 00 2f 54 00 39 54 00 13 54 ff ec        cT..T./T.9T..T..
+0090: 54 00 38 54 ff d7 54 00 5a 54 ff d8 54 ff db 54        T.8T..T.ZT..T..T
+00a0: ff ef                                                  ..
+-------
+> TT7TTVT\TTXTTTTXTTT TTTTTTTTTTTTTTTTTTTKTTTT+TTTYTTTcTT/T9TTT8TTZTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711583
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5915m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 03 54 00 52 54 00 4b 54 00 01 54 ff d4 54        T..T.RT.KT..T..T
+0010: 00 62 54 00 2d 54 00 58 54 00 40 54 ff f8 54 00        .bT.-T.XT.@T..T.
+0020: 52 54 00 54 54 ff f0 54 00 4c 54 00 60 54 ff fe        RT.TT..T.LT.`T..
+0030: 54 ff ff 54 00 09 54 00 12 54 00 5d 54 00 2f 54        T..T..T..T.]T./T
+0040: ff e6 54 00 4a 54 00 63 54 00 2a 54 ff df 54 00        ..T.JT.cT.*T..T.
+0050: 17 54 00 25 54 ff eb 54 00 5f 54 00 41 54 ff d7        .T.%T..T._T.AT..
+0060: 54 00 52 54 00 1c 54 00 2d 54 00 10 54 00 40 54        T.RT..T.-T..T.@T
+0070: 00 5a 54 ff d3 54 ff e0 54 00 14 54 00 52 54 00        .ZT..T..T..T.RT.
+0080: 52 54 ff e6 54 00 55 54 ff e1 54 ff e8 54 00 34        RT..T.UT..T..T.4
+0090: 54 00 2c 54 00 25 54 ff f8 54 ff e7 54 ff e1 54        T.,T.%T..T..T..T
+00a0: 00 4b                                                  .K
+-------
+> TTRTKTTTbT-TXT@TTRTTTTLT`TTTTT]T/TTJTcT*TTT%TT_TATTRTT-TT@TZTTTTRTRTTUTTT4T,T%TTTTK
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711639
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6251m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e4 54 ff e9 54 ff fe 54 00 00 54 00 62 54        T..T..T..T..T.bT
+0010: 00 32 54 ff d9 54 ff dd 54 00 12 54 00 2c 54 ff        .2T..T..T..T.,T.
+0020: db 54 00 1a 54 00 05 54 ff f0 54 00 39 54 00 4e        .T..T..T..T.9T.N
+0030: 54 00 32 54 ff dd 54 00 21 54 00 37 54 00 59 54        T.2T..T.!T.7T.YT
+0040: 00 16 54 00 0b 54 00 61 54 00 07 54 00 20 54 00        ..T..T.aT..T. T.
+0050: 29 54 00 29 54 00 3d 54 00 08 54 00 1d 54 ff d3        )T.)T.=T..T..T..
+0060: 54 ff fc 54 00 1e 54 ff fd 54 00 0f 54 ff d8 54        T..T..T..T..T..T
+0070: 00 48 54 ff d0 54 00 05 54 00 46 54 ff db 54 ff        .HT..T..T.FT..T.
+0080: d0 54 ff e7 54 00 26 54 00 24 54 00 4a 54 00 43        .T..T.&T.$T.JT.C
+0090: 54 00 0b 54 00 48 54 00 5b 54 00 30 54 00 03 54        T..T.HT.[T.0T..T
+00a0: 00 43                                                  .C
+-------
+> TTTTTbT2TTTT,TTTTT9TNT2TT!T7TYTTTaTT T)T)T=TTTTTTTTTHTTTFTTTT&T$TJTCTTHT[T0TTC
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711693
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6763m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e6 54 00 14 54 ff f6 54 00 4c 54 00 54 54        T..T..T..T.LT.TT
+0010: 00 25 54 ff e8 54 00 5b 54 ff fc 54 00 39 54 ff        .%T..T.[T..T.9T.
+0020: dc 54 00 21 54 00 40 54 00 24 54 00 14 54 00 44        .T.!T.@T.$T..T.D
+0030: 54 00 02 54 00 3a 54 ff f3 54 ff d2 54 00 63 54        T..T.:T..T..T.cT
+0040: 00 44 54 00 07 54 00 07 54 ff ee 54 ff f3 54 ff        .DT..T..T..T..T.
+0050: fa 54 00 24 54 00 63 54 00 0c 54 ff ee 54 ff d7        .T.$T.cT..T..T..
+0060: 54 ff eb 54 00 17 54 00 45 54 ff fc 54 00 25 54        T..T..T.ET..T.%T
+0070: 00 2b 54 ff ff 54 00 1b 54 00 32 54 00 20 54 00        .+T..T..T.2T. T.
+0080: 52 54 00 3e 54 ff dd 54 00 24 54 00 4c 54 00 0b        RT.>T..T.$T.LT..
+0090: 54 ff e5 54 00 20 54 ff f3 54 00 28 54 00 5b 54        T..T. T..T.(T.[T
+00a0: 00 3b                                                  .;
+-------
+> TTTTLTTT%TT[TT9TT!T@T$TTDTT:TTTcTDTTTTTT$TcTTTTTTETT%T+TTT2T TRT>TT$TLTTT TT(T[T;
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711747
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7099m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f4 54 00 15 54 00 52 54 00 2d 54 00 29 54        T..T..T.RT.-T.)T
+0010: 00 2d 54 00 47 54 00 39 54 00 4e 54 ff e2 54 00        .-T.GT.9T.NT..T.
+0020: 23 54 00 03 54 00 26 54 00 28 54 00 56 54 00 3e        #T..T.&T.(T.VT.>
+0030: 54 00 05 54 ff d1 54 00 37 54 00 1e 54 00 32 54        T..T..T.7T..T.2T
+0040: 00 25 54 00 12 54 00 51 54 ff f8 54 00 2b 54 ff        .%T..T.QT..T.+T.
+0050: e9 54 00 3c 54 00 4b 54 00 05 54 00 10 54 00 46        .T.<T.KT..T..T.F
+0060: 54 ff f0 54 ff cf 54 ff ee 54 ff e8 54 00 48 54        T..T..T..T..T.HT
+0070: 00 58 54 ff fe 54 ff d1 54 00 2f 54 00 4f 54 00        .XT..T..T./T.OT.
+0080: 34 54 ff d2 54 00 61 54 00 49 54 00 0d 54 00 14        4T..T.aT.IT..T..
+0090: 54 00 01 54 ff d2 54 00 40 54 00 07 54 ff fc 54        T..T..T.@T..T..T
+00a0: ff ce                                                  ..
+-------
+> TTTRT-T)T-TGT9TNTT#TT&T(TVT>TTT7TT2T%TTQTT+TT<TKTTTFTTTTTHTXTTT/TOT4TTaTITTTTT@TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711813
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7435m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d0 54 00 52 54 ff fd 54 00 29 54 00 44 54        T..T.RT..T.)T.DT
+0010: 00 4d 54 ff ee 54 00 30 54 ff fd 54 00 60 54 00        .MT..T.0T..T.`T.
+0020: 02 54 00 62 54 00 50 54 00 3e 54 00 40 54 00 3e        .T.bT.PT.>T.@T.>
+0030: 54 00 04 54 00 61 54 ff e7 54 ff d9 54 00 05 54        T..T.aT..T..T..T
+0040: 00 4f 54 00 52 54 00 21 54 00 39 54 ff f4 54 00        .OT.RT.!T.9T..T.
+0050: 42 54 ff f6 54 00 1c 54 00 29 54 00 22 54 00 04        BT..T..T.)T."T..
+0060: 54 00 07 54 00 28 54 ff d5 54 ff f3 54 00 0d 54        T..T.(T..T..T..T
+0070: 00 08 54 00 0a 54 ff f7 54 00 39 54 ff d5 54 00        ..T..T..T.9T..T.
+0080: 4a 54 00 41 54 00 05 54 ff e4 54 00 0b 54 ff ee        JT.AT..T..T..T..
+0090: 54 ff fa 54 00 5a 54 ff d0 54 ff e0 54 00 1a 54        T..T.ZT..T..T..T
+00a0: 00 01                                                  ..
+-------
+> TTRTT)TDTMTT0TT`TTbTPT>T@T>TTaTTTTOTRT!T9TTBTTT)T"TTT(TTTTTTT9TTJTATTTTTTZTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711907
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8275m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 61 54 00 5e 54 00 48 54 ff ee 54 00 0e 54        T.aT.^T.HT..T..T
+0010: 00 59 54 ff f5 54 ff ec 54 00 44 54 00 23 54 00        .YT..T..T.DT.#T.
+0020: 58 54 00 4e 54 00 10 54 00 40 54 ff d3 54 00 54        XT.NT..T.@T..T.T
+0030: 54 00 0e 54 ff dc 54 00 21 54 00 00 54 00 14 54        T..T..T.!T..T..T
+0040: ff d5 54 00 40 54 00 63 54 00 56 54 00 37 54 ff        ..T.@T.cT.VT.7T.
+0050: dc 54 00 30 54 00 60 54 00 24 54 00 02 54 00 42        .T.0T.`T.$T..T.B
+0060: 54 ff f9 54 ff d0 54 ff ee 54 00 3f 54 00 0c 54        T..T..T..T.?T..T
+0070: 00 55 54 00 33 54 00 1c 54 00 23 54 00 0b 54 00        .UT.3T..T.#T..T.
+0080: 5f 54 00 3e 54 00 0d 54 00 53 54 00 61 54 00 1b        _T.>T..T.ST.aT..
+0090: 54 00 15 54 00 4a 54 00 12 54 00 12 54 ff e4 54        T..T.JT..T..T..T
+00a0: ff d2                                                  ..
+-------
+> TaT^THTTTYTTTDT#TXTNTT@TTTTTT!TTTT@TcTVT7TT0T`T$TTBTTTT?TTUT3TT#TT_T>TTSTaTTTJTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490711965
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8611m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 1c 54 00 5d 54 00 5f 54 00 02 54 00 19 54        T..T.]T._T..T..T
+0010: 00 53 54 ff fc 54 ff da 54 00 17 54 00 4d 54 ff        .ST..T..T..T.MT.
+0020: ec 54 00 1f 54 00 09 54 00 58 54 00 5e 54 00 59        .T..T..T.XT.^T.Y
+0030: 54 ff f0 54 00 03 54 ff fd 54 00 33 54 00 03 54        T..T..T..T.3T..T
+0040: ff dc 54 00 2a 54 00 35 54 00 04 54 00 0d 54 ff        ..T.*T.5T..T..T.
+0050: fe 54 ff f1 54 00 4b 54 00 34 54 ff eb 54 00 40        .T..T.KT.4T..T.@
+0060: 54 00 29 54 ff e5 54 ff df 54 00 4f 54 ff ed 54        T.)T..T..T.OT..T
+0070: ff e1 54 00 32 54 00 11 54 00 4f 54 ff d2 54 ff        ..T.2T..T.OT..T.
+0080: d3 54 00 07 54 00 0a 54 00 1a 54 ff cf 54 ff f2        .T..T..T..T..T..
+0090: 54 ff dc 54 00 41 54 ff f9 54 00 22 54 ff f7 54        T..T.AT..T."T..T
+00a0: 00 40                                                  .@
+-------
+> TT]T_TTTSTTTTMTTTTXT^TYTTTT3TTT*T5TTTTTKT4TT@T)TTTOTTT2TTOTTTTTTTTTATT"TT@
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712015
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9115m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 09 54 00 08 54 00 30 54 00 3e 54 00 38 54        T..T..T.0T.>T.8T
+0010: 00 37 54 ff d0 54 00 29 54 00 30 54 00 37 54 ff        .7T..T.)T.0T.7T.
+0020: e3 54 ff e5 54 ff df 54 00 4c 54 ff f2 54 00 4c        .T..T..T.LT..T.L
+0030: 54 00 23 54 00 15 54 00 5a 54 00 52 54 00 27 54        T.#T..T.ZT.RT.'T
+0040: 00 28 54 00 46 54 ff fa 54 00 2f 54 00 43 54 00        .(T.FT..T./T.CT.
+0050: 5b 54 00 34 54 ff e2 54 00 12 54 ff cf 54 00 34        [T.4T..T..T..T.4
+0060: 54 00 5d 54 00 3e 54 00 16 54 ff d5 54 00 35 54        T.]T.>T..T..T.5T
+0070: 00 34 54 ff dc 54 00 22 54 00 57 54 00 01 54 00        .4T..T."T.WT..T.
+0080: 5e 54 ff f9 54 00 5e 54 00 27 54 ff ea 54 ff ec        ^T..T.^T.'T..T..
+0090: 54 ff f5 54 ff fb 54 00 3a 54 00 54 54 ff fa 54        T..T..T.:T.TT..T
+00a0: 00 19                                                  ..
+-------
+> TTT0T>T8T7TT)T0T7TTTTLTTLT#TTZTRT'T(TFTT/TCT[T4TTTT4T]T>TTT5T4TT"TWTT^TT^T'TTTTT:TTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712193
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10299m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 5c 54 ff ff 54 00 3f 54 00 2c 54 00 4c 54        T.\T..T.?T.,T.LT
+0010: ff e6 54 ff cf 54 00 3d 54 ff ed 54 00 20 54 00        ..T..T.=T..T. T.
+0020: 03 54 00 10 54 00 53 54 ff dc 54 00 02 54 00 0a        .T..T.ST..T..T..
+0030: 54 00 5a 54 00 17 54 ff e3 54 00 4b 54 00 58 54        T.ZT..T..T.KT.XT
+0040: 00 57 54 00 2e 54 ff df 54 00 5b 54 00 61 54 ff        .WT..T..T.[T.aT.
+0050: ce 54 00 1d 54 ff ec 54 00 11 54 ff ed 54 00 12        .T..T..T..T..T..
+0060: 54 ff d9 54 ff ed 54 ff d0 54 ff f3 54 00 1b 54        T..T..T..T..T..T
+0070: 00 05 54 00 04 54 00 02 54 ff f6 54 ff d7 54 ff        ..T..T..T..T..T.
+0080: fb 54 00 20 54 ff f2 54 00 29 54 00 05 54 00 15        .T. T..T.)T..T..
+0090: 54 00 09 54 00 37 54 00 46 54 00 5b 54 00 12 54        T..T.7T.FT.[T..T
+00a0: 00 5f                                                  ._
+-------
+> T\TT?T,TLTTT=TT TTTSTTTTZTTTKTXTWT.TT[TaTTTTTTTTTTTTTTTTTT TT)TTTT7TFT[TT_
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712231
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10635m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 00 54 ff f6 54 ff eb 54 ff ce 54 ff f6 54        T..T..T..T..T..T
+0010: 00 4d 54 00 5c 54 00 48 54 00 1d 54 00 0d 54 ff        .MT.\T.HT..T..T.
+0020: f8 54 00 5d 54 00 2c 54 00 45 54 00 5a 54 00 1a        .T.]T.,T.ET.ZT..
+0030: 54 ff de 54 00 28 54 00 63 54 00 2a 54 00 47 54        T..T.(T.cT.*T.GT
+0040: 00 32 54 00 04 54 00 3c 54 00 21 54 ff d7 54 ff        .2T..T.<T.!T..T.
+0050: f5 54 ff e3 54 ff db 54 00 56 54 00 08 54 00 21        .T..T..T.VT..T.!
+0060: 54 00 51 54 00 09 54 ff db 54 ff e6 54 ff e3 54        T.QT..T..T..T..T
+0070: ff fa 54 00 29 54 00 2b 54 00 0e 54 ff f0 54 00        ..T.)T.+T..T..T.
+0080: 18 54 00 33 54 00 5b 54 00 34 54 00 0b 54 ff e2        .T.3T.[T.4T..T..
+0090: 54 ff e8 54 ff cf 54 00 58 54 00 5b 54 00 20 54        T..T..T.XT.[T. T
+00a0: ff d4                                                  ..
+-------
+> TTTTTTMT\THTTTT]T,TETZTTT(TcT*TGT2TT<T!TTTTTVTT!TQTTTTTT)T+TTTT3T[T4TTTTTXT[T T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712301
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10971m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff ec 54 00 45 54 00 3d 54 00 0f 54 00 14 54        T..T.ET.=T..T..T
+0010: 00 27 54 00 4c 54 ff fe 54 00 17 54 00 15 54 ff        .'T.LT..T..T..T.
+0020: e4 54 ff f0 54 00 21 54 ff f1 54 00 5c 54 ff f1        .T..T.!T..T.\T..
+0030: 54 00 50 54 00 1b 54 00 27 54 00 07 54 00 2f 54        T.PT..T.'T..T./T
+0040: 00 18 54 00 40 54 00 4f 54 00 2d 54 ff f6 54 00        ..T.@T.OT.-T..T.
+0050: 12 54 00 62 54 00 0b 54 ff e3 54 00 08 54 00 14        .T.bT..T..T..T..
+0060: 54 ff e1 54 ff fb 54 00 37 54 00 60 54 00 28 54        T..T..T.7T.`T.(T
+0070: 00 2f 54 00 3e 54 00 43 54 00 0e 54 00 1b 54 00        ./T.>T.CT..T..T.
+0080: 14 54 00 1b 54 00 53 54 00 42 54 00 1a 54 ff f2        .T..T.ST.BT..T..
+0090: 54 00 04 54 00 1b 54 ff f1 54 00 2c 54 ff f1 54        T..T..T..T.,T..T
+00a0: 00 38                                                  .8
+-------
+> TTET=TTT'TLTTTTTT!TT\TTPTT'TT/TT@TOT-TTTbTTTTTTT7T`T(T/T>TCTTTTTSTBTTTTTT,TT8
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712339
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11475m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 61 54 00 4e 54 00 0b 54 ff fc 54 00 2c 54        T.aT.NT..T..T.,T
+0010: 00 53 54 00 41 54 00 51 54 00 48 54 00 2f 54 00        .ST.AT.QT.HT./T.
+0020: 60 54 00 43 54 00 5d 54 00 00 54 ff f4 54 00 41        `T.CT.]T..T..T.A
+0030: 54 00 50 54 00 02 54 00 2e 54 00 21 54 00 5f 54        T.PT..T..T.!T._T
+0040: 00 13 54 ff e3 54 00 34 54 ff ff 54 ff d9 54 00        ..T..T.4T..T..T.
+0050: 0a 54 ff f1 54 00 3b 54 00 31 54 00 3e 54 ff d4        .T..T.;T.1T.>T..
+0060: 54 00 4b 54 00 3e 54 ff db 54 00 5b 54 ff f1 54        T.KT.>T..T.[T..T
+0070: 00 41 54 00 30 54 00 04 54 ff dc 54 00 26 54 00        .AT.0T..T..T.&T.
+0080: 24 54 00 11 54 00 51 54 ff e1 54 ff e8 54 ff fa        $T..T.QT..T..T..
+0090: 54 00 62 54 00 27 54 00 08 54 00 39 54 ff d9 54        T.bT.'T..T.9T..T
+00a0: 00 20                                                  . 
+-------
+> TaTNTTT,TSTATQTHT/T`TCT]TTTATPTT.T!T_TTT4TTTTT;T1T>TTKT>TT[TTAT0TTT&T$TTQTTTTbT'TT9TT 
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712395
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11811m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 36 54 00 4d 54 ff f2 54 00 31 54 00 2b 54        T.6T.MT..T.1T.+T
+0010: 00 27 54 ff da 54 ff eb 54 00 1b 54 00 31 54 00        .'T..T..T..T.1T.
+0020: 0a 54 ff e3 54 00 2d 54 ff ec 54 00 31 54 ff e6        .T..T.-T..T.1T..
+0030: 54 00 02 54 00 29 54 ff e9 54 00 4d 54 00 32 54        T..T.)T..T.MT.2T
+0040: 00 57 54 ff d5 54 ff e6 54 00 38 54 00 3e 54 00        .WT..T..T.8T.>T.
+0050: 15 54 00 53 54 ff d6 54 ff d7 54 00 22 54 00 58        .T.ST..T..T."T.X
+0060: 54 ff d3 54 00 28 54 ff d7 54 00 1a 54 00 24 54        T..T.(T..T..T.$T
+0070: 00 00 54 00 16 54 ff ea 54 ff e2 54 00 16 54 ff        ..T..T..T..T..T.
+0080: f3 54 ff d3 54 00 3b 54 ff e9 54 ff e4 54 00 44        .T..T.;T..T..T.D
+0090: 54 00 42 54 00 3b 54 00 23 54 00 57 54 00 2a 54        T.BT.;T.#T.WT.*T
+00a0: 00 22                                                  ."
+-------
+> T6TMTT1T+T'TTTT1TTT-TT1TTT)TTMT2TWTTT8T>TTSTTT"TXTT(TTT$TTTTTTTT;TTTDTBT;T#TWT*T"
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712448
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12315m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f5 54 00 12 54 00 29 54 ff e5 54 ff f9 54        T..T..T.)T..T..T
+0010: 00 0d 54 00 04 54 ff f5 54 ff e3 54 ff e1 54 ff        ..T..T..T..T..T.
+0020: df 54 ff d7 54 00 43 54 00 63 54 00 49 54 00 48        .T..T.CT.cT.IT.H
+0030: 54 00 5e 54 ff ea 54 00 59 54 ff eb 54 00 38 54        T.^T..T.YT..T.8T
+0040: 00 18 54 ff e5 54 ff e2 54 00 42 54 00 3b 54 ff        ..T..T..T.BT.;T.
+0050: dd 54 ff e5 54 00 33 54 ff ed 54 00 1f 54 ff f6        .T..T.3T..T..T..
+0060: 54 ff dd 54 00 54 54 00 62 54 ff e0 54 ff f2 54        T..T.TT.bT..T..T
+0070: ff d3 54 00 35 54 ff d7 54 00 51 54 ff f7 54 ff        ..T.5T..T.QT..T.
+0080: d9 54 00 39 54 00 00 54 00 44 54 00 3a 54 ff dc        .T.9T..T.DT.:T..
+0090: 54 ff ff 54 ff ef 54 00 2b 54 00 16 54 00 1d 54        T..T..T.+T..T..T
+00a0: ff ef                                                  ..
+-------
+> TTT)TTTTTTTTTTCTcTITHT^TTYTT8TTTTBT;TTT3TTTTTTTbTTTT5TTQTTT9TTDT:TTTT+TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712503
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12651m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 35 54 00 5a 54 00 33 54 00 0a 54 ff e2 54        T.5T.ZT.3T..T..T
+0010: 00 4e 54 00 5f 54 00 30 54 00 20 54 ff ea 54 00        .NT._T.0T. T..T.
+0020: 13 54 ff e5 54 00 18 54 00 62 54 00 0d 54 00 2f        .T..T..T.bT..T./
+0030: 54 00 43 54 00 5b 54 00 41 54 00 34 54 00 4c 54        T.CT.[T.AT.4T.LT
+0040: 00 4c 54 00 23 54 ff ef 54 ff fc 54 00 11 54 00        .LT.#T..T..T..T.
+0050: 19 54 00 3b 54 00 4d 54 00 1f 54 00 42 54 ff db        .T.;T.MT..T.BT..
+0060: 54 00 28 54 00 31 54 00 51 54 00 21 54 ff e7 54        T.(T.1T.QT.!T..T
+0070: ff f2 54 00 3a 54 00 0a 54 00 2b 54 00 42 54 00        ..T.:T..T.+T.BT.
+0080: 36 54 00 17 54 ff f9 54 ff fb 54 00 07 54 00 3f        6T..T..T..T..T.?
+0090: 54 00 45 54 00 43 54 ff ec 54 00 04 54 ff dd 54        T.ET.CT..T..T..T
+00a0: ff e6                                                  ..
+-------
+> T5TZT3TTTNT_T0T TTTTTbTT/TCT[TAT4TLTLT#TTTTT;TMTTBTT(T1TQT!TTT:TT+TBT6TTTTT?TETCTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712556
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12987m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff fc 54 00 57 54 00 29 54 00 46 54 00 59 54        T..T.WT.)T.FT.YT
+0010: 00 3c 54 00 50 54 ff e0 54 00 2f 54 00 0d 54 00        .<T.PT..T./T..T.
+0020: 49 54 ff f6 54 00 26 54 ff e6 54 ff e0 54 ff d3        IT..T.&T..T..T..
+0030: 54 00 4a 54 00 58 54 00 26 54 00 38 54 00 0f 54        T.JT.XT.&T.8T..T
+0040: ff e6 54 ff d4 54 00 00 54 00 37 54 00 49 54 00        ..T..T..T.7T.IT.
+0050: 48 54 00 10 54 ff d2 54 00 0a 54 00 40 54 ff f5        HT..T..T..T.@T..
+0060: 54 00 58 54 ff d4 54 ff f8 54 00 03 54 00 25 54        T.XT..T..T..T.%T
+0070: 00 12 54 ff f5 54 ff eb 54 ff e3 54 ff eb 54 00        ..T..T..T..T..T.
+0080: 09 54 00 27 54 00 0d 54 ff eb 54 00 10 54 00 52        .T.'T..T..T..T.R
+0090: 54 ff e3 54 00 14 54 ff d3 54 ff fc 54 00 56 54        T..T..T..T..T.VT
+00a0: 00 50                                                  .P
+-------
+> TTWT)TFTYT<TPTT/TTITT&TTTTJTXT&T8TTTTT7TITHTTTT@TTXTTTT%TTTTTTT'TTTTRTTTTTVTP
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712611
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  13491m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 4a 54 00 41 54 00 13 54 00 50 54 ff f3 54        T.JT.AT..T.PT..T
+0010: ff de 54 00 04 54 00 1a 54 00 08 54 ff d0 54 00        ..T..T..T..T..T.
+0020: 38 54 00 63 54 00 07 54 ff f8 54 00 47 54 00 1d        8T.cT..T..T.GT..
+0030: 54 00 4f 54 00 4c 54 00 03 54 00 62 54 00 56 54        T.OT.LT..T.bT.VT
+0040: 00 11 54 00 47 54 00 48 54 00 2a 54 00 52 54 ff        ..T.GT.HT.*T.RT.
+0050: ee 54 00 4e 54 00 33 54 00 1b 54 00 21 54 00 5f        .T.NT.3T..T.!T._
+0060: 54 00 0f 54 ff f5 54 00 2c 54 00 4a 54 00 3d 54        T..T..T.,T.JT.=T
+0070: 00 07 54 00 46 54 00 5b 54 00 2c 54 00 4e 54 ff        ..T.FT.[T.,T.NT.
+0080: e0 54 00 26 54 00 2d 54 00 4d 54 00 5f 54 00 23        .T.&T.-T.MT._T.#
+0090: 54 00 03 54 00 22 54 00 60 54 ff d4 54 00 17 54        T..T."T.`T..T..T
+00a0: 00 27                                                  .'
+-------
+> TJTATTPTTTTTTT8TcTTTGTTOTLTTbTVTTGTHT*TRTTNT3TT!T_TTT,TJT=TTFT[T,TNTT&T-TMT_T#TT"T`TTT'
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712664
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  13843m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0d 54 00 3b 54 ff da 54 00 5e 54 00 00 54        T..T.;T..T.^T..T
+0010: 00 12 54 00 0e 54 00 0b 54 00 48 54 00 3c 54 ff        ..T..T..T.HT.<T.
+0020: f1 54 ff fc 54 ff ef 54 ff f4 54 00 2e 54 00 36        .T..T..T..T..T.6
+0030: 54 00 0f 54 00 57 54 ff ef 54 00 50 54 ff d8 54        T..T.WT..T.PT..T
+0040: ff fa 54 00 35 54 ff de 54 00 63 54 00 02 54 ff        ..T.5T..T.cT..T.
+0050: fb 54 00 4c 54 00 16 54 00 3a 54 ff ff 54 00 5a        .T.LT..T.:T..T.Z
+0060: 54 00 40 54 ff f4 54 00 0b 54 00 23 54 ff d8 54        T.@T..T..T.#T..T
+0070: 00 26 54 00 2f 54 00 13 54 00 23 54 00 06 54 00        .&T./T..T.#T..T.
+0080: 22 54 ff fc 54 00 18 54 ff e9 54 00 14 54 00 62        "T..T..T..T..T.b
+0090: 54 00 21 54 00 4e 54 00 39 54 00 0d 54 ff f3 54        T.!T.NT.9T..T..T
+00a0: ff f8                                                  ..
+-------
+> TT;TT^TTTTTHT<TTTTT.T6TTWTTPTTT5TTcTTTLTT:TTZT@TTT#TT&T/TT#TT"TTTTTbT!TNT9TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712719
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14171m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 45 54 ff fd 54 00 59 54 00 09 54 00 25 54        T.ET..T.YT..T.%T
+0010: 00 2f 54 00 36 54 00 24 54 ff df 54 ff d5 54 ff        ./T.6T.$T..T..T.
+0020: f1 54 00 59 54 00 19 54 00 4b 54 ff e9 54 ff e1        .T.YT..T.KT..T..
+0030: 54 00 36 54 00 48 54 ff d1 54 ff ef 54 00 4e 54        T.6T.HT..T..T.NT
+0040: ff f3 54 00 42 54 00 0b 54 ff f3 54 00 46 54 ff        ..T.BT..T..T.FT.
+0050: ee 54 00 4e 54 00 43 54 ff dc 54 ff d2 54 00 45        .T.NT.CT..T..T.E
+0060: 54 ff d3 54 00 06 54 ff db 54 00 56 54 00 01 54        T..T..T..T.VT..T
+0070: ff d3 54 00 12 54 00 17 54 ff f4 54 00 1e 54 ff        ..T..T..T..T..T.
+0080: ec 54 00 2f 54 ff d9 54 00 4d 54 00 19 54 00 0d        .T./T..T.MT..T..
+0090: 54 00 0e 54 00 34 54 ff d2 54 00 3f 54 00 07 54        T..T.4T..T.?T..T
+00a0: 00 29                                                  .)
+-------
+> TETTYTT%T/T6T$TTTTYTTKTTT6THTTTNTTBTTTFTTNTCTTTETTTTVTTTTTTTT/TTMTTTT4TT?TT)
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712773
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14675m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 34 54 ff ec 54 00 0b 54 00 5d 54 00 03 54        T.4T..T..T.]T..T
+0010: 00 04 54 00 19 54 00 34 54 00 1c 54 00 5a 54 00        ..T..T.4T..T.ZT.
+0020: 04 54 00 20 54 00 26 54 00 2d 54 ff dc 54 00 3e        .T. T.&T.-T..T.>
+0030: 54 ff ed 54 00 0f 54 00 0c 54 ff d0 54 00 2b 54        T..T..T..T..T.+T
+0040: ff ed 54 ff e4 54 ff d4 54 00 31 54 00 4c 54 ff        ..T..T..T.1T.LT.
+0050: db 54 00 09 54 00 55 54 00 61 54 00 15 54 ff d6        .T..T.UT.aT..T..
+0060: 54 00 13 54 00 3d 54 ff da 54 00 60 54 00 55 54        T..T.=T..T.`T.UT
+0070: 00 58 54 00 0d 54 00 0a 54 00 0b 54 00 3c 54 ff        .XT..T..T..T.<T.
+0080: df 54 00 28 54 ff ed 54 ff e7 54 00 63 54 00 0a        .T.(T..T..T.cT..
+0090: 54 00 1c 54 00 27 54 ff da 54 ff d2 54 ff fc 54        T..T.'T..T..T..T
+00a0: 00 1d                                                  ..
+-------
+> T4TTT]TTTT4TTZTT T&T-TT>TTTTT+TTTT1TLTTTUTaTTTT=TT`TUTXTTTT<TT(TTTcTTT'TTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712893
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15347m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 07 54 00 2a 54 00 4e 54 ff dc 54 00 07 54        T..T.*T.NT..T..T
+0010: ff f9 54 00 1d 54 00 54 54 00 26 54 00 17 54 00        ..T..T.TT.&T..T.
+0020: 3b 54 00 62 54 00 4c 54 ff fb 54 00 53 54 00 5f        ;T.bT.LT..T.ST._
+0030: 54 ff f3 54 ff e3 54 00 02 54 00 1f 54 00 19 54        T..T..T..T..T..T
+0040: 00 19 54 00 16 54 ff dc 54 ff d2 54 00 03 54 00        ..T..T..T..T..T.
+0050: 0c 54 00 24 54 ff e5 54 ff ef 54 00 3d 54 ff d5        .T.$T..T..T.=T..
+0060: 54 00 4e 54 00 3c 54 00 2e 54 ff d5 54 00 4c 54        T.NT.<T..T..T.LT
+0070: ff f1 54 00 48 54 00 63 54 00 1d 54 00 63 54 ff        ..T.HT.cT..T.cT.
+0080: f8 54 ff dd 54 00 4b 54 00 63 54 ff fe 54 00 20        .T..T.KT.cT..T. 
+0090: 54 ff f0 54 ff e6 54 00 45 54 ff e9 54 ff db 54        T..T..T.ET..T..T
+00a0: 00 0f                                                  ..
+-------
+> TT*TNTTTTTTT&TT;TbTLTTST_TTTTTTTTTTTT$TTT=TTNT<T.TTLTTHTcTTcTTTKTcTT TTTETTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490712936
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15851m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f6 54 ff d2 54 ff f1 54 ff de 54 00 61 54        T..T..T..T..T.aT
+0010: ff f6 54 00 53 54 ff de 54 00 3b 54 00 63 54 00        ..T.ST..T.;T.cT.
+0020: 54 54 00 10 54 00 57 54 ff ff 54 ff fb 54 00 5f        TT..T.WT..T..T._
+0030: 54 ff ea 54 ff cf 54 00 44 54 00 4c 54 ff f8 54        T..T..T.DT.LT..T
+0040: ff fd 54 00 3d 54 00 16 54 ff d3 54 00 52 54 00        ..T.=T..T..T.RT.
+0050: 0b 54 00 52 54 ff d6 54 00 2d 54 00 4b 54 ff d1        .T.RT..T.-T.KT..
+0060: 54 00 46 54 00 10 54 ff dc 54 00 54 54 00 58 54        T.FT..T..T.TT.XT
+0070: 00 33 54 00 43 54 ff e1 54 ff d6 54 00 63 54 00        .3T.CT..T..T.cT.
+0080: 5c 54 ff d6 54 00 24 54 ff f7 54 ff f5 54 00 3d        \T..T.$T..T..T.=
+0090: 54 ff d9 54 ff fe 54 00 0a 54 ff f8 54 ff eb 54        T..T..T..T..T..T
+00a0: 00 3b                                                  .;
+-------
+> TTTTTaTTSTT;TcTTTTWTTT_TTTDTLTTT=TTTRTTRTT-TKTTFTTTTTXT3TCTTTcT\TT$TTT=TTTTTT;
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713045
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  16523m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f4 54 00 4f 54 00 19 54 00 02 54 00 59 54        T..T.OT..T..T.YT
+0010: 00 0e 54 00 63 54 00 20 54 00 27 54 00 4c 54 00        ..T.cT. T.'T.LT.
+0020: 07 54 ff e1 54 00 2d 54 00 07 54 00 07 54 ff cf        .T..T.-T..T..T..
+0030: 54 00 14 54 00 51 54 00 14 54 ff df 54 00 51 54        T..T.QT..T..T.QT
+0040: ff fd 54 ff d7 54 00 3b 54 ff df 54 ff ee 54 00        ..T..T.;T..T..T.
+0050: 12 54 00 39 54 ff d2 54 ff e7 54 00 0f 54 ff e7        .T.9T..T..T..T..
+0060: 54 00 12 54 00 5d 54 00 30 54 ff ce 54 ff e7 54        T..T.]T.0T..T..T
+0070: 00 0e 54 00 09 54 ff f7 54 ff fe 54 00 2f 54 00        ..T..T..T..T./T.
+0080: 1d 54 00 10 54 00 52 54 00 4d 54 00 05 54 00 27        .T..T.RT.MT..T.'
+0090: 54 ff e5 54 00 41 54 00 4d 54 00 60 54 00 41 54        T..T.AT.MT.`T.AT
+00a0: ff f0                                                  ..
+-------
+> TTOTTTYTTcT T'TLTTT-TTTTTQTTTQTTT;TTTT9TTTTTT]T0TTTTTTT/TTTRTMTT'TTATMT`TAT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713096
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17027m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0c 54 00 56 54 ff d4 54 00 58 54 00 32 54        T..T.VT..T.XT.2T
+0010: 00 4f 54 00 63 54 ff d1 54 00 09 54 00 45 54 00        .OT.cT..T..T.ET.
+0020: 18 54 00 03 54 00 1c 54 ff de 54 ff cf 54 00 1b        .T..T..T..T..T..
+0030: 54 00 61 54 00 13 54 ff eb 54 ff de 54 00 0f 54        T.aT..T..T..T..T
+0040: ff f1 54 00 17 54 00 40 54 00 37 54 ff f6 54 ff        ..T..T.@T.7T..T.
+0050: e5 54 00 27 54 00 63 54 00 32 54 00 0d 54 00 00        .T.'T.cT.2T..T..
+0060: 54 ff e2 54 00 30 54 00 02 54 00 40 54 00 1d 54        T..T.0T..T.@T..T
+0070: ff fd 54 ff ea 54 ff ef 54 00 34 54 00 20 54 00        ..T..T..T.4T. T.
+0080: 5e 54 ff e9 54 00 2b 54 00 06 54 00 30 54 00 0b        ^T..T.+T..T.0T..
+0090: 54 00 63 54 00 5c 54 ff d7 54 00 2c 54 00 27 54        T.cT.\T..T.,T.'T
+00a0: 00 35                                                  .5
+-------
+> TTVTTXT2TOTcTTTETTTTTTTaTTTTTTT@T7TTT'TcT2TTTT0TT@TTTTT4T T^TT+TT0TTcT\TT,T'T5
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713162
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17363m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 57 54 00 14 54 00 12 54 00 25 54 00 42 54        T.WT..T..T.%T.BT
+0010: 00 17 54 ff f9 54 ff d2 54 00 19 54 00 13 54 00        ..T..T..T..T..T.
+0020: 03 54 00 3f 54 00 2c 54 00 16 54 00 01 54 00 61        .T.?T.,T..T..T.a
+0030: 54 00 07 54 00 12 54 00 10 54 ff e9 54 00 2e 54        T..T..T..T..T..T
+0040: 00 2c 54 ff ce 54 00 4b 54 00 29 54 00 2e 54 ff        .,T..T.KT.)T..T.
+0050: ce 54 ff de 54 ff e2 54 00 4b 54 ff d1 54 ff f0        .T..T..T.KT..T..
+0060: 54 00 2a 54 ff fd 54 00 56 54 00 03 54 00 36 54        T.*T..T.VT..T.6T
+0070: 00 25 54 ff dd 54 00 5b 54 ff f4 54 ff fe 54 00        .%T..T.[T..T..T.
+0080: 17 54 ff ec 54 00 28 54 ff d5 54 00 12 54 ff d8        .T..T.(T..T..T..
+0090: 54 00 32 54 00 3f 54 00 0d 54 00 3c 54 00 4e 54        T.2T.?T..T.<T.NT
+00a0: ff e5                                                  ..
+-------
+> TWTTT%TBTTTTTTT?T,TTTaTTTTT.T,TTKT)T.TTTTKTTT*TTVTT6T%TT[TTTTT(TTTT2T?TT<TNT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713204
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17699m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 51 54 ff ea 54 00 44 54 00 04 54 ff dd 54        T.QT..T.DT..T..T
+0010: 00 15 54 ff f5 54 00 47 54 00 32 54 00 63 54 ff        ..T..T.GT.2T.cT.
+0020: e8 54 ff ef 54 00 32 54 00 10 54 00 03 54 00 32        .T..T.2T..T..T.2
+0030: 54 ff ce 54 00 05 54 ff e1 54 ff d9 54 00 24 54        T..T..T..T..T.$T
+0040: ff f8 54 ff ea 54 00 0f 54 ff d3 54 00 27 54 00        ..T..T..T..T.'T.
+0050: 0b 54 00 4f 54 00 5b 54 00 62 54 00 5c 54 00 05        .T.OT.[T.bT.\T..
+0060: 54 00 2d 54 00 20 54 ff fc 54 ff fe 54 00 44 54        T.-T. T..T..T.DT
+0070: 00 07 54 ff d5 54 ff f8 54 ff f9 54 00 2f 54 00        ..T..T..T..T./T.
+0080: 08 54 00 02 54 ff ef 54 00 61 54 00 4d 54 00 0f        .T..T..T.aT.MT..
+0090: 54 00 41 54 00 03 54 00 5b 54 00 33 54 ff e9 54        T.AT..T.[T.3T..T
+00a0: 00 43                                                  .C
+-------
+> TQTTDTTTTTGT2TcTTT2TTT2TTTTT$TTTTT'TTOT[TbT\TT-T TTTDTTTTT/TTTTaTMTTATT[T3TTC
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713274
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18203m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 09 54 00 42 54 00 0d 54 00 38 54 00 17 54        T..T.BT..T.8T..T
+0010: 00 39 54 ff e7 54 00 54 54 00 20 54 ff cf 54 00        .9T..T.TT. T..T.
+0020: 59 54 ff f0 54 00 34 54 00 2d 54 00 18 54 ff ea        YT..T.4T.-T..T..
+0030: 54 ff fc 54 ff f7 54 ff f2 54 ff ce 54 00 2c 54        T..T..T..T..T.,T
+0040: 00 10 54 ff f0 54 00 56 54 ff f2 54 00 20 54 00        ..T..T.VT..T. T.
+0050: 03 54 00 1f 54 00 4d 54 00 37 54 00 27 54 00 03        .T..T.MT.7T.'T..
+0060: 54 00 46 54 ff ff 54 ff df 54 00 15 54 ff f1 54        T.FT..T..T..T..T
+0070: ff e0 54 ff f2 54 00 35 54 00 52 54 00 4f 54 00        ..T..T.5T.RT.OT.
+0080: 30 54 00 23 54 00 20 54 00 52 54 ff f7 54 00 0a        0T.#T. T.RT..T..
+0090: 54 00 25 54 00 2f 54 ff fc 54 00 14 54 ff e5 54        T.%T./T..T..T..T
+00a0: 00 05                                                  ..
+-------
+> TTBTT8TT9TTTT TTYTT4T-TTTTTTT,TTTVTT TTTMT7T'TTFTTTTTTT5TRTOT0T#T TRTTT%T/TTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713312
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18555m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e4 54 ff f4 54 00 5a 54 00 09 54 00 01 54        T..T..T.ZT..T..T
+0010: 00 51 54 00 55 54 00 5e 54 ff eb 54 00 43 54 00        .QT.UT.^T..T.CT.
+0020: 04 54 00 51 54 ff d5 54 00 13 54 00 1d 54 00 38        .T.QT..T..T..T.8
+0030: 54 ff ff 54 00 41 54 00 5e 54 ff e6 54 00 39 54        T..T.AT.^T..T.9T
+0040: 00 17 54 00 49 54 ff ce 54 00 31 54 00 42 54 00        ..T.IT..T.1T.BT.
+0050: 0d 54 ff ee 54 ff d6 54 ff ff 54 00 21 54 00 0f        .T..T..T..T.!T..
+0060: 54 00 1b 54 00 0c 54 ff f3 54 ff f5 54 00 23 54        T..T..T..T..T.#T
+0070: 00 3f 54 00 1d 54 00 1b 54 00 2b 54 ff e0 54 00        .?T..T..T.+T..T.
+0080: 01 54 00 34 54 00 39 54 00 3d 54 00 49 54 00 5b        .T.4T.9T.=T.IT.[
+0090: 54 00 20 54 00 0c 54 00 18 54 ff e3 54 ff f8 54        T. T..T..T..T..T
+00a0: ff ee                                                  ..
+-------
+> TTTZTTTQTUT^TTCTTQTTTT8TTAT^TT9TTITT1TBTTTTT!TTTTTT#T?TTT+TTT4T9T=TIT[T TTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713382
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18883m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 36 54 ff d0 54 ff f7 54 00 61 54 00 36 54        T.6T..T..T.aT.6T
+0010: ff d6 54 ff fa 54 00 3e 54 ff ee 54 00 21 54 00        ..T..T.>T..T.!T.
+0020: 40 54 ff df 54 ff db 54 ff dd 54 ff f5 54 00 07        @T..T..T..T..T..
+0030: 54 00 26 54 00 5a 54 ff dd 54 00 5e 54 00 17 54        T.&T.ZT..T.^T..T
+0040: 00 5b 54 00 2b 54 00 4d 54 00 27 54 00 21 54 00        .[T.+T.MT.'T.!T.
+0050: 0d 54 ff e0 54 00 36 54 00 38 54 00 18 54 00 4b        .T..T.6T.8T..T.K
+0060: 54 ff cf 54 00 01 54 ff fe 54 00 0c 54 00 03 54        T..T..T..T..T..T
+0070: 00 20 54 00 3c 54 00 61 54 00 38 54 ff d1 54 00        . T.<T.aT.8T..T.
+0080: 45 54 00 23 54 00 5f 54 ff f1 54 00 34 54 00 4b        ET.#T._T..T.4T.K
+0090: 54 00 2b 54 ff f3 54 00 0f 54 00 05 54 00 4f 54        T.+T..T..T..T.OT
+00a0: ff cf                                                  ..
+-------
+> T6TTTaT6TTT>TT!T@TTTTTT&TZTT^TT[T+TMT'T!TTT6T8TTKTTTTTT T<TaT8TTET#T_TT4TKT+TTTTOT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713420
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  19387m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 08 54 00 12 54 ff ef 54 00 1d 54 ff e9 54        T..T..T..T..T..T
+0010: ff d1 54 00 11 54 00 24 54 00 5f 54 ff da 54 00        ..T..T.$T._T..T.
+0020: 1e 54 00 04 54 00 04 54 00 14 54 ff f9 54 00 27        .T..T..T..T..T.'
+0030: 54 00 2a 54 00 1d 54 ff e4 54 ff e1 54 ff d2 54        T.*T..T..T..T..T
+0040: 00 14 54 00 51 54 00 4c 54 00 3b 54 00 4e 54 00        ..T.QT.LT.;T.NT.
+0050: 29 54 00 62 54 00 03 54 00 41 54 ff f6 54 00 0c        )T.bT..T.AT..T..
+0060: 54 00 44 54 00 22 54 00 42 54 00 44 54 00 55 54        T.DT."T.BT.DT.UT
+0070: 00 28 54 ff e3 54 00 5e 54 00 5c 54 00 46 54 00        .(T..T.^T.\T.FT.
+0080: 4b 54 00 16 54 00 2f 54 00 28 54 00 1b 54 00 61        KT..T./T.(T..T.a
+0090: 54 00 62 54 00 00 54 ff fa 54 ff f3 54 00 4f 54        T.bT..T..T..T.OT
+00a0: 00 3f                                                  .?
+-------
+> TTTTTTTT$T_TTTTTTT'T*TTTTTTQTLT;TNT)TbTTATTTDT"TBTDTUT(TT^T\TFTKTT/T(TTaTbTTTTOT?
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713475
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  19723m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 08 54 00 39 54 00 1f 54 00 26 54 00 4d 54        T..T.9T..T.&T.MT
+0010: ff d7 54 00 5f 54 00 4f 54 00 30 54 00 47 54 00        ..T._T.OT.0T.GT.
+0020: 5e 54 00 28 54 00 1b 54 00 1f 54 ff d9 54 00 1a        ^T.(T..T..T..T..
+0030: 54 00 60 54 00 03 54 ff e8 54 ff e7 54 00 23 54        T.`T..T..T..T.#T
+0040: 00 5d 54 ff f7 54 00 1e 54 00 1a 54 00 1d 54 00        .]T..T..T..T..T.
+0050: 2e 54 00 48 54 ff d3 54 ff ee 54 00 3d 54 00 55        .T.HT..T..T.=T.U
+0060: 54 00 11 54 00 1d 54 00 18 54 00 03 54 ff f7 54        T..T..T..T..T..T
+0070: 00 50 54 ff cf 54 ff f6 54 00 1b 54 00 43 54 ff        .PT..T..T..T.CT.
+0080: e2 54 ff d6 54 00 0e 54 ff d0 54 00 03 54 ff db        .T..T..T..T..T..
+0090: 54 00 42 54 00 3e 54 00 4e 54 00 44 54 00 2b 54        T.BT.>T.NT.DT.+T
+00a0: 00 4e                                                  .N
+-------
+> TT9TT&TMTT_TOT0TGT^T(TTTTT`TTTT#T]TTTTT.THTTT=TUTTTTTTPTTTTCTTTTTTTBT>TNTDT+TN
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713528
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  20227m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 22 54 00 08 54 00 59 54 00 2b 54 00 2e 54        T."T..T.YT.+T..T
+0010: ff e9 54 00 47 54 00 32 54 00 1a 54 00 21 54 00        ..T.GT.2T..T.!T.
+0020: 5b 54 ff cf 54 00 1b 54 00 0c 54 00 36 54 00 25        [T..T..T..T.6T.%
+0030: 54 00 3e 54 00 1d 54 00 13 54 00 5c 54 ff d3 54        T.>T..T..T.\T..T
+0040: ff e9 54 00 29 54 00 37 54 00 4b 54 ff f9 54 ff        ..T.)T.7T.KT..T.
+0050: f4 54 ff dc 54 00 12 54 00 62 54 ff ea 54 ff f6        .T..T..T.bT..T..
+0060: 54 ff db 54 00 5c 54 ff e8 54 00 05 54 00 25 54        T..T.\T..T..T.%T
+0070: 00 57 54 ff d5 54 00 5b 54 ff f0 54 ff fe 54 00        .WT..T.[T..T..T.
+0080: 34 54 00 42 54 00 3b 54 00 1a 54 00 5c 54 00 36        4T.BT.;T..T.\T.6
+0090: 54 00 0f 54 ff f8 54 00 21 54 00 3c 54 ff f2 54        T..T..T.!T.<T..T
+00a0: ff ec                                                  ..
+-------
+> T"TTYT+T.TTGT2TT!T[TTTT6T%T>TTT\TTT)T7TKTTTTTbTTTT\TTT%TWTT[TTT4TBT;TT\T6TTT!T<TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713584
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  20563m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f8 54 00 0a 54 ff f7 54 00 23 54 ff d7 54        T..T..T..T.#T..T
+0010: 00 24 54 ff dc 54 00 43 54 00 4e 54 00 05 54 00        .$T..T.CT.NT..T.
+0020: 29 54 ff da 54 00 3f 54 ff dd 54 00 3a 54 ff fc        )T..T.?T..T.:T..
+0030: 54 ff df 54 00 02 54 ff e4 54 00 4d 54 00 2b 54        T..T..T..T.MT.+T
+0040: ff de 54 00 5d 54 00 1d 54 00 3e 54 00 1f 54 ff        ..T.]T..T.>T..T.
+0050: ff 54 00 39 54 00 52 54 00 43 54 ff ce 54 ff df        .T.9T.RT.CT..T..
+0060: 54 00 26 54 00 1e 54 00 18 54 00 18 54 00 08 54        T.&T..T..T..T..T
+0070: 00 33 54 00 05 54 ff d3 54 00 00 54 00 3d 54 00        .3T..T..T..T.=T.
+0080: 29 54 00 14 54 00 45 54 00 28 54 00 4f 54 00 63        )T..T.ET.(T.OT.c
+0090: 54 00 39 54 00 42 54 00 3c 54 00 5d 54 ff f2 54        T.9T.BT.<T.]T..T
+00a0: 00 5b                                                  .[
+-------
+> TTTT#TT$TTCTNTT)TT?TT:TTTTTMT+TT]TT>TTT9TRTCTTT&TTTTT3TTTT=T)TTET(TOTcT9TBT<T]TT[
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713636
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  20899m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 5d 54 00 0e 54 ff ed 54 00 24 54 00 23 54        T.]T..T..T.$T.#T
+0010: 00 36 54 00 46 54 00 38 54 00 49 54 ff df 54 ff        .6T.FT.8T.IT..T.
+0020: e2 54 00 19 54 00 50 54 ff fb 54 00 0e 54 00 28        .T..T.PT..T..T.(
+0030: 54 00 55 54 ff e3 54 00 56 54 00 00 54 00 63 54        T.UT..T.VT..T.cT
+0040: ff f5 54 00 38 54 00 23 54 00 36 54 00 43 54 ff        ..T.8T.#T.6T.CT.
+0050: f5 54 ff f1 54 00 52 54 00 36 54 00 3c 54 00 40        .T..T.RT.6T.<T.@
+0060: 54 00 4d 54 ff fe 54 00 63 54 00 3b 54 00 49 54        T.MT..T.cT.;T.IT
+0070: 00 19 54 00 36 54 00 40 54 00 04 54 ff f2 54 ff        ..T.6T.@T..T..T.
+0080: d1 54 ff ea 54 00 47 54 00 12 54 ff f2 54 00 61        .T..T.GT..T..T.a
+0090: 54 00 23 54 00 54 54 00 38 54 00 12 54 00 15 54        T.#T.TT.8T..T..T
+00a0: 00 3a                                                  .:
+-------
+> T]TTT$T#T6TFT8TITTTTPTTT(TUTTVTTcTT8T#T6TCTTTRT6T<T@TMTTcT;TITT6T@TTTTTGTTTaT#TTT8TTT:
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713692
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21403m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d7 54 00 03 54 00 0e 54 00 60 54 ff ed 54        T..T..T..T.`T..T
+0010: 00 1c 54 ff fc 54 00 4f 54 00 4f 54 00 2d 54 00        ..T..T.OT.OT.-T.
+0020: 61 54 ff dd 54 ff fe 54 00 19 54 ff e6 54 00 3a        aT..T..T..T..T.:
+0030: 54 00 61 54 ff cf 54 00 01 54 00 2b 54 00 23 54        T.aT..T..T.+T.#T
+0040: 00 39 54 ff e4 54 ff db 54 00 2c 54 ff ef 54 00        .9T..T..T.,T..T.
+0050: 3f 54 ff e6 54 ff ed 54 00 56 54 ff d1 54 00 1c        ?T..T..T.VT..T..
+0060: 54 00 57 54 00 15 54 00 5b 54 ff f3 54 00 12 54        T.WT..T.[T..T..T
+0070: ff f5 54 00 24 54 00 59 54 00 59 54 ff e4 54 00        ..T.$T.YT.YT..T.
+0080: 32 54 00 51 54 00 59 54 00 0c 54 ff ef 54 00 3f        2T.QT.YT..T..T.?
+0090: 54 ff f3 54 00 46 54 00 10 54 00 1c 54 00 45 54        T..T.FT..T..T.ET
+00a0: 00 52                                                  .R
+-------
+> TTTT`TTTTOTOT-TaTTTTT:TaTTT+T#T9TTT,TT?TTTVTTTWTT[TTTT$TYTYTT2TQTYTTT?TTFTTTETR
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713744
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21739m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 1e 54 00 15 54 ff f6 54 00 1b 54 00 5b 54        T..T..T..T..T.[T
+0010: ff d9 54 00 40 54 00 1d 54 00 54 54 00 5e 54 00        ..T.@T..T.TT.^T.
+0020: 55 54 00 0e 54 00 3c 54 00 03 54 00 15 54 00 2f        UT..T.<T..T..T./
+0030: 54 00 16 54 00 30 54 00 01 54 00 51 54 00 50 54        T..T.0T..T.QT.PT
+0040: 00 00 54 ff fe 54 00 04 54 00 58 54 ff d3 54 00        ..T..T..T.XT..T.
+0050: 29 54 00 14 54 00 42 54 00 1b 54 00 07 54 00 09        )T..T.BT..T..T..
+0060: 54 00 1e 54 ff f7 54 00 35 54 00 33 54 00 23 54        T..T..T.5T.3T.#T
+0070: 00 43 54 00 24 54 00 61 54 00 62 54 00 10 54 00        .CT.$T.aT.bT..T.
+0080: 09 54 ff ef 54 ff e6 54 ff eb 54 ff ea 54 00 62        .T..T..T..T..T.b
+0090: 54 00 5d 54 ff e2 54 ff f4 54 ff f2 54 ff e8 54        T.]T..T..T..T..T
+00a0: ff f1                                                  ..
+-------
+> TTTTT[TT@TTTT^TUTT<TTT/TT0TTQTPTTTTXTT)TTBTTTTTT5T3T#TCT$TaTbTTTTTTTbT]TTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713800
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  22075m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 54 54 00 0a 54 00 60 54 00 2b 54 ff d7 54        T.TT..T.`T.+T..T
+0010: 00 22 54 00 1c 54 ff e7 54 00 3f 54 ff e6 54 00        ."T..T..T.?T..T.
+0020: 4a 54 ff f8 54 00 05 54 ff d5 54 00 48 54 ff d6        JT..T..T..T.HT..
+0030: 54 00 34 54 00 14 54 00 22 54 00 59 54 00 51 54        T.4T..T."T.YT.QT
+0040: ff f2 54 00 5d 54 00 30 54 00 29 54 00 34 54 ff        ..T.]T.0T.)T.4T.
+0050: e4 54 00 10 54 00 31 54 ff ce 54 00 5f 54 00 2d        .T..T.1T..T._T.-
+0060: 54 00 0c 54 ff f4 54 00 18 54 00 17 54 00 02 54        T..T..T..T..T..T
+0070: 00 16 54 00 44 54 00 59 54 00 31 54 00 08 54 00        ..T.DT.YT.1T..T.
+0080: 4c 54 00 10 54 00 3b 54 00 41 54 ff f9 54 00 0f        LT..T.;T.AT..T..
+0090: 54 ff fc 54 00 4e 54 00 0b 54 00 01 54 00 10 54        T..T.NT..T..T..T
+00a0: 00 4d                                                  .M
+-------
+> TTTT`T+TT"TTT?TTJTTTTHTT4TT"TYTQTT]T0T)T4TTT1TT_T-TTTTTTTDTYT1TTLTT;TATTTTNTTTTM
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713853
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  22579m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 01 54 00 63 54 ff d8 54 00 21 54 00 60 54        T..T.cT..T.!T.`T
+0010: 00 1a 54 00 13 54 00 46 54 ff e9 54 ff ea 54 00        ..T..T.FT..T..T.
+0020: 25 54 00 05 54 00 3a 54 00 45 54 ff f7 54 00 04        %T..T.:T.ET..T..
+0030: 54 ff f9 54 ff f3 54 00 20 54 00 27 54 00 5c 54        T..T..T. T.'T.\T
+0040: 00 01 54 ff d6 54 00 55 54 ff f7 54 ff e3 54 00        ..T..T.UT..T..T.
+0050: 18 54 00 5d 54 00 0c 54 00 27 54 00 0a 54 00 2c        .T.]T..T.'T..T.,
+0060: 54 ff ed 54 00 39 54 00 4d 54 ff f3 54 00 0b 54        T..T.9T.MT..T..T
+0070: 00 62 54 00 33 54 00 5f 54 ff ce 54 00 36 54 00        .bT.3T._T..T.6T.
+0080: 3a 54 00 63 54 00 35 54 ff d4 54 00 22 54 ff d2        :T.cT.5T..T."T..
+0090: 54 00 40 54 ff fa 54 ff ec 54 00 35 54 00 49 54        T.@T..T..T.5T.IT
+00a0: 00 3d                                                  .=
+-------
+> TTcTT!T`TTTFTTT%TT:TETTTTT T'T\TTTUTTTT]TT'TT,TT9TMTTTbT3T_TT6T:TcT5TT"TT@TTT5TIT=
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490713973
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  23267m
+payload:   20
+length:    24 bytes
+======
+0000: 54 00 0f 54 00 4b 54 00 1d 54 00 60 54 00 09 54        T..T.KT..T.`T..T
+0010: ff fb 54 ff d2 54 00 21                                ..T..T.!
+-------
+> TTKTT`TTTT!
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714016
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  23763m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 50 54 00 57 54 ff e8 54 00 27 54 00 01 54        T.PT.WT..T.'T..T
+0010: ff e6 54 00 2f 54 00 3d 54 00 3a 54 00 14 54 00        ..T./T.=T.:T..T.
+0020: 28 54 00 50 54 00 28 54 ff e5 54 00 22 54 00 4c        (T.PT.(T..T."T.L
+0030: 54 00 3f 54 00 4e 54 ff e8 54 00 19 54 00 60 54        T.?T.NT..T..T.`T
+0040: 00 20 54 00 35 54 00 55 54 00 1a 54 00 07 54 00        . T.5T.UT..T..T.
+0050: 1b 54 00 4a 54 00 1a 54 ff e3 54 00 60 54 00 59        .T.JT..T..T.`T.Y
+0060: 54 00 47 54 00 29 54 ff e4 54 00 11 54 00 2a 54        T.GT.)T..T..T.*T
+0070: 00 09 54 00 36 54 00 09 54 00 09 54 00 30 54 ff        ..T.6T..T..T.0T.
+0080: e7 54 00 10 54 00 5f 54 ff f2 54 00 32 54 ff f9        .T..T._T..T.2T..
+0090: 54 00 2a 54 00 44 54 ff e2 54 ff f9 54 ff dc 54        T.*T.DT..T..T..T
+00a0: ff d0                                                  ..
+-------
+> TPTWTT'TTT/T=T:TT(TPT(TT"TLT?TNTTT`T T5TUTTTTJTTT`TYTGT)TTT*TT6TTT0TTT_TT2TT*TDTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714068
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  24099m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 38 54 00 59 54 00 0b 54 00 36 54 ff d7 54        T.8T.YT..T.6T..T
+0010: ff f2 54 00 3b 54 00 5a 54 00 58 54 ff ff 54 00        ..T.;T.ZT.XT..T.
+0020: 1a 54 00 08 54 ff e4 54 00 57 54 00 19 54 ff fb        .T..T..T.WT..T..
+0030: 54 ff dd 54 00 62 54 00 02 54 ff f0 54 ff dc 54        T..T.bT..T..T..T
+0040: 00 52 54 00 30 54 00 14 54 00 25 54 00 55 54 00        .RT.0T..T.%T.UT.
+0050: 0b 54 00 2f 54 ff ee 54 ff fa 54 00 40 54 00 37        .T./T..T..T.@T.7
+0060: 54 00 34 54 00 16 54 00 58 54 00 4e 54 00 57 54        T.4T..T.XT.NT.WT
+0070: 00 4f 54 ff e6 54 ff ce 54 00 04 54 ff f3 54 00        .OT..T..T..T..T.
+0080: 04 54 00 26 54 00 3d 54 ff e5 54 00 4d 54 00 5f        .T.&T.=T..T.MT._
+0090: 54 ff f2 54 00 02 54 ff d6 54 00 5e 54 00 40 54        T..T..T..T.^T.@T
+00a0: 00 2a                                                  .*
+-------
+> T8TYTT6TTT;TZTXTTTTTWTTTTbTTTTRT0TT%TUTT/TTT@T7T4TTXTNTWTOTTTTTT&T=TTMT_TTTT^T@T*
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714176
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  24939m
+payload:   20
+length:    159 bytes
+======
+0000: 54 00 62 54 00 25 54 ff f2 54 00 02 54 00 26 54        T.bT.%T..T..T.&T
+0010: ff fb 54 00 31 54 00 4f 54 00 21 54 ff ff 54 00        ..T.1T.OT.!T..T.
+0020: 0c 54 00 47 54 ff f4 54 00 42 54 00 1a 54 00 4a        .T.GT..T.BT..T.J
+0030: 54 ff fb 54 00 10 54 00 5c 54 00 26 54 00 38 54        T..T..T.\T.&T.8T
+0040: ff d0 54 ff ef 54 ff db 54 ff d1 54 ff de 54 00        ..T..T..T..T..T.
+0050: 22 54 ff fa 54 00 2f 54 00 02 54 00 46 54 ff de        "T..T./T..T.FT..
+0060: 54 00 10 54 00 3f 54 00 15 54 00 18 54 00 43 54        T..T.?T..T..T.CT
+0070: 00 55 54 00 30 54 00 24 54 00 19 54 00 4c 54 00        .UT.0T.$T..T.LT.
+0080: 61 54 00 49 54 00 52 54 ff ec 54 00 07 54 00 1a        aT.IT.RT..T..T..
+0090: 54 ff f6 54 00 06 54 00 08 54 00 16 54 ff e3           T..T..T..T..T..
+-------
+> TbT%TTT&TT1TOT!TTTGTTBTTJTTT\T&T8TTTTTT"TT/TTFTTT?TTTCTUT0T$TTLTaTITRTTTTTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714242
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  25275m
+payload:   20
+length:    159 bytes
+======
+0000: 54 00 3f 54 00 1d 54 00 03 54 00 57 54 00 22 54        T.?T..T..T.WT."T
+0010: ff e2 54 ff de 54 00 37 54 ff dc 54 00 3d 54 00        ..T..T.7T..T.=T.
+0020: 18 54 00 52 54 00 42 54 00 4f 54 ff ea 54 00 0a        .T.RT.BT.OT..T..
+0030: 54 00 17 54 00 0c 54 ff ff 54 00 4d 54 00 18 54        T..T..T..T.MT..T
+0040: ff d3 54 00 33 54 ff d4 54 00 15 54 ff e5 54 00        ..T.3T..T..T..T.
+0050: 09 54 00 28 54 00 50 54 00 45 54 ff ea 54 00 46        .T.(T.PT.ET..T.F
+0060: 54 00 21 54 ff ee 54 ff f2 54 00 40 54 00 25 54        T.!T..T..T.@T.%T
+0070: ff d9 54 00 40 54 ff f7 54 00 45 54 ff fe 54 ff        ..T.@T..T.ET..T.
+0080: ee 54 ff e0 54 00 02 54 00 18 54 ff e8 54 00 33        .T..T..T..T..T.3
+0090: 54 00 08 54 00 24 54 00 4e 54 00 04 54 00 35           T..T.$T.NT..T.5
+-------
+> T?TTTWT"TTT7TT=TTRTBTOTTTTTTMTTT3TTTTT(TPTETTFT!TTT@T%TT@TTETTTTTTT3TT$TNTT5
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714284
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  25611m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 27 54 00 53 54 00 61 54 ff eb 54 00 1b 54        T.'T.ST.aT..T..T
+0010: 00 4b 54 ff d5 54 00 19 54 00 2f 54 00 13 54 00        .KT..T..T./T..T.
+0020: 0d 54 00 5f 54 00 10 54 00 09 54 00 2e 54 00 54        .T._T..T..T..T.T
+0030: 54 00 1d 54 00 32 54 ff e1 54 ff e0 54 00 62 54        T..T.2T..T..T.bT
+0040: 00 27 54 ff d7 54 00 4d 54 00 04 54 ff ed 54 00        .'T..T.MT..T..T.
+0050: 48 54 ff fe 54 ff d2 54 00 39 54 00 4b 54 ff e5        HT..T..T.9T.KT..
+0060: 54 ff fd 54 00 15 54 ff db 54 ff fc 54 ff fd 54        T..T..T..T..T..T
+0070: 00 5e 54 00 35 54 ff dd 54 ff e7 54 ff db 54 00        .^T.5T..T..T..T.
+0080: 26 54 00 03 54 ff f2 54 00 48 54 00 10 54 00 2e        &T..T..T.HT..T..
+0090: 54 ff f4 54 00 4d 54 00 47 54 00 31 54 00 0b 54        T..T.MT.GT.1T..T
+00a0: 00 4a                                                  .J
+-------
+> T'TSTaTTTKTTT/TTT_TTT.TTTT2TTTbT'TTMTTTHTTT9TKTTTTTTT^T5TTTT&TTTHTT.TTMTGT1TTJ
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714354
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26115m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f2 54 00 3c 54 00 4b 54 ff f8 54 ff ed 54        T..T.<T.KT..T..T
+0010: 00 48 54 00 2a 54 00 0f 54 00 1b 54 00 37 54 ff        .HT.*T..T..T.7T.
+0020: de 54 00 08 54 00 56 54 00 4e 54 ff dd 54 00 03        .T..T.VT.NT..T..
+0030: 54 ff e0 54 00 2f 54 ff de 54 00 39 54 00 37 54        T..T./T..T.9T.7T
+0040: ff f0 54 00 51 54 00 11 54 00 42 54 ff ee 54 ff        ..T.QT..T.BT..T.
+0050: dc 54 00 47 54 00 01 54 00 5b 54 ff d0 54 ff ff        .T.GT..T.[T..T..
+0060: 54 ff fb 54 00 07 54 ff f9 54 ff df 54 00 11 54        T..T..T..T..T..T
+0070: 00 1a 54 ff d4 54 ff e9 54 ff f9 54 ff da 54 00        ..T..T..T..T..T.
+0080: 24 54 00 23 54 00 28 54 ff fe 54 00 0c 54 00 20        $T.#T.(T..T..T. 
+0090: 54 ff d3 54 00 5b 54 00 08 54 ff f1 54 00 0b 54        T..T.[T..T..T..T
+00a0: 00 5a                                                  .Z
+-------
+> TT<TKTTTHT*TTT7TTTVTNTTTT/TT9T7TTQTTBTTTGTT[TTTTTTTTTTTTT$T#T(TTT TT[TTTTZ
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714392
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26451m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 05 54 ff ec 54 00 08 54 00 3d 54 ff dc 54        T..T..T..T.=T..T
+0010: 00 4d 54 ff f1 54 00 63 54 ff d1 54 00 21 54 ff        .MT..T.cT..T.!T.
+0020: df 54 00 50 54 00 2d 54 00 1d 54 00 16 54 00 63        .T.PT.-T..T..T.c
+0030: 54 ff e5 54 00 56 54 00 4f 54 00 63 54 00 61 54        T..T.VT.OT.cT.aT
+0040: 00 02 54 00 3d 54 ff e6 54 00 22 54 00 4e 54 00        ..T.=T..T."T.NT.
+0050: 34 54 ff e8 54 00 4f 54 00 17 54 00 1e 54 00 0a        4T..T.OT..T..T..
+0060: 54 00 50 54 ff ff 54 00 54 54 00 05 54 00 09 54        T.PT..T.TT..T..T
+0070: ff fb 54 00 09 54 ff db 54 ff d3 54 00 14 54 ff        ..T..T..T..T..T.
+0080: d3 54 00 25 54 00 49 54 00 12 54 ff d6 54 00 61        .T.%T.IT..T..T.a
+0090: 54 00 63 54 00 4a 54 ff d5 54 ff da 54 00 2b 54        T.cT.JT..T..T.+T
+00a0: 00 49                                                  .I
+-------
+> TTTT=TTMTTcTT!TTPT-TTTcTTVTOTcTaTT=TT"TNT4TTOTTTTPTTTTTTTTTTTT%TITTTaTcTJTTT+TI
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714462
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26787m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 35 54 00 4a 54 ff f5 54 00 3f 54 00 05 54        T.5T.JT..T.?T..T
+0010: 00 4a 54 00 4a 54 00 46 54 00 34 54 00 1e 54 ff        .JT.JT.FT.4T..T.
+0020: dd 54 ff ea 54 ff e6 54 ff ce 54 ff fc 54 00 03        .T..T..T..T..T..
+0030: 54 00 2e 54 00 57 54 00 07 54 ff fb 54 ff ea 54        T..T.WT..T..T..T
+0040: 00 61 54 00 29 54 ff f7 54 ff d5 54 00 1f 54 ff        .aT.)T..T..T..T.
+0050: d1 54 00 28 54 ff d2 54 ff df 54 00 18 54 00 03        .T.(T..T..T..T..
+0060: 54 00 50 54 ff cf 54 ff e1 54 00 11 54 ff f3 54        T.PT..T..T..T..T
+0070: ff d2 54 ff e5 54 00 01 54 ff d6 54 00 14 54 ff        ..T..T..T..T..T.
+0080: d7 54 ff ea 54 ff e5 54 00 58 54 ff f0 54 00 41        .T..T..T.XT..T.A
+0090: 54 00 63 54 00 2f 54 00 30 54 00 1e 54 00 06 54        T.cT./T.0T..T..T
+00a0: ff f9                                                  ..
+-------
+> T5TJTT?TTJTJTFT4TTTTTTTT.TWTTTTaT)TTTTT(TTTTTPTTTTTTTTTTTTTXTTATcT/T0TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714556
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  27627m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 53 54 00 29 54 00 49 54 ff db 54 00 0d 54        T.ST.)T.IT..T..T
+0010: 00 1b 54 00 09 54 00 1a 54 ff e4 54 00 30 54 00        ..T..T..T..T.0T.
+0020: 24 54 ff e8 54 ff f9 54 ff f1 54 00 0f 54 00 61        $T..T..T..T..T.a
+0030: 54 00 03 54 00 18 54 ff ff 54 00 2b 54 00 07 54        T..T..T..T.+T..T
+0040: 00 55 54 ff ce 54 ff e5 54 00 41 54 00 39 54 00        .UT..T..T.AT.9T.
+0050: 03 54 00 35 54 00 07 54 ff ee 54 00 0b 54 ff d1        .T.5T..T..T..T..
+0060: 54 00 3b 54 00 05 54 ff e9 54 ff ce 54 ff de 54        T.;T..T..T..T..T
+0070: 00 2c 54 00 03 54 00 4f 54 00 49 54 00 44 54 00        .,T..T.OT.IT.DT.
+0080: 1c 54 ff fc 54 00 57 54 00 02 54 ff dd 54 ff df        .T..T.WT..T..T..
+0090: 54 ff f6 54 ff fe 54 ff de 54 00 2e 54 ff e0 54        T..T..T..T..T..T
+00a0: 00 4b                                                  .K
+-------
+> TST)TITTTTTTT0T$TTTTTaTTTT+TTUTTTAT9TT5TTTTT;TTTTT,TTOTITDTTTWTTTTTTT.TTK
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714609
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  27979m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 46 54 ff f1 54 ff fe 54 00 0f 54 00 42 54        T.FT..T..T..T.BT
+0010: ff e9 54 00 59 54 00 33 54 00 53 54 00 48 54 ff        ..T.YT.3T.ST.HT.
+0020: f6 54 00 0f 54 ff e7 54 00 27 54 00 4a 54 00 4c        .T..T..T.'T.JT.L
+0030: 54 00 63 54 00 28 54 00 45 54 ff ec 54 ff e5 54        T.cT.(T.ET..T..T
+0040: 00 1e 54 00 46 54 ff ec 54 00 5c 54 00 5a 54 ff        ..T.FT..T.\T.ZT.
+0050: e9 54 00 1f 54 00 23 54 ff eb 54 ff d7 54 00 30        .T..T.#T..T..T.0
+0060: 54 00 4e 54 00 01 54 ff ef 54 ff f4 54 00 1f 54        T.NT..T..T..T..T
+0070: ff fb 54 ff ea 54 ff f1 54 ff f3 54 00 24 54 00        ..T..T..T..T.$T.
+0080: 3e 54 00 3f 54 00 59 54 00 2c 54 ff e8 54 00 05        >T.?T.YT.,T..T..
+0090: 54 00 00 54 00 16 54 00 1b 54 00 32 54 ff fd 54        T..T..T..T.2T..T
+00a0: 00 38                                                  .8
+-------
+> TFTTTTBTTYT3TSTHTTTT'TJTLTcT(TETTTTFTT\TZTTT#TTT0TNTTTTTTTTT$T>T?TYT,TTTTTT2TT8
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714664
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  28475m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 16 54 ff d5 54 ff cf 54 ff fa 54 00 36 54        T..T..T..T..T.6T
+0010: 00 2e 54 ff d2 54 ff ee 54 ff f6 54 ff f7 54 00        ..T..T..T..T..T.
+0020: 1f 54 00 3f 54 ff e2 54 00 5c 54 00 33 54 00 2a        .T.?T..T.\T.3T.*
+0030: 54 ff ee 54 ff e3 54 00 40 54 ff d6 54 00 2a 54        T..T..T.@T..T.*T
+0040: 00 18 54 00 0c 54 ff f9 54 00 0f 54 00 20 54 00        ..T..T..T..T. T.
+0050: 40 54 00 47 54 00 2d 54 00 5f 54 ff e9 54 00 35        @T.GT.-T._T..T.5
+0060: 54 00 5d 54 00 58 54 00 28 54 00 4a 54 00 4e 54        T.]T.XT.(T.JT.NT
+0070: 00 3c 54 ff de 54 00 43 54 ff d7 54 00 09 54 ff        .<T..T.CT..T..T.
+0080: de 54 ff f5 54 00 43 54 00 43 54 00 4f 54 ff db        .T..T.CT.CT.OT..
+0090: 54 00 0a 54 00 1a 54 00 21 54 00 3d 54 00 58 54        T..T..T.!T.=T.XT
+00a0: 00 26                                                  .&
+-------
+> TTTTT6T.TTTTTT?TT\T3T*TTT@TT*TTTTT T@TGT-T_TT5T]TXT(TJTNT<TTCTTTTTCTCTOTTTT!T=TXT&
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714717
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  28811m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 48 54 00 53 54 ff db 54 ff df 54 ff e3 54        T.HT.ST..T..T..T
+0010: 00 1e 54 00 07 54 00 25 54 ff f1 54 00 41 54 ff        ..T..T.%T..T.AT.
+0020: ee 54 00 1a 54 00 61 54 ff fb 54 00 5e 54 ff dd        .T..T.aT..T.^T..
+0030: 54 ff df 54 00 1a 54 00 20 54 00 28 54 00 3c 54        T..T..T. T.(T.<T
+0040: ff ee 54 ff e3 54 00 3c 54 00 10 54 ff e8 54 00        ..T..T.<T..T..T.
+0050: 10 54 00 56 54 00 2e 54 ff fd 54 00 35 54 00 1c        .T.VT..T..T.5T..
+0060: 54 ff d9 54 00 3d 54 00 4c 54 ff e5 54 00 27 54        T..T.=T.LT..T.'T
+0070: 00 30 54 00 11 54 00 44 54 00 0e 54 ff fd 54 00        .0T..T.DT..T..T.
+0080: 5f 54 00 00 54 ff f2 54 00 49 54 00 62 54 00 51        _T..T..T.IT.bT.Q
+0090: 54 00 4c 54 00 2d 54 00 26 54 00 07 54 00 5a 54        T.LT.-T.&T..T.ZT
+00a0: 00 2e                                                  ..
+-------
+> THTSTTTTTT%TTATTTaTT^TTTT T(T<TTT<TTTTVT.TT5TTT=TLTT'T0TTDTTT_TTTITbTQTLT-T&TTZT.
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714772
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  29315m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 51 54 00 46 54 ff fe 54 00 55 54 ff fe 54        T.QT.FT..T.UT..T
+0010: 00 1f 54 00 62 54 ff f7 54 ff ec 54 00 1e 54 ff        ..T.bT..T..T..T.
+0020: e2 54 00 32 54 00 01 54 00 56 54 ff fe 54 ff e6        .T.2T..T.VT..T..
+0030: 54 00 07 54 ff d8 54 00 5f 54 ff f7 54 00 22 54        T..T..T._T..T."T
+0040: 00 3c 54 ff f8 54 00 4e 54 00 2c 54 00 61 54 ff        .<T..T.NT.,T.aT.
+0050: d6 54 ff ef 54 00 2f 54 ff ed 54 00 09 54 00 29        .T..T./T..T..T.)
+0060: 54 00 41 54 00 0c 54 00 26 54 ff ef 54 00 0d 54        T.AT..T.&T..T..T
+0070: ff e0 54 ff f0 54 00 19 54 ff f9 54 00 59 54 00        ..T..T..T..T.YT.
+0080: 59 54 00 34 54 ff f0 54 ff f6 54 00 3b 54 00 18        YT.4T..T..T.;T..
+0090: 54 ff e5 54 00 0c 54 00 0e 54 ff eb 54 00 51 54        T..T..T..T..T.QT
+00a0: 00 63                                                  .c
+-------
+> TQTFTTUTTTbTTTTT2TTVTTTTT_TT"T<TTNT,TaTTT/TTT)TATT&TTTTTTTYTYT4TTT;TTTTTTQTc
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714825
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  29651m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 59 54 00 0b 54 00 36 54 ff da 54 00 25 54        T.YT..T.6T..T.%T
+0010: 00 46 54 00 47 54 00 0b 54 ff ea 54 00 4b 54 00        .FT.GT..T..T.KT.
+0020: 35 54 ff f6 54 00 28 54 00 19 54 ff ed 54 ff ee        5T..T.(T..T..T..
+0030: 54 00 2c 54 00 61 54 00 4b 54 ff fd 54 00 28 54        T.,T.aT.KT..T.(T
+0040: 00 3a 54 00 36 54 00 5c 54 ff fd 54 ff fa 54 ff        .:T.6T.\T..T..T.
+0050: f3 54 ff e8 54 ff f9 54 00 47 54 00 4e 54 00 63        .T..T..T.GT.NT.c
+0060: 54 00 54 54 00 59 54 ff d2 54 00 18 54 00 2b 54        T.TT.YT..T..T.+T
+0070: ff e9 54 ff f0 54 00 5e 54 00 1b 54 00 4c 54 00        ..T..T.^T..T.LT.
+0080: 01 54 ff d6 54 ff f4 54 00 29 54 00 25 54 00 1b        .T..T..T.)T.%T..
+0090: 54 00 57 54 ff e1 54 ff d5 54 ff fb 54 00 25 54        T.WT..T..T..T.%T
+00a0: ff ce                                                  ..
+-------
+> TYTT6TT%TFTGTTTKT5TT(TTTT,TaTKTT(T:T6T\TTTTTTGTNTcTTTYTTT+TTT^TTLTTTT)T%TTWTTTT%T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714880
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  29987m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d4 54 00 03 54 00 1e 54 ff f0 54 ff ef 54        T..T..T..T..T..T
+0010: ff d9 54 ff e7 54 00 62 54 ff ff 54 00 3e 54 ff        ..T..T.bT..T.>T.
+0020: d7 54 ff fc 54 00 61 54 00 53 54 ff f6 54 ff f1        .T..T.aT.ST..T..
+0030: 54 ff ec 54 ff e9 54 00 43 54 00 0b 54 00 08 54        T..T..T.CT..T..T
+0040: 00 1d 54 ff f7 54 ff fb 54 00 4c 54 00 51 54 00        ..T..T..T.LT.QT.
+0050: 38 54 00 32 54 00 0b 54 00 07 54 00 06 54 ff f6        8T.2T..T..T..T..
+0060: 54 00 44 54 00 07 54 ff da 54 00 59 54 00 4a 54        T.DT..T..T.YT.JT
+0070: ff f0 54 00 14 54 ff fa 54 ff e1 54 00 16 54 00        ..T..T..T..T..T.
+0080: 33 54 00 13 54 00 35 54 00 26 54 ff fc 54 00 5f        3T..T.5T.&T..T._
+0090: 54 00 24 54 ff ce 54 00 4b 54 00 23 54 00 45 54        T.$T..T.KT.#T.ET
+00a0: ff f9                                                  ..
+-------
+> TTTTTTTTbTT>TTTaTSTTTTTCTTTTTTLTQT8T2TTTTTDTTTYTJTTTTTT3TT5T&TT_T$TTKT#TET
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714933
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  30491m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 49 54 00 20 54 00 56 54 00 58 54 00 61 54        T.IT. T.VT.XT.aT
+0010: ff db 54 ff db 54 00 59 54 ff fd 54 00 23 54 00        ..T..T.YT..T.#T.
+0020: 06 54 ff e8 54 00 5a 54 ff db 54 00 4a 54 ff de        .T..T.ZT..T.JT..
+0030: 54 00 5f 54 00 4c 54 00 2b 54 00 5d 54 ff ea 54        T._T.LT.+T.]T..T
+0040: 00 36 54 00 02 54 00 63 54 00 55 54 ff eb 54 00        .6T..T.cT.UT..T.
+0050: 61 54 ff e3 54 00 39 54 00 1b 54 ff da 54 00 0c        aT..T.9T..T..T..
+0060: 54 ff dd 54 ff e7 54 ff f1 54 00 2d 54 00 00 54        T..T..T..T.-T..T
+0070: 00 5d 54 ff f9 54 ff f4 54 ff dd 54 00 11 54 ff        .]T..T..T..T..T.
+0080: fe 54 00 39 54 00 42 54 00 13 54 ff ff 54 00 2a        .T.9T.BT..T..T.*
+0090: 54 00 43 54 00 47 54 00 5c 54 00 0c 54 ff f9 54        T.CT.GT.\T..T..T
+00a0: 00 1f                                                  ..
+-------
+> TIT TVTXTaTTTYTT#TTTZTTJTT_TLT+T]TT6TTcTUTTaTT9TTTTTTT-TT]TTTTTT9TBTTT*TCTGT\TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490714988
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  30827m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f2 54 00 2c 54 00 34 54 00 48 54 00 06 54        T..T.,T.4T.HT..T
+0010: 00 1f 54 00 2c 54 ff ee 54 00 40 54 00 49 54 ff        ..T.,T..T.@T.IT.
+0020: ef 54 ff f2 54 00 4e 54 00 42 54 00 2d 54 00 0c        .T..T.NT.BT.-T..
+0030: 54 00 35 54 ff d2 54 ff dc 54 00 00 54 00 2c 54        T.5T..T..T..T.,T
+0040: 00 12 54 00 03 54 ff fc 54 00 03 54 00 4d 54 00        ..T..T..T..T.MT.
+0050: 33 54 00 58 54 00 22 54 ff e2 54 ff eb 54 00 07        3T.XT."T..T..T..
+0060: 54 00 18 54 ff ea 54 ff f1 54 00 5a 54 ff e1 54        T..T..T..T.ZT..T
+0070: 00 52 54 ff fd 54 00 5c 54 00 1d 54 ff dd 54 00        .RT..T.\T..T..T.
+0080: 12 54 ff e9 54 00 15 54 ff fd 54 00 52 54 00 07        .T..T..T..T.RT..
+0090: 54 00 04 54 00 1d 54 00 23 54 00 25 54 00 63 54        T..T..T.#T.%T.cT
+00a0: 00 0b                                                  ..
+-------
+> TT,T4THTTT,TT@TITTTNTBT-TT5TTTT,TTTTTMT3TXT"TTTTTTTZTTRTT\TTTTTTTRTTTT#T%TcT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715053
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  31163m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 20 54 00 30 54 ff e9 54 00 39 54 00 30 54        T. T.0T..T.9T.0T
+0010: ff f9 54 00 4d 54 00 5b 54 ff e2 54 00 36 54 00        ..T.MT.[T..T.6T.
+0020: 1e 54 ff f2 54 00 14 54 ff f1 54 00 4d 54 ff f1        .T..T..T..T.MT..
+0030: 54 00 22 54 00 5e 54 ff ed 54 00 24 54 ff fc 54        T."T.^T..T.$T..T
+0040: ff eb 54 00 5d 54 ff e8 54 ff ec 54 00 30 54 00        ..T.]T..T..T.0T.
+0050: 14 54 00 1b 54 00 1c 54 ff ed 54 ff db 54 00 1e        .T..T..T..T..T..
+0060: 54 00 5b 54 00 0f 54 ff ce 54 00 47 54 ff eb 54        T.[T..T..T.GT..T
+0070: 00 3c 54 ff ed 54 ff f5 54 00 5b 54 ff d5 54 00        .<T..T..T.[T..T.
+0080: 0b 54 00 48 54 ff dc 54 00 34 54 00 21 54 00 04        .T.HT..T.4T.!T..
+0090: 54 ff e0 54 ff fd 54 ff d7 54 00 3c 54 00 25 54        T..T..T..T.<T.%T
+00a0: 00 44                                                  .D
+-------
+> T T0TT9T0TTMT[TT6TTTTTMTT"T^TT$TTT]TTT0TTTTTTT[TTTGTT<TTT[TTTHTT4T!TTTTT<T%TD
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715096
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  31667m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 13 54 00 58 54 ff cf 54 ff fc 54 ff f0 54        T..T.XT..T..T..T
+0010: ff d1 54 ff ea 54 00 4b 54 00 59 54 00 4f 54 00        ..T..T.KT.YT.OT.
+0020: 50 54 00 63 54 ff cf 54 ff e6 54 00 30 54 ff e6        PT.cT..T..T.0T..
+0030: 54 ff e2 54 00 01 54 00 5d 54 ff da 54 00 02 54        T..T..T.]T..T..T
+0040: 00 55 54 00 34 54 00 10 54 00 3d 54 00 0f 54 00        .UT.4T..T.=T..T.
+0050: 3b 54 00 63 54 00 17 54 00 4b 54 ff e2 54 00 5b        ;T.cT..T.KT..T.[
+0060: 54 00 08 54 ff e7 54 ff d4 54 ff f3 54 00 53 54        T..T..T..T..T.ST
+0070: 00 3c 54 00 3e 54 00 47 54 00 55 54 00 2e 54 00        .<T.>T.GT.UT..T.
+0080: 2a 54 ff fb 54 00 31 54 00 52 54 00 57 54 00 28        *T..T.1T.RT.WT.(
+0090: 54 00 08 54 00 34 54 00 42 54 00 51 54 ff dd 54        T..T.4T.BT.QT..T
+00a0: 00 5e                                                  .^
+-------
+> TTXTTTTTTKTYTOTPTcTTT0TTTT]TTTUT4TT=TT;TcTTKTT[TTTTTST<T>TGTUT.T*TT1TRTWT(TT4TBTQTT^
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715149
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  31995m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff fd 54 00 60 54 00 37 54 00 2f 54 ff ed 54        T..T.`T.7T./T..T
+0010: 00 25 54 ff f5 54 ff e1 54 00 0f 54 ff e5 54 00        .%T..T..T..T..T.
+0020: 1b 54 00 1f 54 00 3f 54 00 34 54 00 17 54 ff e4        .T..T.?T.4T..T..
+0030: 54 ff e7 54 00 45 54 00 1f 54 00 11 54 ff ea 54        T..T.ET..T..T..T
+0040: 00 2b 54 ff fa 54 00 27 54 00 37 54 00 01 54 00        .+T..T.'T.7T..T.
+0050: 20 54 00 2a 54 00 3c 54 00 21 54 00 3a 54 00 35         T.*T.<T.!T.:T.5
+0060: 54 ff e8 54 ff de 54 00 62 54 00 28 54 00 19 54        T..T..T.bT.(T..T
+0070: ff f7 54 ff f0 54 00 5e 54 ff d4 54 00 2f 54 00        ..T..T.^T..T./T.
+0080: 0c 54 00 4b 54 00 09 54 00 4a 54 00 5b 54 00 0b        .T.KT..T.JT.[T..
+0090: 54 00 53 54 00 0c 54 00 21 54 00 0e 54 ff f4 54        T.ST..T.!T..T..T
+00a0: ff d2                                                  ..
+-------
+> TT`T7T/TT%TTTTTTT?T4TTTTETTTT+TT'T7TT T*T<T!T:T5TTTbT(TTTT^TT/TTKTTJT[TTSTT!TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715206
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  32315m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 46 54 00 25 54 00 21 54 ff ee 54 ff fe 54        T.FT.%T.!T..T..T
+0010: 00 31 54 00 5f 54 00 14 54 00 2e 54 00 1b 54 00        .1T._T..T..T..T.
+0020: 2a 54 ff fa 54 00 3a 54 00 30 54 ff df 54 00 34        *T..T.:T.0T..T.4
+0030: 54 00 2b 54 00 3c 54 ff ee 54 00 16 54 00 4e 54        T.+T.<T..T..T.NT
+0040: ff e8 54 ff e8 54 00 43 54 ff ed 54 00 02 54 ff        ..T..T.CT..T..T.
+0050: d5 54 ff fc 54 00 21 54 00 3f 54 00 10 54 00 57        .T..T.!T.?T..T.W
+0060: 54 00 44 54 00 5b 54 ff d9 54 ff f4 54 00 19 54        T.DT.[T..T..T..T
+0070: 00 48 54 00 49 54 00 24 54 00 09 54 00 3d 54 ff        .HT.IT.$T..T.=T.
+0080: e8 54 ff e0 54 00 13 54 00 50 54 00 28 54 00 05        .T..T..T.PT.(T..
+0090: 54 00 59 54 ff f4 54 ff d1 54 ff f3 54 ff ea 54        T.YT..T..T..T..T
+00a0: 00 5e                                                  .^
+-------
+> TFT%T!TTT1T_TT.TT*TT:T0TT4T+T<TTTNTTTCTTTTT!T?TTWTDT[TTTTHTIT$TT=TTTTPT(TTYTTTTT^
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715257
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  32795m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 17 54 00 51 54 00 47 54 ff ea 54 00 55 54        T..T.QT.GT..T.UT
+0010: ff cf 54 00 4d 54 00 4f 54 00 07 54 00 37 54 00        ..T.MT.OT..T.7T.
+0020: 28 54 ff d7 54 ff d1 54 00 2d 54 00 04 54 ff e0        (T..T..T.-T..T..
+0030: 54 ff d8 54 00 01 54 00 2e 54 ff d8 54 00 1c 54        T..T..T..T..T..T
+0040: ff e7 54 00 0f 54 00 1d 54 00 57 54 00 5d 54 ff        ..T..T..T.WT.]T.
+0050: de 54 00 1c 54 ff fa 54 ff dd 54 ff fa 54 00 48        .T..T..T..T..T.H
+0060: 54 00 61 54 00 09 54 00 52 54 00 10 54 ff fc 54        T.aT..T.RT..T..T
+0070: ff dc 54 00 10 54 00 32 54 00 38 54 00 04 54 00        ..T..T.2T.8T..T.
+0080: 07 54 ff d5 54 00 4b 54 ff fa 54 00 53 54 00 5c        .T..T.KT..T.ST.\
+0090: 54 00 39 54 ff dd 54 00 63 54 00 05 54 00 05 54        T.9T..T.cT..T..T
+00a0: ff eb                                                  ..
+-------
+> TTQTGTTUTTMTOTT7T(TTT-TTTTT.TTTTTTWT]TTTTTTHTaTTRTTTTT2T8TTTTKTTST\T9TTcTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715322
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  33115m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 61 54 00 41 54 00 17 54 ff eb 54 ff db 54        T.aT.AT..T..T..T
+0010: ff d6 54 ff d8 54 ff f3 54 00 2b 54 ff ef 54 00        ..T..T..T.+T..T.
+0020: 50 54 ff d4 54 ff e5 54 00 53 54 ff fa 54 ff ef        PT..T..T.ST..T..
+0030: 54 00 41 54 ff e1 54 00 17 54 00 3c 54 ff d1 54        T.AT..T..T.<T..T
+0040: 00 38 54 00 26 54 00 3b 54 ff d2 54 ff e6 54 00        .8T.&T.;T..T..T.
+0050: 12 54 00 37 54 ff de 54 00 5b 54 00 41 54 00 5d        .T.7T..T.[T.AT.]
+0060: 54 ff dc 54 00 1a 54 00 5a 54 ff e6 54 00 46 54        T..T..T.ZT..T.FT
+0070: ff fe 54 00 0c 54 00 10 54 00 62 54 ff e4 54 00        ..T..T..T.bT..T.
+0080: 4b 54 ff fa 54 00 3c 54 ff e8 54 ff ce 54 00 48        KT..T.<T..T..T.H
+0090: 54 ff e5 54 ff ef 54 00 52 54 ff e9 54 00 0f 54        T..T..T.RT..T..T
+00a0: ff fd                                                  ..
+-------
+> TaTATTTTTTT+TTPTTTSTTTATTT<TT8T&T;TTTT7TT[TAT]TTTZTTFTTTTbTTKTT<TTTHTTTRTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715365
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  33435m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e0 54 ff ee 54 ff ec 54 00 0b 54 ff fa 54        T..T..T..T..T..T
+0010: 00 03 54 ff d6 54 00 16 54 00 1e 54 00 1f 54 ff        ..T..T..T..T..T.
+0020: fa 54 00 4e 54 ff ef 54 00 3f 54 ff f7 54 ff ed        .T.NT..T.?T..T..
+0030: 54 ff da 54 ff dc 54 00 48 54 00 06 54 00 31 54        T..T..T.HT..T.1T
+0040: 00 50 54 ff e7 54 ff fa 54 00 06 54 00 53 54 00        .PT..T..T..T.ST.
+0050: 10 54 00 20 54 00 3a 54 00 55 54 00 60 54 00 20        .T. T.:T.UT.`T. 
+0060: 54 00 0a 54 00 63 54 00 21 54 00 4f 54 ff cf 54        T..T.cT.!T.OT..T
+0070: 00 29 54 00 11 54 00 05 54 00 0d 54 00 33 54 00        .)T..T..T..T.3T.
+0080: 0b 54 00 5b 54 ff fe 54 00 31 54 00 08 54 00 20        .T.[T..T.1T..T. 
+0090: 54 ff fd 54 ff f7 54 ff d4 54 00 19 54 00 5b 54        T..T..T..T..T.[T
+00a0: 00 59                                                  .Y
+-------
+> TTTTTTTTTTTTNTT?TTTTTHTT1TPTTTTSTT T:TUT`T TTcT!TOTT)TTTT3TT[TT1TT TTTTT[TY
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715543
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  34547m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff ff 54 ff d4 54 ff d8 54 ff d6 54 00 50 54        T..T..T..T..T.PT
+0010: ff da 54 00 46 54 00 60 54 00 51 54 00 02 54 ff        ..T.FT.`T.QT..T.
+0020: ed 54 00 50 54 ff eb 54 00 46 54 00 04 54 ff fd        .T.PT..T.FT..T..
+0030: 54 00 18 54 00 25 54 ff e8 54 00 33 54 00 48 54        T..T.%T..T.3T.HT
+0040: 00 48 54 00 45 54 00 0d 54 00 60 54 00 18 54 00        .HT.ET..T.`T..T.
+0050: 11 54 00 14 54 ff d9 54 00 45 54 00 34 54 00 0f        .T..T..T.ET.4T..
+0060: 54 ff dc 54 00 41 54 00 15 54 00 2a 54 ff d9 54        T..T.AT..T.*T..T
+0070: 00 39 54 00 2b 54 00 46 54 00 21 54 ff d4 54 ff        .9T.+T.FT.!T..T.
+0080: f8 54 00 26 54 ff e7 54 ff ef 54 00 2e 54 ff ff        .T.&T..T..T..T..
+0090: 54 00 47 54 ff e5 54 00 34 54 ff fb 54 00 39 54        T.GT..T.4T..T.9T
+00a0: 00 53                                                  .S
+-------
+> TTTTTPTTFT`TQTTTPTTFTTTT%TT3THTHTETT`TTTTTET4TTTATT*TT9T+TFT!TTT&TTT.TTGTT4TT9TS
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715581
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  34960m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff de 54 ff fc 54 ff e4 54 00 24 54 ff fb 54        T..T..T..T.$T..T
+0010: ff ce 54 ff cf 54 ff d3 54 00 1f 54 00 51 54 ff        ..T..T..T..T.QT.
+0020: db 54 00 3e 54 ff ec 54 00 2b 54 00 00 54 00 30        .T.>T..T.+T..T.0
+0030: 54 ff d0 54 ff e1 54 ff da 54 ff fd 54 00 4f 54        T..T..T..T..T.OT
+0040: 00 17 54 00 39 54 00 0c 54 ff d5 54 00 59 54 ff        ..T.9T..T..T.YT.
+0050: d7 54 00 31 54 00 3c 54 ff cf 54 00 58 54 00 0c        .T.1T.<T..T.XT..
+0060: 54 00 33 54 00 4c 54 00 1a 54 00 0f 54 00 48 54        T.3T.LT..T..T.HT
+0070: 00 5d 54 ff f3 54 00 44 54 00 08 54 00 06 54 ff        .]T..T.DT..T..T.
+0080: d4 54 ff e3 54 00 35 54 00 29 54 00 59 54 00 2d        .T..T.5T.)T.YT.-
+0090: 54 ff e2 54 00 08 54 ff f2 54 00 24 54 ff e3 54        T..T..T..T.$T..T
+00a0: 00 51                                                  .Q
+-------
+> TTTT$TTTTTTQTT>TT+TT0TTTTTOTT9TTTYTT1T<TTXTT3TLTTTHT]TTDTTTTT5T)TYT-TTTT$TTQ
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715635
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  33550m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e9 54 00 5d 54 ff ec 54 00 16 54 ff ef 54        T..T.]T..T..T..T
+0010: ff f9 54 00 2a 54 00 1f 54 00 5d 54 00 3b 54 00        ..T.*T..T.]T.;T.
+0020: 18 54 00 26 54 ff d3 54 ff eb 54 ff d5 54 00 25        .T.&T..T..T..T.%
+0030: 54 ff fb 54 00 2b 54 00 3f 54 00 25 54 ff f2 54        T..T.+T.?T.%T..T
+0040: 00 1f 54 ff ed 54 00 29 54 00 2a 54 00 35 54 ff        ..T..T.)T.*T.5T.
+0050: d2 54 00 5c 54 00 0b 54 00 41 54 00 55 54 ff f5        .T.\T..T.AT.UT..
+0060: 54 00 2e 54 00 30 54 ff fe 54 ff f8 54 ff ed 54        T..T.0T..T..T..T
+0070: ff ed 54 00 44 54 00 61 54 00 33 54 00 54 54 00        ..T.DT.aT.3T.TT.
+0080: 00 54 00 08 54 00 38 54 00 3e 54 ff ea 54 00 1f        .T..T.8T.>T..T..
+0090: 54 ff d1 54 ff e0 54 ff e7 54 00 0e 54 00 28 54        T..T..T..T..T.(T
+00a0: 00 24                                                  .$
+-------
+> TT]TTTTT*TT]T;TT&TTTT%TT+T?T%TTTT)T*T5TT\TTATUTT.T0TTTTTDTaT3TTTTT8T>TTTTTTT(T$
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715689
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  32236m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0f 54 00 0f 54 ff d9 54 ff e1 54 ff f9 54        T..T..T..T..T..T
+0010: 00 3d 54 00 20 54 ff fc 54 00 0c 54 ff ff 54 00        .=T. T..T..T..T.
+0020: 31 54 00 42 54 00 5e 54 00 0f 54 00 13 54 ff f5        1T.BT.^T..T..T..
+0030: 54 ff e3 54 00 2c 54 ff d8 54 00 1f 54 00 53 54        T..T.,T..T..T.ST
+0040: ff ff 54 00 4e 54 ff d7 54 ff db 54 ff fe 54 ff        ..T.NT..T..T..T.
+0050: ef 54 ff fd 54 ff fa 54 ff f7 54 00 4d 54 00 0e        .T..T..T..T.MT..
+0060: 54 ff d8 54 00 42 54 00 07 54 ff fc 54 00 1f 54        T..T.BT..T..T..T
+0070: 00 40 54 00 4f 54 00 39 54 00 35 54 ff fc 54 00        .@T.OT.9T.5T..T.
+0080: 52 54 00 07 54 00 1d 54 00 53 54 00 08 54 00 0e        RT..T..T.ST..T..
+0090: 54 00 24 54 ff fc 54 ff dc 54 00 60 54 00 5e 54        T.$T..T..T.`T.^T
+00a0: ff fc                                                  ..
+-------
+> TTTTTT=T TTTT1TBT^TTTTT,TTTSTTNTTTTTTTTMTTTBTTTT@TOT9T5TTRTTTSTTT$TTT`T^T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715743
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  30440m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 5c 54 ff eb 54 00 30 54 ff d7 54 ff f0 54        T.\T..T.0T..T..T
+0010: 00 4d 54 00 01 54 ff ea 54 00 2c 54 ff fd 54 00        .MT..T..T.,T..T.
+0020: 5e 54 ff f3 54 00 0a 54 00 20 54 00 18 54 ff ea        ^T..T..T. T..T..
+0030: 54 ff ef 54 ff dc 54 ff e8 54 00 07 54 00 23 54        T..T..T..T..T.#T
+0040: ff dc 54 00 23 54 00 44 54 ff ff 54 ff e1 54 00        ..T.#T.DT..T..T.
+0050: 25 54 00 11 54 00 05 54 ff ec 54 00 3f 54 00 0d        %T..T..T..T.?T..
+0060: 54 ff fb 54 ff fc 54 00 2a 54 00 45 54 00 45 54        T..T..T.*T.ET.ET
+0070: 00 09 54 00 25 54 00 48 54 ff f4 54 00 34 54 00        ..T.%T.HT..T.4T.
+0080: 59 54 00 51 54 ff fd 54 ff f4 54 00 0f 54 00 2a        YT.QT..T..T..T.*
+0090: 54 ff e0 54 00 49 54 ff e0 54 ff ec 54 00 30 54        T..T.IT..T..T.0T
+00a0: 00 3b                                                  .;
+-------
+> T\TT0TTTMTTT,TT^TTT TTTTTTT#TT#TDTTT%TTTT?TTTT*TETETT%THTT4TYTQTTTT*TTITTT0T;
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715797
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  29342m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 5e 54 ff ea 54 ff f4 54 00 21 54 00 60 54        T.^T..T..T.!T.`T
+0010: ff de 54 ff e1 54 ff f5 54 ff e7 54 00 5f 54 00        ..T..T..T..T._T.
+0020: 45 54 00 48 54 ff f7 54 00 03 54 00 23 54 00 0e        ET.HT..T..T.#T..
+0030: 54 ff da 54 00 38 54 00 1d 54 ff df 54 00 15 54        T..T.8T..T..T..T
+0040: 00 1f 54 00 5c 54 ff e9 54 ff d8 54 00 41 54 00        ..T.\T..T..T.AT.
+0050: 54 54 ff dd 54 00 15 54 00 07 54 00 49 54 00 1a        TT..T..T..T.IT..
+0060: 54 00 4c 54 ff de 54 00 1b 54 00 3b 54 00 16 54        T.LT..T..T.;T..T
+0070: 00 33 54 00 1f 54 00 4c 54 ff f8 54 ff fd 54 00        .3T..T.LT..T..T.
+0080: 0d 54 00 29 54 00 3e 54 ff f9 54 ff db 54 00 23        .T.)T.>T..T..T.#
+0090: 54 ff d2 54 00 25 54 00 5a 54 00 13 54 ff d4 54        T..T.%T.ZT..T..T
+00a0: 00 50                                                  .P
+-------
+> T^TTT!T`TTTTT_TETHTTT#TTT8TTTTT\TTTATTTTTTITTLTTT;TT3TTLTTTT)T>TTT#TT%TZTTTP
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715853
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  27818m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 32 54 ff e3 54 ff f6 54 ff e6 54 00 4f 54        T.2T..T..T..T.OT
+0010: ff ce 54 00 27 54 00 5f 54 00 15 54 00 43 54 00        ..T.'T._T..T.CT.
+0020: 0e 54 ff d7 54 00 01 54 00 2b 54 00 16 54 ff f4        .T..T..T.+T..T..
+0030: 54 00 07 54 ff f1 54 ff f6 54 ff ff 54 ff d5 54        T..T..T..T..T..T
+0040: ff db 54 00 12 54 ff d2 54 00 1b 54 00 02 54 ff        ..T..T..T..T..T.
+0050: da 54 00 41 54 ff ef 54 00 27 54 00 32 54 00 50        .T.AT..T.'T.2T.P
+0060: 54 00 26 54 00 2f 54 00 0b 54 00 56 54 00 15 54        T.&T./T..T.VT..T
+0070: 00 24 54 00 2a 54 00 02 54 00 03 54 00 4a 54 00        .$T.*T..T..T.JT.
+0080: 63 54 00 52 54 00 0e 54 ff ff 54 00 2a 54 00 35        cT.RT..T..T.*T.5
+0090: 54 ff f7 54 ff ed 54 ff fd 54 00 3d 54 00 45 54        T..T..T..T.=T.ET
+00a0: 00 54                                                  .T
+-------
+> T2TTTTOTT'T_TTCTTTT+TTTTTTTTTTTTTTATT'T2TPT&T/TTVTT$T*TTTJTcTRTTT*T5TTTT=TETT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715905
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  26875m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3d 54 00 37 54 ff d1 54 ff f0 54 00 47 54        T.=T.7T..T..T.GT
+0010: 00 17 54 ff d6 54 00 50 54 00 31 54 00 3e 54 ff        ..T..T.PT.1T.>T.
+0020: ec 54 00 0a 54 00 43 54 00 62 54 ff dd 54 00 41        .T..T.CT.bT..T.A
+0030: 54 00 3b 54 00 5c 54 ff f9 54 00 2a 54 00 26 54        T.;T.\T..T.*T.&T
+0040: 00 13 54 00 59 54 ff d3 54 00 60 54 ff e6 54 00        ..T.YT..T.`T..T.
+0050: 4f 54 00 3e 54 ff ce 54 ff ff 54 00 2d 54 00 0d        OT.>T..T..T.-T..
+0060: 54 00 48 54 00 35 54 00 42 54 00 29 54 00 3f 54        T.HT.5T.BT.)T.?T
+0070: ff e2 54 00 56 54 00 62 54 ff dc 54 00 26 54 ff        ..T.VT.bT..T.&T.
+0080: d8 54 00 52 54 00 3f 54 ff cf 54 00 62 54 ff e4        .T.RT.?T..T.bT..
+0090: 54 ff cf 54 ff e6 54 00 02 54 00 0b 54 ff f6 54        T..T..T..T..T..T
+00a0: ff e2                                                  ..
+-------
+> T=T7TTTGTTTPT1T>TTTCTbTTAT;T\TT*T&TTYTT`TTOT>TTT-TTHT5TBT)T?TTVTbTT&TTRT?TTbTTTTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490715961
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  25981m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 45 54 00 62 54 00 51 54 00 5e 54 ff eb 54        T.ET.bT.QT.^T..T
+0010: 00 48 54 ff d1 54 00 0e 54 00 60 54 00 22 54 ff        .HT..T..T.`T."T.
+0020: fc 54 ff f8 54 ff f4 54 00 63 54 ff fc 54 00 27        .T..T..T.cT..T.'
+0030: 54 00 2b 54 ff e2 54 00 51 54 00 11 54 ff fb 54        T.+T..T.QT..T..T
+0040: 00 25 54 ff e2 54 00 55 54 ff da 54 00 24 54 00        .%T..T.UT..T.$T.
+0050: 5c 54 00 3b 54 00 06 54 00 43 54 00 4f 54 00 3e        \T.;T..T.CT.OT.>
+0060: 54 00 1f 54 00 60 54 00 25 54 00 5c 54 00 01 54        T..T.`T.%T.\T..T
+0070: 00 2c 54 00 1e 54 ff e1 54 00 14 54 00 2e 54 00        .,T..T..T..T..T.
+0080: 58 54 ff fa 54 ff d3 54 00 12 54 ff f7 54 00 63        XT..T..T..T..T.c
+0090: 54 ff f6 54 00 5b 54 ff d8 54 00 41 54 00 62 54        T..T.[T..T.AT.bT
+00a0: 00 2d                                                  .-
+-------
+> TETbTQT^TTHTTT`T"TTTTcTT'T+TTQTTT%TTUTT$T\T;TTCTOT>TT`T%T\TT,TTTT.TXTTTTTcTT[TTATbT-
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716013
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  24725m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e6 54 00 25 54 00 05 54 00 58 54 00 29 54        T..T.%T..T.XT.)T
+0010: ff e1 54 ff f2 54 00 59 54 00 35 54 ff e1 54 00        ..T..T.YT.5T..T.
+0020: 50 54 00 5e 54 00 0e 54 00 1f 54 00 3f 54 00 20        PT.^T..T..T.?T. 
+0030: 54 00 0c 54 00 61 54 ff e0 54 00 06 54 00 24 54        T..T.aT..T..T.$T
+0040: ff e6 54 00 1d 54 00 0d 54 00 15 54 ff de 54 00        ..T..T..T..T..T.
+0050: 2e 54 00 2f 54 00 2a 54 00 17 54 00 1f 54 00 11        .T./T.*T..T..T..
+0060: 54 00 50 54 ff e9 54 ff ed 54 00 40 54 00 4c 54        T.PT..T..T.@T.LT
+0070: 00 3e 54 00 3d 54 00 36 54 ff d3 54 00 59 54 ff        .>T.=T.6T..T.YT.
+0080: fe 54 00 2d 54 00 3d 54 ff e7 54 ff df 54 00 34        .T.-T.=T..T..T.4
+0090: 54 ff f4 54 00 0a 54 ff e2 54 ff ff 54 ff ce 54        T..T..T..T..T..T
+00a0: 00 04                                                  ..
+-------
+> TT%TTXT)TTTYT5TTPT^TTT?T TTaTTT$TTTTTT.T/T*TTTTPTTT@TLT>T=T6TTYTT-T=TTT4TTTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716069
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  23917m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d4 54 ff df 54 00 52 54 00 55 54 ff d7 54        T..T..T.RT.UT..T
+0010: ff ec 54 ff d6 54 00 37 54 ff f1 54 00 34 54 00        ..T..T.7T..T.4T.
+0020: 1c 54 ff fd 54 00 29 54 00 0b 54 ff d1 54 00 35        .T..T.)T..T..T.5
+0030: 54 ff d6 54 00 0a 54 ff ee 54 ff f0 54 00 4b 54        T..T..T..T..T.KT
+0040: ff ef 54 00 2b 54 ff f9 54 00 1b 54 ff eb 54 00        ..T.+T..T..T..T.
+0050: 5a 54 00 42 54 ff ff 54 00 56 54 00 5b 54 00 35        ZT.BT..T.VT.[T.5
+0060: 54 00 54 54 ff ea 54 00 58 54 ff f0 54 00 16 54        T.TT..T.XT..T..T
+0070: ff f1 54 ff ed 54 ff ec 54 ff e5 54 00 3f 54 00        ..T..T..T..T.?T.
+0080: 3a 54 ff da 54 00 12 54 ff fe 54 00 46 54 ff d3        :T..T..T..T.FT..
+0090: 54 00 03 54 ff f2 54 ff e4 54 00 17 54 00 12 54        T..T..T..T..T..T
+00a0: ff ec                                                  ..
+-------
+> TTTRTUTTTT7TT4TTT)TTT5TTTTTKTT+TTTTZTBTTVT[T5TTTTXTTTTTTT?T:TTTTFTTTTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716133
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  23556m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 18 54 00 44 54 ff db 54 00 48 54 00 0e 54        T..T.DT..T.HT..T
+0010: 00 07 54 00 2c 54 00 13 54 00 0c 54 ff ff 54 ff        ..T.,T..T..T..T.
+0020: ce 54 ff ce 54 ff de 54 00 4a 54 ff f8 54 00 62        .T..T..T.JT..T.b
+0030: 54 ff f2 54 00 01 54 ff f9 54 ff d4 54 00 2a 54        T..T..T..T..T.*T
+0040: 00 57 54 00 30 54 ff e6 54 00 3f 54 00 32 54 00        .WT.0T..T.?T.2T.
+0050: 12 54 00 2f 54 ff d8 54 ff e0 54 00 48 54 00 1d        .T./T..T..T.HT..
+0060: 54 ff fd 54 00 0e 54 ff d3 54 00 24 54 ff f0 54        T..T..T..T.$T..T
+0070: 00 11 54 00 49 54 ff dd 54 00 54 54 00 34 54 ff        ..T.IT..T.TT.4T.
+0080: d4 54 00 2f 54 ff d2 54 ff d2 54 00 1a 54 00 33        .T./T..T..T..T.3
+0090: 54 ff e9 54 00 25 54 00 01 54 ff f1 54 00 0c 54        T..T.%T..T..T..T
+00a0: ff e4                                                  ..
+-------
+> TTDTTHTTT,TTTTTTTJTTbTTTTT*TWT0TT?T2TT/TTTHTTTTT$TTTITTTT4TT/TTTT3TT%TTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716177
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  22131m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3c 54 00 0c 54 00 0b 54 ff ff 54 00 21 54        T.<T..T..T..T.!T
+0010: 00 5e 54 00 13 54 00 43 54 00 03 54 ff e6 54 00        .^T..T.CT..T..T.
+0020: 46 54 00 1a 54 00 63 54 ff f5 54 00 45 54 00 05        FT..T.cT..T.ET..
+0030: 54 ff f7 54 00 54 54 00 50 54 ff d6 54 00 00 54        T..T.TT.PT..T..T
+0040: 00 2a 54 ff f2 54 00 5f 54 00 5c 54 ff e7 54 00        .*T..T._T.\T..T.
+0050: 40 54 00 60 54 ff e3 54 00 2b 54 ff dd 54 ff ec        @T.`T..T.+T..T..
+0060: 54 00 3e 54 00 4c 54 ff f6 54 ff da 54 00 34 54        T.>T.LT..T..T.4T
+0070: 00 2f 54 ff ec 54 00 62 54 00 5b 54 00 39 54 00        ./T..T.bT.[T.9T.
+0080: 4d 54 ff ef 54 00 16 54 00 29 54 ff d1 54 ff d3        MT..T..T.)T..T..
+0090: 54 00 60 54 00 46 54 00 10 54 00 12 54 ff d9 54        T.`T.FT..T..T..T
+00a0: ff e6                                                  ..
+-------
+> T<TTTT!T^TTCTTTFTTcTTETTTTTPTTT*TT_T\TT@T`TT+TTT>TLTTT4T/TTbT[T9TMTTT)TTT`TFTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716229
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  21453m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d8 54 00 22 54 00 19 54 00 47 54 00 21 54        T..T."T..T.GT.!T
+0010: 00 59 54 ff df 54 00 60 54 00 63 54 00 1b 54 00        .YT..T.`T.cT..T.
+0020: 0b 54 ff e3 54 ff e5 54 00 3d 54 ff d5 54 ff df        .T..T..T.=T..T..
+0030: 54 ff e0 54 ff d3 54 00 42 54 00 45 54 00 15 54        T..T..T.BT.ET..T
+0040: 00 1a 54 ff f7 54 00 13 54 00 22 54 ff d9 54 ff        ..T..T..T."T..T.
+0050: ea 54 00 5d 54 00 07 54 ff ef 54 00 0f 54 00 2d        .T.]T..T..T..T.-
+0060: 54 ff d7 54 ff f8 54 00 28 54 ff ef 54 ff e0 54        T..T..T.(T..T..T
+0070: 00 1b 54 ff f7 54 00 0f 54 ff ff 54 ff f6 54 ff        ..T..T..T..T..T.
+0080: e5 54 00 33 54 00 40 54 00 4e 54 ff f8 54 00 1f        .T.3T.@T.NT..T..
+0090: 54 00 3d 54 ff d3 54 00 2b 54 ff de 54 ff e5 54        T.=T..T.+T..T..T
+00a0: 00 1c                                                  ..
+-------
+> TT"TTGT!TYTT`TcTTTTT=TTTTTBTETTTTT"TTT]TTTT-TTT(TTTTTTTTT3T@TNTTT=TT+TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716287
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  20802m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f5 54 00 33 54 00 5c 54 00 62 54 00 00 54        T..T.3T.\T.bT..T
+0010: 00 4b 54 00 05 54 00 5d 54 00 0c 54 ff d6 54 00        .KT..T.]T..T..T.
+0020: 44 54 00 53 54 00 1f 54 ff f3 54 00 42 54 00 33        DT.ST..T..T.BT.3
+0030: 54 ff ed 54 ff ec 54 ff d8 54 ff d3 54 ff dd 54        T..T..T..T..T..T
+0040: ff dc 54 00 60 54 00 06 54 ff d7 54 00 13 54 ff        ..T.`T..T..T..T.
+0050: f3 54 00 0f 54 00 42 54 00 03 54 ff eb 54 ff eb        .T..T.BT..T..T..
+0060: 54 00 47 54 00 49 54 00 1d 54 00 54 54 00 12 54        T.GT.IT..T.TT..T
+0070: 00 2b 54 00 1a 54 ff f8 54 00 60 54 00 2e 54 00        .+T..T..T.`T..T.
+0080: 24 54 00 07 54 ff fb 54 ff d2 54 00 27 54 00 04        $T..T..T..T.'T..
+0090: 54 00 39 54 ff f4 54 00 04 54 00 5f 54 00 41 54        T.9T..T..T._T.AT
+00a0: 00 25                                                  .%
+-------
+> TT3T\TbTTKTT]TTTDTSTTTBT3TTTTTTT`TTTTTTBTTTTGTITTTTT+TTT`T.T$TTTT'TT9TTT_TAT%
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716337
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  19870m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 20 54 00 0e 54 00 52 54 ff d2 54 00 48 54        T. T..T.RT..T.HT
+0010: ff e8 54 00 4a 54 00 5d 54 ff f7 54 ff ec 54 ff        ..T.JT.]T..T..T.
+0020: e5 54 00 5d 54 00 21 54 00 50 54 ff ea 54 00 58        .T.]T.!T.PT..T.X
+0030: 54 ff ce 54 00 19 54 ff e0 54 00 2c 54 00 1a 54        T..T..T..T.,T..T
+0040: 00 4b 54 00 05 54 00 28 54 00 4e 54 00 1c 54 00        .KT..T.(T.NT..T.
+0050: 26 54 ff f8 54 00 5e 54 ff e3 54 00 61 54 ff f3        &T..T.^T..T.aT..
+0060: 54 ff ed 54 ff f2 54 ff d9 54 00 29 54 00 4c 54        T..T..T..T.)T.LT
+0070: ff ec 54 ff db 54 ff d5 54 ff ee 54 00 35 54 00        ..T..T..T..T.5T.
+0080: 04 54 00 5c 54 00 50 54 00 03 54 00 55 54 00 12        .T.\T.PT..T.UT..
+0090: 54 00 5c 54 00 39 54 00 45 54 00 04 54 00 30 54        T.\T.9T.ET..T.0T
+00a0: ff dc                                                  ..
+-------
+> T TTRTTHTTJT]TTTT]T!TPTTXTTTT,TTKTT(TNTT&TT^TTaTTTTT)TLTTTTT5TT\TPTTUTT\T9TETT0T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716445
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  18703m
+payload:   20
+length:    52 bytes
+======
+0000: 54 ff f2 54 ff f3 54 ff cf 54 ff fa 54 00 04 54        T..T..T..T..T..T
+0010: 00 5a 54 ff ea 54 ff f5 54 00 38 54 ff cf 54 00        .ZT..T..T.8T..T.
+0020: 17 54 00 2c 54 00 20 54 ff e2 54 00 32 54 ff df        .T.,T. T..T.2T..
+0030: 54 ff d3 54                                            T..T
+-------
+> TTTTTTZTTT8TTT,T TT2TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716515
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17878m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d0 54 00 3b 54 00 14 54 ff e8 54 00 27 54        T..T.;T..T..T.'T
+0010: 00 13 54 00 42 54 ff ff 54 ff ec 54 ff f9 54 ff        ..T.BT..T..T..T.
+0020: d4 54 00 52 54 00 14 54 00 51 54 ff f7 54 ff fc        .T.RT..T.QT..T..
+0030: 54 00 38 54 00 0a 54 ff dc 54 ff ed 54 ff dd 54        T.8T..T..T..T..T
+0040: 00 2f 54 ff da 54 00 31 54 00 36 54 00 24 54 00        ./T..T.1T.6T.$T.
+0050: 40 54 00 5a 54 00 4d 54 ff fa 54 00 34 54 00 43        @T.ZT.MT..T.4T.C
+0060: 54 00 1f 54 00 56 54 00 0b 54 ff d3 54 ff f9 54        T..T.VT..T..T..T
+0070: ff d3 54 00 53 54 ff dd 54 00 31 54 ff e3 54 00        ..T.ST..T.1T..T.
+0080: 62 54 ff f4 54 00 11 54 00 19 54 00 16 54 00 5d        bT..T..T..T..T.]
+0090: 54 ff e9 54 00 3c 54 ff f3 54 00 5b 54 00 4b 54        T..T.<T..T.[T.KT
+00a0: 00 17                                                  ..
+-------
+> TT;TTT'TTBTTTTTRTTQTTT8TTTTT/TT1T6T$T@TZTMTT4TCTTVTTTTTSTT1TTbTTTTT]TT<TT[TKT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716554
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  17350m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 48 54 00 30 54 ff d0 54 ff ed 54 00 0e 54        T.HT.0T..T..T..T
+0010: 00 37 54 00 3b 54 00 0a 54 ff fe 54 00 00 54 ff        .7T.;T..T..T..T.
+0020: d9 54 00 05 54 ff e7 54 00 37 54 ff f1 54 00 0a        .T..T..T.7T..T..
+0030: 54 ff d8 54 00 2e 54 ff f3 54 00 46 54 ff d1 54        T..T..T..T.FT..T
+0040: 00 3b 54 00 10 54 ff f5 54 ff d0 54 00 5c 54 ff        .;T..T..T..T.\T.
+0050: ef 54 00 14 54 00 13 54 ff d0 54 ff e2 54 ff ce        .T..T..T..T..T..
+0060: 54 00 07 54 00 25 54 00 2e 54 ff ef 54 00 60 54        T..T.%T..T..T.`T
+0070: 00 4d 54 00 0f 54 ff d9 54 00 5c 54 00 46 54 00        .MT..T..T.\T.FT.
+0080: 04 54 ff ec 54 ff ea 54 00 28 54 00 2f 54 00 2c        .T..T..T.(T./T.,
+0090: 54 00 44 54 00 4c 54 00 11 54 ff e2 54 00 20 54        T.DT.LT..T..T. T
+00a0: 00 4b                                                  .K
+-------
+> THT0TTTT7T;TTTTTTT7TTTT.TTFTT;TTTT\TTTTTTTT%T.TT`TMTTT\TFTTTT(T/T,TDTLTTT TK
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716623
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  16837m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d2 54 00 34 54 ff f2 54 00 15 54 00 61 54        T..T.4T..T..T.aT
+0010: ff e3 54 ff e8 54 ff e2 54 00 08 54 00 3b 54 00        ..T..T..T..T.;T.
+0020: 18 54 00 24 54 00 00 54 00 00 54 00 4d 54 ff e9        .T.$T..T..T.MT..
+0030: 54 00 55 54 00 54 54 ff e8 54 00 38 54 ff e4 54        T.UT.TT..T.8T..T
+0040: 00 2d 54 00 57 54 00 22 54 00 3c 54 00 36 54 ff        .-T.WT."T.<T.6T.
+0050: dd 54 00 55 54 00 08 54 00 02 54 00 3d 54 00 4d        .T.UT..T..T.=T.M
+0060: 54 00 13 54 00 04 54 ff f5 54 00 1e 54 00 2a 54        T..T..T..T..T.*T
+0070: 00 18 54 00 3a 54 00 47 54 ff f2 54 ff fd 54 00        ..T.:T.GT..T..T.
+0080: 3f 54 00 57 54 00 58 54 00 43 54 00 26 54 ff fb        ?T.WT.XT.CT.&T..
+0090: 54 00 1f 54 ff f3 54 ff da 54 00 4b 54 ff d9 54        T..T..T..T.KT..T
+00a0: ff f3                                                  ..
+-------
+> TT4TTTaTTTTT;TT$TTTMTTUTTTT8TT-TWT"T<T6TTUTTT=TMTTTTT*TT:TGTTT?TWTXTCT&TTTTTKTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716662
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  16097m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0d 54 00 22 54 00 3c 54 ff e3 54 00 28 54        T..T."T.<T..T.(T
+0010: ff d8 54 00 17 54 ff d8 54 00 02 54 ff dd 54 00        ..T..T..T..T..T.
+0020: 06 54 00 61 54 00 36 54 00 4a 54 00 63 54 00 34        .T.aT.6T.JT.cT.4
+0030: 54 ff e2 54 00 52 54 00 40 54 00 5c 54 00 3e 54        T..T.RT.@T.\T.>T
+0040: 00 3c 54 00 60 54 00 49 54 00 4a 54 00 0c 54 ff        .<T.`T.IT.JT..T.
+0050: dc 54 00 30 54 ff e2 54 00 4c 54 ff fa 54 00 24        .T.0T..T.LT..T.$
+0060: 54 00 04 54 00 15 54 00 45 54 ff da 54 ff fa 54        T..T..T.ET..T..T
+0070: 00 04 54 00 19 54 00 1f 54 00 4a 54 00 4f 54 00        ..T..T..T.JT.OT.
+0080: 39 54 00 0b 54 00 1d 54 00 0d 54 00 43 54 ff ed        9T..T..T..T.CT..
+0090: 54 00 33 54 ff d6 54 00 26 54 00 58 54 00 23 54        T.3T..T.&T.XT.#T
+00a0: 00 59                                                  .Y
+-------
+> TT"T<TT(TTTTTTTaT6TJTcT4TTRT@T\T>T<T`TITJTTT0TTLTT$TTTETTTTTTJTOT9TTTTCTT3TT&TXT#TY
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716717
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15621m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e7 54 00 36 54 00 1e 54 00 17 54 ff dd 54        T..T.6T..T..T..T
+0010: 00 5b 54 00 31 54 00 4a 54 00 26 54 00 00 54 ff        .[T.1T.JT.&T..T.
+0020: e5 54 00 2d 54 00 41 54 ff e5 54 00 35 54 00 5e        .T.-T.AT..T.5T.^
+0030: 54 00 13 54 00 48 54 00 36 54 00 0d 54 ff f0 54        T..T.HT.6T..T..T
+0040: ff fc 54 00 25 54 ff e6 54 00 52 54 ff d8 54 00        ..T.%T..T.RT..T.
+0050: 25 54 00 03 54 00 09 54 00 56 54 00 29 54 00 29        %T..T..T.VT.)T.)
+0060: 54 00 3b 54 ff e8 54 ff d0 54 ff d5 54 00 06 54        T.;T..T..T..T..T
+0070: 00 49 54 ff db 54 00 14 54 00 28 54 ff f6 54 ff        .IT..T..T.(T..T.
+0080: d0 54 00 36 54 ff f7 54 00 14 54 ff db 54 00 09        .T.6T..T..T..T..
+0090: 54 00 5b 54 00 5b 54 00 2d 54 ff ef 54 ff e8 54        T.[T.[T.-T..T..T
+00a0: 00 1e                                                  ..
+-------
+> TT6TTTT[T1TJT&TTT-TATT5T^TTHT6TTTT%TTRTT%TTTVT)T)T;TTTTTITTT(TTT6TTTTT[T[T-TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716770
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  15159m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d8 54 ff df 54 00 43 54 ff db 54 00 40 54        T..T..T.CT..T.@T
+0010: 00 08 54 ff f2 54 00 39 54 00 23 54 00 21 54 00        ..T..T.9T.#T.!T.
+0020: 1b 54 00 32 54 ff f0 54 00 16 54 00 3b 54 00 11        .T.2T..T..T.;T..
+0030: 54 00 53 54 00 47 54 ff f3 54 00 17 54 ff d6 54        T.ST.GT..T..T..T
+0040: 00 55 54 ff d5 54 00 3c 54 ff de 54 00 46 54 ff        .UT..T.<T..T.FT.
+0050: e9 54 00 10 54 ff f9 54 00 60 54 00 41 54 ff df        .T..T..T.`T.AT..
+0060: 54 ff f6 54 00 06 54 00 40 54 00 3e 54 00 26 54        T..T..T.@T.>T.&T
+0070: 00 55 54 ff fa 54 00 4c 54 00 35 54 00 0f 54 ff        .UT..T.LT.5T..T.
+0080: e1 54 ff f2 54 00 55 54 00 59 54 00 00 54 00 38        .T..T.UT.YT..T.8
+0090: 54 00 45 54 00 57 54 ff eb 54 00 5a 54 00 57 54        T.ET.WT..T.ZT.WT
+00a0: 00 22                                                  ."
+-------
+> TTTCTT@TTT9T#T!TT2TTT;TTSTGTTTTUTT<TTFTTTT`TATTTT@T>T&TUTTLT5TTTTUTYTT8TETWTTZTWT"
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716825
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14488m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0e 54 00 0a 54 00 30 54 00 0d 54 00 0f 54        T..T..T.0T..T..T
+0010: 00 06 54 00 20 54 ff e4 54 00 35 54 00 36 54 ff        ..T. T..T.5T.6T.
+0020: dc 54 00 50 54 00 2b 54 ff dd 54 00 26 54 00 13        .T.PT.+T..T.&T..
+0030: 54 00 56 54 ff f3 54 ff f3 54 00 3b 54 ff f7 54        T.VT..T..T.;T..T
+0040: 00 52 54 00 43 54 00 5f 54 00 21 54 ff d7 54 00        .RT.CT._T.!T..T.
+0050: 0e 54 00 5d 54 00 11 54 00 23 54 00 63 54 ff d6        .T.]T..T.#T.cT..
+0060: 54 ff d3 54 ff d6 54 ff ce 54 00 06 54 00 3a 54        T..T..T..T..T.:T
+0070: 00 52 54 ff e6 54 ff e2 54 ff f7 54 ff d4 54 00        .RT..T..T..T..T.
+0080: 43 54 ff df 54 00 3c 54 ff e1 54 ff d4 54 ff e1        CT..T.<T..T..T..
+0090: 54 ff f6 54 ff ee 54 ff f5 54 ff dd 54 00 32 54        T..T..T..T..T.2T
+00a0: 00 2a                                                  .*
+-------
+> TTT0TTTT TT5T6TTPT+TT&TTVTTT;TTRTCT_T!TTT]TT#TcTTTTTT:TRTTTTTCTT<TTTTTTTT2T*
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716878
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  14044m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 03 54 00 57 54 00 42 54 00 4e 54 ff f7 54        T..T.WT.BT.NT..T
+0010: 00 52 54 00 10 54 ff e6 54 ff d2 54 00 3f 54 00        .RT..T..T..T.?T.
+0020: 11 54 ff fa 54 00 5e 54 00 59 54 00 4c 54 ff e9        .T..T.^T.YT.LT..
+0030: 54 ff e3 54 00 53 54 ff f5 54 00 20 54 00 62 54        T..T.ST..T. T.bT
+0040: 00 4f 54 ff e7 54 00 22 54 ff e1 54 00 55 54 00        .OT..T."T..T.UT.
+0050: 28 54 00 02 54 ff fc 54 00 26 54 ff f1 54 ff ce        (T..T..T.&T..T..
+0060: 54 ff ed 54 ff e5 54 00 56 54 00 52 54 00 4f 54        T..T..T.VT.RT.OT
+0070: 00 44 54 00 0c 54 00 5c 54 00 16 54 00 33 54 00        .DT..T.\T..T.3T.
+0080: 1f 54 ff ef 54 00 16 54 00 0d 54 00 1d 54 00 62        .T..T..T..T..T.b
+0090: 54 ff d0 54 00 22 54 ff d0 54 00 40 54 00 35 54        T..T."T..T.@T.5T
+00a0: 00 04                                                  ..
+-------
+> TTWTBTNTTRTTTT?TTT^TYTLTTTSTT TbTOTT"TTUT(TTT&TTTTTVTRTOTDTT\TT3TTTTTTbTT"TT@T5T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490716986
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  13029m
+payload:   20
+length:    92 bytes
+======
+0000: 54 00 09 54 ff f5 54 00 01 54 ff d4 54 00 4b 54        T..T..T..T..T.KT
+0010: 00 4d 54 00 18 54 ff df 54 ff e9 54 00 5e 54 00        .MT..T..T..T.^T.
+0020: 10 54 ff e6 54 00 4b 54 ff fb 54 00 0e 54 ff dc        .T..T.KT..T..T..
+0030: 54 ff d6 54 00 4e 54 ff df 54 00 49 54 00 24 54        T..T.NT..T.IT.$T
+0040: 00 5c 54 00 0d 54 00 13 54 ff db 54 00 43 54 00        .\T..T..T..T.CT.
+0050: 55 54 ff ea 54 00 5e 54 00 33 54 ff                    UT..T.^T.3T.
+-------
+> TTTTTKTMTTTT^TTTKTTTTTNTTIT$T\TTTTCTUTT^T3T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717041
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12631m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f1 54 00 2c 54 00 2b 54 00 30 54 ff dd 54        T..T.,T.+T.0T..T
+0010: 00 4b 54 00 2d 54 ff f1 54 00 2e 54 00 1e 54 ff        .KT.-T..T..T..T.
+0020: f6 54 ff db 54 00 00 54 00 50 54 00 5f 54 ff f8        .T..T..T.PT._T..
+0030: 54 00 62 54 00 54 54 ff f1 54 ff d0 54 00 26 54        T.bT.TT..T..T.&T
+0040: ff eb 54 ff f2 54 00 35 54 00 06 54 ff eb 54 ff        ..T..T.5T..T..T.
+0050: f6 54 00 1c 54 00 4e 54 ff f9 54 ff f2 54 ff de        .T..T.NT..T..T..
+0060: 54 00 38 54 00 63 54 00 07 54 00 23 54 00 09 54        T.8T.cT..T.#T..T
+0070: 00 56 54 00 35 54 ff e2 54 00 0f 54 00 18 54 ff        .VT.5T..T..T..T.
+0080: eb 54 00 03 54 00 4f 54 ff e6 54 ff f3 54 00 1c        .T..T.OT..T..T..
+0090: 54 00 62 54 ff d3 54 00 16 54 00 53 54 00 1a 54        T.bT..T..T.ST..T
+00a0: 00 14                                                  ..
+-------
+> TT,T+T0TTKT-TT.TTTTTPT_TTbTTTTT&TTT5TTTTTNTTTT8TcTT#TTVT5TTTTTTOTTTTbTTTSTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717094
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  12052m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 00 54 00 43 54 00 1e 54 ff e0 54 00 0b 54        T..T.CT..T..T..T
+0010: 00 16 54 ff f3 54 ff f0 54 ff d8 54 ff e1 54 00        ..T..T..T..T..T.
+0020: 5b 54 00 20 54 ff d9 54 00 3e 54 00 03 54 ff e9        [T. T..T.>T..T..
+0030: 54 00 19 54 00 4d 54 00 09 54 00 4b 54 00 4e 54        T..T.MT..T.KT.NT
+0040: ff d2 54 00 04 54 00 3e 54 00 18 54 00 03 54 00        ..T..T.>T..T..T.
+0050: 12 54 00 28 54 ff d1 54 00 3d 54 00 22 54 00 23        .T.(T..T.=T."T.#
+0060: 54 00 5f 54 00 3a 54 00 39 54 00 11 54 ff d6 54        T._T.:T.9T..T..T
+0070: ff ec 54 00 3e 54 ff d7 54 ff f3 54 00 42 54 00        ..T.>T..T..T.BT.
+0080: 19 54 00 1b 54 00 58 54 00 46 54 ff e8 54 ff eb        .T..T.XT.FT..T..
+0090: 54 00 15 54 00 12 54 ff e1 54 00 24 54 00 0f 54        T..T..T..T.$T..T
+00a0: 00 1d                                                  ..
+-------
+> TTCTTTTTTTTT[T TT>TTTTMTTKTNTTT>TTTT(TT=T"T#T_T:T9TTTT>TTTBTTTXTFTTTTTT$TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717149
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11677m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f8 54 00 3f 54 00 5a 54 00 5f 54 00 3e 54        T..T.?T.ZT._T.>T
+0010: 00 15 54 00 03 54 00 33 54 00 14 54 00 2a 54 00        ..T..T.3T..T.*T.
+0020: 1a 54 ff d2 54 00 10 54 00 54 54 00 09 54 00 27        .T..T..T.TT..T.'
+0030: 54 ff ef 54 00 5e 54 00 09 54 00 29 54 00 62 54        T..T.^T..T.)T.bT
+0040: 00 07 54 00 60 54 00 50 54 ff fd 54 00 0a 54 00        ..T.`T.PT..T..T.
+0050: 22 54 ff ed 54 00 1f 54 00 1a 54 00 17 54 00 58        "T..T..T..T..T.X
+0060: 54 00 39 54 00 1c 54 00 54 54 00 34 54 ff e5 54        T.9T..T.TT.4T..T
+0070: 00 0c 54 ff e6 54 00 09 54 00 59 54 ff d7 54 00        ..T..T..T.YT..T.
+0080: 5e 54 00 23 54 ff f8 54 00 17 54 00 1a 54 00 43        ^T.#T..T..T..T.C
+0090: 54 00 2f 54 ff f9 54 ff ee 54 00 1e 54 ff df 54        T./T..T..T..T..T
+00a0: 00 0d                                                  ..
+-------
+> TT?TZT_T>TTT3TT*TTTTTTT'TT^TT)TbTT`TPTTT"TTTTTXT9TTTT4TTTTTYTT^T#TTTTCT/TTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717214
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  11310m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 56 54 00 3a 54 00 29 54 00 50 54 00 2e 54        T.VT.:T.)T.PT..T
+0010: 00 19 54 00 1a 54 00 36 54 00 08 54 ff e8 54 00        ..T..T.6T..T..T.
+0020: 02 54 00 10 54 00 4f 54 ff f3 54 00 3a 54 00 49        .T..T.OT..T.:T.I
+0030: 54 00 29 54 ff e1 54 00 34 54 ff f0 54 ff f9 54        T.)T..T.4T..T..T
+0040: 00 2e 54 ff fc 54 00 53 54 00 10 54 ff ed 54 00        ..T..T.ST..T..T.
+0050: 43 54 00 3e 54 ff e3 54 00 61 54 00 1e 54 00 42        CT.>T..T.aT..T.B
+0060: 54 00 18 54 00 39 54 00 53 54 00 62 54 00 28 54        T..T.9T.ST.bT.(T
+0070: 00 0e 54 00 41 54 00 21 54 00 16 54 00 1a 54 ff        ..T.AT.!T..T..T.
+0080: cf 54 00 62 54 ff d6 54 00 27 54 00 02 54 ff e7        .T.bT..T.'T..T..
+0090: 54 00 18 54 ff eb 54 00 00 54 ff da 54 00 3f 54        T..T..T..T..T.?T
+00a0: ff f7                                                  ..
+-------
+> TVT:T)TPT.TTT6TTTTTOTT:TIT)TT4TTT.TTSTTTCT>TTaTTBTT9TSTbT(TTAT!TTTTbTT'TTTTTTT?T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717310
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10460m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 33 54 ff d8 54 ff d0 54 00 15 54 00 61 54        T.3T..T..T..T.aT
+0010: 00 09 54 00 5b 54 00 3f 54 ff e1 54 00 61 54 00        ..T.[T.?T..T.aT.
+0020: 4e 54 00 00 54 00 1a 54 00 16 54 ff f8 54 00 0e        NT..T..T..T..T..
+0030: 54 ff cf 54 00 18 54 ff f9 54 ff db 54 00 21 54        T..T..T..T..T.!T
+0040: ff ef 54 00 2e 54 00 1d 54 00 60 54 00 0c 54 00        ..T..T..T.`T..T.
+0050: 0c 54 00 26 54 00 12 54 ff d7 54 ff f4 54 00 39        .T.&T..T..T..T.9
+0060: 54 00 47 54 00 46 54 00 2f 54 00 07 54 00 54 54        T.GT.FT./T..T.TT
+0070: 00 30 54 00 1e 54 00 39 54 ff f6 54 ff e1 54 ff        .0T..T.9T..T..T.
+0080: d2 54 ff d3 54 00 37 54 ff f8 54 00 4d 54 00 19        .T..T.7T..T.MT..
+0090: 54 00 22 54 ff f9 54 00 55 54 ff ec 54 ff e7 54        T."T..T.UT..T..T
+00a0: 00 0f                                                  ..
+-------
+> T3TTTTaTT[T?TTaTNTTTTTTTTTT!TT.TT`TTT&TTTT9TGTFT/TTTT0TT9TTTTT7TTMTT"TTUTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717367
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  10131m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff cf 54 00 44 54 00 2c 54 ff ce 54 ff e4 54        T..T.DT.,T..T..T
+0010: ff e4 54 00 41 54 00 35 54 ff fd 54 00 61 54 00        ..T.AT.5T..T.aT.
+0020: 43 54 00 07 54 00 33 54 00 1b 54 ff fd 54 00 55        CT..T.3T..T..T.U
+0030: 54 00 14 54 00 39 54 00 0c 54 00 0a 54 00 44 54        T..T.9T..T..T.DT
+0040: 00 20 54 ff ff 54 ff e4 54 ff f2 54 ff e5 54 00        . T..T..T..T..T.
+0050: 39 54 00 4c 54 ff ea 54 00 08 54 ff e1 54 ff ea        9T.LT..T..T..T..
+0060: 54 00 63 54 00 59 54 ff ce 54 00 17 54 00 47 54        T.cT.YT..T..T.GT
+0070: 00 56 54 00 27 54 ff e9 54 00 42 54 ff ce 54 00        .VT.'T..T.BT..T.
+0080: 45 54 ff ec 54 00 49 54 00 44 54 ff f4 54 00 08        ET..T.IT.DT..T..
+0090: 54 00 27 54 00 47 54 00 18 54 ff f6 54 00 43 54        T.'T.GT..T..T.CT
+00a0: ff e6                                                  ..
+-------
+> TTDT,TTTTAT5TTaTCTT3TTTUTT9TTTDT TTTTT9TLTTTTTcTYTTTGTVT'TTBTTETTITDTTT'TGTTTCT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717418
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9642m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f1 54 ff ec 54 00 37 54 ff d7 54 00 5c 54        T..T..T.7T..T.\T
+0010: 00 10 54 00 11 54 00 63 54 ff e0 54 00 22 54 00        ..T..T.cT..T."T.
+0020: 35 54 00 35 54 00 28 54 ff e3 54 ff db 54 00 47        5T.5T.(T..T..T.G
+0030: 54 00 58 54 00 37 54 ff e5 54 00 1f 54 00 0e 54        T.XT.7T..T..T..T
+0040: 00 0a 54 ff d9 54 00 25 54 ff d2 54 00 5a 54 ff        ..T..T.%T..T.ZT.
+0050: f0 54 00 4e 54 00 43 54 00 22 54 00 50 54 00 00        .T.NT.CT."T.PT..
+0060: 54 ff e8 54 00 0f 54 00 63 54 ff d4 54 00 4d 54        T..T..T.cT..T.MT
+0070: 00 51 54 00 32 54 00 3e 54 00 51 54 00 23 54 00        .QT.2T.>T.QT.#T.
+0080: 48 54 00 1a 54 ff e6 54 ff d3 54 00 52 54 ff d7        HT..T..T..T.RT..
+0090: 54 ff f1 54 00 30 54 00 29 54 00 36 54 ff ce 54        T..T.0T.)T.6T..T
+00a0: 00 5d                                                  .]
+-------
+> TTT7TT\TTTcTT"T5T5T(TTTGTXT7TTTTTT%TTZTTNTCT"TPTTTTcTTMTQT2T>TQT#THTTTTRTTT0T)T6TT]
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717482
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9320m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 33 54 00 14 54 ff f1 54 00 01 54 00 1b 54        T.3T..T..T..T..T
+0010: ff f4 54 ff d1 54 00 39 54 00 14 54 ff dd 54 00        ..T..T.9T..T..T.
+0020: 07 54 ff ee 54 ff ff 54 ff f9 54 00 53 54 ff e3        .T..T..T..T.ST..
+0030: 54 00 63 54 00 28 54 ff e9 54 00 1c 54 00 62 54        T.cT.(T..T..T.bT
+0040: ff d7 54 00 36 54 00 5e 54 00 63 54 00 0a 54 00        ..T.6T.^T.cT..T.
+0050: 63 54 00 09 54 00 0d 54 00 31 54 00 23 54 ff e9        cT..T..T.1T.#T..
+0060: 54 00 01 54 ff e8 54 ff f8 54 00 1a 54 00 52 54        T..T..T..T..T.RT
+0070: ff d9 54 00 3c 54 00 27 54 00 4d 54 00 2f 54 00        ..T.<T.'T.MT./T.
+0080: 53 54 00 5d 54 00 2d 54 ff d4 54 00 54 54 00 0b        ST.]T.-T..T.TT..
+0090: 54 ff fa 54 00 0b 54 ff d6 54 ff f2 54 00 19 54        T..T..T..T..T..T
+00a0: 00 36                                                  .6
+-------
+> T3TTTTTTT9TTTTTTTSTTcT(TTTbTT6T^TcTTcTTT1T#TTTTTTRTT<T'TMT/TST]T-TTTTTTTTTT6
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717526
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  9001m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f1 54 00 19 54 ff fb 54 ff e8 54 ff ce 54        T..T..T..T..T..T
+0010: 00 63 54 ff f4 54 ff d5 54 00 59 54 ff d0 54 00        .cT..T..T.YT..T.
+0020: 40 54 00 58 54 ff d7 54 00 06 54 00 3f 54 ff f3        @T.XT..T..T.?T..
+0030: 54 00 2d 54 ff e1 54 ff e4 54 00 04 54 00 5c 54        T.-T..T..T..T.\T
+0040: 00 49 54 00 31 54 ff dd 54 00 18 54 00 5d 54 00        .IT.1T..T..T.]T.
+0050: 5e 54 00 2d 54 00 4d 54 ff de 54 00 04 54 00 0c        ^T.-T.MT..T..T..
+0060: 54 00 04 54 00 22 54 00 61 54 ff f9 54 00 4f 54        T..T."T.aT..T.OT
+0070: 00 10 54 00 31 54 ff fb 54 00 57 54 00 3e 54 00        ..T.1T..T.WT.>T.
+0080: 42 54 ff f6 54 ff dc 54 ff ce 54 00 52 54 ff d4        BT..T..T..T.RT..
+0090: 54 ff e8 54 00 24 54 00 18 54 00 24 54 00 34 54        T..T.$T..T.$T.4T
+00a0: 00 05                                                  ..
+-------
+> TTTTTTcTTTYTT@TXTTT?TT-TTTT\TIT1TTT]T^T-TMTTTTT"TaTTOTT1TTWT>TBTTTTRTTT$TT$T4T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717596
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8528m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 5b 54 ff ed 54 ff d6 54 00 04 54 ff fe 54        T.[T..T..T..T..T
+0010: ff f1 54 00 55 54 00 18 54 00 55 54 ff f8 54 00        ..T.UT..T.UT..T.
+0020: 0a 54 ff db 54 00 13 54 00 3f 54 00 4a 54 00 30        .T..T..T.?T.JT.0
+0030: 54 00 4f 54 ff d1 54 ff dc 54 ff d8 54 00 01 54        T.OT..T..T..T..T
+0040: ff d0 54 00 39 54 00 3d 54 00 46 54 00 3c 54 ff        ..T.9T.=T.FT.<T.
+0050: e3 54 00 20 54 ff e1 54 00 21 54 ff f0 54 00 32        .T. T..T.!T..T.2
+0060: 54 00 5d 54 00 0b 54 00 54 54 ff f7 54 00 01 54        T.]T..T.TT..T..T
+0070: ff f5 54 00 0a 54 00 18 54 ff f2 54 00 4d 54 ff        ..T..T..T..T.MT.
+0080: e0 54 00 0c 54 ff e8 54 ff da 54 ff ee 54 00 48        .T..T..T..T..T.H
+0090: 54 ff e1 54 00 37 54 00 5e 54 ff e7 54 ff f0 54        T..T.7T.^T..T..T
+00a0: 00 5a                                                  .Z
+-------
+> T[TTTTTTUTTUTTTTT?TJT0TOTTTTTT9T=TFT<TT TT!TT2T]TTTTTTTTTTMTTTTTTHTT7T^TTTZ
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717634
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  8216m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0b 54 00 3a 54 00 05 54 00 1d 54 00 01 54        T..T.:T..T..T..T
+0010: 00 10 54 00 28 54 00 5d 54 ff eb 54 00 10 54 00        ..T.(T.]T..T..T.
+0020: 3b 54 ff d5 54 00 09 54 00 4b 54 00 54 54 00 0d        ;T..T..T.KT.TT..
+0030: 54 ff d2 54 00 54 54 00 4a 54 ff d2 54 00 63 54        T..T.TT.JT..T.cT
+0040: 00 4d 54 00 11 54 ff de 54 00 40 54 ff f1 54 ff        .MT..T..T.@T..T.
+0050: d0 54 ff dd 54 00 24 54 ff f1 54 ff f5 54 00 11        .T..T.$T..T..T..
+0060: 54 ff e1 54 ff d5 54 00 26 54 00 53 54 00 35 54        T..T..T.&T.ST.5T
+0070: 00 30 54 00 0d 54 00 43 54 00 41 54 ff e4 54 00        .0T..T.CT.AT..T.
+0080: 13 54 00 09 54 ff d7 54 00 00 54 00 36 54 ff eb        .T..T..T..T.6T..
+0090: 54 00 5b 54 00 4c 54 ff d6 54 ff fb 54 00 14 54        T.[T.LT..T..T..T
+00a0: ff e0                                                  ..
+-------
+> TT:TTTTT(T]TTT;TTTKTTTTTTTJTTcTMTTT@TTTT$TTTTTT&TST5T0TTCTATTTTTT6TT[TLTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717704
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7902m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 43 54 00 12 54 00 27 54 00 3e 54 ff e0 54        T.CT..T.'T.>T..T
+0010: 00 13 54 00 43 54 00 0b 54 00 44 54 ff e4 54 00        ..T.CT..T.DT..T.
+0020: 60 54 ff d7 54 00 4d 54 00 2d 54 ff d4 54 00 1e        `T..T.MT.-T..T..
+0030: 54 00 01 54 ff cf 54 00 29 54 ff f4 54 00 4e 54        T..T..T.)T..T.NT
+0040: 00 1b 54 ff f1 54 00 21 54 00 36 54 ff fd 54 ff        ..T..T.!T.6T..T.
+0050: fa 54 ff ea 54 ff f4 54 00 14 54 00 48 54 ff f0        .T..T..T..T.HT..
+0060: 54 00 57 54 00 07 54 00 50 54 00 3b 54 00 3e 54        T.WT..T.PT.;T.>T
+0070: 00 5a 54 00 0c 54 ff da 54 00 23 54 00 15 54 ff        .ZT..T..T.#T..T.
+0080: ed 54 ff e4 54 ff e3 54 00 15 54 00 1a 54 00 49        .T..T..T..T..T.I
+0090: 54 ff de 54 ff f1 54 00 30 54 00 43 54 00 0f 54        T..T..T.0T.CT..T
+00a0: ff ff                                                  ..
+-------
+> TCTT'T>TTTCTTDTT`TTMT-TTTTT)TTNTTT!T6TTTTTTHTTWTTPT;T>TZTTT#TTTTTTTITTT0TCTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717742
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7446m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3a 54 ff e5 54 00 5e 54 00 50 54 ff e6 54        T.:T..T.^T.PT..T
+0010: ff f6 54 00 63 54 00 07 54 00 16 54 00 37 54 00        ..T.cT..T..T.7T.
+0020: 63 54 ff ed 54 00 54 54 00 3a 54 ff d3 54 00 58        cT..T.TT.:T..T.X
+0030: 54 00 53 54 00 17 54 00 45 54 ff d9 54 00 4a 54        T.ST..T.ET..T.JT
+0040: 00 3c 54 00 28 54 00 00 54 ff f3 54 00 40 54 ff        .<T.(T..T..T.@T.
+0050: f0 54 ff fb 54 00 53 54 ff db 54 00 2f 54 00 04        .T..T.ST..T./T..
+0060: 54 00 48 54 00 21 54 00 39 54 00 5e 54 00 08 54        T.HT.!T.9T.^T..T
+0070: 00 1d 54 ff e2 54 00 14 54 ff e5 54 00 45 54 00        ..T..T..T..T.ET.
+0080: 25 54 00 18 54 00 1e 54 00 4b 54 00 47 54 00 1b        %T..T..T.KT.GT..
+0090: 54 ff ef 54 00 25 54 00 47 54 00 32 54 00 4e 54        T..T.%T.GT.2T.NT
+00a0: 00 40                                                  .@
+-------
+> T:TT^TPTTTcTTT7TcTTTT:TTXTSTTETTJT<T(TTT@TTTSTT/TTHT!T9T^TTTTTTET%TTTKTGTTT%TGT2TNT@
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717797
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  7300m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f4 54 00 5b 54 00 18 54 00 09 54 ff ee 54        T..T.[T..T..T..T
+0010: 00 01 54 00 24 54 ff cf 54 00 0d 54 ff d4 54 00        ..T.$T..T..T..T.
+0020: 22 54 00 17 54 00 04 54 00 50 54 ff f5 54 ff d9        "T..T..T.PT..T..
+0030: 54 ff ef 54 00 2d 54 00 31 54 00 18 54 00 1d 54        T..T.-T.1T..T..T
+0040: 00 11 54 00 01 54 00 5e 54 00 49 54 ff ff 54 00        ..T..T.^T.IT..T.
+0050: 2f 54 ff e5 54 00 07 54 00 45 54 ff e9 54 00 26        /T..T..T.ET..T.&
+0060: 54 ff db 54 ff ff 54 00 0b 54 00 15 54 00 5a 54        T..T..T..T..T.ZT
+0070: 00 4e 54 00 28 54 00 4b 54 00 5d 54 ff fc 54 00        .NT.(T.KT.]T..T.
+0080: 43 54 ff fc 54 ff df 54 ff fe 54 00 36 54 00 43        CT..T..T..T.6T.C
+0090: 54 ff eb 54 00 02 54 ff ee 54 ff e0 54 00 43 54        T..T..T..T..T.CT
+00a0: 00 17                                                  ..
+-------
+> TT[TTTTT$TTTT"TTTPTTTT-T1TTTTT^TITT/TTTETT&TTTTTZTNT(TKT]TTCTTTT6TCTTTTTCT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717850
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6854m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e4 54 ff d2 54 ff d4 54 00 35 54 00 2b 54        T..T..T..T.5T.+T
+0010: 00 20 54 00 14 54 00 09 54 ff cf 54 00 44 54 00        . T..T..T..T.DT.
+0020: 55 54 00 3c 54 00 46 54 ff f0 54 00 2a 54 ff db        UT.<T.FT..T.*T..
+0030: 54 00 11 54 00 45 54 00 09 54 00 54 54 00 0b 54        T..T.ET..T.TT..T
+0040: 00 5c 54 00 3f 54 00 3f 54 ff d1 54 ff d1 54 ff        .\T.?T.?T..T..T.
+0050: d7 54 00 15 54 ff e0 54 00 60 54 ff f6 54 00 25        .T..T..T.`T..T.%
+0060: 54 ff f2 54 ff ea 54 00 59 54 00 57 54 ff fc 54        T..T..T.YT.WT..T
+0070: 00 06 54 00 62 54 00 34 54 ff d4 54 00 44 54 00        ..T.bT.4T..T.DT.
+0080: 47 54 ff d0 54 ff da 54 ff d2 54 ff f3 54 00 3e        GT..T..T..T..T.>
+0090: 54 00 11 54 ff d8 54 ff fa 54 00 59 54 00 25 54        T..T..T..T.YT.%T
+00a0: ff f4                                                  ..
+-------
+> TTTT5T+T TTTTDTUT<TFTT*TTTETTTTT\T?T?TTTTTT`TT%TTTYTWTTTbT4TTDTGTTTTT>TTTTYT%T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717906
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6415m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f2 54 00 59 54 00 4e 54 00 5d 54 00 50 54        T..T.YT.NT.]T.PT
+0010: 00 3f 54 00 5d 54 00 0f 54 ff df 54 00 1d 54 00        .?T.]T..T..T..T.
+0020: 58 54 ff fb 54 ff eb 54 00 18 54 ff ea 54 00 19        XT..T..T..T..T..
+0030: 54 00 56 54 ff e7 54 00 45 54 00 0f 54 00 1d 54        T.VT..T.ET..T..T
+0040: 00 4f 54 ff eb 54 00 0b 54 00 4e 54 00 1a 54 ff        .OT..T..T.NT..T.
+0050: f9 54 ff f5 54 00 5d 54 00 17 54 00 22 54 00 3b        .T..T.]T..T."T.;
+0060: 54 00 54 54 00 20 54 ff e0 54 00 1b 54 00 4d 54        T.TT. T..T..T.MT
+0070: ff dd 54 00 31 54 00 18 54 00 36 54 00 49 54 00        ..T.1T..T.6T.IT.
+0080: 29 54 00 53 54 00 43 54 ff fc 54 00 18 54 ff cf        )T.ST.CT..T..T..
+0090: 54 00 1a 54 00 4d 54 00 13 54 ff d7 54 00 22 54        T..T.MT..T..T."T
+00a0: 00 3a                                                  .:
+-------
+> TTYTNT]TPT?T]TTTTXTTTTTTVTTETTTOTTTNTTTT]TT"T;TTT TTTMTT1TT6TIT)TSTCTTTTTMTTT"T:
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490717958
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  6137m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0b 54 ff ff 54 ff ee 54 00 1d 54 ff f4 54        T..T..T..T..T..T
+0010: 00 2c 54 ff ed 54 00 28 54 00 01 54 ff dc 54 00        .,T..T.(T..T..T.
+0020: 11 54 00 29 54 00 38 54 ff e0 54 ff f8 54 ff e0        .T.)T.8T..T..T..
+0030: 54 00 11 54 ff d9 54 00 34 54 00 54 54 00 63 54        T..T..T.4T.TT.cT
+0040: 00 0b 54 00 53 54 00 1e 54 ff d3 54 00 4d 54 ff        ..T.ST..T..T.MT.
+0050: ce 54 ff e0 54 ff dd 54 ff eb 54 00 02 54 00 2f        .T..T..T..T..T./
+0060: 54 ff f2 54 ff f7 54 00 0e 54 ff e2 54 00 1b 54        T..T..T..T..T..T
+0070: ff da 54 ff eb 54 00 45 54 00 62 54 00 57 54 00        ..T..T.ET.bT.WT.
+0080: 49 54 00 00 54 ff d5 54 00 0d 54 00 2c 54 00 14        IT..T..T..T.,T..
+0090: 54 ff df 54 ff fb 54 00 32 54 00 22 54 ff f0 54        T..T..T.2T."T..T
+00a0: 00 5c                                                  .\
+-------
+> TTTTTT,TT(TTTT)T8TTTTTT4TTTcTTSTTTMTTTTTT/TTTTTTTTETbTWTITTTT,TTTT2T"TT\
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718014
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5853m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3f 54 00 06 54 00 2f 54 00 5e 54 00 25 54        T.?T..T./T.^T.%T
+0010: 00 00 54 ff ed 54 00 58 54 ff d7 54 00 2b 54 00        ..T..T.XT..T.+T.
+0020: 07 54 00 1a 54 ff e9 54 00 07 54 00 5d 54 00 55        .T..T..T..T.]T.U
+0030: 54 00 45 54 00 3f 54 00 02 54 00 22 54 ff f3 54        T.ET.?T..T."T..T
+0040: 00 48 54 00 2a 54 00 2d 54 ff e2 54 00 2a 54 00        .HT.*T.-T..T.*T.
+0050: 1b 54 ff ee 54 ff f5 54 ff d4 54 00 0a 54 ff e0        .T..T..T..T..T..
+0060: 54 00 04 54 00 2a 54 ff d7 54 00 02 54 00 40 54        T..T.*T..T..T.@T
+0070: 00 48 54 00 29 54 00 32 54 00 5b 54 00 5e 54 00        .HT.)T.2T.[T.^T.
+0080: 09 54 00 41 54 ff e7 54 00 28 54 00 53 54 ff ff        .T.AT..T.(T.ST..
+0090: 54 00 4c 54 ff e4 54 00 27 54 00 27 54 ff d4 54        T.LT..T.'T.'T..T
+00a0: ff e6                                                  ..
+-------
+> T?TT/T^T%TTTXTT+TTTTT]TUTET?TT"TTHT*T-TT*TTTTTTTT*TTT@THT)T2T[T^TTATT(TSTTLTT'T'TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718066
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  5434m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 3a 54 ff db 54 ff dc 54 ff e5 54 00 06 54        T.:T..T..T..T..T
+0010: 00 46 54 00 29 54 ff ff 54 ff e0 54 ff f9 54 00        .FT.)T..T..T..T.
+0020: 30 54 ff d3 54 ff e1 54 ff eb 54 00 3d 54 ff d7        0T..T..T..T.=T..
+0030: 54 00 27 54 ff f1 54 00 55 54 00 4b 54 ff e4 54        T.'T..T.UT.KT..T
+0040: ff df 54 ff e9 54 00 38 54 00 44 54 ff d8 54 00        ..T..T.8T.DT..T.
+0050: 03 54 00 4f 54 00 50 54 ff d5 54 00 26 54 00 59        .T.OT.PT..T.&T.Y
+0060: 54 ff f8 54 00 0c 54 ff f7 54 00 5d 54 00 4a 54        T..T..T..T.]T.JT
+0070: 00 36 54 00 1f 54 ff d1 54 00 1a 54 ff dc 54 00        .6T..T..T..T..T.
+0080: 28 54 00 36 54 ff ed 54 ff df 54 00 1e 54 00 12        (T.6T..T..T..T..
+0090: 54 00 21 54 ff de 54 00 0e 54 ff d6 54 00 04 54        T.!T..T..T..T..T
+00a0: ff d6                                                  ..
+-------
+> T:TTTTTFT)TTTT0TTTT=TT'TTUTKTTTT8TDTTTOTPTT&TYTTTT]TJT6TTTTT(T6TTTTT!TTTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718230
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  4491m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 0c 54 00 40 54 00 58 54 00 62 54 ff f1 54        T..T.@T.XT.bT..T
+0010: ff dd 54 00 23 54 00 08 54 ff e8 54 ff db 54 ff        ..T.#T..T..T..T.
+0020: eb 54 00 37 54 00 0c 54 00 39 54 ff e8 54 ff e3        .T.7T..T.9T..T..
+0030: 54 00 08 54 00 31 54 ff d5 54 00 04 54 ff d1 54        T..T.1T..T..T..T
+0040: 00 23 54 00 5e 54 00 06 54 ff fc 54 ff fc 54 00        .#T.^T..T..T..T.
+0050: 4c 54 00 41 54 ff d2 54 00 02 54 00 24 54 00 46        LT.AT..T..T.$T.F
+0060: 54 00 5d 54 00 44 54 00 4c 54 ff d2 54 ff f6 54        T.]T.DT.LT..T..T
+0070: 00 20 54 ff fc 54 ff fd 54 ff fb 54 00 40 54 ff        . T..T..T..T.@T.
+0080: f1 54 00 33 54 ff f5 54 00 4b 54 00 27 54 00 33        .T.3T..T.KT.'T.3
+0090: 54 00 57 54 ff f0 54 00 10 54 00 12 54 00 4c 54        T.WT..T..T..T.LT
+00a0: 00 23                                                  .#
+-------
+> TT@TXTbTTT#TTTTT7TT9TTTT1TTTT#T^TTTTLTATTT$TFT]TDTLTTT TTTT@TT3TTKT'T3TWTTTTLT#
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718338
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3849m
+payload:   20
+length:    33 bytes
+======
+0000: 54 ff d6 54 00 05 54 00 34 54 ff ce 54 ff d0 54        T..T..T.4T..T..T
+0010: 00 56 54 ff f7 54 00 57 54 00 63 54 ff e3 54 00        .VT..T.WT.cT..T.
+0020: 32                                                     2
+-------
+> TTT4TTTVTTWTcTT2
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718391
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3599m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 43 54 00 0f 54 00 29 54 00 59 54 00 21 54        T.CT..T.)T.YT.!T
+0010: 00 4e 54 00 25 54 00 19 54 ff fd 54 ff df 54 00        .NT.%T..T..T..T.
+0020: 24 54 ff e8 54 ff e4 54 00 39 54 ff ed 54 ff fd        $T..T..T.9T..T..
+0030: 54 00 1b 54 ff e9 54 00 07 54 ff dd 54 00 0d 54        T..T..T..T..T..T
+0040: 00 08 54 00 32 54 ff d3 54 ff e5 54 00 11 54 ff        ..T.2T..T..T..T.
+0050: ed 54 00 0f 54 ff d4 54 00 04 54 ff f5 54 00 55        .T..T..T..T..T.U
+0060: 54 ff f3 54 ff f4 54 ff db 54 00 56 54 00 05 54        T..T..T..T.VT..T
+0070: 00 2b 54 ff d8 54 ff d8 54 00 11 54 00 2f 54 00        .+T..T..T..T./T.
+0080: 56 54 ff d6 54 00 11 54 ff d4 54 00 43 54 00 5a        VT..T..T..T.CT.Z
+0090: 54 00 26 54 ff f2 54 ff ce 54 ff dd 54 ff d5 54        T.&T..T..T..T..T
+00a0: 00 3b                                                  .;
+-------
+> TCTT)TYT!TNT%TTTT$TTT9TTTTTTTTT2TTTTTTTTTUTTTTVTT+TTTT/TVTTTTCTZT&TTTTT;
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718448
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  3355m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff dd 54 00 18 54 ff d8 54 ff e7 54 00 1d 54        T..T..T..T..T..T
+0010: 00 41 54 00 05 54 00 08 54 00 1b 54 00 5e 54 00        .AT..T..T..T.^T.
+0020: 2f 54 00 44 54 00 16 54 00 28 54 ff fc 54 ff e6        /T.DT..T.(T..T..
+0030: 54 00 5e 54 ff e5 54 ff de 54 00 2e 54 00 0f 54        T.^T..T..T..T..T
+0040: 00 07 54 00 5e 54 00 3f 54 ff d2 54 00 34 54 00        ..T.^T.?T..T.4T.
+0050: 2e 54 ff f5 54 ff e5 54 00 62 54 00 2f 54 00 5e        .T..T..T.bT./T.^
+0060: 54 00 35 54 00 41 54 00 0f 54 00 63 54 00 15 54        T.5T.AT..T.cT..T
+0070: 00 06 54 ff d7 54 00 34 54 ff f4 54 ff ec 54 00        ..T..T.4T..T..T.
+0080: 4c 54 00 1d 54 00 3e 54 00 43 54 ff d4 54 00 16        LT..T.>T.CT..T..
+0090: 54 ff d4 54 00 5d 54 00 08 54 00 4e 54 00 2c 54        T..T.]T..T.NT.,T
+00a0: 00 15                                                  ..
+-------
+> TTTTTTATTTT^T/TDTT(TTT^TTT.TTT^T?TT4T.TTTbT/T^T5TATTcTTTT4TTTLTT>TCTTTT]TTNT,T
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718499
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2995m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 2d 54 ff f8 54 00 59 54 00 1c 54 00 2c 54        T.-T..T.YT..T.,T
+0010: 00 19 54 00 24 54 00 5a 54 00 26 54 00 48 54 00        ..T.$T.ZT.&T.HT.
+0020: 39 54 ff d5 54 ff df 54 ff f7 54 00 53 54 00 47        9T..T..T..T.ST.G
+0030: 54 00 63 54 ff d3 54 00 59 54 ff ec 54 00 5d 54        T.cT..T.YT..T.]T
+0040: 00 4a 54 00 63 54 ff f7 54 00 3c 54 ff ce 54 00        .JT.cT..T.<T..T.
+0050: 14 54 00 3f 54 00 2c 54 00 0c 54 00 1a 54 ff d5        .T.?T.,T..T..T..
+0060: 54 00 13 54 00 3d 54 00 10 54 00 5e 54 00 35 54        T..T.=T..T.^T.5T
+0070: 00 3d 54 ff e6 54 ff d7 54 ff f8 54 00 40 54 00        .=T..T..T..T.@T.
+0080: 45 54 00 25 54 00 41 54 00 4d 54 ff e4 54 ff d5        ET.%T.AT.MT..T..
+0090: 54 00 1e 54 00 60 54 00 24 54 00 3d 54 00 0c 54        T..T.`T.$T.=T..T
+00a0: 00 47                                                  .G
+-------
+> T-TTYTT,TT$TZT&THT9TTTTSTGTcTTYTT]TJTcTT<TTT?T,TTTTT=TT^T5T=TTTT@TET%TATMTTTT`T$T=TTG
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718562
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2762m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 46 54 ff f8 54 00 48 54 00 43 54 00 36 54        T.FT..T.HT.CT.6T
+0010: ff d3 54 00 4c 54 00 58 54 00 50 54 00 21 54 00        ..T.LT.XT.PT.!T.
+0020: 2c 54 00 27 54 00 11 54 00 05 54 00 46 54 00 12        ,T.'T..T..T.FT..
+0030: 54 00 0a 54 00 51 54 00 16 54 00 4e 54 00 36 54        T..T.QT..T.NT.6T
+0040: 00 3b 54 00 10 54 ff d4 54 ff e9 54 ff dc 54 ff        .;T..T..T..T..T.
+0050: d9 54 ff ec 54 00 0f 54 ff da 54 00 24 54 ff e4        .T..T..T..T.$T..
+0060: 54 ff e6 54 00 37 54 ff e6 54 ff f7 54 00 4a 54        T..T.7T..T..T.JT
+0070: 00 0a 54 00 29 54 ff f2 54 00 28 54 00 08 54 00        ..T.)T..T.(T..T.
+0080: 4a 54 ff d0 54 00 1a 54 00 35 54 ff d0 54 00 55        JT..T..T.5T..T.U
+0090: 54 00 06 54 00 18 54 00 36 54 ff e6 54 00 49 54        T..T..T.6T..T.IT
+00a0: ff de                                                  ..
+-------
+> TFTTHTCT6TTLTXTPT!T,T'TTTFTTTQTTNT6T;TTTTTTTTT$TTT7TTTJTT)TT(TTJTTT5TTUTTT6TTIT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718607
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  2532m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff fe 54 ff f7 54 ff e8 54 ff d9 54 ff f5 54        T..T..T..T..T..T
+0010: 00 36 54 00 3d 54 ff e2 54 00 1e 54 00 5a 54 ff        .6T.=T..T..T.ZT.
+0020: e3 54 ff fa 54 00 0f 54 ff ec 54 00 36 54 ff d5        .T..T..T..T.6T..
+0030: 54 00 56 54 00 57 54 00 2e 54 00 38 54 00 07 54        T.VT.WT..T.8T..T
+0040: 00 62 54 00 3c 54 ff cf 54 ff d4 54 00 2f 54 ff        .bT.<T..T..T./T.
+0050: ea 54 00 0c 54 00 0c 54 ff d6 54 ff f5 54 ff d3        .T..T..T..T..T..
+0060: 54 00 17 54 ff e6 54 ff fa 54 00 18 54 00 22 54        T..T..T..T..T."T
+0070: 00 50 54 ff ef 54 00 41 54 ff fe 54 00 57 54 00        .PT..T.AT..T.WT.
+0080: 5d 54 ff da 54 00 51 54 00 41 54 00 2e 54 00 06        ]T..T.QT.AT..T..
+0090: 54 ff f8 54 00 00 54 00 3d 54 ff f3 54 ff e0 54        T..T..T.=T..T..T
+00a0: 00 24                                                  .$
+-------
+> TTTTTT6T=TTTZTTTTT6TTVTWT.T8TTbT<TTT/TTTTTTTTTTT"TPTTATTWT]TTQTAT.TTTT=TTT$
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718715
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1979m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff e4 54 00 06 54 00 1b 54 00 3e 54 00 1e 54        T..T..T..T.>T..T
+0010: 00 10 54 00 43 54 00 1e 54 00 0f 54 00 36 54 00        ..T.CT..T..T.6T.
+0020: 13 54 00 25 54 00 53 54 ff dd 54 00 5f 54 00 09        .T.%T.ST..T._T..
+0030: 54 00 2a 54 00 4e 54 00 2e 54 00 20 54 ff d4 54        T.*T.NT..T. T..T
+0040: 00 2b 54 ff ed 54 00 36 54 00 41 54 00 26 54 00        .+T..T.6T.AT.&T.
+0050: 1e 54 00 19 54 00 2b 54 ff d3 54 00 51 54 00 1d        .T..T.+T..T.QT..
+0060: 54 00 3d 54 00 12 54 00 2f 54 ff ed 54 00 54 54        T.=T..T./T..T.TT
+0070: ff eb 54 ff fe 54 00 33 54 ff ff 54 00 45 54 00        ..T..T.3T..T.ET.
+0080: 39 54 ff f6 54 00 5d 54 00 56 54 00 10 54 00 51        9T..T.]T.VT..T.Q
+0090: 54 ff d8 54 ff dd 54 00 4a 54 ff ea 54 ff d6 54        T..T..T.JT..T..T
+00a0: ff e6                                                  ..
+-------
+> TTTT>TTTCTTT6TT%TSTT_TT*TNT.T TT+TT6TAT&TTT+TTQTT=TT/TTTTTT3TTET9TT]TVTTQTTTJTTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718784
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1766m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f7 54 00 51 54 ff f4 54 00 33 54 00 35 54        T..T.QT..T.3T.5T
+0010: 00 01 54 00 5e 54 00 50 54 ff e3 54 00 17 54 00        ..T.^T.PT..T..T.
+0020: 1b 54 00 2f 54 00 4e 54 00 3f 54 00 2a 54 00 5a        .T./T.NT.?T.*T.Z
+0030: 54 00 5e 54 ff f9 54 00 2b 54 ff f9 54 00 5c 54        T.^T..T.+T..T.\T
+0040: 00 57 54 00 43 54 00 49 54 00 0e 54 ff f4 54 00        .WT.CT.IT..T..T.
+0050: 40 54 ff e5 54 00 57 54 00 3f 54 00 16 54 00 45        @T..T.WT.?T..T.E
+0060: 54 00 5c 54 ff ce 54 00 37 54 ff ff 54 00 52 54        T.\T..T.7T..T.RT
+0070: 00 24 54 ff f8 54 00 08 54 00 02 54 00 19 54 00        .$T..T..T..T..T.
+0080: 61 54 00 5a 54 00 5b 54 00 15 54 00 16 54 00 2c        aT.ZT.[T..T..T.,
+0090: 54 00 02 54 00 55 54 00 2a 54 00 1a 54 00 3f 54        T..T.UT.*T..T.?T
+00a0: 00 4f                                                  .O
+-------
+> TTQTT3T5TT^TPTTTT/TNT?T*TZT^TT+TT\TWTCTITTT@TTWT?TTET\TT7TTRT$TTTTTaTZT[TTT,TTUT*TT?TO
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718823
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1455m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d1 54 00 1c 54 00 36 54 ff e0 54 ff fa 54        T..T..T.6T..T..T
+0010: ff fb 54 00 1d 54 ff ef 54 00 43 54 00 34 54 00        ..T..T..T.CT.4T.
+0020: 5e 54 00 62 54 ff dd 54 00 5e 54 00 4f 54 00 5c        ^T.bT..T.^T.OT.\
+0030: 54 ff d7 54 00 12 54 ff fa 54 ff ed 54 00 4d 54        T..T..T..T..T.MT
+0040: 00 35 54 00 4a 54 ff e3 54 ff fa 54 00 47 54 00        .5T.JT..T..T.GT.
+0050: 36 54 00 42 54 00 4c 54 00 12 54 ff fc 54 ff de        6T.BT.LT..T..T..
+0060: 54 00 40 54 00 5f 54 ff d3 54 00 58 54 00 63 54        T.@T._T..T.XT.cT
+0070: ff d6 54 00 1a 54 ff e9 54 ff f5 54 00 05 54 00        ..T..T..T..T..T.
+0080: 3f 54 00 08 54 ff df 54 00 02 54 00 1b 54 00 09        ?T..T..T..T..T..
+0090: 54 00 1e 54 ff e9 54 00 2b 54 00 03 54 ff d5 54        T..T..T.+T..T..T
+00a0: 00 0a                                                  ..
+-------
+> TTT6TTTTTTCT4T^TbTT^TOT\TTTTTMT5TJTTTGT6TBTLTTTT@T_TTXTcTTTTTT?TTTTTTTT+TTT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718878
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1254m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 46 54 ff d2 54 00 38 54 ff dc 54 00 17 54        T.FT..T.8T..T..T
+0010: 00 30 54 00 1b 54 00 47 54 00 14 54 00 35 54 00        .0T..T.GT..T.5T.
+0020: 2e 54 00 61 54 ff f4 54 00 13 54 00 39 54 00 3a        .T.aT..T..T.9T.:
+0030: 54 00 15 54 ff ee 54 00 19 54 ff f9 54 00 07 54        T..T..T..T..T..T
+0040: 00 50 54 ff e5 54 ff d7 54 ff df 54 00 20 54 00        .PT..T..T..T. T.
+0050: 24 54 00 2a 54 ff ed 54 00 3c 54 00 59 54 ff d1        $T.*T..T.<T.YT..
+0060: 54 00 06 54 00 46 54 00 04 54 00 1f 54 ff f7 54        T..T.FT..T..T..T
+0070: 00 2b 54 ff d3 54 00 37 54 ff e1 54 00 21 54 ff        .+T..T.7T..T.!T.
+0080: cf 54 ff ef 54 ff d9 54 00 29 54 00 57 54 00 42        .T..T..T.)T.WT.B
+0090: 54 ff d4 54 00 39 54 00 35 54 ff e9 54 00 2f 54        T..T.9T.5T..T./T
+00a0: 00 40                                                  .@
+-------
+> TFTT8TTT0TTGTT5T.TaTTT9T:TTTTTTPTTTT T$T*TT<TYTTTFTTTT+TT7TT!TTTT)TWTBTT9T5TT/T@
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718931
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  1054m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 10 54 ff d0 54 ff ce 54 00 5f 54 00 13 54        T..T..T..T._T..T
+0010: 00 41 54 00 5b 54 00 59 54 ff f8 54 00 28 54 00        .AT.[T.YT..T.(T.
+0020: 14 54 00 61 54 00 21 54 ff e4 54 00 35 54 ff f2        .T.aT.!T..T.5T..
+0030: 54 00 33 54 00 0b 54 ff e8 54 00 33 54 ff f4 54        T.3T..T..T.3T..T
+0040: 00 02 54 00 40 54 ff f6 54 00 30 54 ff e7 54 00        ..T.@T..T.0T..T.
+0050: 60 54 00 31 54 00 07 54 00 4f 54 00 53 54 00 47        `T.1T..T.OT.ST.G
+0060: 54 00 20 54 00 3b 54 00 43 54 00 4c 54 00 10 54        T. T.;T.CT.LT..T
+0070: 00 39 54 00 02 54 00 33 54 00 02 54 00 59 54 ff        .9T..T.3T..T.YT.
+0080: d5 54 00 21 54 00 1d 54 00 3e 54 00 1b 54 00 3b        .T.!T..T.>T..T.;
+0090: 54 00 15 54 00 07 54 00 32 54 00 21 54 ff fc 54        T..T..T.2T.!T..T
+00a0: ff cf                                                  ..
+-------
+> TTTT_TTAT[TYTT(TTaT!TT5TT3TTT3TTT@TT0TT`T1TTOTSTGT T;TCTLTT9TT3TTYTT!TT>TT;TTT2T!TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490718986
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  754m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff fc 54 ff db 54 00 25 54 00 2f 54 ff d6 54        T..T..T.%T./T..T
+0010: 00 25 54 00 32 54 00 4b 54 00 3e 54 00 55 54 00        .%T.2T.KT.>T.UT.
+0020: 12 54 ff fa 54 ff f4 54 00 22 54 ff eb 54 00 0a        .T..T..T."T..T..
+0030: 54 ff e6 54 00 19 54 00 02 54 00 1a 54 00 20 54        T..T..T..T..T. T
+0040: 00 45 54 00 59 54 ff d4 54 ff f5 54 00 27 54 ff        .ET.YT..T..T.'T.
+0050: e5 54 ff fe 54 00 2c 54 00 1b 54 00 2c 54 00 46        .T..T.,T..T.,T.F
+0060: 54 ff ed 54 ff f6 54 ff cf 54 ff e8 54 00 24 54        T..T..T..T..T.$T
+0070: 00 45 54 00 51 54 ff e6 54 ff fc 54 00 07 54 00        .ET.QT..T..T..T.
+0080: 16 54 00 39 54 00 2b 54 00 10 54 ff e3 54 ff ef        .T.9T.+T..T..T..
+0090: 54 00 5b 54 00 5a 54 00 51 54 00 22 54 00 2e 54        T.[T.ZT.QT."T..T
+00a0: 00 37                                                  .7
+-------
+> TTT%T/TT%T2TKT>TUTTTT"TTTTTTT TETYTTT'TTT,TT,TFTTTTT$TETQTTTTT9T+TTTT[TZTQT"T.T7
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490719039
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  554m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff d2 54 00 2d 54 00 34 54 ff f2 54 00 22 54        T..T.-T.4T..T."T
+0010: 00 1a 54 00 38 54 ff d1 54 ff df 54 ff d3 54 00        ..T.8T..T..T..T.
+0020: 36 54 00 2a 54 00 51 54 00 31 54 00 0a 54 00 0d        6T.*T.QT.1T..T..
+0030: 54 ff eb 54 00 1c 54 ff e1 54 ff db 54 ff f4 54        T..T..T..T..T..T
+0040: 00 0f 54 00 31 54 00 09 54 00 19 54 ff e9 54 ff        ..T.1T..T..T..T.
+0050: f5 54 ff eb 54 00 35 54 00 54 54 ff f6 54 ff eb        .T..T.5T.TT..T..
+0060: 54 ff d3 54 ff ef 54 00 17 54 00 35 54 00 19 54        T..T..T..T.5T..T
+0070: 00 39 54 ff d0 54 ff ee 54 00 55 54 00 48 54 00        .9T..T..T.UT.HT.
+0080: 2d 54 ff f1 54 00 3d 54 ff ec 54 00 20 54 ff f4        -T..T.=T..T. T..
+0090: 54 00 0b 54 00 12 54 00 44 54 ff dc 54 ff e6 54        T..T..T.DT..T..T
+00a0: 00 5d                                                  .]
+-------
+> TT-T4TT"TT8TTTT6T*TQT1TTTTTTTTT1TTTTTT5TTTTTTTT5TT9TTTUTHT-TT=TT TTTTDTTT]
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490719094
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  354m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 09 54 00 49 54 ff f2 54 00 5f 54 00 40 54        T..T.IT..T._T.@T
+0010: 00 48 54 00 4d 54 00 38 54 ff fe 54 00 1a 54 ff        .HT.MT.8T..T..T.
+0020: e5 54 ff e7 54 00 4e 54 00 5c 54 ff f3 54 00 51        .T..T.NT.\T..T.Q
+0030: 54 00 45 54 00 55 54 00 5e 54 00 5a 54 00 44 54        T.ET.UT.^T.ZT.DT
+0040: 00 4c 54 00 30 54 ff d3 54 00 5b 54 00 33 54 00        .LT.0T..T.[T.3T.
+0050: 5d 54 ff d2 54 ff ed 54 00 00 54 00 10 54 ff fa        ]T..T..T..T..T..
+0060: 54 ff ff 54 ff cf 54 00 03 54 00 12 54 ff d2 54        T..T..T..T..T..T
+0070: 00 1f 54 00 2d 54 00 1b 54 00 14 54 00 2a 54 00        ..T.-T..T..T.*T.
+0080: 47 54 00 55 54 00 51 54 00 0a 54 ff d2 54 ff d9        GT.UT.QT..T..T..
+0090: 54 ff d6 54 ff e7 54 00 21 54 00 5e 54 00 17 54        T..T..T.!T.^T..T
+00a0: ff f9                                                  ..
+-------
+> TTITT_T@THTMT8TTTTTNT\TTQTETUT^TZTDTLT0TT[T3T]TTTTTTTTTTTT-TTT*TGTUTQTTTTTT!T^TT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490719147
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  54m
+payload:   20
+length:    162 bytes
+======
+0000: 54 00 02 54 00 2d 54 ff fc 54 00 4c 54 00 5f 54        T..T.-T..T.LT._T
+0010: 00 10 54 00 44 54 00 55 54 00 03 54 00 07 54 00        ..T.DT.UT..T..T.
+0020: 1b 54 00 0b 54 00 08 54 00 07 54 00 17 54 00 0b        .T..T..T..T..T..
+0030: 54 00 2c 54 00 08 54 ff ff 54 ff fa 54 00 34 54        T.,T..T..T..T.4T
+0040: 00 4f 54 00 17 54 00 28 54 00 30 54 00 21 54 00        .OT..T.(T.0T.!T.
+0050: 04 54 00 03 54 00 2b 54 ff d8 54 ff ea 54 00 01        .T..T.+T..T..T..
+0060: 54 00 48 54 00 4c 54 ff d3 54 00 46 54 ff d3 54        T.HT.LT..T.FT..T
+0070: 00 4c 54 00 00 54 ff f0 54 00 5b 54 00 55 54 00        .LT..T..T.[T.UT.
+0080: 13 54 ff ff 54 00 3e 54 00 0a 54 ff e6 54 00 24        .T..T.>T..T..T.$
+0090: 54 00 37 54 00 3e 54 00 0e 54 00 23 54 00 4a 54        T.7T.>T..T.#T.JT
+00a0: 00 1b                                                  ..
+-------
+> TT-TTLT_TTDTUTTTTTTTTT,TTTT4TOTT(T0T!TTT+TTTTHTLTTFTTLTTT[TUTTT>TTT$T7T>TT#TJT
+
+////// FCORE//PACKET END //////
+
+///// FCORE//PACKET START /////
+rx time:   1490719201
+latitude:  56.462000°
+longitude: -2.970700°
+altitude:  203m
+payload:   20
+length:    162 bytes
+======
+0000: 54 ff f7 54 00 41 54 00 47 54 00 2d 54 00 29 54        T..T.AT.GT.-T.)T
+0010: 00 49 54 00 0c 54 00 43 54 00 25 54 00 12 54 ff        .IT..T.CT.%T..T.
+0020: d2 54 00 02 54 ff d3 54 ff df 54 00 31 54 00 18        .T..T..T..T.1T..
+0030: 54 00 00 54 ff f2 54 ff e5 54 00 14 54 00 50 54        T..T..T..T..T.PT
+0040: 00 39 54 ff fd 54 00 36 54 ff ef 54 00 5d 54 00        .9T..T.6T..T.]T.
+0050: 3f 54 00 58 54 ff da 54 ff f5 54 ff eb 54 00 35        ?T.XT..T..T..T.5
+0060: 54 ff ec 54 ff ff 54 ff fc 54 00 07 54 00 1f 54        T..T..T..T..T..T
+0070: 00 35 54 00 21 54 ff d4 54 00 0f 54 ff f7 54 00        .5T.!T..T..T..T.
+0080: 22 54 00 1e 54 ff fe 54 ff d6 54 00 4e 54 00 35        "T..T..T..T.NT.5
+0090: 54 00 15 54 00 08 54 00 36 54 00 3c 54 ff d3 54        T..T..T.6T.<T..T
+00a0: 00 07                                                  ..
+-------
+> TTATGT-T)TITTCT%TTTTTT1TTTTTTPT9TT6TT]T?TXTTTT5TTTTTT5T!TTTT"TTTTNT5TTT6T<TT
+
+////// FCORE//PACKET END //////

@@ -1,0 +1,92 @@
+///// FCORE//PACKET PARSER /////
+[1490782362]: connected to localhost:5555
+[1490782365]: frame start detected
+[1490782379]: decoded valid system packet
+[1490782379]: 	>>>> FIX(0.000000°, 0.000000°, 0m)
+[1490782379]: 	>>>> FCORE//SYS_INIT :: BOOT_DONE (FCORE Test 1)
+[1490782379]: rx stats: 261 received, 256/0 frame bytes (9 fixed)
+[1490782391]: frame start detected
+[1490782405]: decoded valid payload packet (0x0a)
+[1490782405]: 	>>>> FIX(0.000000°, 0.000000°, 0m)
+[1490782405]: rx stats: 522 received, 512/0 frame bytes (15 fixed)
+[1490782416]: frame start detected
+[1490782430]: decoded valid payload packet (0x14)
+[1490782430]: 	>>>> FIX(56.462000°, -2.970700°, 203m)
+[1490782430]: rx stats: 783 received, 768/0 frame bytes (24 fixed)
+[1490782467]: frame start detected
+[1490782481]: decoded valid payload packet (0x14)
+[1490782481]: 	>>>> FIX(56.462000°, -2.970700°, 347m)
+[1490782481]: rx stats: 1044 received, 1024/0 frame bytes (31 fixed)
+[1490782486]: frame start detected
+[1490782500]: decoded valid system packet
+[1490782500]: 	>>>> FIX(56.462000°, -2.970700°, 515m)
+[1490782500]: 	>>>> FCORE//SYS_HEALTH :: G/U,P0A/U,P14/U
+[1490782500]: rx stats: 1305 received, 1280/0 frame bytes (40 fixed)
+[1490782501]: frame start detected
+[1490782515]: rx stats: 1566 received, 1536/0 frame bytes (48 fixed)
+[1490782515]: frame start detected
+[1490782529]: decoded valid payload packet (0x0a)
+[1490782529]: 	>>>> FIX(56.462000°, -2.970700°, 515m)
+[1490782529]: rx stats: 1827 received, 1792/0 frame bytes (58 fixed)
+[1490782529]: frame start detected
+[1490782544]: decoded valid payload packet (0x14)
+[1490782544]: 	>>>> FIX(56.462000°, -2.970700°, 675m)
+[1490782544]: rx stats: 2088 received, 2048/0 frame bytes (64 fixed)
+[1490782569]: frame start detected
+[1490782583]: decoded valid payload packet (0x14)
+[1490782583]: 	>>>> FIX(56.462000°, -2.970700°, 1011m)
+[1490782583]: rx stats: 2349 received, 2304/0 frame bytes (68 fixed)
+[1490782595]: frame start detected
+[1490782610]: rx stats: 2610 received, 2560/0 frame bytes (74 fixed)
+[1490782610]: frame start detected
+[1490782624]: decoded valid payload packet (0x0a)
+[1490782624]: 	>>>> FIX(56.462000°, -2.970700°, 1171m)
+[1490782624]: rx stats: 2871 received, 2816/0 frame bytes (87 fixed)
+[1490782624]: frame start detected
+[1490782638]: decoded valid system packet
+[1490782638]: 	>>>> FIX(56.462000°, -2.970700°, 1339m)
+[1490782638]: 	>>>> FCORE//SYS_HEALTH :: G/U,P0A/U,P14/U
+[1490782638]: rx stats: 3132 received, 3072/0 frame bytes (91 fixed)
+[1490782639]: frame start detected
+[1490782653]: decoded valid payload packet (0x14)
+[1490782653]: 	>>>> FIX(56.462000°, -2.970700°, 1339m)
+[1490782653]: rx stats: 3393 received, 3328/0 frame bytes (97 fixed)
+[1490782671]: frame start detected
+[1490782686]: decoded valid payload packet (0x14)
+[1490782686]: 	>>>> FIX(56.462000°, -2.970700°, 1835m)
+[1490782686]: rx stats: 3654 received, 3584/0 frame bytes (104 fixed)
+[1490782698]: frame start detected
+[1490782712]: rx stats: 3915 received, 3840/0 frame bytes (112 fixed)
+[1490782712]: frame start detected
+[1490782726]: decoded valid payload packet (0x0a)
+[1490782726]: 	>>>> FIX(56.462000°, -2.970700°, 2003m)
+[1490782726]: rx stats: 4176 received, 4096/0 frame bytes (120 fixed)
+[1490782741]: frame start detected
+[1490782755]: lost 1 frames            
+[1490782755]: decoded valid system packet
+[1490782755]: 	>>>> FIX(56.462000°, -2.970700°, 2163m)
+[1490782755]: 	>>>> FCORE//SYS_HEALTH :: G/U,P0A/U,P14/U
+[1490782755]: rx stats: 4698 received, 4352/256 frame bytes (125 fixed)
+[1490782774]: frame start detected
+[1490782788]: decoded valid payload packet (0x14)
+[1490782788]: 	>>>> FIX(56.462000°, -2.970700°, 2499m)
+[1490782788]: rx stats: 4959 received, 4608/256 frame bytes (134 fixed)
+[1490782800]: frame start detected
+[1490782814]: rx stats: 5220 received, 4864/256 frame bytes (143 fixed)
+[1490782814]: frame start detected
+[1490782828]: decoded valid payload packet (0x0a)
+[1490782828]: 	>>>> FIX(56.462000°, -2.970700°, 2659m)
+[1490782828]: rx stats: 5481 received, 5120/256 frame bytes (151 fixed)
+[1490782828]: frame start detected
+[1490782842]: decoded valid payload packet (0x14)
+[1490782842]: 	>>>> FIX(56.462000°, -2.970700°, 2827m)
+[1490782842]: rx stats: 5742 received, 5376/256 frame bytes (159 fixed)
+[1490782846]: frame start detected
+[1490782860]: decoded valid system packet
+[1490782860]: 	>>>> FIX(56.462000°, -2.970700°, 2995m)
+[1490782860]: 	>>>> FCORE//SYS_HEALTH :: G/U,P0A/U,P14/U
+[1490782860]: rx stats: 6003 received, 5632/256 frame bytes (169 fixed)
+[1490782876]: frame start detected
+[1490782890]: decoded valid payload packet (0x14)
+[1490782890]: 	>>>> FIX(56.462000°, -2.970700°, 3323m)
+[1490782890]: rx stats: 6264 received, 5888/256 frame bytes (177 fixed)

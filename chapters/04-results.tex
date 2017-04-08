@@ -3,7 +3,9 @@
 
 \section{Component Testing}
 
-\section{Day In The Life Testing}
+\section{Integrated Testing}
+
+\subsection{Day In The Life Testing}
 
 The Day-in-the-Life test consisted of a full simulated \acrlong{hab} mission,
 from lift-off to landing. To obtain data similar to what would be encountered
@@ -68,65 +70,31 @@ transmission errors.
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
-ylabel=Data Rate (\SI{}{Bps}),
+ylabel=Received Data (\SI{}{\byte}),
 mark size=1.0pt,
 mark repeat={5},
 legend style ={
-    at={(0.98,0.95)}, 
-    anchor=north east, draw=black, 
+    at={(0.02,0.95)}, 
+    anchor=north west, draw=black, 
     fill=white,align=left
 }
 ]
+
 \addplot+ table [
-x=MET, y=error rate, col sep=comma
+x=MET, y=received, col sep=comma
 ] {data/test-ditl/fcore.log.rxstats.csv};
 
 \addplot+ table [
-x=MET, y=bandwidth, col sep=comma
+x=MET, y=invalid, col sep=comma
 ] {data/test-ditl/fcore.log.rxstats.csv};
 
-\legend{Erroneous, Total}
+\legend{Total, Erroneous}
 \end{axis}
 \end{tikzpicture}
 \centering
-\caption{DITL Test - Average data rates}
+\caption{DITL Test - Received frame data}
 \label{fig:ditl-bandwidth}
 \end{figure}
-
-%
-%
-% \begin{figure}[H]
-% \begin{tikzpicture}
-% \begin{axis} [
-% xlabel=Mission Elapsed Time (\SI{}{\second}),
-% ylabel=Received Data (\SI{}{B}),
-% mark size=1.0pt,
-% mark repeat={5},
-% legend style ={
-%     at={(0.02,0.95)},
-%     anchor=north west, draw=black,
-%     fill=white,align=left
-% }
-% ]
-% \addplot+ table [
-% x=MET, y=received, col sep=comma
-% ] {data/test-ditl/fcore.log.rxstats.csv};
-%
-% \addplot+ table [
-% x=MET, y=valid, col sep=comma
-% ] {data/test-ditl/fcore.log.rxstats.csv};
-%
-% \addplot+ table [
-% x=MET, y=invalid, col sep=comma
-% ] {data/test-ditl/fcore.log.rxstats.csv};
-%
-% \legend{Total, Valid Frame Data, Invalid Frame Data}
-% \end{axis}
-% \end{tikzpicture}
-% \centering
-% \caption{DITL Test - Received data}
-% \label{fig:ditl-rxstats}
-% \end{figure}
 
 For the simulated mission, FCORE was configured to transmit a health packet
 every \SI{120}{\second}, reporting the status of the GNSS receiver and the
@@ -155,7 +123,7 @@ payload 20 & 63 & 0 & 6 & 91.3\% \\
 \label{tab:ditl-health}
 \end{table}
 
-\section{Radio Stress-Testing}
+\subsection{Radio Stress-Testing}
 
 The final series of tests focused on the radio communications system's
 performance and ability to correct noise-induced errors in the received data.
@@ -191,11 +159,7 @@ x=MET, y=received, col sep=comma
 x=MET, y=invalid, col sep=comma
 ] {data/test-rs8.256/fcore.log.rxstats.csv};
 
-\addplot+ table [
-x=MET, y=fixed, col sep=comma
-] {data/test-rs8.256/fcore.log.rxstats.csv};
-
-\legend{Total, Erroneous, Fixed}
+\legend{Total, Erroneous}
 \end{axis}
 \end{tikzpicture}
 \centering
@@ -228,11 +192,7 @@ x=MET, y=received, col sep=comma
 x=MET, y=invalid, col sep=comma
 ] {data/test-rs14.256/fcore.log.rxstats.csv};
 
-\addplot+ table [
-x=MET, y=fixed, col sep=comma
-] {data/test-rs14.256/fcore.log.rxstats.csv};
-
-\legend{Total, Erroneous, Fixed}
+\legend{Total, Erroneous}
 \end{axis}
 \end{tikzpicture}
 \centering
@@ -263,15 +223,52 @@ x=MET, y=received, col sep=comma
 x=MET, y=invalid, col sep=comma
 ] {data/test-rs18.256/fcore.log.rxstats.csv};
 
-\addplot+ table [
-x=MET, y=fixed, col sep=comma
-] {data/test-rs18.256/fcore.log.rxstats.csv};
-
-\legend{Total, Erroneous, Fixed}
+\legend{Total, Erroneous}
 \end{axis}
 \end{tikzpicture}
 \centering
 \caption{$\frac{18}{256}$ Error Test - Received Data}
 \label{fig:stress-18.256}
+\end{figure}
+
+Figure \ref{fig:stress-fec} shows that in all three tests, the amount of bytes
+that were corrected using the frames' \acrlong{ecc} was similar. As expected,
+the test with the highest byte error rate shows a slightly inferior correction
+rate – frames that contain more than 16 erroneous bytes cannot be corrected at
+all. Table \ref{tab:stress-fec} shows that the actual error correction rates
+are close to the theoretical byte error rates induced at transmission as long
+as the those theoretical rates are below the theoretical maximum.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Error-Corrected Data (\SI{}{\byte}),
+mark size=1.0pt,
+legend style ={
+    at={(0.02,0.95)}, 
+    anchor=north west, draw=black, 
+    fill=white,align=left
+}
+]
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs8.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs14.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs18.256/fcore.log.rxstats.csv};
+
+\legend{$\frac{8}{256}$, $\frac{14}{256}$, $\frac{18}{256}$}
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{$\frac{14}{256}$ Error Tests - Error Correction Performance}
+\label{fig:stress-fec}
 \end{figure}
 
