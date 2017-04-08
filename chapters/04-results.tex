@@ -17,12 +17,20 @@ is received, and not emitted.
 
 \begin{figure}[H]
 \begin{tikzpicture}
-\begin{axis}
-\addplot table [
-xlabel=Mission Elapsed Time,
-ylabel=Altitude,
-x=met, y=alt, col sep=comma
-] {data/02-ditl/loc.csv};
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Altitude (\SI{}{\metre}),
+mark size=1.0pt,
+mark repeat={5},
+legend style ={
+    at={(0.98,0.95)}, 
+    anchor=north east, draw=black, 
+    fill=white,align=left
+}
+]
+\addplot+ table [
+x=MET, y=altitude, col sep=comma
+] {data/test-ditl/loc.csv};
 \end{axis}
 \end{tikzpicture}
 \centering
@@ -30,26 +38,240 @@ x=met, y=alt, col sep=comma
 \label{fig:dit-alt}
 \end{figure}
 
-The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
-payloads: payload 10 at priority level 2, and payload 20 at priority level 1.
-Table \ref{tab:ditl-cfg}.
+% The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
+% payloads: payload 10 at priority level 2, and payload 20 at priority level 1.
+% Table \ref{tab:ditl-cfg}.
+%
+% \begin{table}[H]
+% \begin{center}
+% \begin{tabular}{ |c|c c c| }
+% \hline
+% payload & priority & core frequency & polling interval \\
+% \hline
+% GNSS & - & - & - \\
+% 10 & 2 & \SI{5.082}{\hertz} & \SI{102}{\second} \\
+% 20 & 1 & \SI{10.164}{\hertz} & \SI{51}{\second} \\
+% \hline
+% \end{tabular}
+% \end{center}
+% \caption {DITL Test - FCORE configuration}
+% \label{tab:ditl-cfg}
+% \end{table}
+
+Figure \ref{fig:ditl-bandwidth} shows that the average data rate used by the
+platform stabilised early into the flight close to \SI{10}{bps}, or
+\SI{110}{bps} (out of a maximum bandwidth of \SI{200}{bps}). Over the full
+simulation's duration, an average of \SI{0.63}{Bps} were lost due to
+transmission errors.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Data Rate (\SI{}{Bps}),
+mark size=1.0pt,
+mark repeat={5},
+legend style ={
+    at={(0.98,0.95)}, 
+    anchor=north east, draw=black, 
+    fill=white,align=left
+}
+]
+\addplot+ table [
+x=MET, y=error rate, col sep=comma
+] {data/test-ditl/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=bandwidth, col sep=comma
+] {data/test-ditl/fcore.log.rxstats.csv};
+
+\legend{Erroneous, Total}
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{DITL Test - Average data rates}
+\label{fig:ditl-bandwidth}
+\end{figure}
+
+%
+%
+% \begin{figure}[H]
+% \begin{tikzpicture}
+% \begin{axis} [
+% xlabel=Mission Elapsed Time (\SI{}{\second}),
+% ylabel=Received Data (\SI{}{B}),
+% mark size=1.0pt,
+% mark repeat={5},
+% legend style ={
+%     at={(0.02,0.95)},
+%     anchor=north west, draw=black,
+%     fill=white,align=left
+% }
+% ]
+% \addplot+ table [
+% x=MET, y=received, col sep=comma
+% ] {data/test-ditl/fcore.log.rxstats.csv};
+%
+% \addplot+ table [
+% x=MET, y=valid, col sep=comma
+% ] {data/test-ditl/fcore.log.rxstats.csv};
+%
+% \addplot+ table [
+% x=MET, y=invalid, col sep=comma
+% ] {data/test-ditl/fcore.log.rxstats.csv};
+%
+% \legend{Total, Valid Frame Data, Invalid Frame Data}
+% \end{axis}
+% \end{tikzpicture}
+% \centering
+% \caption{DITL Test - Received data}
+% \label{fig:ditl-rxstats}
+% \end{figure}
+
+For the simulated mission, FCORE was configured to transmit a health packet
+every \SI{120}{\second}, reporting the status of the GNSS receiver and the
+two payloads. Table \ref{tab:ditl-health} presents the data extracted from those
+packets: both payloads were available and responding to the bus controller more
+than \SI{90}{\percent} of the time. The actual percentage could differ by a few
+percentage points since the system reports health at fairly large time
+intervals. It is interesting to note that the GNSS receiver is marked as
+recovering in nearly \SI{3}{\percent} of the health messages, indicating an
+inability from the \acrshort{ahabus} platform to parse a valid location from
+its input.
 
 \begin{table}[H]
-\caption {DITL Test - FCORE configuration}
-\label{tab:ditl-cfg}
 \begin{center}
-\begin{tabular}{ |c|c c c| }
+\begin{tabular}{ |c|c c c c| }
 \hline
-payload & priority & core frequency & polling interval \\
+payload & up count & down count & recovering count & uprate \\
 \hline
-GNSS & - & -
-10 & 2 & \SI{5.082}{\hertz} & \SI{102}{\second} \\
-20 & 1 & \SI{10.164}{\hertz} & \SI{51}{\second} \\
+GNSS       & 67 & 0 & 2 & 97.1\% \\
+payload 10 & 64 & 0 & 5 & 92.8\% \\
+payload 20 & 63 & 0 & 6 & 91.3\% \\
 \hline 
 \end{tabular}
 \end{center}
+\caption {DITL Test - Platform health data}
+\label{tab:ditl-health}
 \end{table}
 
-
-
 \section{Radio Stress-Testing}
+
+The final series of tests focused on the radio communications system's
+performance and ability to correct noise-induced errors in the received data.
+As discussed in section \ref{sec:radio-coms}, the \acrfull{ecc} embedded in
+each frame can correct up to sixteen erroneous bytes per frame of 256 bytes.
+A modified version of FCORE was used to corrupt given amounts of bytes before
+transmission and thus simulate a noise radio channel. The three tests were run
+for ten minutes each with increasing error simulation rates below, near and
+above the theoretical limit of the \acrshort{fec} algorithm, at $\frac{8}{256}$,
+$\frac{14}{256}$ and $\frac{18}{256}$ error rates.
+
+Figure \ref{fig:stress-8.256} shows that when the byte error rate is well below
+(half) the theoretical maximum acceptable, the \acrshort{fec} algorithm performs
+well and only a single frame was lost, due to an antenna disconnection.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Received Data (\SI{}{\byte}),
+mark size=1.0pt,
+legend style ={
+    at={(0.02,0.95)}, 
+    anchor=north west, draw=black, 
+    fill=white,align=left
+}
+]
+\addplot+ table [
+x=MET, y=received, col sep=comma
+] {data/test-rs8.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=invalid, col sep=comma
+] {data/test-rs8.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs8.256/fcore.log.rxstats.csv};
+
+\legend{Total, Erroneous, Fixed}
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{$\frac{8}{256}$ Error Test - Received Data}
+\label{fig:stress-8.256}
+\end{figure}
+
+When the average byte error rate, as shown in figure \ref{fig:stress-14.256},
+some frames can be corrected, while some where the error rate is higher than
+the average are lost. The fluctuations in actual error rate are due to the use
+of the C language's \texttt{rand()} function. %remote or explain
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Received Data (\SI{}{\byte}),
+mark size=1.0pt,
+legend style ={
+    at={(0.02,0.95)}, 
+    anchor=north west, draw=black, 
+    fill=white,align=left
+}
+]
+\addplot+ table [
+x=MET, y=received, col sep=comma
+] {data/test-rs14.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=invalid, col sep=comma
+] {data/test-rs14.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs14.256/fcore.log.rxstats.csv};
+
+\legend{Total, Erroneous, Fixed}
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{$\frac{14}{256}$ Error Test - Received Data}
+\label{fig:stress-14.256}
+\end{figure}
+
+Finally, an average error rate above the theoretical maximum of \SI{16}{\byte}
+causes most of the frames to be lost as shown in figure \ref{fig:stress-18.256}.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis} [
+xlabel=Mission Elapsed Time (\SI{}{\second}),
+ylabel=Received Data (\SI{}{\byte}),
+mark size=1.0pt,
+legend style ={
+    at={(0.02,0.95)}, 
+    anchor=north west, draw=black, 
+    fill=white,align=left
+}
+]
+\addplot+ table [
+x=MET, y=received, col sep=comma
+] {data/test-rs18.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=invalid, col sep=comma
+] {data/test-rs18.256/fcore.log.rxstats.csv};
+
+\addplot+ table [
+x=MET, y=fixed, col sep=comma
+] {data/test-rs18.256/fcore.log.rxstats.csv};
+
+\legend{Total, Erroneous, Fixed}
+\end{axis}
+\end{tikzpicture}
+\centering
+\caption{$\frac{18}{256}$ Error Test - Received Data}
+\label{fig:stress-18.256}
+\end{figure}
+
