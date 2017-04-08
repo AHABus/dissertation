@@ -1,6 +1,8 @@
 \chapter{Literature Review}
 \label{ch:literature-review}
 
+\section{\acrlong{hab} Missions}
+
 Most \acrshort{hab} missions led by universities, schools or amateur are built 
 around commercially available small computers or micro-controller boards:
 Redland Green School students used a Raspberry Pi (\cite{rpi2014}) running
@@ -9,15 +11,7 @@ python scripts as an \acrfull{obc} for their HAB mission
 micro-controller based boards like the Arduino Mega
 (\cite{AtmelCorporation2015}).
 
-In the United Kingdom, radio licenses do not cover airborne transmission, making
-packet radio protocols like AX.25 unusable for HAB missions 
-(\cite{ukhasradio2016}). However, the Office of Communications allows the use
-of certain \textit{license-exempt} frequencies like the 70cm wavelength band,
-provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}).
-For this reason, most missions launched from the United Kingdom use the
-Radiometrix NTX2 transmitter (\cite{radiometrix2012}). Because of the
-constraints, these missions usually transmit their telemetry as text using the
-\acrfull{rtty} protocol.
+\section{\acrlong{obc} Architectures}
 
 While most \acrshort{hab} projects make use of commercial-off-the-shelf
 components, the finished payloads are usually custom, single-purpose designs
@@ -38,6 +32,18 @@ in his 2001 paper how a simple packet protocol built on top of \acrshort{i2c}
 itself is used for data transfer and error detection in Aalborg University's
 CubeSats (\cite{Clausen2001}).
 
+\section{Digital Radio Telemetry}
+
+In the United Kingdom, radio licenses do not cover airborne transmission, making
+packet radio protocols like AX.25 unusable for HAB missions 
+(\cite{ukhasradio2016}). However, the Office of Communications allows the use
+of certain \textit{license-exempt} frequencies like the 70cm wavelength band,
+provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}).
+For this reason, most missions launched from the United Kingdom use the
+Radiometrix NTX2 transmitter (\cite{radiometrix2012}). Because of the
+constraints, these missions usually transmit their telemetry as text using the
+\acrfull{rtty} protocol.
+
 Satellite missions last a lot longer than High-Altitude Balloons' and the
 requirements for radio transmissions differ: while satellites can only
 communicate when their orbit passes above a ground station and require precise
@@ -52,6 +58,8 @@ instrument's measurements (\cite{Eatchel2002}). The BRITE-Austria CubeSat
 mission uses the AX.25 packet radio protocol (used by amateur radio users),
 which allows the use of off-the-shelf transmission and reception hardware
 rather than custom-made circuits (\cite{Traussnig2007}).
+
+\section{Telemetry Protocols}
 
 Some nano-satellites use custom telemetry data format, which allows the team
 to minimise the volume of data to be sent over radio. The Planetary Society's

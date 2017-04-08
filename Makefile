@@ -20,16 +20,11 @@ compile:
 open: compile
 	@open $(TARGET).pdf
 
-count: $(CHAPTERS)
-	@echo $(CHAPTERS)
-	@echo "[done]"
-	
+count-detailed:
+	@texcount -nosub -inc -q $(TARGET).tex
 
-$(CH_DIR)/%.tex:
-	@echo "[chapter: $@]"
-	@texcount -nosub $@
-	
-
+count:
+	@texcount -nosub -merge -q $(TARGET).tex
 
 clean:
 	@rm -rf $(OUT_DIR)

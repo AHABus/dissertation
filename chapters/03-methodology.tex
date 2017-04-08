@@ -1,12 +1,7 @@
 \chapter{Proposed Solution and Methodology}
 \label{ch:methodology}
 
-% TODO: add something about:
-%       - hardware choices
-%       - software choices
-%       - language choices
-%
-%       - overall arch (flight platform, ground segmetn)
+\section{Proposed Solution}
 
 The proposed solution for this project is inspired by the bus model that
 supports the architecture of most commercial satellites. A standard software
@@ -56,6 +51,10 @@ The following chapter describes the design processes used to develop and
 integrate those components into a functioning prototype of the Abertay
 High-Altitude Bus (\textit{AHABus}), and the methods used to test the viability
 and performance of the design.
+
+\section{Environment}
+
+\section{Development Approach}
 
 \section{Radio Communications}
 \label{sec:radio-coms}
@@ -651,11 +650,11 @@ being addressed, thus preventing a payload from corrupting another's signal.
 
 This solution was tested using a Raspberry Pi 3 for the \acrlong{obc}, and an
 Arduino UNO board for the payload. An unforeseen electrical engineering issue
-required slight redesign of the system: on both the Arduino or the Raspberry
+required a slight redesign of the system: on both the Arduino or the Raspberry
 Pi, a small voltage, even inferior to the logic high (\SI{3.3}{V} on Raspberry
 Pi, \SI{5}{V} on the Arduino UNO) was enough for the line to be read as a
 logical high. This caused certain bursts of noise in the lines to be detected
-by the \acrshort{obc} as a high CR line, even though the payload had not
+by the \acrshort{obc} as a high CR signal, even though the payload had not
 raised it. This was fixed by using inverted logic: a payload would signal 
 available data by pulling the \(\overline{CE}\) line low, and the \acrshort{obc}
 would pull \(\overline{CR}\) low when addressing a payload.
@@ -687,18 +686,18 @@ only receive or transmit data when addressed by it.
 
 \subsection{Protocol Specification}
 
+% TODO
 
-
-
-
-\subsection{Arduino Implementation}
-
-\section{Flight Software}
+\section{Flight Platform}
 \label{sec:flight-software}
 
-\subsection{Architecture}
+\subsection{Hardware Prototype}
 
-\subsection{User Interface}
+\subsection{Flight Software}
+
+\subsubsection{Payload Priority System}
+
+\subsubsection{Mission Design and Configuration Files}
 
 \section{Ground Segment}
 \label{sec:ground-segment}

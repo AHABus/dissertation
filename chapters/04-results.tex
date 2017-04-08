@@ -235,9 +235,7 @@ Figure \ref{fig:stress-fec} shows that in all three tests, the amount of bytes
 that were corrected using the frames' \acrlong{ecc} was similar. As expected,
 the test with the highest byte error rate shows a slightly inferior correction
 rate – frames that contain more than 16 erroneous bytes cannot be corrected at
-all. Table \ref{tab:stress-fec} shows that the actual error correction rates
-are close to the theoretical byte error rates induced at transmission as long
-as the those theoretical rates are below the theoretical maximum.
+all.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -271,4 +269,25 @@ x=MET, y=fixed, col sep=comma
 \caption{$\frac{14}{256}$ Error Tests - Error Correction Performance}
 \label{fig:stress-fec}
 \end{figure}
+
+Table \ref{tab:stress-fec} shows that the reported error correction rates
+are slightly less than the theoretical error rates induced at transmission as
+long as the these theoretical rates are below the maximum acceptable rate, and
+fall well below when the error rate is above the limit.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{ |c|c c| }
+\hline
+test & Correction Rate & Theoretical Error Rate \\
+\hline
+$\frac{8}{256}$  & \SI{2.826}{\percent} & \SI{3.125}{\percent} \\ [0.2em]
+$\frac{14}{256}$ & \SI{3.655}{\percent} & \SI{5.469}{\percent} \\ [0.2em]
+$\frac{18}{256}$ & \SI{2.514}{\percent} & \SI{7.031}{\percent} \\ [0.2em]
+\hline 
+\end{tabular}
+\end{center}
+\caption {DITL Test - Platform health data}
+\label{tab:stress-fec}
+\end{table}
 
