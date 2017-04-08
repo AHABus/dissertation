@@ -19,6 +19,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[a4paper, margin=2.54cm]{geometry}
 \usepackage[nottoc]{tocbibind}
+\usepackage{array}
+
 
 %\renewcommand{\familydefault}{\sfdefault}
 \pgfplotsset{width=10cm,height=6cm,compat=newest}
@@ -45,18 +47,26 @@ firstinits=true
 
 % Parameters
 
-
 \setlength{\baselineskip}{1.5em}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
 
 % Title
 
 \newcommand\frontmatter{%
-    \cleardoublepage
-    \pagenumbering{roman}}
+\cleardoublepage
+\pagenumbering{roman}
+}
 
 \newcommand\mainmatter{%
-    \cleardoublepage
-    \pagenumbering{arabic}}
+\cleardoublepage
+\pagenumbering{arabic}
+}
 
 \makeatletter
 \def\maketitle{%

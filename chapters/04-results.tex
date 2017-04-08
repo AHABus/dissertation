@@ -1,11 +1,14 @@
 \chapter{Results}
 \label{ch:results}
 
-\section{Component Testing}
+The following section presents the results of the tests done as part of the
+evaluation process of the project, as discussed in section \ref{sec:testing}.
 
-\section{Integrated Testing}
+% \section{Component Testing}
+%
+% \section{Integrated Testing}
 
-\subsection{Day In The Life Testing}
+\section{Day In The Life Testing}
 \label{ssec:results-ditl}
 
 The Day-in-the-Life test consisted of a full simulated \acrlong{hab} mission,
@@ -18,7 +21,7 @@ the received headers over the approximately two hours and twenty minutes of the
 simulation. The altitude marks are matched to the time at which each packet
 is received, and not emitted.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -41,25 +44,24 @@ x=MET, y=altitude, col sep=comma
 \label{fig:dit-alt}
 \end{figure}
 
-% The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
-% payloads: payload 10 at priority level 2, and payload 20 at priority level 1.
-% Table \ref{tab:ditl-cfg}.
-%
-% \begin{table}[H]
-% \begin{center}
-% \begin{tabular}{ |c|c c c| }
-% \hline
-% payload & priority & core frequency & polling interval \\
-% \hline
-% GNSS & - & - & - \\
-% 10 & 2 & \SI{5.082}{\hertz} & \SI{102}{\second} \\
-% 20 & 1 & \SI{10.164}{\hertz} & \SI{51}{\second} \\
-% \hline
-% \end{tabular}
-% \end{center}
-% \caption {DITL Test - FCORE configuration}
-% \label{tab:ditl-cfg}
-% \end{table}
+The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
+payloads: payload 10 at priority level 2, and payload 20 at priority level 1.
+Table \ref{tab:ditl-cfg} shows the core frequency and polling intervals for
+each payload, generated from the mission file by the FCORE configuration tool.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c||c c c}
+
+payload & priority & core frequency & polling interval \\ \hline
+10 & 2 & \SI{5.082}{\hertz} & \SI{102}{\second} \\
+20 & 1 & \SI{10.164}{\hertz} & \SI{51}{\second} \\
+
+\end{tabular}
+\end{center}
+\caption {DITL Test - FCORE configuration}
+\label{tab:ditl-cfg}
+\end{table}
 
 Figure \ref{fig:ditl-bandwidth} shows that the average data rate used by the
 platform stabilised early into the flight close to \SI{10}{bps}, or
@@ -67,7 +69,7 @@ platform stabilised early into the flight close to \SI{10}{bps}, or
 simulation's duration, an average of \SI{0.63}{Bps} were lost due to
 transmission errors.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -108,23 +110,44 @@ recovering in nearly \SI{3}{\percent} of the health messages, indicating an
 inability from the \acrshort{ahabus} platform to parse a valid location from
 its input.
 
-\begin{table}[H]
+\begin{table}[h]
 \begin{center}
-\begin{tabular}{ |c|c c c c| }
-\hline
-payload & up count & down count & recovering count & uprate \\
-\hline
+\begin{tabular}{c||c c c|c}
+
+payload & up count & down count & recovering count & uptime ratio \\ \hline
 GNSS       & 67 & 0 & 2 & 97.1\% \\
-payload 10 & 64 & 0 & 5 & 92.8\% \\
-payload 20 & 63 & 0 & 6 & 91.3\% \\
-\hline 
+payload 10 & 64 & 0 & 5 & \SI{92.8}{\percent} \\
+payload 20 & 63 & 0 & 6 & \SI{91.3}{\percent} \\
+
 \end{tabular}
 \end{center}
 \caption {DITL Test - Platform health data}
 \label{tab:ditl-health}
 \end{table}
 
-\subsection{Radio System Resilience Testing}
+The number of valid and invalid packets received for each payload are given in
+table \ref{tab:ditl-packet-count}, along with the expected number of packets
+calculated from the FCORE configuration polling intervals given in table
+\ref{tab:ditl-cfg} and the mission duration of \SI{8482}{\second}. The ratio of
+received packets to expected packets matches the uptime ratios reported by
+FCORE health packets, given in table \ref{tab:ditl-health}.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c||c c|c c|c}
+
+payload & valid packets & invalid packets & total & expected & ratio \\
+\hline
+payload 10 & 71 & 2 & 79 & 83 & \SI{95.2}{\percent} \\
+payload 20 & 138 & 6 & 144 & 166 & \SI{86.7}{\percent} \\
+
+\end{tabular}
+\end{center}
+\caption {DITL Test - Received packets}
+\label{tab:ditl-health}
+\end{table}
+
+\section{Radio System Resilience Testing}
 \label{ssec:results-resilience}
 
 The final series of tests focused on the radio communications system's
@@ -141,7 +164,7 @@ Figure \ref{fig:stress-8.256} shows that when the byte error rate is well below
 (half) the theoretical maximum acceptable, the \acrshort{fec} algorithm performs
 well and only a single frame was lost, due to an antenna disconnection.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -174,7 +197,7 @@ some frames can be corrected, while some where the error rate is higher than
 the average are lost. The fluctuations in actual error rate are due to the use
 of the C language's \texttt{rand()} function. %remote or explain
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -205,7 +228,7 @@ x=MET, y=invalid, col sep=comma
 Finally, an average error rate above the theoretical maximum of \SI{16}{\byte}
 causes most of the frames to be lost as shown in figure \ref{fig:stress-18.256}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -239,7 +262,7 @@ the test with the highest byte error rate shows a slightly inferior correction
 rate – frames that contain more than 16 erroneous bytes cannot be corrected at
 all.
 
-\begin{figure}[H]
+\begin{figure}[h]
 \begin{tikzpicture}
 \begin{axis} [
 xlabel=Mission Elapsed Time (\SI{}{\second}),
@@ -277,16 +300,15 @@ are slightly less than the theoretical error rates induced at transmission as
 long as the these theoretical rates are below the maximum acceptable rate, and
 fall well below when the error rate is above the limit.
 
-\begin{table}[H]
+\begin{table}[h]
 \begin{center}
-\begin{tabular}{ |c|c c| }
-\hline
-test & Correction Rate & Theoretical Error Rate \\
-\hline
+\begin{tabular}{c||c c}
+
+test & Correction Rate & Theoretical Error Rate \\ \hline
 $\frac{8}{256}$  & \SI{2.826}{\percent} & \SI{3.125}{\percent} \\ [0.2em]
 $\frac{14}{256}$ & \SI{3.655}{\percent} & \SI{5.469}{\percent} \\ [0.2em]
 $\frac{18}{256}$ & \SI{2.514}{\percent} & \SI{7.031}{\percent} \\ [0.2em]
-\hline 
+
 \end{tabular}
 \end{center}
 \caption {DITL Test - Platform health data}
