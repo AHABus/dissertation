@@ -10,10 +10,10 @@ all: open
 compile:
 	@mkdir -p $(OUT_DIR)
 	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex
-	@$(BIB) -output-directory $(OUT_DIR) $(TARGET) > /dev/null
-	@makeglossaries -d $(OUT_DIR) $(TARGET)
-	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
-	@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
+	#@$(BIB) -output-directory $(OUT_DIR) $(TARGET) > /dev/null
+	#@makeglossaries -d $(OUT_DIR) $(TARGET)
+	#@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
+	#@$(TEX) -halt-on-error -output-directory $(OUT_DIR) -shell-escape $(TARGET).tex > /dev/null
 	@cp $(OUT_DIR)/$(TARGET).pdf ./$(TARGET).pdf
 	@clear
 
