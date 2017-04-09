@@ -690,7 +690,7 @@ solution like the one described in the previous section, it relied on the
 \acrshort{i2c} standard. The protocol was chosen because it provides a two-way
 communication interface over two wires, for up to 127 devices. The major
 difference with a \acrshort{uart} serial interface is that \acrshort{i2c} is
-asymmetric: one device acts as the bus controllers, and passive devices can
+asymmetric: one device acts as the bus controller, and passive devices can
 only receive or transmit data when addressed by it.
 
 \subsection{AHABus Payload Bus Protocol}
@@ -745,22 +745,93 @@ connection by writing \texttt{0x00} in the connection flag.
 \section{Flight Platform}
 \label{sec:flight-software}
 
-\subsection{Hardware Prototype}
-\label{sec:flight-hardware}
-
 \subsection{Flight Software}
 
-\subsubsection{Payload Priority System}
+%TODO: formulation
+The main role of the flight software is to link the subsystems discussed
+previously and handle the data flowing through the system, from each payload's
+raw data to the resulting radio frames. It is also responsible for keeping track
+of the platform geographic co-ordinates and its altitude.
 
-\subsubsection{Mission Design and Configuration Files}
+To avoid the added workload of designing and programming a real-time firmware
+from nothing, the \acrfull{fcore}, \acrshort{ahabus}'s flight software, was
+based upon FreeRTOS and the SDK provided by Espressif for the ESP8266
+micro-controllers, which was used as the \acrshort{obc} for the prototype.
+
+FreeRTOS is a real-time kernel that provides a prioritised task model: each task
+is given a function (usually, an event loop) to run and a priority level. At
+regular intervals, the kernel establishes a list of all the tasks that must run,
+and gives processor time to the one with the highest priority. Such a
+deterministic system is desirable for applications like \acrshort{ahabus}, which
+must run on embedded devices with limited computing power, and where certain
+actions must imperatively run at regular intervals. \acrshort{fcore} was
+designed around three main tasks, along with the standalone radio subsystem
+
+
+\subsubsection{Payload Bus Task}
+Each payload is assigned its own task, with a running
+interval depending on how the payload was configured before flight. Each task
+fetches data from its payload, packetises it and adds it to the radio queue.
+
+
+\subsubsection{System Health Task}
+
+The system task runs at fixed intervals to check the status of each subsystem
+and create a system health message, sent to the ground station through the
+radio subsystem. It was assigned the highest priority level, so that even if a
+subsystem were to fail and not explicitly release control, FreeRTOS would give
+the System Task the execution context, thus allowing health packets to be sent
+to the ground station.
+
+The health of each subsystem is stored globally, and each system can indicate
+an issue by modifying its entry. There are four health states that subsystems
+can have, represented each by a single ASCII character: booting (B), up (U),
+recovering (R) and down (D). Each system is flagged as booting on startup.
+Payloads are flagged as recovering if the last attempt to poll their data
+failed, and down if more than five attempts to communicate failed in a row.
+the \acrshort{gnss} subsystem is flagged as recovering if no valid position
+fix was received from the receiver, and down if the received messages were not
+parsed correctly.
+
+Health messages were designed to be human-readable: this improves the chances
+that ground teams can understand the status of the platform, even if the
+message's packet and frame were to be corrupted beyond the Frame Layer's
+\acrshort{fec} limits.
+
+The message is sent as a list of comma-separated entries. Each entry starts
+with a letter indicating its type (G for the \acrshort{gnss} subsystem, P for
+payloads). In the case of payloads, the type is followed by the payload's
+identifier as a two-character hexadecimal number. The identifier is then
+followed by a forward slash (``/'') and the status character as discussed above.
+Listing \ref{lst:health-message} shows an example health message.
+
+\begin{lstlisting}[caption=FCORE - Example Health Message, label=lst:health-message]
+FCORE//SYS_HEALTH G/U,P0A/R,P14/U
+\end{lstlisting}
+
+\subsubsection{GNSS Task}
+
+The \acrshort{gnss} task was designed to run at fixed intervals to parse the
+\acrshort{gnss} receiver's output, and update the platform's cached
+co-ordinates and altitude. This cached location is the one included in radio
+packets.
+
+\subsubsection{Radio Subsystem}
+
+\subsection{Mission Design and Configuration Files}
 \label{sssec:conf-file}
+
+
+\subsection{Hardware Prototype}
+\label{sec:flight-hardware}
 
 \section{Ground Segment}
 \label{sec:ground-segment}
 
 \subsection{Extracting Raw Binary Stream}
+\label{sec:binary-extraction}
 
-\subsection{Packet}
+\subsection{Packet Parser}
 
 \section{Evaluation}
 \label{sec:testing}

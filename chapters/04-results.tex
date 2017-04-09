@@ -1,12 +1,43 @@
 \chapter{Results}
 \label{ch:results}
 
-The following section presents the results of the tests done as part of the
-evaluation process of the project, as discussed in section \ref{sec:testing}.
+The following section presents the observations and numerical results obtained
+during the tests done as part of the evaluation process of the project, as
+discussed in section \ref{sec:testing}.
 
-% \section{Component Testing}
-%
-% \section{Integrated Testing}
+\section{Observed Issues}
+
+\subsection{Radio Communications}
+
+The initial tests of the radio encoder and transmission stack ported to the
+ESP8266 revealed issues with the micro-controller's interrupt system: events for
+both \acrshort{uart} share the same interrupt, and \texttt{UART0} events (used
+when communicating with the \acrshort{gnss} receiver) were detected at the same
+time as \texttt{UART1} events. Additionally, the design of the ESP8266 meant
+that the interrupts would fire not just when the transmission buffer crossed
+its low threshold, but whenever it was filled below the threshold, locking the
+controller into an interrupt loop and eventually triggering the watchdog timer.
+
+Once those issues were fixed, as discussed in section \ref{sec:flight-software},
+the radio protocol performed without issues on the transmission side. Reception
+proved mostly stable apart from one main issue caused by the frame format: since
+the end of a frame is detected by the number of byte received, byte losses
+while receiving a frame would cause the start of the subsequent frame to be
+counted as the end of the current one. As a result, dropped bytes in a frame
+would most often cause the next frame to not be detected even if it was formed
+properly.
+
+\subsection{Payload Bus}
+
+Though the payload bus was found to be reliable overall, two issues were found
+during platform testing. First, the default \acrshort{i2c} library provided
+with the ESP8266 SDK had a very short clock stretch timeout, which meant that
+payloads had a very short time window to respond to any request from the bus
+controller, leading to a high rate of failed communications until the stretch
+value was raised. Second, there were some cases where the last command from the
+bus controller (clear the connection flag register) would fail. As a result,
+the payload would be prevented to write any new data until the next
+communication from the bus controller.
 
 \section{Day In The Life Testing}
 \label{ssec:results-ditl}
