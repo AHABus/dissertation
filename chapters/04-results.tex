@@ -8,6 +8,7 @@ discussed in section \ref{sec:testing}.
 \section{Observed Issues}
 
 \subsection{Radio Communications}
+\label{ssec:results-rtx}
 
 The initial tests of the radio encoder and transmission stack ported to the
 ESP8266 revealed issues with the micro-controller's interrupt system: events for
@@ -28,6 +29,7 @@ would most often cause the next frame to not be detected even if it was formed
 properly.
 
 \subsection{Payload Bus}
+\label{ssec:results-bus}
 
 Though the payload bus was found to be reliable overall, two issues were found
 during platform testing. First, the default \acrshort{i2c} library provided

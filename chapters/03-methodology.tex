@@ -765,14 +765,45 @@ and gives processor time to the one with the highest priority. Such a
 deterministic system is desirable for applications like \acrshort{ahabus}, which
 must run on embedded devices with limited computing power, and where certain
 actions must imperatively run at regular intervals. \acrshort{fcore} was
-designed around three main tasks, along with the standalone radio subsystem
+designed around three main tasks, along with the standalone radio subsystem.
+Figure \ref{fig:fcore-arch} shows an overview of the the \acrshort{fcore}
+architecture, and the component presented in the following sections.
 
+\begin{figure}[H]
+\includegraphics[width=0.6\textwidth]{fcore-arch.pdf}
+\centering
+\caption{\acrshort{fcore} architecture}
+\label{fig:fcore-arch}
+\end{figure}
 
 \subsubsection{Payload Bus Task}
-Each payload is assigned its own task, with a running
-interval depending on how the payload was configured before flight. Each task
-fetches data from its payload, packetises it and adds it to the radio queue.
 
+The payload bus subsystem was designed so that each payload connected to the
+platform is given a unique identifier, which is also its address on the
+\acrshort{i2c} bus. To avoid errors emanating from one payload to propagate
+and take the whole payload bus offline, each payload is assigned a Payload
+Bus Task.
+
+A Bus Tasks runs at a fixed interval, configured at compile time depending on
+the payload's priority level, as discussed in more details in section
+\ref{sssec:conf-file}. The task establishes a connection with the payload using
+the \acrshort{ahabus} payload bus protocol. If data is available, it is
+collected into a temporary buffer and a packet with the platform's cached
+geographical coordinates is created and sent to the radio submodule.
+
+While the ESP8266 micro-controller does not have any hardware \acrshort{i2c}
+support, the FreeRTOS SDK provides an implementation based on hardware timers
+that was used for bus operations. As discussed in the results (section
+\ref{ssec:results-bus}), the library had to be modified to extend the
+\acrshort{i2c} clock stretch timeout to \SI{100000}{\micro\second}, so that
+payloads with relatively slow processors had enough time to reply to commands.
+
+Because all the payload bus tasks run at the same priority level, there was a
+possibility that a payload's task could take control of the kernel while another
+was still communicating with its own payload. To avoid this, the portion of the
+code that handles communications over the bus and packetisation was marked
+as critical, preventing FreeRTOS from triggering a context switch until all data
+is collected.
 
 \subsubsection{System Health Task}
 
@@ -811,10 +842,22 @@ FCORE//SYS_HEALTH G/U,P0A/R,P14/U
 
 \subsubsection{GNSS Task}
 
-The \acrshort{gnss} task was designed to run at fixed intervals to parse the
-\acrshort{gnss} receiver's output, and update the platform's cached
-co-ordinates and altitude. This cached location is the one included in radio
-packets.
+The \acrshort{gnss} task was designed to run at fixed intervals of
+\SI{20}{\second} to parse the \acrshort{gnss} receiver's output, and update the
+platform's cached co-ordinates and altitude. This cached location is the one
+included in radio packets.
+
+\acrshort{fcore} was designed to use \acrshort{gnss} receivers that comply with
+the NMEA 0183 standard (\cite{Bekte2001}). In order to avoid the added risk of
+writing a custom parser for an existing standard, the minmea library
+(\cite{Moczek2016}) was chosen for its simplicity and reasonable size.
+
+The NMEA sentences used to keep track of a receiver positions are called GGA.
+Since receivers transmit multiple types of sentences every second, the
+\acrshort{gnss} task was designed to attempt to parse up to five sentences
+every time it runs, until a GGA sentence is found. If no GGA sentence is 
+received, the task sets the \acrshort{gnss} health status to recovering to
+indicate that transmitted positions might be out of date.
 
 \subsubsection{Radio Subsystem}
 
