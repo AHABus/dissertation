@@ -1,18 +1,48 @@
 \chapter{Discussion}
 \label{ch:discussion}
 
-\section{Introduction}
-
 The aim of the project was to design and build a prototype of a High-Altitude
-Balloon modular payload bus, similar in principle to buses used in the
-satellite industry, and evaluate both the feasibility of such a platform and
-its performance.
-
-The AHABus platform prototype was 
+Balloon modular platform, similar in principle to buses used in the satellite
+industry, and evaluate both the feasibility of such a platform and its
+performance. The platform was required to allow for stable internal
+communications between the payloads and the \acrlong{obc}, tracking of
+ancillary data (\acrshort{gnss} co-ordinates and altitude) and reliable
+transmission of the collected telemetry to one or multiple ground stations 
+through a low-power radio channel. In this chapter, the \acrshort{ahabus}
+platform prototype is evaluated against these aims, first qualitatively through
+general observations and critical analysis, then in quantitatively, using the
+testing results presented in chapter \ref{ch:results}. This chapter finally
+presents the further work that would be required for the platform to fully meet
+its design goals.
 
 \section{Project Evaluation}
 
-\subsection{Overview}
+\subsection{Platform}
+
+As a software platform, the \acrshort{ahabus} prototype fulfils most of its
+goals: the flight \acrshort{fcore} was complete enough to support full-flight
+simulations, manage the bus, \acrshort{gnss} and radio communications without
+failure. During the testing phase, no major software design error were found,
+and the only instances where failures were found to be caused by the flight
+software itself. Though quite cumbersome to work with, and lacking in
+documentation, the \acrshort{fcore} configuration tool discussed in section
+\ref{sssec:conf-file} proved reliable, and the resulting \acrshort{fcore} builds
+did not suffer from erroneous bandwidth usage.
+
+There are, however, areas that could be improved upon: the software design of
+\acrshort{fcore} makes use of numerous data buffers for the different
+transmission layers. Those buffers are required because of the slow speeds that
+those communications protocol use, but are at the moment not optimised to be as
+small as required – instead, all buffers can hold \SI{4096}{\byte}. This would
+prevent the current source code to be ported to architectures that provide less
+dynamic memory than the chosen ESP8266 micro-controller does.
+
+Due to lack of time, very little work was done on the hardware aspect of
+\acrshort{ahabus}: testing was done using a development board instead of the
+bare micro-controller for the \acrlong{obc}, and the power and payload bus were
+little more than wires routed through a breadboard. An improved development
+platform using a printed circuit board was designed as presented in
+\ref{sec:flight-hardware}, but could not be fully assembled and tested in time.
 
 \subsection{Radio Communications System}
 

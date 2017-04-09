@@ -148,7 +148,7 @@ transmission.
 \end{description}
 
 To avoid possible byte order conflicts between the architectures used on the
-flight platform and the ground station, multi-bytes values referred to in the
+flight platform and the ground station, multi-byte values referred to in the
 specification should always be transmitted as big-endian (most significant byte
 first).
 
@@ -343,14 +343,14 @@ for the decoder to start parsing a frame, it would have been impossible to apply
 \end{figure}
 
 The start sequence design had to be changed to occupy a single frame byte, as
-opposed to two bytes in version 2 of the frame format. Using a single byte to
-detect the start of a frame was not deemed sufficient, since the probably of
-that exact value occurring elsewhere in the binary stream would have been
-fairly high. To mitigate this, the third and final version of the frame format
-uses a single frame start marker (\texttt{0x5A}) at the beginning of each
-frame, and each frame must be preceded by at least one synchronisation byte
-(\texttt{0xAA}), inserted in the binary stream as shown in the lower half of 
-figure \ref{fig:frame-sync-extra}. The following 223 bytes in the frame
+opposed to two bytes in the second version of the frame format. Using a single
+byte to detect the start of a frame was not deemed sufficient, since the
+probably of that exact value occurring elsewhere in the binary stream would
+have been fairly high. To mitigate this, the third and final version of the
+frame format uses a single frame start marker (\texttt{0x5A}) at the beginning
+of each frame, and each frame must be preceded by at least one synchronisation
+byte (\texttt{0xAA}), inserted in the binary stream as shown in the lower half
+of figure \ref{fig:frame-sync-extra}. The following 223 bytes in the frame
 (starting with the protocol version number) are error-corrected, with the
 frame's 32 trailing bytes.
 
@@ -692,12 +692,14 @@ only receive or transmit data when addressed by it.
 \label{sec:flight-software}
 
 \subsection{Hardware Prototype}
+\label{sec:flight-hardware}
 
 \subsection{Flight Software}
 
 \subsubsection{Payload Priority System}
 
 \subsubsection{Mission Design and Configuration Files}
+\label{sssec:conf-file}
 
 \section{Ground Segment}
 \label{sec:ground-segment}
@@ -710,5 +712,7 @@ only receive or transmit data when addressed by it.
 \label{sec:testing}
 
 \subsection{Day in the life Testing}
+\label{ssec:method-ditl}
 
 \subsection{Resilience Testing}
+\label{ssec:method-resilience}
