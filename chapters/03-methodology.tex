@@ -79,14 +79,14 @@ is carried too far by winds and cannot be recovered after landing.
 From the constraints discussed above, the requirements below were established
 for the radio communications system:
 
-\begin{enumerate}
+\begin{itemize}
 \item provide a system to transmit binary data.% DATA LINK
 \item minimise the amount of overhead and bandwidth required.% ALL
 \item allow multiple payload's data to be sent on the same link.% PACKET LAYER
 \item provide stable transmissions on a low-power link.% FRAME LAYER
 \item correct as many transmission-induced data errors as possible.% FRAME LAYER
 \item allow ground crew to track the balloon's location over time.% PACKET LAYER
-\end{enumerate}
+\end{itemize}
 
 As stated in chapter \ref{ch:literature-review}, the United Kingdom's Office
 of Communications restrict what frequencies can be used for airborne
@@ -578,12 +578,14 @@ until all of the packet's payload has been framed.
 
 For testing purposes, a simple program was built that takes in user input,
 uses the encoder to package that data and outputs the frame stream to the
-UNIX standard output (\texttt{stdout}).
+UNIX standard output (\texttt{stdout}) so that the test decoder, discussed in
+section \ref{sssec:rtx-decoder}, could parse it as input.
 
 % TODO: more details? how much is required?
 % TODO: add reference to appendix with code
 
 \subsubsection{Decoder}
+\label{sssec:rtx-decoder}
 
 \subsubsection{Initial Testing}
 
@@ -594,6 +596,18 @@ The Payload Bus is the hardware and software interface that is used by the
 \acrfull{obc} to communicate with each payload carried on a mission.
 
 \subsection{Requirements}
+
+The requirements established for the payload bus were fairly simple: its only
+role is to collect available data from each payload and make it available to
+the flight software to process and transmit through the radio system.
+Nonetheless a formal list of requirements was established:
+
+\begin{itemize}
+\item Provide a channel between payloads and the \acrshort{obc}.
+\item Prevent multiple payloads from transmitting simultaneously.
+\item Allow for different numbers of payloads with minimum changes.
+\item Minimise the amount of Input/Output pins required on the \acrshort{obc}.
+\end{itemize}
 
 \subsection{Initial Prototypes}
 
@@ -619,17 +633,19 @@ corrupted whenever two or more payloads were attempting to send data to the
 
 The chosen solution for this problem was to make four bus lines available to
 each payload. In addition to the common Rx/Tx lines, each interface is composed
-of a Communication Request Line (CR) and a Communication Enable Line (CE). With
-the new design, the communication sequence had to be changed to the following:
+of a Communication Request Line ($\overline{CR}$) and a Communication Enable
+Line ($\overline{CE}$). With this design, the communication sequence had to
+be changed to the following:
 
 \begin{enumerate}
-\item When a payload is ready to send data, it pulls its CR line high.
+\item When a payload is ready to send data, it pulls its $\overline{CR}$ line
+low.
 \item The \acrshort{obc} lists payloads that have raised CR. For each:
 \begin{enumerate}
-    \item The \acrshort{obc} pulls the payload's CE line high.
+    \item The \acrshort{obc} pulls the payload's $\overline{CE}$ line low.
     \item The payload sends its data to the \acrshort{obc}.
-    \item The \acrshort{obc} pulls the payload's CE line low.
-    \item The payload pulls its CR line low.
+    \item The \acrshort{obc} release the payload's $\overline{CE}$ line to high.
+    \item The payload releases its $\overline{CR}$ line to high.
     \item The \acrshort{obc} processes the received data.
 \end{enumerate}
 \end{enumerate}
@@ -637,44 +653,37 @@ the new design, the communication sequence had to be changed to the following:
 To ensure that non-cooperative payload could not attempt to send data when the
 \acrshort{obc} had not addressed them through pulling the CE line high, a logic
 AND gate (two NAND gates chained together as shown in figure \ref{fig:uart-nor})
-was placed between the payload's Tx line and its CE line. With this design,
-any signal on the Tx line could not get past the gate unless the payload was
-being addressed, thus preventing a payload from corrupting another's signal.
+was placed between the payload's Tx line and its $\overline{CE}$ line. With
+this design, any signal on the Tx line could not get past the gate unless the
+payload was being addressed, thus preventing a payload from corrupting
+another's signal.
 
 \begin{figure}[H]
 \includegraphics[width=0.6\textwidth]{serial-nand.png}
 \centering
-\caption{Payload Tx line protection}
+\caption{Payload Tx Line Protection}
 \label{fig:uart-nor}
 \end{figure}
 
 This solution was tested using a Raspberry Pi 3 for the \acrlong{obc}, and an
-Arduino UNO board for the payload. An unforeseen electrical engineering issue
-required a slight redesign of the system: on both the Arduino or the Raspberry
-Pi, a small voltage, even inferior to the logic high (\SI{3.3}{V} on Raspberry
-Pi, \SI{5}{V} on the Arduino UNO) was enough for the line to be read as a
-logical high. This caused certain bursts of noise in the lines to be detected
-by the \acrshort{obc} as a high CR signal, even though the payload had not
-raised it. This was fixed by using inverted logic: a payload would signal 
-available data by pulling the \(\overline{CE}\) line low, and the \acrshort{obc}
-would pull \(\overline{CR}\) low when addressing a payload.
+Arduino UNO board for the payload. The system worked with the experimental
+setup, and the \acrlong{obc} and the OBC were able to exchange data. However,
+the design was deemed flawed because of the hardware requirements: while the Rx
+and Tx lines are shared between all payloads, each still requires two I/O pins
+on the \acrshort{obc} for the $\overline{CE}$ and $\overline{CR}$ lines. With
+most micro-controllers exposing between 5 and 15 I/O pins, this would have
+strongly limited how many payloads could have been connected at the same time.
 
 \begin{figure}[H]
 \includegraphics[width=0.6\textwidth]{serial-wires.jpg}
 \centering
-\caption{Payload Serial Bus test setup}
+\caption{Payload Serial Bus Test Setup}
 \label{fig:uart-nor}
 \end{figure}
 
-The system worked with the experimental setup, and the \acrlong{obc} and the
-OBC were able to exchange data. However, the design was deemed flawed because
-of the hardware requirements: while the Rx and Tx lines are shared between all
-payloads, each still requires two I/O pins on the \acrshort{obc} for the 
-\(\overline{CE}\) and \(\overline{CR}\) lines. With most micro-controllers
-exposing between 5 and 15 I/O pins, this would have strongly limited how many
-payloads could have been connected at the same time.
-
 \subsubsection{\acrshort{i2c} Bus Interface}
+
+% FIXME: move that to results?
 
 The second experimental setup was much simpler: instead of using an hybrid
 solution like the one described in the previous section, it relied on the
@@ -686,7 +695,52 @@ only receive or transmit data when addressed by it.
 
 \subsection{AHABus Payload Bus Protocol}
 
-% TODO
+After the two experiments described in in the previous sections, \acrshort{i2c}
+was chosen as the payload bus's underlying protocol: it allows a large number of
+payloads to be supported with only two lines (clock line, SCL, and data line,
+SDA), and its controller/controllee paradigm allows the \acrshort{obc} to be
+have complete control over which payload is allowed to transmit, and when.
+
+The AHABus Payload Bus protocol was designed to work with a virtual register
+system: each payload can be thought of like a memory array, and the bus
+controller (the \acrshort{obc}) writes and reads data to and from addresses on
+each payload. Addressing a specific payload on the bus, replying to the bus
+controller and read/write operations are handled by the underlying
+\acrshort{i2c} protocol (\cite{NXPSemiconductors2014}). Table
+\ref{tab:bus-protocol-registers} gives the addresses, sizes and purposes of
+each register. Multi-byte values are always encoded in big-endian order.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{r||l l l}
+
+address & size & name & description \\ \hline
+\texttt{0x01} & 1 & Con. Flag & Set to \texttt{0xFF} by the \acrshort{obc} when  a connection is open. \\
+\texttt{0x02} & 2 & Data Length & Number of data bytes available \\
+\texttt{0x10} & - & data & Payload data exposed to the \acrshort{obc}
+
+\end{tabular}
+\end{center}
+\caption {AHABus Payload Bus Protocol - Virtual Registers}
+\label{tab:bus-protocol-registers}
+\end{table}
+
+When the bus controller starts polling a payload, a connection is opened by
+writing \texttt{0xFF} to the Connection Flag register. To avoid data races,
+payloads cannot change any of the registers values while the connection flag
+is set. The controller then fetches two bytes from the Data Length register. If
+there is no data to be collected (zero length), the controller closes the
+connection by writing \texttt{0x00} in the connection flag.
+
+If a non-zero amount of data is available, the controller can start requesting
+it by sending \acrshort{i2c} read requests from address \texttt{0x10} onwards.
+To be compatible with devices that only provide small transmissions buffers,
+the controller cannot fetch more than 32 bytes at the same time. If there are
+more than 32 bytes of data available, the controller will send multiple read
+requests with increasing offsets from the base data address.
+
+Once the data has been successfully collected, the controller closes the
+connection by writing \texttt{0x00} in the connection flag.
 
 \section{Flight Platform}
 \label{sec:flight-software}
