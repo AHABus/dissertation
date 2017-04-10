@@ -48,13 +48,31 @@ received from the platform.
 \end{description}
 
 The following chapter describes the design processes used to develop and
-integrate those components into a functioning prototype of the Abertay
-High-Altitude Bus (\textit{AHABus}), and the methods used to test the viability
-and performance of the design.
+integrate those components into a functioning prototype of the
+\acrfull{ahabus}, and the methods used to test the viability and performance of
+the design.
 
 \section{Environment}
 
-\section{Development Approach}
+The proposed solution was designed to run on low-cost embedded platforms, and
+the prototype was built around the Espressif ESP8266 micro-controller
+(\acrlong{obc}). The radio link used a Radiometrix NTX2B transmitter
+(\cite{radiometrix2012}), and an unnamed Software-Defined Radio receiver and
+antenna.
+
+The software packages used during the project were:
+
+\begin{description}
+    
+\item[ESP OpenRTOS SDK] A FreeRTOS-based real-time kernel for the ESP8266.
+\item[Clang/LLVM] C compiler for macOS (version 802.0.38).
+\item[GQRX] macOS Software-Defined Radio application.
+\item[dl-fldigi] digital radio decoding software.
+\item[Textmate] Code editor.
+\item[C (C99 standard)] Language used for all parts of \acrshort{ahabus}.
+\item[Python 2.7] Language used for log file analysis
+
+\end{description}
 
 \section{Radio Communications}
 \label{sec:radio-coms}
@@ -587,7 +605,22 @@ section \ref{sssec:rtx-decoder}, could parse it as input.
 \subsubsection{Decoder}
 \label{sssec:rtx-decoder}
 
-\subsubsection{Initial Testing}
+The decoding functions of the library were designed with threaded applications
+in mind: the decoding function is given a callback called whenever a packet
+is decoded, and never returns.
+
+Decoding is done in a sequential way. Once the start of a frame has been
+detected, the next 256 bytes are collected. Those 256 bytes are then checked
+at increasing levels of details. Once a frame has been received, the first
+action that the decoder runs is \acrlong{fec}. If all errors can be corrected,
+the packet header is then extracted from the frame, as well as the beginning of
+the packet's data. Subsequent frames are decoded the same way, except all of
+their content is added to the packet's data, until the enough bytes have been
+decoded to account for the packet's indicated length.
+
+The user-provided callback function is invoked as soon as a full packet is
+decoded. It is given a flag indicating whether any erroneous frames were
+detected, so that potentially corrupted packets can be marked.
 
 \section{Payload Bus}
 \label{sec:payload-bus}
@@ -861,12 +894,132 @@ indicate that transmitted positions might be out of date.
 
 \subsubsection{Radio Subsystem}
 
+The radio subsystem was designed around the ESP8266's \texttt{UART1}. While it
+provides a hardware transmission buffer, tis size is only 127 bytes. Given the
+radio channel's low bandwidth (\SI{200}{bps}), this was considered insufficient.
+To allow whole packets to be sent to the radio without forcing the calling code
+to wait until the buffer is empty, the hardware buffer was supplemented with
+a much larger buffer in software. Whenever data is sent to the radio system,
+it is placed in this buffer. An Interrupt Service Routine so that whenever the
+hardware buffer is empty, 127 bytes are copied from the software buffer to the
+hardware one.
+
+To avoid overhead, the radio subsystem was not given any threading protections.
+Instead, calling code was designed so that no two places can be interacting with
+the radio subsystem at the system: any function that creates packets and places
+them in the radio queue is marked as critical, preventing FreeRTOS to switch
+contexts.
+
 \subsection{Mission Design and Configuration Files}
 \label{sssec:conf-file}
 
+Because \acrshort{fcore} was designed to run on embedded platforms with 
+potentially no support for configuration files, the settings for a given mission
+(payload addresses, priority levels...) had to be written as part of the
+firmware source code. To avoid requiring future users having to understand and
+modify the source code themselves, a code generation approach was taken: a
+tool parses a configuration file and generates C source files containing the
+mission configuration data, after which the firmware can be compiled and flashed
+without manual editing of its source. An example configuration file is shown
+in listing \ref{lst:conf-file}
+
+\begin{lstlisting}[
+    caption=FCORE - Example Configuration File,
+    label=lst:conf-file
+]
+{
+    "name": "FCORE Test 1",
+    "payloads": [
+        {
+            "address":  10,
+            "name":     "zero-mass spectrometer",
+            "priority": 2
+        },
+        {
+            "address":  20,
+            "name":     "thermometer",
+            "priority": 1
+        }
+    ]
+}
+\end{lstlisting}
+
+This tool was also used to optimise the polling frequency for each payload.
+A payload's priority level defines how often it is polled: level two payloads
+are polled half as often as level one, and level three a third as often. Since
+the number of payloads, their level and the available bandwidth are known when
+the file is parsed, a formula could be obtained to calculate the optimal
+polling interval, provided the maximum size of a packet was fixed (during the
+tests, this value was fixed to 420 bytes, which fit in two 256-byte frames,
+resulting in at most 512 bytes generated each time a payload is polled).
+
+If $B$ is the total available bandwidth, $n_1, n_2, n_3$ the number of payloads
+at each level, $F_P$ the average byte rate of a level 1 payload and $F_S$ the
+average byte rate of the system health packets:
+
+\[B = F_S + n_{1}F_{P} + \frac{n_{2}F_{P}}{2} + \frac{n_{3}F_{P}}{3} \]
+
+\[B = F_S + F_{P}(n_{1} + \frac{n_2}{2} + \frac{n_3}{3}) \]
+
+\[F_P = \frac{B-F_S}{n_{1} + \frac{n_2}{2} + \frac{n_3}{3}} \]
+
+Once the average byte rate of a payload, its priority level $P$ and how many
+frames are required to encapsulate the data it can return, the interval can be
+obtained:
+
+\[ \Delta_T = P \times \frac{256 \times N_{Frames}}{F_P} \]
+
+The configuration tool was written in ruby because it allows easy parsing of
+JSON files. An example output source file is shown in figure \ref{fig:conf-out},
+generated from the example configuration file discussed previously.
+
+\begin{lstlisting}[
+    caption=FCORE - Example Configuration Output,
+    label=lst:conf-out
+]
+// FCORE Configuration File - FCORE Test 1
+// Generated on 2017-03-29 by fcore_config.rb
+
+#define FCORE_MISSION_NAME    "FCORE Test 1"
+#define FCORE_CONFIG_GENDATE  "2017-03-29"
+#define FCORE_PAYLOAD_COUNT   (2)
+#define FCORE_BUS_MAXDATA     (420)
+#define FCORE_BUS_FREQ        (10.164040404040405)
+#define FCORE_BUS_INTERVAL    (51)
+
+const FCPayload fcore_payloads[FCORE_PAYLOAD_COUNT] = {
+    {10, "zero-mass spectrometer", 2, STATUS_BOOT},
+    {20, "thermometer", 1, STATUS_BOOT},
+};
+\end{lstlisting}
 
 \subsection{Hardware Prototype}
 \label{sec:flight-hardware}
+
+Because a large part of the project was focused on developing the protocols and
+software that support the \acrshort{ahabus} platform, most of the testing was
+done on development boards and breadboards. Because the NTX2 radio transmitter
+requires voltage differentials to control the frequency, and it was controlled
+using a \acrshort{uart} signal, a voltage divider bridge was added between the
+digital I/O pin and its frequency control pin.
+
+\begin{figure}[H]
+\includegraphics[width=0.4\textwidth]{ahabus-schema.png}
+\centering
+\caption{AHABus - Electronic Circuit}
+\label{fig:ahabus-schema}
+\end{figure}
+
+Some preliminary printed circuit board layouts were designed for a next round
+of testing. The schematics and the PCB layout are shown in figures
+\ref{fig:ahabus-schema} and \ref{fig:ahabus-pcb}.
+
+\begin{figure}[H]
+\includegraphics[width=0.4\textwidth]{ahabus-pcb.png}
+\centering
+\caption{AHABus - Printed Circuit Board Layout}
+\label{fig:ahabus-pcb}
+\end{figure}
 
 \section{Ground Segment}
 \label{sec:ground-segment}
