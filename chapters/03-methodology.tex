@@ -970,12 +970,14 @@ obtained:
 \[ \Delta_T = P \times \frac{256 \times N_{Frames}}{F_P} \]
 
 The configuration tool was written in ruby because it allows easy parsing of
-JSON files. An example output source file is shown in figure \ref{fig:conf-out},
-generated from the example configuration file discussed previously.
+JSON files. An example output source file is shown in listing 
+\ref{lst:conf-out}, generated from the example configuration file discussed
+previously.
 
 \begin{lstlisting}[
     caption=FCORE - Example Configuration Output,
-    label=lst:conf-out
+    label=lst:conf-out,
+    language=c
 ]
 // FCORE Configuration File - FCORE Test 1
 // Generated on 2017-03-29 by fcore_config.rb
@@ -1027,13 +1029,94 @@ of testing. The schematics and the PCB layout are shown in figures
 \subsection{Extracting Raw Binary Stream}
 \label{sec:binary-extraction}
 
+The ground segment was based on Dl-Fldigi, an open-source binary radio decoder.
+While Dl-Fldigi can decode RTTY signals, it was meant to decode RTTY text and
+not binary data like the \acrshort{ahabus} packet radio protocol requires.
+The data decoded by the software is not written to any file, but instead printed
+in the main window, which means that byte which values are outside the range of
+ASCII printable characters were invisible.
+
+In order to allow a decoding tool to work on the full binary stream, a fork of
+Dl-Fldigi was modified so that the binary stream could be extracted. When the
+modified version starts, it creates a local network socket, to which any
+byte decoded from RTTY streams are forwarded. This design was chosen because
+most programming languages provide support for network communications, which
+means that tools could easily be written to work with AHABus frame streams, such
+as the packet parser discussed in the following section.
+
 \subsection{Packet Parser}
+\label{sec:packet-dispatcher}
+
+For the purpose of debugging, a simple command-line based packet parser and
+monitor was built upon the decoder discussed in section
+\ref{sssec:rtx-decoder}. Because the platform was still at the prototype stage,
+it was kept fairly simple. The location metadata contained in the packets is
+displayed directly, as are system health packets. The data contained in packets
+coming from payloads is written directly to one file for each payload. Listing
+\ref{lst:fcore-parser-out} shows an example output from the packet parser.
+
+\begin{lstlisting}[
+    caption=Ground Segment - Example Packet Parser Output,
+    label=lst:fcore-parser-out
+]
+[1490711516]: frame start detected
+[1490711531]: decoded valid payload packet (0x14)
+[1490711531]: 	>>>> FIX(56.462000deg, -2.970700deg, 5579m)
+[1490711531]: rx stats: 7569 received, 7424/0 frame bytes (0 fixed)
+[1490711545]: frame start detected
+[1490711559]: decoded valid system packet
+[1490711559]: 	>>>> FIX(56.462000deg, -2.970700deg, 5747m)
+[1490711559]: 	>>>> FCORE//SYS_HEALTH :: G/U,P0A/U,P14/U
+[1490711559]: rx stats: 7830 received, 7680/0 frame bytes (0 fixed)
+[1490711569]: frame start detected
+\end{lstlisting}
+
+For testing purposes, the parser was also set to output statistics on the amount
+of data received, fixed errors and number of frames decoded or lost.
 
 \section{Evaluation}
 \label{sec:testing}
 
+Evaluation and testing of the project proved difficult because of the nature
+of the prototype: embedded systems provide little, if any way to debug and
+observe code behaviour. Instead, most of the testing had to focus on the data
+received by the ground segment. Nonetheless, testing was conducted through
+two main methods discussed in this section.
+
+For all tests, the experimental setup was kept consistent: an ESP8266
+development board was used as the \acrshort{obc}, while two Arduino Uno boards
+were connected as payloads, generating fake instrument data. A \SI{5}{\volt}
+power supply was connected to the power lines.
+
 \subsection{Day in the life Testing}
 \label{ssec:method-ditl}
 
+The day-in-the-life test was meant to simulate a full \acrshort{hab} mission,
+in order to evaluate both the overall viability of the platform, and test the
+performance of the \acrshort{ahabus} platform's subsystems.
+
+In order to come as close as possible to real-life conditions, the
+\acrshort{gnss} receiver was replaced with an Arduino board programmed to
+simulate the position updates of a receiver attached to a \acrlong{hab}
+throughout ascent and descent.
+
+Because the test was executed locally, the long-range aspect of the radio
+communications could only be simulated by using a short antenna on the reception
+side, and no antenna on the simulated platform.
+
 \subsection{Resilience Testing}
 \label{ssec:method-resilience}
+
+The goal of the resilience tests was to test the performance of the packet radio
+protocol, and specifically the \acrlong{fec}/Frame layer. To simulate a noisy
+radio channel, a modified version of \acrshort{fcore} was built so that it
+would randomly change the value of a byte before transmitting it. Knowing the
+maximum theoretical correction limit of the \acrshort{fec} algorithm
+($\frac{16}{256}$), three average error rates
+($\frac{corrupted}{transmitted}$) were tested:
+
+\begin{itemize}
+    \item well under the limit ($\frac{8}{256}$);
+    \item just under the limit ($\frac{14}{256}$);
+    \item above the limit ($\frac{18}{256}$).
+\end{itemize}
