@@ -15,19 +15,14 @@ general qualitative observation and analysis. This chapter finally presents the
 further work that would be required for the platform to fully meet its design
 goals, leading to potential test flights.
 
-\section{Analysis of Test Results}
-
-This section aims to explain and analyse the quantitative results obtained
-during the testing phase of the project. The results are presented in chapter
-\ref{ch:results}, and the raw data files obtained from each tests are included
-in appendices \ref{} through \ref{}, or on the project's GitHub account at
-https://github.com/ahabus/results
-
-\subsection{Day-in-the-Life Test}
-
-\subsection{Radio System Resilience Tests}
-
 \section{Project Evaluation}
+
+Overall, the project could be considered a success. As further section discuss,
+some issues were encountered, and most aspects of the \acrshort{ahabus}
+platform, protocols and toolchain still require refinement and further testing,
+but the results and observation presented in chapter \ref{ch:results} showed
+that developing a modular platform for \acrlong{hab} missions based on the
+concept of satellite buses is feasible.
 
 \subsection{Platform}
 
@@ -66,7 +61,46 @@ platform using a printed circuit board was designed as presented in
 
 \subsection{Radio Communications System}
 
+The radio protocol and its software implementation proved equally time consuming
+and successful. For reasons explained in this section, the protocol could not
+be considered final or perfect, but the version developed over the duration of
+the project proved reliable enough to transmit large amounts of data over long
+simulated test missions.
+
+There were however some observed issues, both in the design of the protocol and
+in the frame and packet decoder implementation. First, the current use of a
+16-bit unsigned integer to encode the platform's altitude in packet's header
+could be problematic even though it did not cause problems during testing: first
+because some locations on Earth are located below the mean sea level, leading to
+negative altitudes that cannot be encoded with unsigned integers. Then because
+the use of 16 bits, while sufficient to encode the altitudes at which balloons
+normally fly, leave little to no margin for expansion, for example to
+\acrshort{hab}-launched small rockets, or eventually nano-satellites.
+
+Furthermore, it was observed that the reliance on frame length to detect the
+end of a frame is error-prone. The current implementation of the frame decoder
+counts the 256 bytes that follow a frame start marker as the frame,
+unconditionally. As described in section \ref{ssec:results-rtx}, this causes
+an issue where dropped bytes in the middle of the frame will cause the start
+of the following frame to be consumed as the end of the current one.
+
+One solution to this issue would be the use of an end-of-frame marker instead,
+and to reject frames that are shorter than 256 bytes. However, this approach
+would be challenging to implement in the context of the \acrshort{ahabus} radio
+protocol. Because the end marker value might occur in the frame's content, it
+must be escaped so that the decoder does not interpret a content byte as the
+frame end. This can be achieved through \textit{byte stuffing}: an escape value
+is chosen, and any end marker or escape value that occurs in the content must
+be preceded by the escape value. The use of \acrshort{fec} in the protocol
+further complicates the issue: the \acrlong{ecc} would have to be escaped too,
+making frames impossible to error-correct before the escaped bytes have been
+resolved by the decoder. This means that a single corrupted escape byte in a
+received frame would prevent the frame from being corrected at all, even if the
+number of invalid bytes is inferior to the \acrshort{fec} algorithm limit.
+
 \subsection{Payload Bus}
+
+
 
 \subsection{Ground Segment}
 
@@ -87,5 +121,17 @@ a server, so that client applications can be built for each team. This would
 allow customised dashboards more apt to decode payload-specific data, and the
 parser would only act as a dispatcher, and possibly a way to monitor the
 \acrshort{ahabus} platform itself during its flight.
+
+\section{Analysis of Test Results}
+
+This section aims to explain and analyse the quantitative results obtained
+during the testing phase of the project. The results are presented in chapter
+\ref{ch:results}, and the raw data files obtained from each tests are included
+in appendices \ref{} through \ref{}, or on the project's GitHub account at
+https://github.com/ahabus/results
+
+\subsection{Day-in-the-Life Test}
+
+\subsection{Radio System Resilience Tests}
 
 \section{Further Work} % << mix in with the rest?
