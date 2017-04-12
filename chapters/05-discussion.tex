@@ -9,11 +9,23 @@ communications between the payloads and the \acrlong{obc}, tracking of
 ancillary data (\acrshort{gnss} co-ordinates and altitude) and reliable
 transmission of the collected telemetry to one or multiple ground stations 
 through a low-power radio channel. In this chapter, the \acrshort{ahabus}
-platform prototype is evaluated against these aims, first qualitatively through
-general observations and critical analysis, then in quantitatively, using the
-testing results presented in chapter \ref{ch:results}. This chapter finally
-presents the further work that would be required for the platform to fully meet
-its design goals.
+platform prototype is evaluated against these aims, first by analysing the
+results of tests discussed in chapter \ref{ch:results}, then through more
+general qualitative observation and analysis. This chapter finally presents the
+further work that would be required for the platform to fully meet its design
+goals, leading to potential test flights.
+
+\section{Analysis of Test Results}
+
+This section aims to explain and analyse the quantitative results obtained
+during the testing phase of the project. The results are presented in chapter
+\ref{ch:results}, and the raw data files obtained from each tests are included
+in appendices \ref{} through \ref{}, or on the project's GitHub account at
+https://github.com/ahabus/results
+
+\subsection{Day-in-the-Life Test}
+
+\subsection{Radio System Resilience Tests}
 
 \section{Project Evaluation}
 
@@ -58,10 +70,22 @@ platform using a printed circuit board was designed as presented in
 
 \subsection{Ground Segment}
 
-\section{Analysis of Test Results}
+The ground segment software was found to be reliable and sufficient for the
+initial round of testing. All requirements were met: the modified version of
+Dl-Fldigi was stable during the tests and successfully broadcasted the decoded
+raw binary stream. The packet decoder/parser was sufficient to gather
+information about the radio communication statistics and the platform's health
+during missions, and received payload data was successfully written to disk
+and marked as either valid or invalid.
 
-\subsection{Day-in-the-Life Test}
-
-\subsection{Radio System Resilience Tests}
+While the current toolchain was sufficient for testing, and would likely be
+usable for further tests, better packet forwarding would be required for a
+finished software suite. While the current solution writes data directly to the
+local drive of the receiving computer, a better solution might be to forward
+decoded data and metadata for each packet to a socket on the local network, or
+a server, so that client applications can be built for each team. This would
+allow customised dashboards more apt to decode payload-specific data, and the
+parser would only act as a dispatcher, and possibly a way to monitor the
+\acrshort{ahabus} platform itself during its flight.
 
 \section{Further Work} % << mix in with the rest?
