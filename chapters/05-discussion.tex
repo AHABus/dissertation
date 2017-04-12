@@ -37,6 +37,14 @@ small as required – instead, all buffers can hold \SI{4096}{\byte}. This would
 prevent the current source code to be ported to architectures that provide less
 dynamic memory than the chosen ESP8266 micro-controller does.
 
+While the platform proved reliable and would be well suited for scientific
+missions, where most of the generated telemetry is numerical measurements, it
+might be less adequate for student missions where most users would expect to
+transmit more data, like real-time pictures: the packets size limit
+(\SI{420}{\byte}) would make transmitting any reasonably-sized image impossible.
+This issue could potentially be solved by adding time division algorithms other
+than the one presented in section \ref{ssec:conf-file}.
+
 Due to lack of time, very little work was done on the hardware aspect of
 \acrshort{ahabus}: testing was done using a development board instead of the
 bare micro-controller for the \acrlong{obc}, and the power and payload bus were

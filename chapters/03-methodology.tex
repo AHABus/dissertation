@@ -911,7 +911,7 @@ them in the radio queue is marked as critical, preventing FreeRTOS to switch
 contexts.
 
 \subsection{Mission Design and Configuration Files}
-\label{sssec:conf-file}
+\label{ssec:conf-file}
 
 Because \acrshort{fcore} was designed to run on embedded platforms with 
 potentially no support for configuration files, the settings for a given mission
@@ -1120,3 +1120,6 @@ maximum theoretical correction limit of the \acrshort{fec} algorithm
     \item just under the limit ($\frac{14}{256}$);
     \item above the limit ($\frac{18}{256}$).
 \end{itemize}
+
+Each test involved having the prototype platform run for ten minutes in normal
+conditions, an attempting to decode packets using ground segment software.
