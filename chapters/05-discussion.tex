@@ -33,7 +33,7 @@ failure. During the testing phase, no major software design error were found,
 and the only instances where failures were found to be caused by the flight
 software itself. Though quite cumbersome to work with, and lacking in
 documentation, the \acrshort{fcore} configuration tool discussed in section
-\ref{sssec:conf-file} proved reliable, and the resulting \acrshort{fcore} builds
+\ref{ssec:conf-file} proved reliable, and the resulting \acrshort{fcore} builds
 did not suffer from erroneous bandwidth usage.
 
 There are, however, areas that could be improved upon: the software design of
@@ -91,7 +91,7 @@ protocol. Because the end marker value might occur in the frame's content, it
 must be escaped so that the decoder does not interpret a content byte as the
 frame end. This can be achieved through \textit{byte stuffing}: an escape value
 is chosen, and any end marker or escape value that occurs in the content must
-be preceded by the escape value. The use of \acrshort{fec} in the protocol
+be preceded by the escape value. The use of \acrlong{fec} in the protocol
 further complicates the issue: the \acrlong{ecc} would have to be escaped too,
 making frames impossible to error-correct before the escaped bytes have been
 resolved by the decoder. This means that a single corrupted escape byte in a
