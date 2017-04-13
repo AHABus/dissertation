@@ -100,19 +100,27 @@ resolved by the decoder. This means that a single corrupted escape byte in a
 received frame would prevent the frame from being corrected at all, even if the
 number of invalid bytes is inferior to the \acrshort{fec} algorithm limit.
 
-% Finally, it was observed during all tests that the loss of a frame could be
-% reported twice in the reception statistics: the last decoded frame number is
-% only changed when a valid frame is parsed, and the frame sequence number is
-% discarded if the frame contains too many erroneous bytes and cannot be
-% corrected. While this avoid tracking corrupt frame sequence numbers in the
-% decoder, it means that a corrupt frame will not be registered in the sequence,
-% and the decoder will report a dropped frame when
-
 \subsection{Payload Bus}
+\label{ssec:discussion-bus}
 
-The payload bus
+The payload data bus worked well overall, even though payloads failed to
+respond in certain occurrences. Due to the absence of debugging facilities on
+the Wemos D1 development board and lack of time, the root cause of this issue
+could not be successfully identified. One possibility is the difference in
+logical levels between the \acrlong{obc} (\SI{3.3}{\volt}) and the test
+payloads (\SI{5.0}{\volt}). While in practice both side were able to detect
+logical highs and lows, it is possible that performance could be improved by
+using a voltage regulator on the data and clock lines. Additionally, the test
+payloads were written using the Arduino libraries, which provide an easy-to-use
+API to interact with AVR-based boards, but include a lot of overhead. It is
+possible that some length interrupt service routines or I/O actions were
+delaying the payloads' responses to \acrshort{i2c} requests, causing the
+\acrshort{obc} to flag them as unresponsive.
 
-
+Of all the systems designed for this project, the payload bus was the most
+simple – it relies heavily on \acrshort{i2c}, an existing protocol – but also
+the one that was the most complex to test thoroughly, and the one that would
+require the most additional testing to be approved before a real test mission.
 
 \subsection{Ground Segment}
 
@@ -169,14 +177,24 @@ discussed in section \ref{ssec:conf-file}.
 
 This disparity between actual and optimal use of the bandwidth was caused by the payloads: the time division formula used to compute the polling interval solves for the case where each payload always transmit exactly the maximum amount of data that can be contained in packet. During the test, one of the payload generated data at a low enough rate that it fit into small packets that could be encapsulated into a single frame, reducing the required bandwidth. This issue would be challenging to address with the current architecture since it requires the polling intervals to be fixed. A better use of the bandwidth could be approached by selecting appropriate payload priority levels during the mission design phase, or designing payload to use the full capacity of the radio communications layer.
 
+It is important to note that the amount of erroneous data received was lower
+than that reported by the decoder/parser, due to software design. 256 bytes are
+added to the erroneous data count when a frame has too many errors to be
+error-corrected, or when frames are skipped – the current frame sequence number
+is higher than expected. When a corrupt frame is detected, the last decoded
+sequence number is not changed to avoid overwriting it with a potentially
+corrupted value. Because of this, the next valid frame to be detected will
+also cause a dropped frame to be reported, even though the corrupt's frame
+256 bytes have already been recorded.
+
 Finally, table \ref{tab:ditl-health} shows that even though the data bus
 performed well overall, both test payloads were marked as unresponsive in
-nearly \SI{10}{\percent} of the system health packets transmitted by the
-platform. The source of the problem could not be identified due to the lack of
-time and the difficulty of debugging this subsystem in particular: the
-Wemos D1 development board that was used as the \acrlong{obc} does not provide
-useful printing devices that could have been used to send log messages.
+nearly \SI{10}{\percent}, which can be considered high. As discussed in section
+\ref{ssec:discussion-bus}, a single root cause could not be identified for this
+particular issue, and more testing would be required.
 
 \subsection{Radio System Resilience Tests}
+
+
 
 \section{Further Work} % << mix in with the rest?
