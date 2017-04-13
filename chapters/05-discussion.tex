@@ -195,6 +195,49 @@ particular issue, and more testing would be required.
 
 \subsection{Radio System Resilience Tests}
 
+The resilience tests were aimed at testing the reliability of the \acrlong{fec}
+algorithm used in the radio protocol's frame layer. Those tests were considered
+critical because the frame layer must provide reliability to the
+\acrshort{ahabus} radio protocol. Since the chosen \acrshort{fec} algorithm,
+Reed-Solomon codes $RS(255,223)$, can fix a maximum of 16 bytes per 256-byte
+code block, the tests were designed to simulate average error rates below (8
+bytes out of 256), near (14 bytes out of 256) and above (18 bytes out of 256
+that theoretical limit, through the software method discussed in section
+\ref{ssec:method-resilience}.
 
+Overall, figures \ref{fig:stress-8.256}, \ref{fig:stress-14.256} and
+\ref{fig:stress-18.256} show the expected behaviour: the higher the average
+error rate, the more erroneous frames. It is interesting to note that even at
+the two lower rates ($\frac{8}{256}$ and $\frac{16}{256}$), which are below
+the maximum rate that the \acrlong{ecc} should be able to fix, some frames are
+dropped. The main cause is the use of start sequences. While \acrshort{ecc} are
+able to correct up to 16 erroneous bytes, the detection of the frame itself is a
+pre-requisite. If the frame start marker itself is corrupted, the decoder cannot
+identify the frame, and it will is counted as lost, even if the total number
+of erroneous bytes in the frame is less than 16.
+
+Additionally, it is important to note that the target error rates were averages.
+For those three tests, the code used was set to corrupt the current byte if a
+pseudo-random number between 0.0 and 1.0, obtained through the C standard
+library's \texttt{rand()} function, was above the error rate. \texttt{rand()},
+while allowing a good estimate, is not statistically accurate, and some frames
+had a higher or lower than average erroneous bytes. This is believed to be the
+source of the discrepancy between the theoretical average error rates and the
+actual correction rates shown for the first two tests in table
+\ref{tab:stress-fec}.
+
+Finally, the third tests demonstrates the inaptitude of the \acrshort{ecc}
+to cope when the average error rate is above the the algorithm's maximum. Most
+of the frames were lost, the only few decoded being just under the threshold
+due to the fluctuations discussed above. Table \ref{tab:stress-fec} shows that
+the correction rate is significantly lower than the $\frac{14}{256}$ test, which
+was expected: Reed-Solomon codes cannot fix even some errors if the number of
+erroneous bytes in a code block is above the chosen algorithm's limit.
+
+Overall, these three tests showed that the \acrshort{fec} algorithm chosen for
+the frame layer worked as expected, so long as the error rate remains under
+16 bytes per code block (frame). Ultimately, this limit is a trade-off between
+reliability and bandwidth: raising it would require more bytes in each frame
+to be allocated to \acrlong{ecc}.
 
 \section{Further Work} % << mix in with the rest?
