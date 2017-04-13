@@ -1,6 +1,8 @@
 \chapter{Results}
 \label{ch:results}
 
+\section{Introduction}
+
 The following section presents the observations and numerical results obtained
 during the tests done as part of the evaluation process of the project, as
 discussed in section \ref{sec:testing}.
@@ -55,7 +57,7 @@ from lift-off to landing. To obtain data similar to what would be encountered
 during a real flight, the GNSS receiver was replaced by an Arduino board 
 sending simulated geographic co-ordinates and altitude.
 
-Figure \ref{fig:dit-alt} shows the altitude of the AHABus platform reported by
+Figure \ref{fig:ditl-alt} shows the altitude of the AHABus platform reported by
 the received headers over the approximately two hours and twenty minutes of the
 simulation. The altitude marks are matched to the time at which each packet
 is received, and not emitted.
@@ -80,7 +82,7 @@ x=MET, y=altitude, col sep=comma
 \end{tikzpicture}
 \centering
 \caption{DITL Test - Altitude over time}
-\label{fig:dit-alt}
+\label{fig:ditl-alt}
 \end{figure}
 
 The mission platform was composed of the AHABus \acrlong{obc}, and two simulated
@@ -101,12 +103,6 @@ payload & priority & core frequency & polling interval \\ \hline
 \caption {DITL Test - FCORE configuration}
 \label{tab:ditl-cfg}
 \end{table}
-
-Figure \ref{fig:ditl-bandwidth} shows that the average data rate used by the
-platform stabilised early into the flight close to \SI{10}{bps}, or
-\SI{110}{bps} (out of a maximum bandwidth of \SI{200}{bps}). Over the full
-simulation's duration, an average of \SI{0.63}{Bps} were lost due to
-transmission errors.
 
 Figure \ref{fig:ditl-bandwidth} shows that the average data reception rate was
 stable over the whole simulation, with an average of \SI{11}{Bps}, or

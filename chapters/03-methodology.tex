@@ -1,6 +1,8 @@
 \chapter{Proposed Solution and Methodology}
 \label{ch:methodology}
 
+\section{Introduction}
+
 \section{Proposed Solution}
 
 The proposed solution for this project is inspired by the bus model that
@@ -132,8 +134,10 @@ some level of error checking if the transmission of a parity bit is enabled, but
 it does not carry enough information to correct errors. Additionally, RTTY is
 purely a link layer, and does not provide any kind of encapsulation necessary
 for multiplexing data from different payloads.
-
-\subsection{Hardware Setup}
+%
+% \subsection{Hardware Setup}
+%
+% The radio tra
 
 \subsection{AHABus Radio Protocol}
 
@@ -675,11 +679,11 @@ be changed to the following:
 low.
 \item The \acrshort{obc} lists payloads that have raised CR. For each:
 \begin{enumerate}
-    \item The \acrshort{obc} pulls the payload's $\overline{CE}$ line low.
-    \item The payload sends its data to the \acrshort{obc}.
-    \item The \acrshort{obc} release the payload's $\overline{CE}$ line to high.
-    \item The payload releases its $\overline{CR}$ line to high.
-    \item The \acrshort{obc} processes the received data.
+\item The \acrshort{obc} pulls the payload's $\overline{CE}$ line low.
+\item The payload sends its data to the \acrshort{obc}.
+\item The \acrshort{obc} releases the payload's $\overline{CE}$ line to high.
+\item The payload releases its $\overline{CR}$ line to high.
+\item The \acrshort{obc} processes the received data.
 \end{enumerate}
 \end{enumerate}
 

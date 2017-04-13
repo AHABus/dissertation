@@ -1,6 +1,8 @@
 \chapter{Discussion}
 \label{ch:discussion}
 
+\section{Introduction}
+
 The aim of the project was to design and build a prototype of a High-Altitude
 Balloon modular platform, similar in principle to buses used in the satellite
 industry, and evaluate both the feasibility of such a platform and its
@@ -98,7 +100,17 @@ resolved by the decoder. This means that a single corrupted escape byte in a
 received frame would prevent the frame from being corrected at all, even if the
 number of invalid bytes is inferior to the \acrshort{fec} algorithm limit.
 
+% Finally, it was observed during all tests that the loss of a frame could be
+% reported twice in the reception statistics: the last decoded frame number is
+% only changed when a valid frame is parsed, and the frame sequence number is
+% discarded if the frame contains too many erroneous bytes and cannot be
+% corrected. While this avoid tracking corrupt frame sequence numbers in the
+% decoder, it means that a corrupt frame will not be registered in the sequence,
+% and the decoder will report a dropped frame when
+
 \subsection{Payload Bus}
+
+The payload bus
 
 
 
@@ -131,6 +143,39 @@ in appendices \ref{} through \ref{}, or on the project's GitHub account at
 https://github.com/ahabus/results
 
 \subsection{Day-in-the-Life Test}
+
+The main goal of the day-in-the-life test was to evaluate whether the platform
+was viable for full-duration \acrlong{hab} missions. In that respect, the test
+can be considered successful: as shown in figure \ref{fig:ditl-alt}, the
+simulation spanned a whole mission sequence, from launch through burst altitude,
+to descent and landing, over a slightly more than two hours and twenty minutes.
+
+While actions were taken for the test to mirror an actual mission as much as
+possible, like the use of fake \acrshort{gnss} messages, one effect in
+particular that had to be ignored was the weakening of the radio signal: in a
+real mission, the increase in the distance between the ground station and the
+platform over time means that the radio channel qualities (signal-to-noise
+ratio, line of sight interruptions) are not constant. For this test, neither the
+transmission nor the reception antenna were moved. Range resilience would have
+to be tested through dedicated tests before the platform is used on real
+missions.
+
+The test allowed a long duration check of the radio protocol and systems. Figure
+\ref{fig:ditl-bandwidth} shows that the amount of corrupted frames was well
+below the total amount of data that was received. The average rate of
+transmission, however, was only slightly above half of the available bandwidth,
+despite the use of the calculation of the optimal intervals using the tool
+discussed in section \ref{ssec:conf-file}.
+
+This disparity between actual and optimal use of the bandwidth was caused by the payloads: the time division formula used to compute the polling interval solves for the case where each payload always transmit exactly the maximum amount of data that can be contained in packet. During the test, one of the payload generated data at a low enough rate that it fit into small packets that could be encapsulated into a single frame, reducing the required bandwidth. This issue would be challenging to address with the current architecture since it requires the polling intervals to be fixed. A better use of the bandwidth could be approached by selecting appropriate payload priority levels during the mission design phase, or designing payload to use the full capacity of the radio communications layer.
+
+Finally, table \ref{tab:ditl-health} shows that even though the data bus
+performed well overall, both test payloads were marked as unresponsive in
+nearly \SI{10}{\percent} of the system health packets transmitted by the
+platform. The source of the problem could not be identified due to the lack of
+time and the difficulty of debugging this subsystem in particular: the
+Wemos D1 development board that was used as the \acrlong{obc} does not provide
+useful printing devices that could have been used to send log messages.
 
 \subsection{Radio System Resilience Tests}
 
