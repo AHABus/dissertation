@@ -3,96 +3,44 @@
 
 \section{Introduction}
 
-\section{\acrlong{hab} Missions}
+In this chapter, existing \acrlong{hab} architectures are first presented and analysed in order to identify current shortcomings. A comparison with equivalent systems in nano-satellites is then made to identify concepts that can be translated to \acrshort{hab} applications, before a more in-depth analysis of applicable telemetry and data transfer technologies.
 
-Most \acrshort{hab} missions led by universities, schools or amateur are built 
-around commercially available small computers or micro-controller boards:
-Redland Green School students used a Raspberry Pi (\cite{rpi2014}) running
-python scripts as an \acrfull{obc} for their HAB mission
-(\cite{Hinschelwood2015}), while other projects have been ran on AVR
-micro-controller based boards like the Arduino Mega
-(\cite{AtmelCorporation2015}).
+\section{Existing \acrlong{hab} Architectures}
 
-\section{\acrlong{obc} Architectures}
+For this paper, small-budget \acrlong{hab} missions led by universities, schools or amateurs were investigated. More complex architectures exist, like the ones used by NASA for their long-duration, high altitude experiments (\cite{Eggers2016}). Such architectures were not considered because of the differences in scope, budget and complexity.
 
-While most \acrshort{hab} projects make use of commercial-off-the-shelf
-components, the finished payloads are usually custom, single-purpose designs
-that are little, if at all modular. In the design document for the Titan-1 HAB
-mission, Bombasaro describes a hardware bus based on tightly coupled sensors
-which communicate over two different data buses, SPI and \acrshort{i2c}, and a
-custom-made, single-purpose flight software (\cite{Bombasaro2015}).
+While small-budget missions are built around commercial off-the-shelf small computers, or micro-controller-based boards for their \acrlong{obc} and instruments, the resulting designs are often non-modular, combine different communications standard in order to communicate with an heterogenous set of instruments, and make use of customised, text-based telemetry formats in the United Kingdom.
 
-Because of the risks and cost involved, nano-satellites rely more on modular
-designs, allowing each team to work on their module independently. In his paper,
-Volstad describes the design of the data bus of the NTNU CubeSat: while the OBC
-is a based on a custom made circuit board, it is designed to provide a standard
-power interface, as well as access to an \acrshort{i2c} standard bus
-(\cite{NXPSemiconductors2014}) to each payload (\cite{Volstad2011}). The
-\acrshort{i2c} protocol was chosen because of its low power consumption, and
-because if only requires two lines (clock and data). Thomas Clausen describes
-in his 2001 paper how a simple packet protocol built on top of \acrshort{i2c}
-itself is used for data transfer and error detection in Aalborg University's
-CubeSats (\cite{Clausen2001}).
+Redland Green School students based their design on a Raspberry Pi (ARM-based) computer (\cite{rpi2014}). Each software module of the project was developed on individual machines using the Python language (\cite{VanRossum2011}), before ``Each development Pi and its corresponding breadboard of components [were] combined to a single 256MB Pi'' (\cite{Hinschelwood2015}). While the approach was modularised, the use of commercial sensors with hard-coded communication protocols meant that moving final modules to the flight computer involved ``some code editing as different components need to use the same GPIO pins'', which introduce the potential for a single point human error.
 
-\section{Digital Radio Telemetry}
+On other projects like Emmanuel Bonbasaro's (\cite{Bombasaro2015}) Titan-1 mission, a micro-controller boards like an ``Arduino Mega 2560 is [...] used as flight computer'', alongside multiple commercial sensors connected to the \acrshort{obc} through multiple different data buses (in this case \acrfull{i2c} and \acrfull{spi}), because of the disparate communication standards in use in affordable commercial sensors. The flight software discussed by the author is a custom-made solution developed specifically for Titan 1's architecture, which would render its re-use in a different mission complicated.
 
-In the United Kingdom, radio licenses do not cover airborne transmission, making
-packet radio protocols like AX.25 unusable for HAB missions 
-(\cite{ukhasradio2016}). However, the Office of Communications allows the use
-of certain \textit{license-exempt} frequencies like the 70cm wavelength band,
-provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}).
-For this reason, most missions launched from the United Kingdom use the
-Radiometrix NTX2 transmitter (\cite{radiometrix2012}). Because of the
-constraints, these missions usually transmit their telemetry as text using the
-\acrfull{rtty} protocol.
+Transmitting data to the ground as it is captured is desirable because of the likelihood that the payload cannot be recovered. Outside the United Kingdom, missions often make use of amateur radio derived systems. Jason Winningham (\cite{Winningham2006}) provides guidelines on the use of the \acrfull{aprs} for \acrshort{hab} missions, which allows the use of an existing infrastructure that can repeat packets received by any stations and ensure that data is received even if the ballon is not in range of the tracking station (\cite{TheAPRSWorkingGroup2000}).
 
-Satellite missions last a lot longer than High-Altitude Balloons' and the
-requirements for radio transmissions differ: while satellites can only
-communicate when their orbit passes above a ground station and require precise
-speed and data volume planning, as described by Sandy Anthunes in his book
-(\cite{Antunes2015}), non-floating HAB missions allow for line-of-sight
-communications from liftoff to late into the descent of the payload.
+Amateur radio licenses, to which the use of APRS is linked, are restricted in the United Kingdom by the Office of Communications and licensees ``shall not establish or use the Radio Equipment in any Aircraft or other Airborne Vehicle. [...] ``Aircraft'' and ``Airborne Vehicles'' includes full size and models and also includes balloons whether tethered or free'' (\cite{Ofcom2017}). However, the use of certain \textit{license-exempt} frequencies like the 70cm wavelength band, provided that the transmission power does not exceed 10mW (\cite{Ofcom2014}). For this reason, most missions launched from the United Kingdom make use of the Radiometrix NTX2 transmitter (\cite{radiometrix2012}), coupled with a de-facto telemetry standard using plain-text sentences, sent over low-speed  \acrfull{rtty} links to minimise losses due to low signal-to-noise ratio (\cite{UKHAS2015}).
 
-There are however some technologies that can be adapted from satellites to be
-used in \acrshort{hab} applications. The University of Arizona uses a custom
-packet format over 434MHz radio, containing raw binary values for each
-instrument's measurements (\cite{Eatchel2002}). The BRITE-Austria CubeSat
-mission uses the AX.25 packet radio protocol (used by amateur radio users),
-which allows the use of off-the-shelf transmission and reception hardware
-rather than custom-made circuits (\cite{Traussnig2007}).
+\section{Satellites Bus Architectures}
 
-\section{Telemetry Protocols}
+When space conditions are required, or when the targeted scientific observations require longer or more global exposure times, nano-satellites have become popular over the last decade ( \cite{McDowell2017a}, \cite{McDowell2017}) as a relatively affordable – though much more costly than \acrshort{hab} missions – access to space. The most popular standard is CubeSat (\cite{Heidt2000}), based on \SI{10}{\centi\metre} cubes small and light enough to be launched as secondary payloads, and thus only require a small portion of the launch costs to be covered by nano-satellites teams.
 
-Some nano-satellites use custom telemetry data format, which allows the team
-to minimise the volume of data to be sent over radio. The Planetary Society's
-Lightsail mission has an uplink connection that allows the ground station
-to request specific logs or data. By default, The spacecraft only communicates
-a custom beacon containing a summary of the its housekeeping data
-(\cite{planetary2016}). Uplink being impractical with the transmission power
-limits imposed in the United Kingdom, such a selective telemetry system cannot
-be relied upon for \acrshort{hab} missions.
+Because of the risks and cost involved, nano-satellites rely more on modular designs, allowing each team to work on their module independently. In his paper, Marius Volstad describes the design of the data bus of the NTNU CubeSat. While the \acrlong{obc} is a based on a custom-made circuit board, it is designed to provide a standard power interface to each payload, as well as access to an \acrshort{i2c} standard bus (\cite{NXPSemiconductors2014}) to each payload (\cite{Volstad2011}). The \acrshort{i2c} protocol was chosen because of its low power consumption, and because if only requires two lines (clock and data).
 
-To improve collaboration and allow the deployment of large networks of
-satellites, probes and other space vehicles, the Consultative Committee for
-Space Data Systems has defined multiple communication standards that for
-the different types of networks encountered in spacecrafts.
+Thomas Clausen (\cite{Clausen2001}) describes in his 2001 paper the design of an internal bus for CubeSats based on the \acrshort{i2c} protocol as well. In this case too, \acrshort{i2c} was chosen for its low power consumption and I/O line usage, but also for its speed and reliance to noise, and because the addressing of payloads on the bus can be done entirely in software. T. Clausen proposes the use of a limited packet system on top of \acrshort{i2c} in order to provide stable data transfers between payloads and the \acrlong{obc}.
 
-SpaceWire defines how instruments' data can be accessed by having the OBC
-remotely poll their memory (\cite{parkes2005}). A similar system is used to
-fetch data from ROM chips over \acrshort{i2c} and could be used to build a
-simple data bus.
+These modular designs are taken further in full-scale satellites and exploration probes. Lockheed Martin's 1999 patent (\cite{Benedetti1999}) describes a system that provides a modular power, propulsion and and data management platform on which payloads are connected to simplify satellite and probe development. In order improve collaboration between divisions and improve the reusability of software and hardware modules, the \acrfull{ccsds} and \acrfull{esa} have designed SpaceWire, a series of standards for satellites' internal computer and network systems. The SpaceWire Remote Access Protocol (\cite{parkes2005}) proposes a simple model in which instruments' data is accessed by the \acrlong{obc} by addressing each instrument like random-access memory cells. A similar system is used to fetch data from ROM chips over \acrshort{i2c} and could be used to build a simple data bus.
 
-The \acrshort{ccsds} Space Packet protocol defines a packet format used to
-encapsulate application data (from instruments for example) that can be sent
-over a ``Space Link'', an analogue of the OSI model's link layer
-(\cite{Stallings1987}) using \acrshort{ccsds} frames to encapsulate packets
-originating from multiple instruments, ground stations and spacecrafts
-(\cite{ccsds2003}).
+\section{Satellite Radio Technologies}
 
-While \acrshort{hab} applications do not require the level of complexity of
-\acrshort{ccsds} protocols — addressing is not needed since the network only
-contains two endpoints, communicating in a single direction — some details of
-the Space Packet protocol are worth reusing (Forward Error Correction,
-different Application IDs for each payload).
+Satellite missions last a lot longer than High-Altitude Balloons' and the requirements for radio transmissions differ. While satellites can only communicate when their orbit passes above a ground station and require precise speed and data volume planning, as described by Sandy Anthunes in his book (\cite{Antunes2015}), non-floating HAB missions normally allow for line-of-sight communications from liftoff to late into the descent of the payload.
+
+Furthermore, numerous nano-satellites use custom telemetry data format, which allows the team to minimise the volume of data to be sent over radio. The Planetary Society's Lightsail mission (\cite{planetary2016}) uses an uplink connection that allows the ground station to request specific logs or data. By default, The spacecraft only communicates a custom beacon containing a summary of the its housekeeping data. Uplink being impractical with the transmission power limits imposed in the United Kingdom, such a selective telemetry system cannot be relied upon for HAB missions.
+
+There are however some technologies that can be adapted from satellites to be used in HAB applications. In a 2002 paper (\cite{Eatchel2002}), the telemetry standard for the CubeSat programmes of the University of Arizona are presented as a custom binary packet format. Binary data obtained from each instrument is encapsulated in packets of variable length (between 0 and 256 bytes), preceded by a header ``[containing] a six byte call sign and a satellite ID code'' and followed by a CRC16 checksum for error detection. Conversely, the BRITE-Austria CubeSat mission described by Wolfgang Traussnig (\cite{Traussnig2007}) uses the existing AX.25 packet radio standard as its link layer, and proposes the use of the \acrshort{ccsds} frame and packet protocols on top of it.
+
+The \acrshort{ccsds} Space Packet protocol defines a packet format used to encapsulate application data (from instruments for example) that can be sent over a ``Space Link'', an analogue of the OSI model's link layer (\cite{Stallings1987}) using \acrshort{ccsds} frames to encapsulate packets originating from multiple instruments, ground stations and spacecrafts (\cite{ccsds2003}). While \acrlong{hab} applications do not require the level of complexity of \acrshort{ccsds} protocols — addressing is not needed since the network only contains two endpoints, communicating in a single direction — some details of the Space Packet protocol are worth reusing (\acrfull{fec}, different Application IDs for each payload).
+
+% bit about FEC? Real-Time OS
 
 \section{Summary}
+
+As discussed in this chapter, the current state of the art of low-budget \acrlong{hab} missions relies on single-purpose, custom hardware and software designs that cannot be easily reused across missions and payload configurations. In the following chapter, a solution based on the technologies and architectures used in related but less affordable satellite systems is presented and analysed.
