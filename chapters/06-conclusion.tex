@@ -1,2 +1,11 @@
 \chapter{Conclusion}
 \label{ch:conclusion}
+
+In summary, the project discussed in this paper was successful. The main goal of the project, investigating the feasibility of a modular bus system for \acrlong{hab} missions, was reached, and a working prototype was successfully designed, implemented and tested.
+
+Overall, the modular bus architecture found in most modern satellites and deep-space probes was found to be portable to \acrlong{hab} applications: no major issues were found  in the \acrshort{ahabus} prototype, and the platform performed well enough in its first round of testing that the concept could be taken further. While the associated tooling would require more work to make it more accessible and easier to use, an \acrshort{ahabus}-based mission could be designed and prepared using the platform in its current state, without requiring payload team to edit the flight software's source code.
+
+As discussed in chapter \ref{ch:discussion}, the \acrshort{ahabus} platform in its current state, while well suited for scientific missions where data is collected at low, steady rates, would not perform as well in simpler missions focused on collecting high-volume data at long intervals such as pictures.
+
+Further work will be required to qualify the \acrshort{ahabus} platform for flight missions. More investigation will be required to identify the root cause, and mitigate the payload bus protocol issues discussed in section \ref{ssec:discussion-bus}. Advanced testing of the radio system must be undertaken, specifically range testing, as well as line-of-sight and interference testing to qualify the behaviour of the radio protocol and software low signal-to-noise ration environments. Power consumption testing would be beneficial so that the current draw of the multi-payload, modular platform can be compared to more common custom-designed, single purpose mission architectures. Finally, test missions will have to be flown, possibly using an \acrshort{ahabus} platform as a passive payload flying alongside a simple, well tested radio and \acrshort{gnss} beacon for backup.
+

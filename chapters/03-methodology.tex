@@ -3,6 +3,8 @@
 
 \section{Introduction}
 
+In this chapter, the \acrfull{ahabus} is presented as a prototype solution to the issues exposed in chapter \ref{ch:lit-review}. 
+
 \section{Proposed Solution}
 
 The proposed solution for this project is inspired by the bus model that
@@ -10,7 +12,9 @@ supports the architecture of most commercial satellites. A standard software
 and hardware platform provides common facilities required on all High-Altitude
 flights – position tracking, internal data transfers and radio telemetry to the
 ground station – allowing payloads (scientific instruments for example) to
-only generate data and make it available to the platform.
+only generate data and make it available to the platform. A global overview of the platform and the environment used for its development is presented, followed by a detailed discussion of the development process of each of the four main components of \acrshort{ahabus} (Radio Communications, Payload Bus, Flight Software and Ground Segment). Finally, the methods used to evaluate the viability of the prototype platform are presented, leading to the results presented in chapter \ref{ch:results}.
+
+The source code and protocol documentation resulting from the development process discussed in this chapter are available in the project's repositories listed in appendix \ref{apx:source-repos}.
 
 \begin{figure}[H]
 \includegraphics[width=0.35\textwidth]{payloadbus.pdf}
@@ -56,11 +60,7 @@ the design.
 
 \section{Environment}
 
-The proposed solution was designed to run on low-cost embedded platforms, and
-the prototype was built around the Espressif ESP8266 micro-controller
-(\acrlong{obc}). The radio link used a Radiometrix NTX2B transmitter
-(\cite{radiometrix2012}), and an unnamed Software-Defined Radio receiver and
-antenna.
+The proposed solution was designed to run on low-cost embedded platforms, and the prototype was built around the Espressif ESP8266 (\cite{EspressifInc.2017}) micro-controller (\acrlong{obc}). The radio link used a Radiometrix NTX2B transmitter (\cite{radiometrix2012}), and an unnamed Software-Defined Radio receiver and antenna.
 
 The software packages used during the project were:
 
@@ -823,7 +823,7 @@ Bus Task.
 
 A Bus Tasks runs at a fixed interval, configured at compile time depending on
 the payload's priority level, as discussed in more details in section
-\ref{sssec:conf-file}. The task establishes a connection with the payload using
+\ref{ssec:conf-file}. The task establishes a connection with the payload using
 the \acrshort{ahabus} payload bus protocol. If data is available, it is
 collected into a temporary buffer and a packet with the platform's cached
 geographical coordinates is created and sent to the radio submodule.
