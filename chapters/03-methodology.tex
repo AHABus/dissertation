@@ -3,18 +3,18 @@
 
 \section{Introduction}
 
-In this chapter, the \acrfull{ahabus} is presented as a prototype solution to the issues exposed in chapter \ref{ch:lit-review}. 
+In this chapter, the \acrfull{ahabus} is presented as a prototype solution to the issues exposed in chapter \ref{ch:literature-review}. A global overview of the platform and the environment used for its development is presented, followed by a detailed discussion of the development process of each of the four main components of \acrshort{ahabus} (Radio Communications, Payload Bus, Flight Software and Ground Segment). Finally, the methods used to evaluate the viability of the prototype platform are presented, leading to the results presented in chapter \ref{ch:results}.
+
+The source code and protocol documentation resulting from the development process discussed in this chapter are available in the project's repositories listed in appendix \ref{apx:source-repos}.
 
 \section{Proposed Solution}
 
 The proposed solution for this project is inspired by the bus model that
 supports the architecture of most commercial satellites. A standard software
 and hardware platform provides common facilities required on all High-Altitude
-flights – position tracking, internal data transfers and radio telemetry to the
-ground station – allowing payloads (scientific instruments for example) to
-only generate data and make it available to the platform. A global overview of the platform and the environment used for its development is presented, followed by a detailed discussion of the development process of each of the four main components of \acrshort{ahabus} (Radio Communications, Payload Bus, Flight Software and Ground Segment). Finally, the methods used to evaluate the viability of the prototype platform are presented, leading to the results presented in chapter \ref{ch:results}.
-
-The source code and protocol documentation resulting from the development process discussed in this chapter are available in the project's repositories listed in appendix \ref{apx:source-repos}.
+flights – position tracking, internal data transfers and radio telemetry to
+the ground station – allowing payloads (scientific instruments for example) to
+only generate data and make it available to the platform.
 
 \begin{figure}[H]
 \includegraphics[width=0.35\textwidth]{payloadbus.pdf}
@@ -80,7 +80,7 @@ The software packages used during the project were:
 \label{sec:radio-coms}
 
 This section describes the design process that led to the radio communications
-protocol used by the AHABus platform to send payload data and flight metadata
+protocol used by the \acrshort{ahabus} platform to send payload data and flight metadata
 to the ground station. Its role is to ensure that arbitrary binary data – each
 payload can use their own data format – as stably and reliably as possible. As
 discussed in the following subsections, the design and implementation choice
@@ -139,11 +139,11 @@ for multiplexing data from different payloads.
 %
 % The radio tra
 
-\subsection{AHABus Radio Protocol}
+\subsection{\acrshort{ahabus} Radio Protocol}
 
-The AHABus radio protocol was designed to match the requirements for the radio
+The \acrshort{ahabus} radio protocol was designed to match the requirements for the radio
 system as closely as possible. While the specification presented in this section
-is the last version, which was implemented in the AHABus prototype, some parts
+is the last version, which was implemented in the \acrshort{ahabus} prototype, some parts
 of the protocol evolved or had to be changed during the prototyping process.
 % TODO: Might not be necessary to say that here, given further sections
 
@@ -198,7 +198,7 @@ until the next byte, or the next byte starts immediately.
 
 Other existing protocols exist that can transmit data over radio audio signals,
 like DominoEx or Olivia, sometimes with better transmission rates. RTTY was
-preferred over them because the ESP8266 board used as OBC in the AHABus
+preferred over them because the ESP8266 board used as OBC in the \acrshort{ahabus}
 prototype provides hardware support for UART, making it easier to implement and
 reliable. Since the link layer is transparent to the frame and packet layers,
 RTTY could be swapped for another protocol in the future with no impact on
@@ -233,12 +233,12 @@ data was missing.
 Identifying lost sections of an arbitrary stream of bytes without any form of
 formatting is not possible: since it is not known in advance what data should
 be expected, there is no model to which actual received data can be compared.
-For this reason, the AHABus radio protocol was designed as a framed protocol:
+For this reason, the \acrshort{ahabus} radio protocol was designed as a framed protocol:
 the stream of data is divided in chunks of a set number of bytes, encapsulated
 in \textit{frames} that contain the a sequence number used to track the position
 of the chunk in the data stream.
 
-The AHABus frame design was inspired by other frame-based protocols like the
+The \acrshort{ahabus} frame design was inspired by other frame-based protocols like the
 CCSDS Space Packet/Frame protocol. Each frame is composed of two section: a
 header, that contains metadata, and a payload containing the data carried by
 that frame.
@@ -267,7 +267,7 @@ The resulting first version of the frame format is presented in figure
     \end{bytefield}
     \end{center}
     \centering
-    \caption{AHABus Frame Format – Version 1}
+    \caption{\acrshort{ahabus} Frame Format – Version 1}
     \label{fig:frame-fmt-orig}
 \end{figure}
 
@@ -292,7 +292,7 @@ detected, the frame's end is detected once 256 bytes have been received.
     \end{bytefield}
     \end{center}
     \centering
-    \caption{AHABus Frame Format – Version 2}
+    \caption{\acrshort{ahabus} Frame Format – Version 2}
     \label{fig:frame-fmt-2}
 \end{figure}
 
@@ -425,14 +425,14 @@ of data being encapsulated in each frame.
     \end{tikzpicture}
     \end{center}
     \centering
-    \caption{AHABus Frame Synchronisation State Machine}
+    \caption{\acrshort{ahabus} Frame Synchronisation State Machine}
     \label{fig:frame-fsm}
 \end{figure}
 
 Figure \ref{fig:frame-fsm} presents the finite state machine that
-AHABus frame decoders must implement to detect frames in a binary
+\acrshort{ahabus} frame decoders must implement to detect frames in a binary
 stream, and figure \ref{fig:frame-fmt-3} the final version of the
-AHABus frame format.
+\acrshort{ahabus} frame format.
 
 % Go to the magic website http://madebyevan.com/fsm/
 
@@ -451,7 +451,7 @@ AHABus frame format.
         \end{leftwordgroup}
     \end{bytefield}
     \centering
-    \caption{AHABus Frame Format - Version 3}
+    \caption{\acrshort{ahabus} Frame Format - Version 3}
     \label{fig:frame-fmt-3}
 \end{figure}
  
@@ -460,7 +460,7 @@ AHABus frame format.
 Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
 chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
 percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
-explained further, the AHABus frames were chosen to be 256-byte
+explained further, the \acrshort{ahabus} frames were chosen to be 256-byte
 long. As shown previously, each frame also includes.
 
 \subsubsection{Packet Layer}
@@ -470,13 +470,13 @@ Layers, and was designed to allow the multiplexing of multiple payload's data as
 well as the transmission of ancillary data required for the overall flight
 management (platform's GNSS co-ordinates and altitude).
 
-To achieve those goals, the AHABus protocol uses packets similar to frames. Each
+To achieve those goals, the \acrshort{ahabus} protocol uses packets similar to frames. Each
 packet encapsulates a chunk of data retrieved from a single payload. To that
 end, packets were designed to be of variable length, to avoid unnecessary
 padding, which would have wasted bandwidth. The data - referred to as the
 packet's \textit{payload} – is preceded by the packet's header, which contains
 information necessary to attribute the packet's data to a payload, indicate
-the length of the packet, and carry the AHABus platform's location and altitude.
+the length of the packet, and carry the \acrshort{ahabus} platform's location and altitude.
 
 This design achieves multiplexing through time division: packets are chunked
 and sent in frames one after the other, and can be dispatched to their
@@ -500,11 +500,11 @@ an even or fair share of the total bandwidth. As discussed in section
         \end{leftwordgroup}
     \end{bytefield}
     \centering
-    \caption{AHABus Packet Format - Version 1}
+    \caption{\acrshort{ahabus} Packet Format - Version 1}
     \label{fig:packet-fmt-1}
 \end{figure}
 
-Figure \ref{fig:packet-fmt-1} shows the first and current version of the AHABus
+Figure \ref{fig:packet-fmt-1} shows the first and current version of the \acrshort{ahabus}
 packet format. Like frame discussed in section \ref{sssec:frame-layer}, each
 packet carries a version flag which was added to allow backwards compatibility,
 were the protocol to evolve in the future.
@@ -553,7 +553,7 @@ seconds until another packet is processed.
 
 \item In the case where a frame is lost due to channel noise or interferences,
 finding the start of the next packet would have been complicated, or required
-a synchronisation mechanism similar to the one designed for AHABus frames.
+a synchronisation mechanism similar to the one designed for \acrshort{ahabus} frames.
 Aligning packets instead makes such a system unnecessary, reducing the packet
 header size and the complexity of packet decoders.
 \end{itemize}
@@ -562,14 +562,14 @@ header size and the complexity of packet decoders.
 
 \subsection{Initial Implementation and Testing}
 
-To evaluate the protocol's viability, a full demonstration of an AHABus radio
+To evaluate the protocol's viability, a full demonstration of an \acrshort{ahabus} radio
 stack was written. Its main goals were to provide a reference implementation of
 a compliant encoder and decoder, validate the protocol's design process, and
 test the algorithms used in a controlled environment before integrated testing.
 
 The C language (ISO/IEC 9899:1999 standard) was chosen for the reference
 implementation because of its widespread use, and its availability on most
-micro-controller and embedded platforms, which would be used as AHABus flight
+micro-controller and embedded platforms, which would be used as \acrshort{ahabus} flight
 platforms. To render the code as portable and reusable as possible, care was
 taken to limit the dependencies to a subset of the C language standard library,
 and avoid use of dynamic memory allocation, which is often inefficient or
@@ -730,7 +730,7 @@ difference with a \acrshort{uart} serial interface is that \acrshort{i2c} is
 asymmetric: one device acts as the bus controller, and passive devices can
 only receive or transmit data when addressed by it.
 
-\subsection{AHABus Payload Bus Protocol}
+\subsection{\acrshort{ahabus} Payload Bus Protocol}
 
 After the two experiments described in in the previous sections, \acrshort{i2c}
 was chosen as the payload bus's underlying protocol: it allows a large number of
@@ -738,7 +738,7 @@ payloads to be supported with only two lines (clock line, SCL, and data line,
 SDA), and its controller/controllee paradigm allows the \acrshort{obc} to be
 have complete control over which payload is allowed to transmit, and when.
 
-The AHABus Payload Bus protocol was designed to work with a virtual register
+The \acrshort{ahabus} Payload Bus protocol was designed to work with a virtual register
 system: each payload can be thought of like a memory array, and the bus
 controller (the \acrshort{obc}) writes and reads data to and from addresses on
 each payload. Addressing a specific payload on the bus, replying to the bus
@@ -758,7 +758,7 @@ address & size & name & description \\ \hline
 
 \end{tabular}
 \end{center}
-\caption {AHABus Payload Bus Protocol - Virtual Registers}
+\caption {\acrshort{ahabus} Payload Bus Protocol - Virtual Registers}
 \label{tab:bus-protocol-registers}
 \end{table}
 
@@ -1012,7 +1012,7 @@ digital I/O pin and its frequency control pin.
 \begin{figure}[H]
 \includegraphics[width=0.4\textwidth]{ahabus-schema.png}
 \centering
-\caption{AHABus - Electronic Circuit}
+\caption{\acrshort{ahabus} - Electronic Circuit}
 \label{fig:ahabus-schema}
 \end{figure}
 
@@ -1023,7 +1023,7 @@ of testing. The schematics and the PCB layout are shown in figures
 \begin{figure}[H]
 \includegraphics[width=0.4\textwidth]{ahabus-pcb.png}
 \centering
-\caption{AHABus - Printed Circuit Board Layout}
+\caption{\acrshort{ahabus} - Printed Circuit Board Layout}
 \label{fig:ahabus-pcb}
 \end{figure}
 
@@ -1045,7 +1045,7 @@ Dl-Fldigi was modified so that the binary stream could be extracted. When the
 modified version starts, it creates a local network socket, to which any
 byte decoded from RTTY streams are forwarded. This design was chosen because
 most programming languages provide support for network communications, which
-means that tools could easily be written to work with AHABus frame streams, such
+means that tools could easily be written to work with \acrshort{ahabus} frame streams, such
 as the packet parser discussed in the following section.
 
 \subsection{Packet Parser}
@@ -1078,6 +1078,12 @@ coming from payloads is written directly to one file for each payload. Listing
 For testing purposes, the parser was also set to output statistics on the amount
 of data received, fixed errors and number of frames decoded or lost.
 
+\begin{figure}[H]
+\includegraphics[width=0.40\textwidth]{dl-fldigi.png}
+\centering
+\caption{\acrshort{ahabus} - Ground Segment Software}
+\end{figure}
+
 \section{Evaluation}
 \label{sec:testing}
 
@@ -1087,10 +1093,14 @@ observe code behaviour. Instead, most of the testing had to focus on the data
 received by the ground segment. Nonetheless, testing was conducted through
 two main methods discussed in this section.
 
-For all tests, the experimental setup was kept consistent: an ESP8266
-development board was used as the \acrshort{obc}, while two Arduino Uno boards
-were connected as payloads, generating fake instrument data. A \SI{5}{\volt}
-power supply was connected to the power lines.
+For all tests, the experimental setup, as shown in figure \ref{fig:exp-setup} was kept consistent: an ESP8266 development board was used as the \acrshort{obc}, while two Arduino Uno boards were connected as payloads, generating fake instrument data. A \SI{5}{\volt} power supply was connected to the power lines.
+
+\begin{figure}[H]
+\includegraphics[width=0.40\textwidth]{test-rig.jpg}
+\centering
+\caption{\acrshort{ahabus} - Test Setup}
+\label{fig:exp-setup}
+\end{figure}
 
 \subsection{Day in the life Testing}
 \label{ssec:method-ditl}
