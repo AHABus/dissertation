@@ -457,11 +457,11 @@ stream, and figure \ref{fig:frame-fmt-3} the final version of the
  
 %TODO: what's that worth? shouldn't it be at the end
 
-Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
-chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
-percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
-explained further, the \acrshort{ahabus} frames were chosen to be 256-byte
-long. As shown previously, each frame also includes.
+% Encapsulating the transmitted data adds overhead. If \(n\) is the size of a
+% chunk in bytes, and each frame adds \(m\) bytes of metadata, then only a
+% percentage \(\frac{n}{n+m}\) of the stream contains actual data. For reasons
+% explained further, the \acrshort{ahabus} frames were chosen to be 256-byte
+% long. As shown previously, each frame also includes.
 
 \subsubsection{Packet Layer}
 
@@ -774,10 +774,14 @@ it by sending \acrshort{i2c} read requests from address \texttt{0x10} onwards.
 To be compatible with devices that only provide small transmissions buffers,
 the controller cannot fetch more than 32 bytes at the same time. If there are
 more than 32 bytes of data available, the controller will send multiple read
-requests with increasing offsets from the base data address.
+requests with increasing offsets from the base data address. Once the data has 
+been successfully collected, the controller closes the connection by writing
+\texttt{0x00} in the connection flag.
 
-Once the data has been successfully collected, the controller closes the
-connection by writing \texttt{0x00} in the connection flag.
+To make development of payloads more accessible, an simple library was written
+for Arduino-compatible micro-controllers to abstract the bus protocol's
+implementation details behind simple function calls. The library makes use 
+of the Arduino library's implementation of \acrshort{i2c}, \texttt{Wire}.
 
 \section{Flight Platform}
 \label{sec:flight-software}
