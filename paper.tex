@@ -27,6 +27,11 @@
 \usepackage[titletoc,toc,page]{appendix}
 \usepackage[nottoc]{tocbibind}
 \usepackage{array}
+\usepackage{etoolbox}
+
+% reinstate the correct level for list of tables and figures
+\appto\listoffigures{\addtocontents{lof}{\protect\setcounter{tocdepth}{1}}}
+\appto\listoftables{\addtocontents{lot}{\protect\setcounter{tocdepth}{1}}}
 
 
 %\renewcommand{\familydefault}{\sfdefault}
@@ -114,7 +119,6 @@ The resulting protocols and platform prototype were successful and passed both d
 \end{abstract}
 
 \tableofcontents
-\setlength{\parskip}{1em}
 
 \listoffigures
 
@@ -122,6 +126,8 @@ The resulting protocols and platform prototype were successful and passed both d
 
 \printglossary
 \printglossary[type=\acronymtype]
+
+\setlength{\parskip}{1em}
 
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}

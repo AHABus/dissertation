@@ -1083,7 +1083,7 @@ For testing purposes, the parser was also set to output statistics on the amount
 of data received, fixed errors and number of frames decoded or lost.
 
 \begin{figure}[H]
-\includegraphics[width=0.40\textwidth]{dl-fldigi.png}
+\includegraphics[width=0.80\textwidth]{dl-fldigi.png}
 \centering
 \caption{\acrshort{ahabus} - Ground Segment Software}
 \end{figure}
@@ -1100,7 +1100,7 @@ two main methods discussed in this section.
 For all tests, the experimental setup, as shown in figure \ref{fig:exp-setup} was kept consistent: an ESP8266 development board was used as the \acrshort{obc}, while two Arduino Uno boards were connected as payloads, generating fake instrument data. A \SI{5}{\volt} power supply was connected to the power lines.
 
 \begin{figure}[H]
-\includegraphics[width=0.40\textwidth]{test-rig.jpg}
+\includegraphics[width=0.80\textwidth]{test-rig.jpg}
 \centering
 \caption{\acrshort{ahabus} - Test Setup}
 \label{fig:exp-setup}
@@ -1116,7 +1116,8 @@ performance of the \acrshort{ahabus} platform's subsystems.
 In order to come as close as possible to real-life conditions, the
 \acrshort{gnss} receiver was replaced with an Arduino board programmed to
 simulate the position updates of a receiver attached to a \acrlong{hab}
-throughout ascent and descent.
+throughout ascent and descent, using a UKHAS library to emulate NMEA output
+(\cite{UKHAS2010}).
 
 Because the test was executed locally, the long-range aspect of the radio
 communications could only be simulated by using a short antenna on the reception
