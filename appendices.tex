@@ -178,10 +178,10 @@ variable length.
   \begin{itemize}
   \item
     AHABus platform's latitude in decimal format at the time the packet
-    was encoded, in (8.24) fixed point format,
+    was encoded as a 32-bit signed integer, multiplied by 10000,
   \item
     AHABus platform's longitude in decimal format at the time the packet
-    was encoded, in (8.24) fixed point format,
+    was encoded as a 32-bit signed integer, multiplied by 10000,
   \item
     AHABus platform's altitude in metres at the time the packet was
     encoded, in 16-bit unsigned integer format.
